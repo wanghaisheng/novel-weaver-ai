@@ -1,0 +1,682 @@
+
+{
+  "appTitle": "노블 위버 AI",
+  "loading": {
+    "application": "애플리케이션 로딩 중...",
+    "translations": "번역 로딩 중..."
+  },
+  "error": {
+    "unknownView": "알 수 없는 뷰입니다. 예기치 않은 오류가 발생했습니다.",
+    "pageNotFound": "이런! 페이지를 찾을 수 없습니다."
+  },
+  "navigation": {
+    "features": "주요 기능",
+    "howItWorks": "작동 방식",
+    "pricing": "요금제",
+    "testimonials": "사용자 후기",
+    "genreTools": "장르 도구",
+    "toolsMegaMenu": "장르 프롬프트",
+    "signIn": "로그인",
+    "signOut": "로그아웃",
+    "signUp": "회원가입",
+    "goToTool": "도구로 이동",
+    "myNovels": "내 소설",
+    "getStarted": "시작하기",
+    "startCreating": "창작 시작",
+    "goHome": "홈페이지로 이동"
+  },
+  "footer": {
+    "copyright": "© {{year}} {{appTitle}}. 모든 권리 보유.",
+    "copyrightSimple": "© {{year}} {{appTitle}}",
+    "copyrightPricingPage": "© {{year}} {{appTitle}}. Gumroad를 통한 안전한 결제.",
+    "copyrightToolPage": "© {{year}} {{appTitle}}. 당신의 창작 파트너.",
+    "tagline": "한 단어, 한 단어로 세상을 엮습니다.",
+    "privacyPolicy": "개인정보 처리방침",
+    "termsOfService": "서비스 이용약관",
+    "aboutUs": "회사 소개",
+    "contactUs": "문의하기",
+    "language": "언어",
+    "selectLanguageLabel": "언어 선택",
+    "toolNavigation": "도구 탐색"
+  },
+  "home": {
+    "hero": {
+      "welcome": "환영합니다,",
+      "tagline": "아이디어 구상부터 최종 원고까지, 매력적인 소설을 만드는 AI 파트너입니다. 함께 당신의 이야기를 엮어보세요.",
+      "createNovelNow": "지금 소설 만들기",
+      "createNovelNowAriaLabel": "Novel Weaver AI로 소설 창작 시작하기"
+    },
+    "features": {
+      "sectionTitle": "{{appTitle}}로 당신의 걸작을 쓰는 데 필요한 모든 것",
+      "ideation": {
+        "title": "AI 아이디어 구상 및 컨셉",
+        "description": "AI가 생성하는 플롯, 캐릭터, 설정 아이디어로 창의력을 발휘하세요. 작가의 장벽을 즉시 극복할 수 있습니다."
+      },
+      "outlining": {
+        "title": "구조화된 아웃라인",
+        "description": "3막 구조와 같은 고전적인 구조를 지원하는 유연한 아웃라인 도구로 생각을 정리하세요."
+      },
+      "writing": {
+        "title": "협업형 AI 글쓰기",
+        "description": "AI 지원으로 챕터를 더 빠르게 작성하세요. 프롬프트를 제공하고 AI가 매력적인 장면을 쓰는 데 도움을 받으세요."
+      },
+      "revision": {
+        "title": "통찰력 있는 교정 도구",
+        "description": "일관성, 속도, 묘사, 대화에 대한 AI 기반 제안으로 원고를 다듬으세요."
+      }
+    },
+    "howItWorks": {
+      "sectionTitle": "Novel Weaver AI 작동 방식",
+      "spark": {
+        "title": "1. 컨셉 구상",
+        "description": "핵심 아이디어, 장르, 캐릭터를 정의하세요. AI를 사용하여 브레인스토밍하거나 세부 정보를 수동으로 입력하세요."
+      },
+      "outline": {
+        "title": "2. 플롯 아웃라인",
+        "description": "안내된 3막 구조를 사용하여 이야기를 구성하고 주요 플롯 포인트와 전환점을 자세히 설명하세요."
+      },
+      "draft": {
+        "title": "3. 챕터 초안 작성",
+        "description": "POV, 목표, 주요 장면에 초점을 맞춰 AI 공동 작성 지원으로 챕터별로 작성하세요."
+      },
+      "refine": {
+        "title": "4. 수정 및 교정",
+        "description": "AI 교정 도구를 활용하여 일관성을 확인하고, 묘사를 강화하며, 대화를 최적화하고, 속도를 조절하세요."
+      }
+    },
+    "megaMenu": {
+        "title": "특화 장르 프롬프트",
+        "description": "다양한 장르에 맞춰 미세 조정된 AI 프롬프트를 탐색하여 특정 이야기 요소를 시작하세요.",
+        "alertAccessingTools": "{{genreName}} 도구에 접근 중..."
+    },
+    "showcase": {
+      "sectionTitle": "영감을 얻으세요: 소설 쇼케이스",
+      "noMatch": "현재 필터와 일치하는 쇼케이스가 없습니다."
+    },
+    "testimonials": {
+      "sectionTitle": "작가들의 이야기",
+      "sectionDescription": "{{appTitle}}로 글쓰기 과정을 변화시킨 작가들의 이야기를 들어보세요.",
+      "1": {
+        "quote": "{{appTitle}}는 거대한 작가의 장벽을 깨는 데 도움을 주었습니다. 아이디어 구상 도구는 게임 체인저입니다!",
+        "authorName": "알렉스 R.",
+        "authorTitle": "SF 소설가"
+      },
+      "2": {
+        "quote": "신인 작가로서 구조화된 아웃라인과 AI 공동 작성 기능은 매우 소중했습니다. 마침내 첫 소설을 완성했어요!",
+        "authorName": "제이미 L.",
+        "authorTitle": "판타지 작가"
+      },
+      "3": {
+        "quote": "교정 도구는 믿을 수 없을 정도로 통찰력이 있습니다. 속도와 묘사에 대한 AI의 제안 덕분에 제 원고가 훨씬 강력해졌습니다.",
+        "authorName": "샘 K.",
+        "authorTitle": "미스터리 작가"
+      }
+    },
+    "genreTools": {
+        "sectionTitle": "특화 장르 도구로 이야기 맞춤 설정",
+        "sectionDescription": "{{appTitle}}는 장르마다 고유한 요구 사항이 있음을 이해합니다. 미세 조정된 메타 프롬프트로 구동되는 특화 도구는 선택한 장르의 관습과 분위기를 정확히 파악하는 데 도움을 줍니다.",
+        "toolFocusLabel": "도구 초점",
+        "sciFi": {
+            "name": "공상 과학",
+            "description": "미래 사회, 첨단 기술, 우주의 먼 곳을 탐험하세요.",
+            "toolFocus": "기술 개념, 외계 종족, 미래 사회, 철학적 난제에 대한 프롬프트."
+        },
+        "fantasy": {
+            "name": "판타지",
+            "description": "상상 속 영역에서 마법, 신화 속 생물, 장대한 퀘스트 이야기를 엮으세요.",
+            "toolFocus": "장대한 규모의 세계관 구축, 마법 시스템 규칙, 신화 속 종족, 예언의 흐름에 대한 프롬프트."
+        },
+        "mystery": {
+            "name": "미스터리 및 스릴러",
+            "description": "단서, 교란 정보, 충격적인 반전으로 가득 찬 긴장감 넘치는 이야기를 만드세요.",
+            "toolFocus": "단서 배치, 용의자 개발, 플롯 반전, 긴장감 있는 속도 구축을 위한 프롬프트."
+        },
+        "customPrompt": {
+            "title": "커스텀 메타 프롬프트 빌더 잠금 해제",
+            "description": "유료 사용자는 강력한 커스텀 메타 프롬프트 빌더에 액세스할 수 있습니다. 자신만의 고유한 이야기 구조, AI 지침, 장르 매개변수를 정의하여 소설 개발에 대한 전례 없는 제어력을 확보하세요.",
+            "cta": "프리미엄 요금제 살펴보기"
+        }
+    },
+    "seoSection": {
+        "title": "AI 소설 쓰기로 창의적 잠재력 발휘",
+        "paragraph1": "Novel Weaver AI는 소설 창작이라는 창의적인 여정의 궁극적인 파트너입니다. 초보 작가든 노련한 작가든, AI 기반 도구는 초기 컨셉 구상부터 최종 원고 교정까지의 과정을 간소화하도록 설계되었습니다. AI 스토리 생성, 캐릭터 창조, 플롯 개발, 지능형 교정 제안과 같은 기능을 통해 {{appTitle}}는 작가의 장벽을 극복하고 허구의 세계에 생명을 불어넣는 데 도움을 줍니다.",
+        "paragraph2": "저희 플랫폼은 SF, 판타지, 미스터리 등 다양한 장르를 지원하며 특화된 지원을 제공합니다. 구조화된 아웃라인 도구를 활용하여 매력적인 서사 구조를 구축한 다음, 사용자의 비전을 이해하는 AI 공동 작성 지원으로 챕터 작성에 몰입하세요. {{appTitle}}는 협업에 중점을 두어, AI를 활용하여 생산성과 창의성을 향상시키면서도 사용자의 고유한 목소리가 이야기의 핵심으로 남도록 보장합니다.",
+        "paragraph3": "소설 쓰기의 미래를 경험하세요. {{appTitle}}로 창작 과정을 변화시키고 있는 작가 커뮤니티에 참여하세요. 오늘 걸작을 만들기 시작하고, AI가 복잡한 플롯을 엮고, 기억에 남는 캐릭터를 개발하며, 독자를 사로잡는 몰입형 세계를 만드는 데 도움을 드리도록 하세요."
+    }
+  },
+  "pricing": {
+    "pageTitle": "당신의 이야기에 맞는 완벽한 요금제 찾기",
+    "currencyAutoDetectMessage": "통화({{currencyCode}})가 자동 감지되었습니다. 변경할 수 있습니다.",
+    "currencySelectedMessage": "통화가 {{currencyCode}}(으)로 설정되었습니다.",
+    "perMonth": "/월",
+    "billedAnnually": "매년 청구",
+    "polloApiNote": "결제 처리는 예시이며 플레이스홀더 Gumroad 링크를 사용합니다.",
+    "polloApiLinkText": "Gumroad에 대해 자세히 알아보기.",
+    "paymentSafety": "안전하고 암호화된 결제.",
+    "morePaymentMethods": "등",
+    "gumroadLinkUnavailableAlert": "{{planName}} ({{cycle}})에 대한 Gumroad 링크를 아직 사용할 수 없습니다.",
+    "joinUsersSection": {
+        "title": "{{appTitle}}에서 수천 명의 작가와 함께하세요",
+        "ctaLoggedIn": "내 소설로 이동",
+        "ctaLoggedOut": "지금 무료 요금제 시작하기"
+    },
+    "selectCurrencyAriaLabel": "가격 표시 통화 선택",
+    "plans": {
+      "free": {
+        "name": "프리 위버",
+        "features": [
+          "소설 프로젝트 1개",
+          "기본 AI 아이디어 구상",
+          "표준 플롯 아웃라인",
+          "AI 공동 작성 (제한적)",
+          "기본 교정 제안",
+          "소설당 최대 10,000단어",
+          "커뮤니티 접근",
+          ".txt로 다운로드",
+          "제한된 AI 모델 접근"
+        ],
+        "cta": "무료로 시작하기"
+      },
+      "lite": {
+        "name": "라이트 위버",
+        "features": [
+          "프리 플랜의 모든 기능, 추가로:",
+          "소설 프로젝트 3개",
+          "고급 AI 아이디어 구상",
+          "향상된 플롯 아웃라인",
+          "AI 공동 작성 (보통)",
+          "표준 교정 제품군",
+          "소설당 최대 50,000단어",
+          "우선 커뮤니티 지원",
+          "장르별 프롬프트 (기본)",
+          "표준 AI 모델 접근"
+        ],
+        "cta": "라이트 선택"
+      },
+      "pro": {
+        "name": "프로 위버",
+        "features": [
+          "라이트 플랜의 모든 기능, 추가로:",
+          "무제한 소설 프로젝트",
+          "전문가 AI 아이디어 구상 및 브레인스토밍",
+          "맞춤형 플롯 구조",
+          "AI 공동 작성 (광범위)",
+          "전체 AI 교정 제품군",
+          "소설당 무제한 단어",
+          "전담 지원",
+          "전체 장르별 프롬프트 라이브러리",
+          "커스텀 메타 프롬프트 빌더",
+          "프리미엄 AI 모델 접근"
+        ],
+        "cta": "프로로 이동"
+      }
+    }
+  },
+  "billingCycle": {
+    "monthly": "월간",
+    "yearly": "연간",
+    "saveBadgeYearly": "20% 할인"
+  },
+  "faqs": {
+    "general": {
+      "sectionTitle": "자주 묻는 질문"
+    },
+    "pricing": {
+      "sectionTitle": "요금제 FAQ"
+    },
+    "tool": {
+        "sectionTitle": "Novel Weaver AI: 질문과 답변",
+        "sectionDescription": "Novel Weaver AI 편집기 사용에 대해 궁금한 점이 있으신가요? 아래에서 일반적인 질문에 대한 답변을 찾아보세요."
+    }
+  },
+  "general.faqs": [
+      {
+        "question": "Novel Weaver AI란 무엇인가요?",
+        "answer": "Novel Weaver AI는 아이디어 구상, 아웃라인 작성, 챕터 작성, 교정 등 소설 창작의 모든 단계에서 작가를 지원하도록 설계된 AI 기반 웹 애플리케이션입니다. 구조화된 도구와 고급 AI를 결합하여 매력적인 이야기를 만드는 데 도움을 줍니다."
+      },
+      {
+        "question": "AI는 소설 쓰기에 어떻게 도움이 되나요?",
+        "answer": "AI는 아이디어 브레인스토밍, 플롯 포인트 제안, 캐릭터 개발, 프롬프트 기반 챕터 초안 생성, 작품 교정 제안(예: 묘사 개선, 일관성 확인, 대화 최적화) 등에 도움을 줄 수 있습니다."
+      },
+      {
+        "question": "Novel Weaver AI는 모든 장르에 적합한가요?",
+        "answer": "네! SF, 판타지, 미스터리와 같은 인기 장르에 대한 특화 프롬프트를 제공하지만 핵심 도구는 다목적이며 열정을 가진 모든 장르에 적용할 수 있습니다. 커스텀 메타 프롬프트 빌더(프로 요금제)는 더욱 심도 있는 장르 맞춤 설정을 가능하게 합니다."
+      },
+      {
+        "question": "Novel Weaver AI로 만든 콘텐츠의 소유권은 저에게 있나요?",
+        "answer": "물론입니다. Novel Weaver AI에 입력하고 생성한 모든 콘텐츠와 AI 지원으로 생성된 서사의 소유권은 전적으로 귀하에게 있습니다. 저희는 당신의 이야기가 당신의 것이라고 믿습니다."
+      },
+      {
+        "question": "제 데이터는 어떻게 저장되고 안전한가요?",
+        "answer": "소설 데이터는 빠른 액세스를 위해 주로 브라우저의 로컬 저장소에 저장됩니다. 편리하지만 '소설 다운로드' 기능을 자주 사용하여 컴퓨터에 .txt 백업을 저장하는 것이 좋습니다. 인증된 사용자의 경우 향후 업데이트에 클라우드 저장소 옵션이 포함될 수 있습니다. 저희는 데이터 보안에 전념하고 있지만 로컬 저장소는 본질적으로 브라우저에 연결됩니다."
+      },
+      {
+        "question": "Novel Weaver AI를 무료로 사용할 수 있나요?",
+        "answer": "네, 플랫폼을 사용해 볼 수 있는 기본 기능과 제한이 있는 '프리 위버' 요금제를 제공합니다. 더 고급 기능과 적은 제한을 원하시면 저렴한 유료 요금제를 제공합니다."
+      }
+  ],
+  "pricing.faqs": [
+    {
+      "question": "어떤 결제 수단을 사용할 수 있나요?",
+      "answer": "주요 신용카드(Visa, Mastercard, American Express), PayPal, Apple Pay, Google Pay 및 결제 처리 파트너인 Gumroad에서 지원하는 기타 결제 수단을 사용할 수 있습니다."
+    },
+    {
+      "question": "언제든지 구독을 취소할 수 있나요?",
+      "answer": "네, 월간 또는 연간 구독은 언제든지 취소할 수 있습니다. 취소하면 현재 청구 기간이 끝날 때까지 요금제 기능에 계속 액세스할 수 있습니다. 부분 기간에 대해서는 환불되지 않습니다."
+    },
+    {
+      "question": "요금제를 업그레이드하거나 다운그레이드하면 어떻게 되나요?",
+      "answer": "업그레이드는 일반적으로 즉시 적용되며 새 요금제에 대해 비례 배분된 요금이 부과됩니다. 다운그레이드는 현재 청구 주기가 끝나면 적용됩니다. 세부 사항은 Gumroad의 구독 관리에서 처리합니다."
+    },
+    {
+      "question": "유료 요금제에 대한 무료 평가판이 있나요?",
+      "answer": "Novel Weaver AI의 핵심 기능을 경험할 수 있는 포괄적인 무료 요금제를 제공합니다. 현재 유료 요금제에 대한 별도의 시간 제한 무료 평가판은 제공하지 않습니다."
+    },
+    {
+      "question": "'제한된' AI 모델 액세스와 '전체' AI 모델 액세스는 무엇을 의미하나요?",
+      "answer": "무료 및 라이트 요금제는 표준 AI 모델을 사용할 수 있습니다. 프로 요금제는 프리미엄급의 더 강력한 AI 모델에 액세스할 수 있어 고품질 제안, 더 미묘한 글쓰기, 복잡한 프롬프트에 대한 더 나은 이해를 얻을 수 있습니다."
+    },
+    {
+      "question": "커스텀 메타 프롬프트 빌더란 무엇인가요?",
+      "answer": "프로 요금제에서 사용할 수 있는 이 강력한 도구를 사용하면 자신만의 고유한 이야기 구조, AI 지침, 소설 생성을 위한 매개변수를 정의하여 매우 특정한 요구 사항에 맞게 AI의 창작 과정에 대한 전례 없는 제어력을 얻을 수 있습니다."
+    },
+    {
+      "question": "유료 요금제에 단어 수 제한이 있나요?",
+      "answer": "'라이트 위버' 요금제는 소설당 넉넉한 단어 수 제한(예: 50,000단어)이 있습니다. '프로 위버' 요금제는 소설당 무제한 단어를 제공하여 제한 없이 대작을 쓸 수 있도록 합니다."
+    }
+  ],
+  "toolPage": {
+    "sections": {
+      "novelEditor": { "title": "소설 편집기" },
+      "trendSpark": { "title": "트렌드 스파크 ✨" },
+      "poemGenerator": { "title": "시 생성기 (출시 예정)" },
+      "scriptWriter": { "title": "대본 작성기 (출시 예정)" }
+    },
+    "subSections": {
+        "novelWorkflowEditor": { "title": "소설 워크플로우 편집기" },
+        "features": { "title": "편집기 기능" },
+        "howItWorks": { "title": "편집기 가이드" },
+        "showcase": { "title": "편집기 예시" },
+        "faq": { "title": "편집기 FAQ" }
+    }
+  },
+  "trendSparkTool": {
+    "title": "트렌드 스파크: AI 소설 컨셉 생성기",
+    "description": "현재 소설 트렌드를 분석하고 수익성 있는 스토리 아이디어를 생성합니다. 아래에 인기 있는 테마, 트로프 또는 플랫폼 트렌드를 입력하고 AI가 다음 베스트셀러의 불꽃을 지피도록 하세요!",
+    "inputLabel": "현재 소설 트렌드 설명:",
+    "inputPlaceholder": "예: '아카데미 요소가 있는 시스템 재배물', '웹소설 플랫폼의 현대 판타지 로맨스 속 원수에서 연인으로', '고유 스킬을 가진 회귀자 주인공', '스크리블허브에서 인기 있는 제작 및 길드 건설 요소가 있는 LitRPG'...",
+    "inputInstruction": "구체적으로 작성해주세요! 장르, 트로프, 대상 플랫폼 또는 인기를 얻고 있는 모든 것을 언급하세요.",
+    "buttonGenerate": "트렌드 분석 및 아이디어 생성",
+    "buttonLoading": "AI가 브레인스토밍 중...",
+    "buttonDevelopConcept": "소설 편집기에서 이 아이디어 개발하기",
+    "generatedConceptsTitle": "AI 생성 소설 컨셉:",
+    "conceptCard": {
+      "genre": "추천 장르",
+      "targetAudience": "대상 독자/플랫폼",
+      "sellingPoints": "주요 판매 포인트 / 수익화 각도"
+    },
+    "errors": {
+      "noTrendsProvided": "먼저 소설 트렌드를 설명해주세요.",
+      "apiError": "AI와 통신하는 중 오류가 발생했습니다. 다시 시도해주세요.",
+      "noConceptsGenerated": "AI가 입력 내용에 기반한 컨셉을 생성할 수 없었습니다. 트렌드에 대한 설명을 바꾸거나 더 자세한 내용을 추가해보세요."
+    }
+  },
+  "stageNavigator": {
+    "title": "소설 단계"
+  },
+  "stage": {
+    "foundation": {
+      "title": "1단계: 기초 및 아이디어 구상",
+      "description": "핵심 아이디어, 장르, 캐릭터, 세계관을 정의하세요. 이야기의 기초를 다지세요."
+    },
+    "outline": {
+      "title": "2단계: 플롯 아웃라인",
+      "description": "3막 구조를 사용하여 서사를 구성하세요. 주요 플롯 포인트, 전환점, 전체적인 이야기 흐름을 자세히 설명하세요."
+    },
+    "writing": {
+      "title": "3단계: 챕터 작성",
+      "description": "소설을 챕터별로 작성하세요. 프롬프트와 아웃라인을 기반으로 AI 공동 작성 지원을 활용하세요."
+    },
+    "revision": {
+      "title": "4단계: 수정 및 교정",
+      "description": "원고를 다듬으세요. 일관성 확인, 묘사 강화, 대화 최적화, 속도 조정을 위해 AI 도구를 사용하세요."
+    },
+    "finalizeExport": {
+      "title": "5단계: 마무리 및 내보내기",
+      "description": "완성된 소설을 검토하고 최종 제목을 지정한 다음 작품을 다운로드하세요."
+    }
+  },
+  "revisionTool": {
+    "task": {
+      "consistency": "일관성 확인",
+      "description": "묘사 강화",
+      "dialogue": "대화 최적화",
+      "pacing": "속도 조정"
+    }
+  },
+  "stage4revision": {
+    "introUIText": "초고가 있습니다. 선임 편집자 역할을 하여 다음 작업 중 하나를 도와주세요. 작업을 선택하고 텍스트를 붙여넣은 다음 AI 제안을 받으세요.",
+    "labels": {
+        "selectTask": "교정 작업 선택:",
+        "pasteText": "교정할 텍스트를 여기에 붙여넣으세요:"
+    },
+    "placeholders": {
+        "selectTask": "-- 교정 작업 선택 --",
+        "pasteText": "AI가 교정할 텍스트를 입력하거나 붙여넣으세요..."
+    },
+    "buttons": {
+        "processing": "AI가 교정 중...",
+        "getSuggestions": "AI 제안 받기",
+        "copyToClipboard": "제안 복사하기"
+    },
+    "titles": {
+        "aiSuggestions": "AI 교정 제안"
+    },
+    "alerts": {
+        "selectTaskAndText": "교정 작업을 선택하고 교정할 텍스트를 붙여넣으세요."
+    },
+    "errors": {
+        "failedToGetRevision": "AI로부터 교정 제안을 받는 데 실패했습니다.",
+        "errorPrefix": "오류"
+    },
+    "taskDescriptions": {
+        "Consistency Check": "AI가 플롯 구멍, 일관성 없는 캐릭터 행동, 세계관과의 모순을 확인합니다.",
+        "Description Enhancement": "AI가 오감과 '보여주기, 말하지 않기' 원칙을 사용하여 묘사를 더 생생하고 감각적으로 다시 작성합니다.",
+        "Dialogue Optimization": "AI가 대화를 더 자연스럽고 캐릭터 성격에 맞게 만들며 플롯을 진행시키거나 캐릭터 관계를 드러냅니다.",
+        "Pacing Adjustment": "AI가 속도를 평가합니다. 느리면 중복 정보를 줄이는 데 도움을 주고, 빠르면 세부 정보와 심리 묘사를 추가하는 데 도움을 줍니다."
+    }
+  },
+  "finalizeExport": {
+    "congratulations": "🎉 축하합니다! 🎉",
+    "reachedFinalStage": "마지막 단계에 도달했습니다. 당신의 소설은 멋진 제목을 달고 다운로드될 준비가 되었습니다.",
+    "novelTitleLabel": "소설 제목",
+    "novelTitlePlaceholder": "걸작의 최종 제목을 입력하세요",
+    "novelTitleInstruction": "이 제목은 다운로드된 파일에 사용됩니다.",
+    "downloadButton": "소설 다운로드 (.txt)",
+    "downloadAriaLabel": "완성된 소설을 텍스트 파일로 다운로드합니다",
+    "thankYouMessage": "{{appTitle}}를 사용하여 이야기를 엮어주셔서 감사합니다. 즐거운 글쓰기 되세요!"
+  },
+  "toolSidebar": {
+    "backToHomeTitle": "{{appTitle}} 홈으로 돌아가기",
+    "creativeStudio": "창작 스튜디오",
+    "expandAriaLabel": "사이드바 확장",
+    "collapseAriaLabel": "사이드바 축소",
+    "expandTitle": "확장",
+    "collapseTitle": "축소",
+    "navigationTitle": "기타 도구",
+    "homePageNavTitle": "홈페이지",
+    "homePageNavTitleCollapsed": "홈페이지로 이동",
+    "settingsTitle": "설정",
+    "apiKey": {
+      "label": "커스텀 Gemini API 키 (선택 사항)",
+      "placeholder": "API 키를 입력하세요",
+      "saveButton": "키 저장",
+      "clearButton": "키 지우기",
+      "description": "기본적으로 환경 키를 사용합니다. 키는 브라우저에 로컬로 저장됩니다.",
+      "customSaved": "커스텀 API 키가 저장되었습니다.",
+      "customCleared": "커스텀 API 키가 지워졌습니다. 기본값을 사용합니다."
+    },
+    "user": {
+        "signedInAs": "로그인 계정",
+        "signOut": "로그아웃"
+    }
+  },
+  "signInPage": {
+    "title": "계정에 로그인",
+    "labels": {
+      "email": "이메일 주소",
+      "password": "비밀번호"
+    },
+    "placeholders": {
+      "email": "you@example.com"
+    },
+    "buttons": {
+      "signIn": "로그인",
+      "signInWith": "{{providerName}}(으)로 로그인",
+      "signUp": "지금 회원가입"
+    },
+    "orContinueWith": "또는 다음으로 계속",
+    "dontHaveAccount": "계정이 없으신가요?",
+    "errors": {
+      "unknownError": "로그인 중 알 수 없는 오류가 발생했습니다. 다시 시도해주세요."
+    }
+  },
+  "signUpPage": {
+    "titles": {
+        "createAccount": "계정 만들기",
+        "verifyEmail": "이메일 인증"
+    },
+    "labels": {
+      "email": "이메일 주소",
+      "password": "비밀번호",
+      "confirmPassword": "비밀번호 확인",
+      "verificationCode": "인증 코드"
+    },
+    "placeholders": {
+      "email": "you@example.com",
+      "verificationCode": "이메일로 받은 코드 입력"
+    },
+    "instructions": {
+        "passwordMinLength": "최소 6자 이상이어야 합니다."
+    },
+    "buttons": {
+      "registerAndSendCode": "가입하고 인증 코드 받기",
+      "verifyCode": "코드 인증",
+      "backToRegistration": "가입으로 돌아가기",
+      "signUpWith": "{{providerName}}(으)로 가입",
+      "signIn": "로그인"
+    },
+    "orSignUpWith": "또는 다음으로 가입",
+    "alreadyHaveAccount": "이미 계정이 있으신가요?",
+    "messages": {
+        "verificationSent": "인증 코드가 이메일로 발송되었습니다. 받은 편지함(및 스팸 폴더)을 확인해주세요.",
+        "verificationSuccess": "계정이 성공적으로 인증되었습니다! 로그인으로 리디렉션됩니다...",
+        "signInAfterVerification": "계정이 인증되었습니다. 계속하려면 로그인해주세요."
+    },
+    "errors": {
+        "passwordsMismatch": "비밀번호가 일치하지 않습니다.",
+        "passwordTooShort": "비밀번호는 최소 6자 이상이어야 합니다.",
+        "codeEmpty": "인증 코드를 비워둘 수 없습니다.",
+        "unknownInitiationError": "가입 시작 중 알 수 없는 오류가 발생했습니다.",
+        "unknownVerificationError": "인증 중 알 수 없는 오류가 발생했습니다."
+    }
+  },
+  "authCallbackPage": {
+    "processing": "인증 처리 중...",
+    "verifyingToken": "신원 확인 중...",
+    "failed": "인증 실패: {{error}}",
+    "signInRetryMessage": "인증 실패: {{error}}. 다시 로그인해주세요.",
+    "buttons": {
+        "trySignInAgain": "다시 로그인 시도"
+    },
+    "errors": {
+        "oauthProviderError": "인증 공급자 오류.",
+        "tokenNotFound": "인증 응답에서 액세스 토큰을 찾을 수 없습니다.",
+        "unknownError": "알 수 없는 인증 오류가 발생했습니다."
+    }
+  },
+  "staticPages": {
+    "backToHome": "홈으로 돌아가기",
+    "returnToHomepage": "홈페이지로 돌아가기"
+  },
+  "privacyPage": {
+    "title": "개인정보 처리방침",
+    "thankYou": "{{appTitle}}를 선택해주셔서 감사합니다! 저희는 귀하의 개인정보를 보호하고 데이터를 투명하게 처리하기 위해 최선을 다하고 있습니다.",
+    "contentComingSoonTitle": "자세한 개인정보 처리방침 곧 제공 예정!",
+    "workingOnDetails": "현재 개인정보 처리방침에 대한 자세한 법적 문구를 최종 검토 중입니다. 이 페이지에서는 곧 다음에 대한 포괄적인 정보를 제공할 예정입니다:",
+    "infoWeCollect": "수집하는 정보 (예: 계정 데이터, 로컬에 저장된 소설 콘텐츠, 사용 분석).",
+    "howWeUseInfo": "정보 사용 방법 (예: 서비스 제공 및 개선, 경험 개인화, 귀하와의 소통).",
+    "howWeProtectInfo": "정보 보호 방법 (예: 처리할 수 있는 모든 데이터에 대한 보안 조치, 로컬 저장소 고려 사항).",
+    "yourRights": "데이터에 대한 귀하의 권리 (예: 접근, 수정, 삭제).",
+    "andMore": "쿠키, 제3자 서비스, 정책 업데이트 등.",
+    "checkBackSoon": "전체 개인정보 처리방침은 곧 다시 확인해주세요. 귀하의 신뢰는 저희에게 중요합니다."
+  },
+  "termsPage": {
+    "title": "서비스 이용약관",
+    "welcome": "{{appTitle}}에 오신 것을 환영합니다! 저희 서비스를 이용함으로써 귀하는 본 약관에 동의하게 됩니다.",
+    "contentComingSoonTitle": "전체 서비스 이용약관 곧 제공 예정!",
+    "finalizingLegalFramework": "저희는 포괄적인 서비스 이용약관을 부지런히 작업하고 있습니다. 이 문서에서는 다음을 설명합니다:",
+    "userResponsibilities": "{{appTitle}} 사용자로서의 귀하의 책임.",
+    "providerResponsibilities": "서비스 제공자로서의 저희의 책임.",
+    "contentOwnership": "콘텐츠 소유권 및 지적 재산권에 대한 명확화.",
+    "acceptableUse": "플랫폼의 허용 가능한 사용에 관한 정책.",
+    "disclaimers": "보증 부인 및 책임 제한.",
+    "otherLegalInfo": "준거법 및 분쟁 해결을 포함한 기타 중요한 법적 정보.",
+    "checkBackSoon": "잠시만 기다려주시면 감사하겠습니다. 곧 전체 서비스 이용약관을 다시 확인해주세요."
+  },
+  "aboutPage": {
+    "title": "Novel Weaver AI 소개",
+    "welcome": "AI 협업의 힘으로 이야기가 살아나는 {{appTitle}}에 오신 것을 환영합니다!",
+    "missionStoryComingSoon": "저희의 사명과 이야기 - 곧 제공 예정!",
+    "passionateAboutEmpowering": "저희는 귀하와 같은 작가에게 힘을 실어주는 데 열정적입니다. 현재 이 섹션을 작성하여 다음을 공유하고 있습니다:",
+    "visionBehind": "{{appTitle}} 이면의 비전과 저희의 여정.",
+    "teamAndValues": "저희 팀과 핵심 가치에 대한 정보.",
+    "revolutionizeNovelWriting": "혁신적인 AI 도구를 통해 소설 쓰기 과정을 혁신하는 방법.",
+    "commitmentToAuthors": "작가 지원 및 창의성 육성에 대한 저희의 약속.",
+    "stayTuned": "{{appTitle}}를 이끄는 사람들과 열정에 대해 더 자세히 알아보려면 계속 지켜봐 주세요."
+  },
+  "contactPage": {
+    "title": "문의하기",
+    "loveToHear": "여러분의 의견을 듣고 싶습니다! 질문, 피드백 또는 파트너십 문의가 있으시면 언제든지 연락주십시오.",
+    "contactInfoComingSoon": "연락처 정보 및 양식 - 곧 제공 예정!",
+    "pageWillFeature": "이 페이지에는 곧 다음이 포함될 예정입니다:",
+    "emailAddress": "지원 및 문의를 위한 전용 이메일 주소.",
+    "contactForm": "이 페이지에서 직접 사용할 수 있는 사용하기 쉬운 문의 양식.",
+    "socialMediaLinks": "소셜 미디어 채널 링크 (해당되는 경우).",
+    "appreciatePatience": "이러한 소통 채널을 설정하는 동안 잠시만 기다려주시면 감사하겠습니다. 여러분과의 소통을 기대합니다!"
+  },
+  "seo": {
+    "defaultTagline": "AI 창작 소설 파트너",
+    "defaultDescription": "AI 기반 창작 파트너인 Novel Weaver AI로 아이디어 구상부터 최종 원고까지 매력적인 소설을 만드세요. AI 아이디어 구상, 아웃라인, 공동 작성, 교정 도구를 제공합니다.",
+    "home": {
+      "titleSuffix": "AI 소설 쓰기 도우미",
+      "description": "Novel Weaver AI: 소설 쓰기를 위한 궁극적인 AI 기반 파트너. 지능형 도구로 아이디어 생성, 플롯 아웃라인, 챕터 공동 작성, 원고 교정을 수행하세요."
+    },
+    "tool": {
+      "defaultTitle": "소설 편집기",
+      "description": "{{appTitle}}의 '{{novelTitle}}' 소설 편집기 - 현재 '{{currentStage}}' 단계입니다. 기초, 아웃라인, 글쓰기, 교정을 위해 AI 도구를 활용하세요."
+    },
+    "pricing": {
+      "title": "요금제",
+      "description": "{{appTitle}}의 유연한 요금제를 살펴보세요. 무료, 라이트, 프로 중에서 선택하여 창의적인 요구 사항에 맞는 AI 소설 쓰기 기능을 잠금 해제하세요."
+    },
+    "signIn": {
+      "title": "로그인",
+      "description": "{{appTitle}} 계정에 로그인하여 소설 프로젝트, AI 글쓰기 도구에 액세스하고 걸작을 계속 만드세요."
+    },
+    "signUp": {
+      "title": "회원가입",
+      "description": "{{appTitle}} 계정을 만들어 소설 아이디어 구상, 아웃라인, 글쓰기, 교정을 위한 AI 기반 도구를 사용해보세요. 오늘 글쓰기 여정을 시작하세요!"
+    },
+    "authCallback": {
+      "title": "인증 중",
+      "description": "{{appTitle}}에 대한 인증을 처리 중입니다. 잠시만 기다려주세요."
+    },
+    "privacy": {
+      "title": "개인정보 처리방침",
+      "description": "{{appTitle}}의 개인정보 처리방침을 읽고 정보를 수집, 사용, 보호하는 방법을 이해하세요."
+    },
+    "terms": {
+      "title": "서비스 이용약관",
+      "description": "{{appTitle}}의 서비스 이용약관을 검토하세요. AI 소설 쓰기 플랫폼 사용 시 귀하의 권리와 책임을 이해하세요."
+    },
+    "about": {
+      "title": "회사 소개",
+      "description": "{{appTitle}}, AI로 작가에게 힘을 실어주려는 저희의 사명, 혁신적인 소설 쓰기 도구 뒤에 있는 팀에 대해 자세히 알아보세요."
+    },
+    "contact": {
+      "title": "문의하기",
+      "description": "{{appTitle}} 팀에 문의하세요. AI 소설 쓰기 플랫폼에 대한 질문, 피드백, 문의를 환영합니다."
+    }
+  },
+  "ldJson": {
+    "userPlaceholder": "작가",
+    "seePlans": "페이지에서 요금제 보기"
+  },
+  "download": {
+    "title": "소설 제목",
+    "defaultFilename": "나의_ai_소설",
+    "stage1": {
+        "coreIdea": "핵심 아이디어",
+        "genre": "장르",
+        "tone": "분위기",
+        "targetAudience": "대상 독자",
+        "theme": "주제",
+        "logline": "로그라인",
+        "characters": "등장인물",
+        "worldBuilding": "세계관 설정"
+    },
+    "character": {
+        "name": "이름",
+        "fields": {
+            "identity": "정체성",
+            "appearance": "외모",
+            "personality": "성격",
+            "want": "욕구",
+            "need": "필요",
+            "flaw": "결점",
+            "backstory": "배경 이야기",
+            "arc": "인물 성장",
+            "motivation": "동기 (적대자)",
+            "relationshipToProtagonist": "주인공과의 관계 (적대자)",
+            "functionInStory": "이야기 속 역할 (조연)",
+            "briefDescription": "간단한 설명 (조연)"
+        }
+    },
+    "worldBuilding": {
+        "fields": {
+            "timeAndPlace": "시간 및 장소",
+            "coreRules": "핵심 규칙",
+            "socialStructure": "사회 구조",
+            "keyLocations": "주요 장소"
+        }
+    },
+    "stage2": {
+        "actKey": {
+            "act1": "1막",
+            "act2": "2막",
+            "act3": "3막"
+        },
+        "plotPointKey": {
+            "stasis": "일상",
+            "incitingIncident": "발단 사건",
+            "debate": "고민",
+            "turningPoint1": "1차 전환점",
+            "testsAlliesEnemies": "시험, 협력자, 적대자",
+            "midpoint": "중간점",
+            "risingAction": "상승 액션",
+            "allIsLost": "절망의 순간",
+            "turningPoint2": "2차 전환점",
+            "runUpToClimax": "클라이맥스 전개",
+            "climax": "클라이맥스",
+            "fallingAction": "하강 액션",
+            "resolution": "결말"
+        }
+    },
+    "stage3": {
+        "chapter": "챕터",
+        "pov": "시점 인물",
+        "goal": "핵심 목표",
+        "keyPlotPoints": "주요 플롯 포인트",
+        "startingScene": "시작 장면",
+        "endingScene": "종결 장면",
+        "atmosphere": "분위기",
+        "targetWordCount": "목표 단어 수"
+    }
+  },
+  "novel": {
+    "defaultTitle": "나의 AI 소설"
+  },
+  "genres": {
+    "sciFi": { "name": "SF", "description": "미래, 기술, 우주를 탐험하세요." },
+    "fantasy": { "name": "판타지", "description": "마법, 신화, 장대한 퀘스트." },
+    "mystery": { "name": "미스터리", "description": "단서, 긴장감, 스릴 넘치는 반전." }
+  },
+  "upgradeModal": {
+    "title": "무료 한도 도달",
+    "description": "무료 소설 다운로드 횟수를 모두 사용하셨습니다. 계속 다운로드하고 프리미엄 기능을 사용하려면 로그인하거나 업그레이드하세요.",
+    "cta": "로그인 / 업그레이드",
+    "later": "나중에",
+    "signInPrompt": "더 많은 소설을 다운로드하고 프리미엄 기능을 이용하려면 로그인하거나 업그레이드하세요."
+  }
+}

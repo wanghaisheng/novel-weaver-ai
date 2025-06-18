@@ -1,0 +1,682 @@
+
+{
+  "appTitle": "Novel Weaver AI",
+  "loading": {
+    "application": "Loading application...",
+    "translations": "Loading translations..."
+  },
+  "error": {
+    "unknownView": "Unknown view. An unexpected error occurred.",
+    "pageNotFound": "Oops! Page Not Found."
+  },
+  "navigation": {
+    "features": "Features",
+    "howItWorks": "How It Works",
+    "pricing": "Pricing",
+    "testimonials": "Testimonials",
+    "genreTools": "Genre Tools",
+    "toolsMegaMenu": "Genre Prompts",
+    "signIn": "Sign In",
+    "signOut": "Sign Out",
+    "signUp": "Sign Up",
+    "goToTool": "Go to Tool",
+    "myNovels": "My Novels",
+    "getStarted": "Get Started",
+    "startCreating": "Start Creating",
+    "goHome": "Go to Home Page"
+  },
+  "footer": {
+    "copyright": "© {{year}} {{appTitle}}. All rights reserved.",
+    "copyrightSimple": "© {{year}} {{appTitle}}",
+    "copyrightPricingPage": "© {{year}} {{appTitle}}. Secure payments via Gumroad.",
+    "copyrightToolPage": "© {{year}} {{appTitle}}. Your creative partner.",
+    "tagline": "Crafting Worlds, One Word at a Time.",
+    "privacyPolicy": "Privacy Policy",
+    "termsOfService": "Terms of Service",
+    "aboutUs": "About Us",
+    "contactUs": "Contact Us",
+    "language": "Language",
+    "selectLanguageLabel": "Select language",
+    "toolNavigation": "Tool Navigation"
+  },
+  "home": {
+    "hero": {
+      "welcome": "Welcome to",
+      "tagline": "Your AI-powered partner for crafting compelling novels, from initial idea to final polished draft. Let's weave your story together.",
+      "createNovelNow": "Create Your Novel Now",
+      "createNovelNowAriaLabel": "Start creating your novel with Novel Weaver AI"
+    },
+    "features": {
+      "sectionTitle": "Everything You Need to Write Your Masterpiece with {{appTitle}}",
+      "ideation": {
+        "title": "AI Ideation & Concept",
+        "description": "Spark creativity with AI-generated ideas for plots, characters, and settings. Overcome writer's block instantly."
+      },
+      "outlining": {
+        "title": "Structured Outlining",
+        "description": "Organize your thoughts with a flexible outlining tool that supports classic structures like the three-act model."
+      },
+      "writing": {
+        "title": "Collaborative AI Writing",
+        "description": "Draft chapters faster with AI assistance. Provide prompts and let the AI help you write compelling scenes."
+      },
+      "revision": {
+        "title": "Insightful Revision Tools",
+        "description": "Refine your manuscript with AI-powered suggestions for consistency, pacing, descriptions, and dialogue."
+      }
+    },
+    "howItWorks": {
+      "sectionTitle": "How Novel Weaver AI Works",
+      "spark": {
+        "title": "1. Spark Concept",
+        "description": "Define your core idea, genre, and characters. Use AI to brainstorm or fill in the details manually."
+      },
+      "outline": {
+        "title": "2. Outline Plot",
+        "description": "Structure your story using the guided three-act framework, detailing key plot points and turning points."
+      },
+      "draft": {
+        "title": "3. Draft Chapters",
+        "description": "Write chapter by chapter with AI co-writing assistance, focusing on POV, goals, and key scenes."
+      },
+      "refine": {
+        "title": "4. Refine & Polish",
+        "description": "Utilize AI revision tools to check consistency, enhance descriptions, optimize dialogue, and adjust pacing."
+      }
+    },
+    "megaMenu": {
+        "title": "Specialized Genre Prompts",
+        "description": "Explore AI prompts fine-tuned for various genres to kickstart specific story elements.",
+        "alertAccessingTools": "Accessing {{genreName}} tools..."
+    },
+    "showcase": {
+      "sectionTitle": "Get Inspired: Novel Showcase",
+      "noMatch": "No showcases match the current filter."
+    },
+    "testimonials": {
+      "sectionTitle": "What Our Writers Say",
+      "sectionDescription": "Hear from authors who have transformed their writing process with {{appTitle}}.",
+      "1": {
+        "quote": "{{appTitle}} helped me break through a massive writer's block. The ideation tools are a game-changer!",
+        "authorName": "Alex R.",
+        "authorTitle": "Sci-Fi Novelist"
+      },
+      "2": {
+        "quote": "As a new writer, the structured outlining and AI co-writing features were invaluable. I finally finished my first novel!",
+        "authorName": "Jamie L.",
+        "authorTitle": "Fantasy Author"
+      },
+      "3": {
+        "quote": "The revision tools are incredibly insightful. My manuscript is so much stronger thanks to the AI's suggestions on pacing and description.",
+        "authorName": "Sam K.",
+        "authorTitle": "Mystery Writer"
+      }
+    },
+    "genreTools": {
+        "sectionTitle": "Tailor Your Story with Specialized Genre Tools",
+        "sectionDescription": "{{appTitle}} understands that different genres have unique needs. Our specialized tools, powered by fine-tuned meta prompts, help you nail the conventions and atmosphere of your chosen genre.",
+        "toolFocusLabel": "Tool Focus",
+        "sciFi": {
+            "name": "Science Fiction",
+            "description": "Explore futuristic societies, advanced technology, and the far reaches of space.",
+            "toolFocus": "Prompts for tech concepts, alien species, future societies, and philosophical quandaries."
+        },
+        "fantasy": {
+            "name": "Fantasy",
+            "description": "Weave tales of magic, mythical creatures, and epic quests in imaginative realms.",
+            "toolFocus": "World-building prompts for epic scope, magic system rules, mythical races, and prophecy arcs."
+        },
+        "mystery": {
+            "name": "Mystery & Thriller",
+            "description": "Craft suspenseful narratives filled with clues, red herrings, and shocking twists.",
+            "toolFocus": "Prompts for clue dropping, suspect development, plot twists, and building suspenseful pacing."
+        },
+        "customPrompt": {
+            "title": "Unlock the Custom Meta Prompt Builder",
+            "description": "Paid users gain access to our powerful Custom Meta Prompt Builder. Define your own unique story structures, AI instructions, and genre parameters for unparalleled control over your novel's development.",
+            "cta": "Explore Premium Plans"
+        }
+    },
+    "seoSection": {
+        "title": "Unlock Your Creative Potential with AI Novel Writing",
+        "paragraph1": "Novel Weaver AI is your ultimate partner in the creative journey of novel writing. Whether you're an aspiring author or a seasoned writer, our AI-powered tools are designed to streamline your process, from brainstorming initial concepts to polishing your final draft. With features like AI story generation, character creation, plot development, and intelligent revision suggestions, {{appTitle}} helps you overcome writer's block and bring your fictional worlds to life.",
+        "paragraph2": "Our platform supports a variety of genres, offering specialized assistance for Sci-Fi, Fantasy, Mystery, and more. Utilize our structured outlining tools to build a compelling narrative framework, and then dive into chapter writing with AI co-writing support that understands your vision. {{appTitle}} focuses on collaboration, ensuring your unique voice remains at the heart of your story while leveraging AI to enhance productivity and creativity.",
+        "paragraph3": "Experience the future of novel writing. Join a community of authors who are transforming their creative process with {{appTitle}}. Start crafting your masterpiece today, and let our AI assist you in weaving intricate plots, developing memorable characters, and creating immersive worlds that captivate your readers."
+    }
+  },
+  "pricing": {
+    "pageTitle": "Find the Perfect Plan for Your Story",
+    "currencyAutoDetectMessage": "Currency ({{currencyCode}}) auto-detected. You can change it.",
+    "currencySelectedMessage": "Currency set to {{currencyCode}}.",
+    "perMonth": "/ month",
+    "billedAnnually": "billed annually",
+    "polloApiNote": "Payment processing is illustrative and uses placeholder Gumroad links.",
+    "polloApiLinkText": "Learn more about Gumroad.",
+    "paymentSafety": "Secure and encrypted payments.",
+    "morePaymentMethods": "and more",
+    "gumroadLinkUnavailableAlert": "Gumroad link for {{planName}} ({{cycle}}) is not available yet.",
+    "joinUsersSection": {
+        "title": "Join Thousands of Writers on {{appTitle}}",
+        "ctaLoggedIn": "Go to My Novels",
+        "ctaLoggedOut": "Start Your Free Plan Today"
+    },
+    "selectCurrencyAriaLabel": "Select currency for pricing display",
+    "plans": {
+      "free": {
+        "name": "Free Weaver",
+        "features": [
+          "1 Novel Project",
+          "Basic AI Ideation",
+          "Standard Plot Outlining",
+          "AI Co-Writing (Limited)",
+          "Basic Revision Suggestions",
+          "Up to 10,000 words per novel",
+          "Community Access",
+          "Download as .txt",
+          "Limited AI Model Access"
+        ],
+        "cta": "Start for Free"
+      },
+      "lite": {
+        "name": "Lite Weaver",
+        "features": [
+          "Everything in Free, plus:",
+          "3 Novel Projects",
+          "Advanced AI Ideation",
+          "Enhanced Plot Outlining",
+          "AI Co-Writing (Moderate)",
+          "Standard Revision Suite",
+          "Up to 50,000 words per novel",
+          "Priority Community Support",
+          "Genre-Specific Prompts (Basic)",
+          "Standard AI Model Access"
+        ],
+        "cta": "Choose Lite"
+      },
+      "pro": {
+        "name": "Pro Weaver",
+        "features": [
+          "Everything in Lite, plus:",
+          "Unlimited Novel Projects",
+          "Expert AI Ideation & Brainstorming",
+          "Customizable Plot Structures",
+          "AI Co-Writing (Extensive)",
+          "Full AI Revision Suite",
+          "Unlimited words per novel",
+          "Dedicated Support",
+          "Full Genre-Specific Prompt Library",
+          "Custom Meta Prompt Builder",
+          "Premium AI Model Access"
+        ],
+        "cta": "Go Pro"
+      }
+    }
+  },
+  "billingCycle": {
+    "monthly": "Monthly",
+    "yearly": "Yearly",
+    "saveBadgeYearly": "Save 20%"
+  },
+  "faqs": {
+    "general": {
+      "sectionTitle": "Frequently Asked Questions"
+    },
+    "pricing": {
+      "sectionTitle": "Pricing FAQs"
+    },
+    "tool": {
+        "sectionTitle": "Novel Weaver AI: Your Questions Answered",
+        "sectionDescription": "Have questions about using the Novel Weaver AI editor? Find answers to common queries below."
+    }
+  },
+  "general.faqs": [
+      {
+        "question": "What is Novel Weaver AI?",
+        "answer": "Novel Weaver AI is an AI-powered web application designed to assist writers in every stage of the novel creation process, from ideation and outlining to chapter writing and revision. It combines structured tools with advanced AI to help you craft compelling stories."
+      },
+      {
+        "question": "How does the AI help with writing a novel?",
+        "answer": "The AI can help brainstorm ideas, suggest plot points, develop characters, generate draft content for chapters based on your prompts, and provide suggestions for revising your work (e.g., improving descriptions, checking consistency, optimizing dialogue)."
+      },
+      {
+        "question": "Is Novel Weaver AI suitable for all genres?",
+        "answer": "Yes! While we offer specialized prompts for popular genres like Sci-Fi, Fantasy, and Mystery, the core tools are versatile and can be adapted for any genre you're passionate about. The Custom Meta Prompt Builder (Pro plan) allows even deeper genre customization."
+      },
+      {
+        "question": "Do I own the content I create with Novel Weaver AI?",
+        "answer": "Absolutely. You retain full ownership of all content you create and input into Novel Weaver AI, as well as the narratives generated with AI assistance based on your inputs. We believe your story is yours."
+      },
+      {
+        "question": "How is my data saved and is it secure?",
+        "answer": "Your novel data is primarily saved in your browser's local storage for quick access. While convenient, we strongly recommend frequently using the 'Download Novel' feature to save a .txt backup to your computer. For authenticated users, future updates may include cloud storage options. We are committed to data security, but local storage is inherently tied to your browser."
+      },
+      {
+        "question": "Can I use Novel Weaver AI for free?",
+        "answer": "Yes, we offer a 'Free Weaver' plan with basic features and limitations, perfect for trying out the platform. For more advanced capabilities and fewer restrictions, we offer affordable paid plans."
+      }
+  ],
+  "pricing.faqs": [
+    {
+      "question": "What payment methods do you accept?",
+      "answer": "We accept major credit cards (Visa, Mastercard, American Express), PayPal, Apple Pay, Google Pay, and other payment methods supported by Gumroad, our payment processing partner."
+    },
+    {
+      "question": "Can I cancel my subscription at any time?",
+      "answer": "Yes, you can cancel your monthly or yearly subscription at any time. If you cancel, you'll retain access to your plan's features until the end of your current billing period. No refunds are provided for partial periods."
+    },
+    {
+      "question": "What happens if I upgrade or downgrade my plan?",
+      "answer": "Upgrades are typically effective immediately, with a prorated charge for the new plan. Downgrades take effect at the end ofyour current billing cycle. Specifics are handled by Gumroad's subscription management."
+    },
+    {
+      "question": "Is there a free trial for paid plans?",
+      "answer": "We offer a comprehensive Free plan that allows you to experience the core functionalities of Novel Weaver AI. We currently do not offer separate time-limited free trials for paid plans."
+    },
+    {
+      "question": "What does 'Limited' vs 'Full' AI Model Access mean?",
+      "answer": "Free and Lite plans may use standard AI models. Pro plans get access to our premium, more powerful AI models, which can result in higher quality suggestions, more nuanced writing, and better understanding of complex prompts."
+    },
+    {
+      "question": "What is the Custom Meta Prompt Builder?",
+      "answer": "Available on the Pro plan, this powerful tool allows you to define your own unique story structures, AI instructions, and parameters for novel generation, giving you unparalleled control over the AI's creative process to match very specific needs."
+    },
+    {
+      "question": "Are there any word count limits on paid plans?",
+      "answer": "The 'Lite Weaver' plan has a generous word count limit per novel (e.g., 50,000 words). The 'Pro Weaver' plan offers unlimited words per novel, allowing you to write epics without restriction."
+    }
+  ],
+  "toolPage": {
+    "sections": {
+      "novelEditor": { "title": "Novel Editor" },
+      "trendSpark": { "title": "Trend Spark ✨" },
+      "poemGenerator": { "title": "Poem Generator (Soon)" },
+      "scriptWriter": { "title": "Script Writer (Soon)" }
+    },
+    "subSections": {
+        "novelWorkflowEditor": { "title": "Novel Workflow Editor" },
+        "features": { "title": "Editor Features" },
+        "howItWorks": { "title": "Editor Guide" },
+        "showcase": { "title": "Editor Examples" },
+        "faq": { "title": "Editor FAQs" }
+    }
+  },
+  "trendSparkTool": {
+    "title": "Trend Spark: AI Novel Concept Generator",
+    "description": "Analyze current novel trends and generate monetizable story ideas. Input popular themes, tropes, or platform trends below, and let AI spark your next bestseller!",
+    "inputLabel": "Describe Current Novel Trends:",
+    "inputPlaceholder": "e.g., 'System cultivation with academy arcs', 'Enemies-to-lovers in modern fantasy on WebNovel', 'Regressor MC with unique skill on RoyalRoad', 'LitRPG with crafting and guild building popular on ScribbleHub'...",
+    "inputInstruction": "Be specific! Mention genres, tropes, target platforms, or anything you've noticed gaining traction.",
+    "buttonGenerate": "Analyze Trends & Generate Ideas",
+    "buttonLoading": "AI is Brainstorming...",
+    "buttonDevelopConcept": "Develop this Idea in Novel Editor",
+    "generatedConceptsTitle": "AI-Generated Novel Concepts:",
+    "conceptCard": {
+      "genre": "Suggested Genre",
+      "targetAudience": "Target Audience/Platform",
+      "sellingPoints": "Key Selling Points / Monetization Angles"
+    },
+    "errors": {
+      "noTrendsProvided": "Please describe some novel trends first.",
+      "apiError": "An error occurred while communicating with the AI. Please try again.",
+      "noConceptsGenerated": "The AI couldn't generate concepts based on your input. Try rephrasing or adding more details about the trends."
+    }
+  },
+  "stageNavigator": {
+    "title": "Novel Stages"
+  },
+  "stage": {
+    "foundation": {
+      "title": "Stage 1: Foundation & Ideation",
+      "description": "Define your core idea, genre, characters, and world. Lay the groundwork for your story."
+    },
+    "outline": {
+      "title": "Stage 2: Plot Outlining",
+      "description": "Structure your narrative using the three-act model. Detail key plot points, turning points, and the overall story arc."
+    },
+    "writing": {
+      "title": "Stage 3: Chapter Writing",
+      "description": "Draft your novel chapter by chapter. Utilize AI co-writing assistance based on your prompts and outline."
+    },
+    "revision": {
+      "title": "Stage 4: Revision & Polishing",
+      "description": "Refine your manuscript. Use AI tools for consistency checks, description enhancement, dialogue optimization, and pacing adjustments."
+    },
+    "finalizeExport": {
+      "title": "Stage 5: Finalize & Export",
+      "description": "Review your completed novel, give it a final title, and download your work."
+    }
+  },
+  "revisionTool": {
+    "task": {
+      "consistency": "Consistency Check",
+      "description": "Description Enhancement",
+      "dialogue": "Dialogue Optimization",
+      "pacing": "Pacing Adjustment"
+    }
+  },
+  "stage4revision": {
+    "introUIText": "I have a draft, please act as a senior editor and help me with one ofthe following tasks. Select a task, paste your text, and get AI suggestions.",
+    "labels": {
+        "selectTask": "Select Revision Task:",
+        "pasteText": "Paste the text to be revised here:"
+    },
+    "placeholders": {
+        "selectTask": "-- Select a Revision Task --",
+        "pasteText": "Enter or paste the text you want the AI to revise..."
+    },
+    "buttons": {
+        "processing": "AI is Revising...",
+        "getSuggestions": "Get AI Suggestions",
+        "copyToClipboard": "Copy Suggestions"
+    },
+    "titles": {
+        "aiSuggestions": "AI Revision Suggestions"
+    },
+    "alerts": {
+        "selectTaskAndText": "Please select a revision task and paste some text to revise."
+    },
+    "errors": {
+        "failedToGetRevision": "Failed to get revision suggestions from AI.",
+        "errorPrefix": "Error"
+    },
+    "taskDescriptions": {
+        "Consistency Check": "AI will check for plot holes, inconsistent character behavior, or contradictions with world-building.",
+        "Description Enhancement": "AI will rewrite descriptions to be more vivid and sensory, using the five senses and 'show, don't tell'.",
+        "Dialogue Optimization": "AI will make dialogue more natural, aligned with character personalities, and advance the plot.",
+        "Pacing Adjustment": "AI will assess pacing. If slow, it helps cut redundancy; if fast, it helps add detail."
+    }
+  },
+  "finalizeExport": {
+    "congratulations": "🎉 Congratulations! 🎉",
+    "reachedFinalStage": "You've reached the final stage. Your novel is ready for its grand title and to be downloaded.",
+    "novelTitleLabel": "Your Novel's Title",
+    "novelTitlePlaceholder": "Enter the final title for your masterpiece",
+    "novelTitleInstruction": "This title will be used in the downloaded file.",
+    "downloadButton": "Download Your Novel (.txt)",
+    "downloadAriaLabel": "Download your completed novel as a text file",
+    "thankYouMessage": "Thank you for using {{appTitle}} to weave your story. Happy writing!"
+  },
+  "toolSidebar": {
+    "backToHomeTitle": "Back to {{appTitle}} Home",
+    "creativeStudio": "Creative Studio",
+    "expandAriaLabel": "Expand sidebar",
+    "collapseAriaLabel": "Collapse sidebar",
+    "expandTitle": "Expand",
+    "collapseTitle": "Collapse",
+    "navigationTitle": "Other Tools",
+    "homePageNavTitle": "Home Page",
+    "homePageNavTitleCollapsed": "Go to Home Page",
+    "settingsTitle": "Settings",
+    "apiKey": {
+      "label": "Custom Gemini API Key (Optional)",
+      "placeholder": "Enter your API key",
+      "saveButton": "Save Key",
+      "clearButton": "Clear Key",
+      "description": "Uses environment key by default. Your key is stored locally in your browser.",
+      "customSaved": "Custom API Key saved.",
+      "customCleared": "Custom API Key cleared. Using default."
+    },
+    "user": {
+        "signedInAs": "Signed in as",
+        "signOut": "Sign Out"
+    }
+  },
+  "signInPage": {
+    "title": "Sign In to Your Account",
+    "labels": {
+      "email": "Email Address",
+      "password": "Password"
+    },
+    "placeholders": {
+      "email": "you@example.com"
+    },
+    "buttons": {
+      "signIn": "Sign In",
+      "signInWith": "Sign in with {{providerName}}",
+      "signUp": "Sign Up Now"
+    },
+    "orContinueWith": "Or continue with",
+    "dontHaveAccount": "Don't have an account?",
+    "errors": {
+      "unknownError": "An unknown error occurred during sign-in. Please try again."
+    }
+  },
+  "signUpPage": {
+    "titles": {
+        "createAccount": "Create Your Account",
+        "verifyEmail": "Verify Your Email"
+    },
+    "labels": {
+      "email": "Email Address",
+      "password": "Password",
+      "confirmPassword": "Confirm Password",
+      "verificationCode": "Verification Code"
+    },
+    "placeholders": {
+      "email": "you@example.com",
+      "verificationCode": "Enter code from email"
+    },
+    "instructions": {
+        "passwordMinLength": "Minimum 6 characters."
+    },
+    "buttons": {
+      "registerAndSendCode": "Register & Send Code",
+      "verifyCode": "Verify Code",
+      "backToRegistration": "Back to Registration",
+      "signUpWith": "Sign up with {{providerName}}",
+      "signIn": "Sign In"
+    },
+    "orSignUpWith": "Or sign up with",
+    "alreadyHaveAccount": "Already have an account?",
+    "messages": {
+        "verificationSent": "Verification code sent to your email. Please check your inbox (and spam folder).",
+        "verificationSuccess": "Account verified successfully! Redirecting to sign in...",
+        "signInAfterVerification": "Your account is verified. Please sign in to continue."
+    },
+    "errors": {
+        "passwordsMismatch": "Passwords do not match.",
+        "passwordTooShort": "Password must be at least 6 characters long.",
+        "codeEmpty": "Verification code cannot be empty.",
+        "unknownInitiationError": "An unknown error occurred during sign-up initiation.",
+        "unknownVerificationError": "An unknown error occurred during verification."
+    }
+  },
+  "authCallbackPage": {
+    "processing": "Processing authentication...",
+    "verifyingToken": "Verifying your identity...",
+    "failed": "Authentication failed: {{error}}",
+    "signInRetryMessage": "Authentication failed: {{error}}. Please try signing in again.",
+    "buttons": {
+        "trySignInAgain": "Try Signing In Again"
+    },
+    "errors": {
+        "oauthProviderError": "Error from authentication provider.",
+        "tokenNotFound": "Access token not found in authentication response.",
+        "unknownError": "An unknown authentication error occurred."
+    }
+  },
+  "staticPages": {
+    "backToHome": "Back to Home",
+    "returnToHomepage": "Return to Homepage"
+  },
+  "privacyPage": {
+    "title": "Privacy Policy",
+    "thankYou": "Thank you for choosing {{appTitle}}! We are committed to protecting your privacy and handling your data transparently.",
+    "contentComingSoonTitle": "Detailed Privacy Policy Coming Soon!",
+    "workingOnDetails": "We are currently finalizing the detailed legal text for our Privacy Policy. This page will soon provide comprehensive information about:",
+    "infoWeCollect": "What information we collect (e.g., account data, novel content stored locally, usage analytics).",
+    "howWeUseInfo": "How we use your information (e.g., to provide and improve the service, personalize your experience, communicate with you).",
+    "howWeProtectInfo": "How we protect your information (e.g., security measures for any data we might handle, local storage considerations).",
+    "yourRights": "Your rights regarding your data (e.g., access, correction, deletion).",
+    "andMore": "Cookies, third-party services, policy updates, and more.",
+    "checkBackSoon": "Please check back soon for the full Privacy Policy. Your trust is important to us."
+  },
+  "termsPage": {
+    "title": "Terms of Service",
+    "welcome": "Welcome to {{appTitle}}! By using our services, you agree to these terms.",
+    "contentComingSoonTitle": "Full Terms of Service Coming Soon!",
+    "finalizingLegalFramework": "We are diligently working on our comprehensive Terms of Service. This document will outline:",
+    "userResponsibilities": "Your responsibilities as a user of {{appTitle}}.",
+    "providerResponsibilities": "Our responsibilities as the service provider.",
+    "contentOwnership": "Clarifications on content ownership and intellectual property.",
+    "acceptableUse": "Policies regarding acceptable use of the platform.",
+    "disclaimers": "Disclaimers of warranties and limitations of liability.",
+    "otherLegalInfo": "Other important legal information, including governing law and dispute resolution.",
+    "checkBackSoon": "We appreciate your patience and encourage you to review this page again shortly for the complete Terms ofService."
+  },
+  "aboutPage": {
+    "title": "About Novel Weaver AI",
+    "welcome": "Welcome to {{appTitle}}, where stories come to life with the power of AI collaboration!",
+    "missionStoryComingSoon": "Our Mission & Story - Coming Soon!",
+    "passionateAboutEmpowering": "We are passionate about empowering writers like you. We are currently crafting this section to share:",
+    "visionBehind": "The vision behind {{appTitle}} and our journey.",
+    "teamAndValues": "Information about our team and core values.",
+    "revolutionizeNovelWriting": "How we aim to revolutionize the novel writing process through innovative AI tools.",
+    "commitmentToAuthors": "Our commitment to supporting authors and fostering creativity.",
+    "stayTuned": "Stay tuned to learn more about the people and passion driving {{appTitle}}."
+  },
+  "contactPage": {
+    "title": "Contact Us",
+    "loveToHear": "We'd love to hear from you! Whether you have a question, feedback, or a partnership inquiry, please feel free to reach out.",
+    "contactInfoComingSoon": "Contact Information & Form - Coming Soon!",
+    "pageWillFeature": "This page will soon feature:",
+    "emailAddress": "A dedicated email address for support and inquiries.",
+    "contactForm": "An easy-to-use contact form directly on this page.",
+    "socialMediaLinks": "Links to our social media channels (if applicable).",
+    "appreciatePatience": "We appreciate your patience as we set up these communication channels. We look forward to connecting with you!"
+  },
+  "seo": {
+    "defaultTagline": "Your AI Creative Partner for Novels",
+    "defaultDescription": "Craft compelling novels from idea to final draft with Novel Weaver AI, your AI-powered creative partner. Features AI ideation, outlining, co-writing, and revision tools.",
+    "home": {
+      "titleSuffix": "AI Novel Writing Assistant",
+      "description": "Novel Weaver AI: Your ultimate AI-powered partner for novel writing. Generate ideas, outline plots, co-write chapters, and revise your manuscript with intelligent tools."
+    },
+    "tool": {
+      "defaultTitle": "Novel Editor",
+      "description": "The {{appTitle}} Novel Editor for '{{novelTitle}}' - Currently at the '{{currentStage}}' stage. Utilize AI tools for foundation, outlining, writing, and revision."
+    },
+    "pricing": {
+      "title": "Pricing Plans",
+      "description": "Explore flexible pricing plans for {{appTitle}}. Choose from Free, Lite, or Pro to unlock AI novel writing features that suit your creative needs."
+    },
+    "signIn": {
+      "title": "Sign In",
+      "description": "Sign in to your {{appTitle}} account to access your novel projects, AI writing tools, and continue crafting your masterpiece."
+    },
+    "signUp": {
+      "title": "Sign Up",
+      "description": "Create your {{appTitle}} account to start using AI-powered tools for novel ideation, outlining, writing, and revision. Begin your writing journey today!"
+    },
+    "authCallback": {
+      "title": "Authenticating",
+      "description": "Processing your authentication for {{appTitle}}. Please wait a moment."
+    },
+    "privacy": {
+      "title": "Privacy Policy",
+      "description": "Read the Privacy Policy for {{appTitle}} to understand how we collect, use, and protect your information."
+    },
+    "terms": {
+      "title": "Terms of Service",
+      "description": "Review the Terms of Service for {{appTitle}}. Understand your rights and responsibilities when using our AI novel writing platform."
+    },
+    "about": {
+      "title": "About Us",
+      "description": "Learn more about {{appTitle}}, our mission to empower writers with AI, and the team behind the innovative novel writing tools."
+    },
+    "contact": {
+      "title": "Contact Us",
+      "description": "Get in touch with the {{appTitle}} team. We welcome your questions, feedback, and inquiries about our AI novel writing platform."
+    }
+  },
+  "ldJson": {
+    "userPlaceholder": "Writer",
+    "seePlans": "See plans on page"
+  },
+  "download": {
+    "title": "Novel Title",
+    "defaultFilename": "my_ai_novel",
+    "stage1": {
+        "coreIdea": "Core Idea",
+        "genre": "Genre",
+        "tone": "Tone",
+        "targetAudience": "Target Audience",
+        "theme": "Theme",
+        "logline": "Logline",
+        "characters": "Characters",
+        "worldBuilding": "World-Building"
+    },
+    "character": {
+        "name": "Name",
+        "fields": {
+            "identity": "Identity",
+            "appearance": "Appearance",
+            "personality": "Personality",
+            "want": "Want",
+            "need": "Need",
+            "flaw": "Flaw",
+            "backstory": "Backstory",
+            "arc": "Arc",
+            "motivation": "Motivation (Antagonist)",
+            "relationshipToProtagonist": "Relationship to Protagonist (Antagonist)",
+            "functionInStory": "Function in Story (Supporting)",
+            "briefDescription": "Brief Description (Supporting)"
+        }
+    },
+    "worldBuilding": {
+        "fields": {
+            "timeAndPlace": "Time & Place",
+            "coreRules": "Core Rules",
+            "socialStructure": "Social Structure",
+            "keyLocations": "Key Locations"
+        }
+    },
+    "stage2": {
+        "actKey": {
+            "act1": "Act I",
+            "act2": "Act II",
+            "act3": "Act III"
+        },
+        "plotPointKey": {
+            "stasis": "Stasis",
+            "incitingIncident": "Inciting Incident",
+            "debate": "Debate",
+            "turningPoint1": "Turning Point 1",
+            "testsAlliesEnemies": "Tests, Allies, Enemies",
+            "midpoint": "Midpoint",
+            "risingAction": "Rising Action",
+            "allIsLost": "All Is Lost",
+            "turningPoint2": "Turning Point 2",
+            "runUpToClimax": "Run-up to Climax",
+            "climax": "Climax",
+            "fallingAction": "Falling Action",
+            "resolution": "Resolution"
+        }
+    },
+    "stage3": {
+        "chapter": "Chapter",
+        "pov": "POV Character",
+        "goal": "Core Goal",
+        "keyPlotPoints": "Key Plot Points",
+        "startingScene": "Starting Scene",
+        "endingScene": "Ending Scene",
+        "atmosphere": "Atmosphere",
+        "targetWordCount": "Target Word Count"
+    }
+  },
+  "novel": {
+    "defaultTitle": "My AI Novel"
+  },
+  "genres": {
+    "sciFi": { "name": "Sci-Fi", "description": "Explore futures, tech, and space." },
+    "fantasy": { "name": "Fantasy", "description": "Magic, myths, and epic quests." },
+    "mystery": { "name": "Mystery", "description": "Clues, suspense, and thrilling twists." }
+  },
+  "upgradeModal": {
+    "title": "Free Limit Reached",
+    "description": "You've used all your free novel downloads. To continue downloading and unlock premium features, please sign in or upgrade.",
+    "cta": "Sign In / Upgrade",
+    "later": "Maybe Later",
+    "signInPrompt": "Please sign in or upgrade to download more novels and access premium features."
+  }
+}

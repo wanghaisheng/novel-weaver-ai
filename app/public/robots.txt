@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://novelweaver.deepseek.diy/sitemap.xml

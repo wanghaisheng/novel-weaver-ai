@@ -1,0 +1,590 @@
+
+{
+  "appTitle": "Novel Weaver AI",
+  "loading": {
+    "application": "Chargement de l'application...",
+    "translations": "Chargement des traductions..."
+  },
+  "error": {
+    "unknownView": "Vue inconnue. Une erreur inattendue s'est produite.",
+    "pageNotFound": "Oups ! Page non trouvée."
+  },
+  "navigation": {
+    "features": "Fonctionnalités",
+    "howItWorks": "Comment Ça Marche",
+    "pricing": "Tarifs",
+    "testimonials": "Témoignages",
+    "genreTools": "Outils de Genre",
+    "toolsMegaMenu": "Prompts de Genre",
+    "signIn": "Se Connecter",
+    "signOut": "Se Déconnecter",
+    "signUp": "S'inscrire",
+    "goToTool": "Aller à l'Outil",
+    "myNovels": "Mes Romans",
+    "getStarted": "Commencer",
+    "startCreating": "Commencer à Créer",
+    "goHome": "Aller à la Page d'Accueil"
+  },
+  "footer": {
+    "copyright": "© {{year}} {{appTitle}}. Tous droits réservés.",
+    "copyrightSimple": "© {{year}} {{appTitle}}",
+    "copyrightPricingPage": "© {{year}} {{appTitle}}. Paiements sécurisés via Gumroad.",
+    "copyrightToolPage": "© {{year}} {{appTitle}}. Votre partenaire créatif.",
+    "tagline": "Façonner des Mondes, Mot par Mot.",
+    "privacyPolicy": "Politique de Confidentialité",
+    "termsOfService": "Conditions d'Utilisation",
+    "aboutUs": "À Propos de Nous",
+    "contactUs": "Contactez-Nous",
+    "language": "Langue",
+    "selectLanguageLabel": "Sélectionner la langue",
+    "toolNavigation": "Navigation des Outils"
+  },
+  "home": {
+    "hero": {
+      "welcome": "Bienvenue sur",
+      "tagline": "Votre partenaire IA pour créer des romans captivants, de l'idée initiale au brouillon final peaufiné. Tissons votre histoire ensemble.",
+      "createNovelNow": "Créez Votre Roman Maintenant",
+      "createNovelNowAriaLabel": "Commencez à créer votre roman avec Novel Weaver AI"
+    },
+    "features": {
+      "sectionTitle": "Tout ce dont vous avez besoin pour écrire votre chef-d'œuvre avec {{appTitle}}",
+      "ideation": {
+        "title": "Idéation & Concept par IA",
+        "description": "Stimulez la créativité avec des idées générées par IA pour les intrigues, personnages et décors. Surmontez instantanément le blocage de l'écrivain."
+      },
+      "outlining": {
+        "title": "Planification Structurée",
+        "description": "Organisez vos pensées avec un outil de planification flexible qui prend en charge les structures classiques comme le modèle en trois actes."
+      },
+      "writing": {
+        "title": "Écriture Collaborative par IA",
+        "description": "Rédigez des chapitres plus rapidement avec l'assistance de l'IA. Fournissez des prompts et laissez l'IA vous aider à écrire des scènes captivantes."
+      },
+      "revision": {
+        "title": "Outils de Révision Perspicaces",
+        "description": "Affinez votre manuscrit avec des suggestions basées sur l'IA pour la cohérence, le rythme, les descriptions et les dialogues."
+      }
+    },
+    "howItWorks": {
+      "sectionTitle": "Comment Fonctionne Novel Weaver AI",
+      "spark": {
+        "title": "1. Lancez le Concept",
+        "description": "Définissez votre idée centrale, genre et personnages. Utilisez l'IA pour brainstormer ou remplissez les détails manuellement."
+      },
+      "outline": {
+        "title": "2. Élaborez l'Intrigue",
+        "description": "Structurez votre histoire en utilisant le cadre guidé en trois actes, détaillant les points clés de l'intrigue et les tournants."
+      },
+      "draft": {
+        "title": "3. Rédigez les Chapitres",
+        "description": "Écrivez chapitre par chapitre avec l'aide à la co-écriture de l'IA, en vous concentrant sur le POV, les objectifs et les scènes clés."
+      },
+      "refine": {
+        "title": "4. Affinez & Polissez",
+        "description": "Utilisez les outils de révision de l'IA pour vérifier la cohérence, améliorer les descriptions, optimiser les dialogues et ajuster le rythme."
+      }
+    },
+    "megaMenu": {
+        "title": "Prompts de Genre Spécialisés",
+        "description": "Explorez des prompts d'IA affinés pour divers genres afin de lancer des éléments d'histoire spécifiques.",
+        "alertAccessingTools": "Accès aux outils {{genreName}}..."
+    },
+    "showcase": {
+      "sectionTitle": "Inspirez-vous : Vitrine de Romans",
+      "noMatch": "Aucune vitrine ne correspond au filtre actuel."
+    },
+    "testimonials": {
+      "sectionTitle": "Ce que Disent Nos Écrivains",
+      "sectionDescription": "Écoutez les auteurs qui ont transformé leur processus d'écriture avec {{appTitle}}.",
+      "1": {
+        "quote": "{{appTitle}} m'a aidé à surmonter un énorme blocage d'écrivain. Les outils d'idéation changent la donne !",
+        "authorName": "Alex R.",
+        "authorTitle": "Romancier de Science-Fiction"
+      },
+      "2": {
+        "quote": "En tant que nouvel écrivain, la planification structurée et les fonctionnalités de co-écriture par IA ont été inestimables. J'ai enfin terminé mon premier roman !",
+        "authorName": "Jamie L.",
+        "authorTitle": "Auteur de Fantasy"
+      },
+      "3": {
+        "quote": "Les outils de révision sont incroyablement perspicaces. Mon manuscrit est tellement plus solide grâce aux suggestions de l'IA sur le rythme et la description.",
+        "authorName": "Sam K.",
+        "authorTitle": "Écrivain de Mystère"
+      }
+    },
+    "genreTools": {
+        "sectionTitle": "Adaptez Votre Histoire avec des Outils de Genre Spécialisés",
+        "sectionDescription": "{{appTitle}} comprend que différents genres ont des besoins uniques. Nos outils spécialisés, alimentés par des méta-prompts affinés, vous aident à maîtriser les conventions et l'atmosphère de votre genre choisi.",
+        "toolFocusLabel": "Focus de l'Outil",
+        "sciFi": {
+            "name": "Science-Fiction",
+            "description": "Explorez des sociétés futuristes, des technologies avancées et les confins de l'espace.",
+            "toolFocus": "Prompts pour concepts technologiques, espèces extraterrestres, sociétés futures et dilemmes philosophiques."
+        },
+        "fantasy": {
+            "name": "Fantasy",
+            "description": "Tissez des récits de magie, de créatures mythiques et de quêtes épiques dans des royaumes imaginatifs.",
+            "toolFocus": "Prompts de construction de monde pour une portée épique, règles de systèmes magiques, races mythiques et arcs de prophétie."
+        },
+        "mystery": {
+            "name": "Mystère & Thriller",
+            "description": "Créez des récits à suspense remplis d'indices, de fausses pistes et de rebondissements choquants.",
+            "toolFocus": "Prompts pour le dépôt d'indices, le développement de suspects, les rebondissements et la construction d'un rythme haletant."
+        },
+        "customPrompt": {
+            "title": "Débloquez le Constructeur de Méta-Prompts Personnalisé",
+            "description": "Les utilisateurs payants ont accès à notre puissant Constructeur de Méta-Prompts Personnalisé. Définissez vos propres structures d'histoire uniques, instructions IA et paramètres de genre pour un contrôle inégalé sur le développement de votre roman.",
+            "cta": "Explorer les Plans Premium"
+        }
+    },
+    "seoSection": {
+        "title": "Libérez Votre Potentiel Créatif avec l'Écriture de Romans par IA",
+        "paragraph1": "Novel Weaver AI est votre partenaire ultime dans le voyage créatif de l'écriture de romans. Que vous soyez un auteur en herbe ou un écrivain chevronné, nos outils alimentés par l'IA sont conçus pour rationaliser votre processus, du brainstorming des concepts initiaux au polissage de votre version finale. Avec des fonctionnalités telles que la génération d'histoires par IA, la création de personnages, le développement d'intrigues et des suggestions de révision intelligentes, {{appTitle}} vous aide à surmonter le blocage de l'écrivain et à donner vie à vos mondes fictifs.",
+        "paragraph2": "Notre plateforme prend en charge une variété de genres, offrant une assistance spécialisée pour la Science-Fiction, la Fantasy, le Mystère, et plus encore. Utilisez nos outils de planification structurée pour construire un cadre narratif convaincant, puis plongez dans l'écriture de chapitres avec un support de co-écriture IA qui comprend votre vision. {{appTitle}} se concentre sur la collaboration, garantissant que votre voix unique reste au cœur de votre histoire tout en tirant parti de l'IA pour améliorer la productivité et la créativité.",
+        "paragraph3": "Découvrez l'avenir de l'écriture de romans. Rejoignez une communauté d'auteurs qui transforment leur processus créatif avec {{appTitle}}. Commencez à façonner votre chef-d'œuvre aujourd'hui, et laissez notre IA vous aider à tisser des intrigues complexes, à développer des personnages mémorables et à créer des mondes immersifs qui captivent vos lecteurs."
+    }
+  },
+  "pricing": {
+    "pageTitle": "Trouvez le Plan Parfait pour Votre Histoire",
+    "currencyAutoDetectMessage": "Devise ({{currencyCode}}) détectée automatiquement. Vous pouvez la changer.",
+    "currencySelectedMessage": "Devise définie sur {{currencyCode}}.",
+    "perMonth": "/ mois",
+    "billedAnnually": "facturé annuellement",
+    "polloApiNote": "Le traitement des paiements est illustratif et utilise des liens Gumroad de remplacement.",
+    "polloApiLinkText": "En savoir plus sur Gumroad.",
+    "paymentSafety": "Paiements sécurisés et cryptés.",
+    "morePaymentMethods": "et plus",
+    "gumroadLinkUnavailableAlert": "Le lien Gumroad pour {{planName}} ({{cycle}}) n'est pas encore disponible.",
+    "joinUsersSection": {
+        "title": "Rejoignez des Milliers d'Écrivains sur {{appTitle}}",
+        "ctaLoggedIn": "Aller à Mes Romans",
+        "ctaLoggedOut": "Commencez Votre Plan Gratuit Aujourd'hui"
+    },
+    "selectCurrencyAriaLabel": "Sélectionnez la devise pour l'affichage des prix",
+    "plans": {
+      "free": {
+        "name": "Tisserand Gratuit",
+        "features": [
+          "1 Projet de Roman",
+          "Idéation IA de Base",
+          "Planification d'Intrigue Standard",
+          "Co-écriture IA (Limitée)",
+          "Suggestions de Révision de Base",
+          "Jusqu'à 10 000 mots par roman",
+          "Accès Communautaire",
+          "Télécharger en .txt",
+          "Accès Limité au Modèle IA"
+        ],
+        "cta": "Commencer Gratuitement"
+      },
+      "lite": {
+        "name": "Tisserand Lite",
+        "features": [
+          "Tout de Gratuit, plus :",
+          "3 Projets de Roman",
+          "Idéation IA Avancée",
+          "Planification d'Intrigue Améliorée",
+          "Co-écriture IA (Modérée)",
+          "Suite de Révision Standard",
+          "Jusqu'à 50 000 mots par roman",
+          "Support Communautaire Prioritaire",
+          "Prompts Spécifiques au Genre (Basique)",
+          "Accès au Modèle IA Standard"
+        ],
+        "cta": "Choisir Lite"
+      },
+      "pro": {
+        "name": "Tisserand Pro",
+        "features": [
+          "Tout de Lite, plus :",
+          "Projets de Roman Illimités",
+          "Idéation & Brainstorming IA Expert",
+          "Structures d'Intrigue Personnalisables",
+          "Co-écriture IA (Intensive)",
+          "Suite Complète de Révision IA",
+          "Mots illimités par roman",
+          "Support Dédié",
+          "Bibliothèque Complète de Prompts Spécifiques au Genre",
+          "Constructeur de Méta-Prompts Personnalisé",
+          "Accès au Modèle IA Premium"
+        ],
+        "cta": "Passer Pro"
+      }
+    }
+  },
+  "billingCycle": {
+    "monthly": "Mensuel",
+    "yearly": "Annuel",
+    "saveBadgeYearly": "Économisez 20%"
+  },
+  "faqs": {
+    "general": {
+      "sectionTitle": "Questions Fréquemment Posées"
+    },
+    "pricing": {
+      "sectionTitle": "FAQ Tarification"
+    },
+    "tool": {
+        "sectionTitle": "Novel Weaver AI : Vos Questions, Nos Réponses",
+        "sectionDescription": "Vous avez des questions sur l'utilisation de l'éditeur Novel Weaver AI ? Trouvez des réponses aux requêtes courantes ci-dessous."
+    }
+  },
+  "general.faqs": "[FR] (Same structure as English, content needs translation)",
+  "pricing.faqs": "[FR] (Same structure as English, content needs translation)",
+  "toolPage": {
+    "sections": {
+      "novelEditor": { "title": "Éditeur de Roman" },
+      "trendSpark": { "title": "Étincelle de Tendance ✨" },
+      "poemGenerator": { "title": "Générateur de Poèmes (Bientôt)" },
+      "scriptWriter": { "title": "Scénariste (Bientôt)" }
+    },
+    "subSections": {
+        "novelWorkflowEditor": { "title": "Éditeur de Flux de Travail de Roman" },
+        "features": { "title": "Fonctionnalités de l'Éditeur" },
+        "howItWorks": { "title": "Guide de l'Éditeur" },
+        "showcase": { "title": "Exemples de l'Éditeur" },
+        "faq": { "title": "FAQ de l'Éditeur" }
+    }
+  },
+  "trendSparkTool": {
+    "title": "Étincelle de Tendance : Générateur de Concepts de Romans IA",
+    "description": "Analysez les tendances actuelles des romans et générez des idées d'histoires monétisables. Entrez des thèmes populaires, des tropes ou des tendances de plateforme ci-dessous, et laissez l'IA enflammer votre prochain bestseller !",
+    "inputLabel": "Décrivez les Tendances Actuelles des Romans :",
+    "inputPlaceholder": "Ex : 'Cultivation de système avec arcs académiques', 'Ennemis-amants dans la fantasy moderne sur WebNovel', 'MC régresseur avec compétence unique sur RoyalRoad', 'LitRPG avec artisanat et construction de guilde populaire sur ScribbleHub'...",
+    "inputInstruction": "Soyez précis ! Mentionnez les genres, les tropes, les plateformes cibles, ou tout ce que vous avez remarqué qui gagne en popularité.",
+    "buttonGenerate": "Analyser les Tendances & Générer des Idées",
+    "buttonLoading": "L'IA Réfléchit...",
+    "buttonDevelopConcept": "Développer cette Idée dans l'Éditeur de Romans",
+    "generatedConceptsTitle": "Concepts de Romans Générés par l'IA :",
+    "conceptCard": {
+      "genre": "Genre Suggéré",
+      "targetAudience": "Public Cible/Plateforme",
+      "sellingPoints": "Points Clés de Vente / Angles de Monétisation"
+    },
+    "errors": {
+      "noTrendsProvided": "Veuillez d'abord décrire quelques tendances de romans.",
+      "apiError": "Une erreur s'est produite lors de la communication avec l'IA. Veuillez réessayer.",
+      "noConceptsGenerated": "L'IA n'a pas pu générer de concepts basés sur votre saisie. Essayez de reformuler ou d'ajouter plus de détails sur les tendances."
+    }
+  },
+  "stageNavigator": {
+    "title": "Étapes du Roman"
+  },
+  "stage": {
+    "foundation": {
+      "title": "Étape 1 : Fondation & Idéation",
+      "description": "Définissez votre idée centrale, genre, personnages et monde. Posez les fondations de votre histoire."
+    },
+    "outline": {
+      "title": "Étape 2 : Planification de l'Intrigue",
+      "description": "Structurez votre récit en utilisant le modèle en trois actes. Détaillez les points clés de l'intrigue, les tournants et l'arc narratif global."
+    },
+    "writing": {
+      "title": "Étape 3 : Rédaction des Chapitres",
+      "description": "Rédigez votre roman chapitre par chapitre. Utilisez l'aide à la co-écriture de l'IA basée sur vos prompts et votre plan."
+    },
+    "revision": {
+      "title": "Étape 4 : Révision & Peaufinage",
+      "description": "Affinez votre manuscrit. Utilisez les outils d'IA pour les vérifications de cohérence, l'amélioration des descriptions, l'optimisation des dialogues et les ajustements de rythme."
+    },
+    "finalizeExport": {
+      "title": "Étape 5 : Finaliser & Exporter",
+      "description": "Relisez votre roman terminé, donnez-lui un titre final et téléchargez votre travail."
+    }
+  },
+  "revisionTool": {
+    "task": {
+      "consistency": "Vérification de Cohérence",
+      "description": "Amélioration de Description",
+      "dialogue": "Optimisation de Dialogue",
+      "pacing": "Ajustement de Rythme"
+    }
+  },
+  "stage4revision": {
+    "introUIText": "J'ai un brouillon, veuillez agir en tant qu'éditeur senior et m'aider avec l'une des tâches suivantes. Sélectionnez une tâche, collez votre texte et obtenez des suggestions de l'IA.",
+    "labels": {
+        "selectTask": "Sélectionner une Tâche de Révision :",
+        "pasteText": "Collez le texte à réviser ici :"
+    },
+    "placeholders": {
+        "selectTask": "-- Sélectionner une Tâche de Révision --",
+        "pasteText": "Entrez ou collez le texte que vous souhaitez que l'IA révise..."
+    },
+    "buttons": {
+        "processing": "L'IA Révise...",
+        "getSuggestions": "Obtenir les Suggestions de l'IA",
+        "copyToClipboard": "Copier les Suggestions"
+    },
+    "titles": {
+        "aiSuggestions": "Suggestions de Révision de l'IA"
+    },
+    "alerts": {
+        "selectTaskAndText": "Veuillez sélectionner une tâche de révision et coller du texte à réviser."
+    },
+    "errors": {
+        "failedToGetRevision": "Échec de l'obtention des suggestions de révision de l'IA.",
+        "errorPrefix": "Erreur"
+    },
+    "taskDescriptions": {
+        "Consistency Check": "L'IA vérifiera les trous dans l'intrigue, le comportement incohérent des personnages ou les contradictions avec la construction du monde.",
+        "Description Enhancement": "L'IA réécrira les descriptions pour les rendre plus vives et sensorielles, en utilisant les cinq sens et le principe 'montrer, ne pas dire'.",
+        "Dialogue Optimization": "L'IA rendra les dialogues plus naturels, alignés sur la personnalité des personnages, et fera avancer l'intrigue.",
+        "Pacing Adjustment": "L'IA évaluera le rythme. S'il est lent, elle aidera à couper les redondances ; s'il est rapide, elle aidera à ajouter des détails."
+    }
+  },
+  "finalizeExport": {
+    "congratulations": "🎉 Félicitations ! 🎉",
+    "reachedFinalStage": "Vous avez atteint la dernière étape. Votre roman est prêt pour son grand titre et pour être téléchargé.",
+    "novelTitleLabel": "Titre de Votre Roman",
+    "novelTitlePlaceholder": "Entrez le titre final de votre chef-d'œuvre",
+    "novelTitleInstruction": "Ce titre sera utilisé dans le fichier téléchargé.",
+    "downloadButton": "Télécharger Votre Roman (.txt)",
+    "downloadAriaLabel": "Téléchargez votre roman terminé en tant que fichier texte",
+    "thankYouMessage": "Merci d'utiliser {{appTitle}} pour tisser votre histoire. Bonne écriture !"
+  },
+  "toolSidebar": {
+    "backToHomeTitle": "Retour à l'Accueil de {{appTitle}}",
+    "creativeStudio": "Studio Créatif",
+    "expandAriaLabel": "Agrandir la barre latérale",
+    "collapseAriaLabel": "Réduire la barre latérale",
+    "expandTitle": "Agrandir",
+    "collapseTitle": "Réduire",
+    "navigationTitle": "Autres Outils",
+    "homePageNavTitle": "Page d'Accueil",
+    "homePageNavTitleCollapsed": "Aller à la Page d'Accueil",
+    "settingsTitle": "Paramètres",
+    "apiKey": {
+      "label": "Clé API Gemini Personnalisée (Optionnel)",
+      "placeholder": "Entrez votre clé API",
+      "saveButton": "Sauvegarder la Clé",
+      "clearButton": "Effacer la Clé",
+      "description": "Utilise la clé d'environnement par défaut. Votre clé est stockée localement dans votre navigateur.",
+      "customSaved": "Clé API personnalisée sauvegardée.",
+      "customCleared": "Clé API personnalisée effacée. Utilisation de la clé par défaut."
+    },
+    "user": {
+        "signedInAs": "Connecté en tant que",
+        "signOut": "Se Déconnecter"
+    }
+  },
+  "signInPage": {
+    "title": "Connectez-vous à Votre Compte",
+    "labels": {
+      "email": "Adresse E-mail",
+      "password": "Mot de Passe"
+    },
+    "placeholders": {
+      "email": "vous@exemple.com"
+    },
+    "buttons": {
+      "signIn": "Se Connecter",
+      "signInWith": "Se connecter avec {{providerName}}",
+      "signUp": "Inscrivez-vous Maintenant"
+    },
+    "orContinueWith": "Ou continuer avec",
+    "dontHaveAccount": "Vous n'avez pas de compte ?",
+    "errors": {
+      "unknownError": "Une erreur inconnue s'est produite lors de la connexion. Veuillez réessayer."
+    }
+  },
+  "signUpPage": {
+    "titles": {
+        "createAccount": "Créez Votre Compte",
+        "verifyEmail": "Vérifiez Votre E-mail"
+    },
+    "labels": {
+      "email": "Adresse E-mail",
+      "password": "Mot de Passe",
+      "confirmPassword": "Confirmer le Mot de Passe",
+      "verificationCode": "Code de Vérification"
+    },
+    "placeholders": {
+      "email": "vous@exemple.com",
+      "verificationCode": "Entrez le code de l'e-mail"
+    },
+    "instructions": {
+        "passwordMinLength": "Minimum 6 caractères."
+    },
+    "buttons": {
+      "registerAndSendCode": "S'inscrire et Envoyer le Code",
+      "verifyCode": "Vérifier le Code",
+      "backToRegistration": "Retour à l'Inscription",
+      "signUpWith": "S'inscrire avec {{providerName}}",
+      "signIn": "Se Connecter"
+    },
+    "orSignUpWith": "Ou s'inscrire avec",
+    "alreadyHaveAccount": "Vous avez déjà un compte ?",
+    "messages": {
+        "verificationSent": "Un code de vérification a été envoyé à votre e-mail. Veuillez vérifier votre boîte de réception (et spam).",
+        "verificationSuccess": "Compte vérifié avec succès ! Redirection vers la connexion...",
+        "signInAfterVerification": "Votre compte est vérifié. Veuillez vous connecter pour continuer."
+    },
+    "errors": {
+        "passwordsMismatch": "Les mots de passe ne correspondent pas.",
+        "passwordTooShort": "Le mot de passe doit comporter au moins 6 caractères.",
+        "codeEmpty": "Le code de vérification ne peut pas être vide.",
+        "unknownInitiationError": "Une erreur inconnue s'est produite lors de l'initiation de l'inscription.",
+        "unknownVerificationError": "Une erreur inconnue s'est produite lors de la vérification."
+    }
+  },
+  "authCallbackPage": {
+    "processing": "Traitement de l'authentification...",
+    "verifyingToken": "Vérification de votre identité...",
+    "failed": "Échec de l'authentification : {{error}}",
+    "signInRetryMessage": "Échec de l'authentification : {{error}}. Veuillez réessayer de vous connecter.",
+    "buttons": {
+        "trySignInAgain": "Réessayer de se Connecter"
+    },
+    "errors": {
+        "oauthProviderError": "Erreur du fournisseur d'authentification.",
+        "tokenNotFound": "Jeton d'accès non trouvé dans la réponse d'authentification.",
+        "unknownError": "Une erreur d'authentification inconnue s'est produite."
+    }
+  },
+  "staticPages": {
+    "backToHome": "Retour à l'Accueil",
+    "returnToHomepage": "Retour à la Page d'Accueil"
+  },
+  "privacyPage": {
+    "title": "Politique de Confidentialité",
+    "thankYou": "Merci d'avoir choisi {{appTitle}} ! Nous nous engageons à protéger votre vie privée et à traiter vos données de manière transparente.",
+    "contentComingSoonTitle": "Politique de Confidentialité Détaillée Bientôt Disponible !",
+    "workingOnDetails": "Nous finalisons actuellement le texte juridique détaillé de notre Politique de Confidentialité. Cette page fournira bientôt des informations complètes sur :",
+    "infoWeCollect": "Quelles informations nous collectons (par ex., données de compte, contenu de roman stocké localement, analyses d'utilisation).",
+    "howWeUseInfo": "Comment nous utilisons vos informations (par ex., pour fournir et améliorer le service, personnaliser votre expérience, communiquer avec vous).",
+    "howWeProtectInfo": "Comment nous protégeons vos informations (par ex., mesures de sécurité pour toutes les données que nous pourrions traiter, considérations relatives au stockage local).",
+    "yourRights": "Vos droits concernant vos données (par ex., accès, correction, suppression).",
+    "andMore": "Cookies, services tiers, mises à jour de la politique, et plus encore.",
+    "checkBackSoon": "Veuillez revenir bientôt pour consulter la Politique de Confidentialité complète. Votre confiance est importante pour nous."
+  },
+  "termsPage": {
+    "title": "Conditions d'Utilisation",
+    "welcome": "Bienvenue sur {{appTitle}} ! En utilisant nos services, vous acceptez ces conditions.",
+    "contentComingSoonTitle": "Conditions d'Utilisation Complètes Bientôt Disponibles !",
+    "finalizingLegalFramework": "Nous travaillons assidûment sur nos Conditions d'Utilisation complètes. Ce document décrira :",
+    "userResponsibilities": "Vos responsabilités en tant qu'utilisateur de {{appTitle}}.",
+    "providerResponsibilities": "Nos responsabilités en tant que fournisseur de services.",
+    "contentOwnership": "Clarifications sur la propriété du contenu et la propriété intellectuelle.",
+    "acceptableUse": "Politiques concernant l'utilisation acceptable de la plateforme.",
+    "disclaimers": "Exonérations de garanties et limitations de responsabilité.",
+    "otherLegalInfo": "Autres informations juridiques importantes, y compris la loi applicable et la résolution des litiges.",
+    "checkBackSoon": "Nous apprécions votre patience et vous encourageons à consulter cette page à nouveau sous peu pour les Conditions d'Utilisation complètes.",
+    "content": {
+        "section1_p1": "En accédant ou en utilisant {{appTitle}} (\"Service\"), vous acceptez d'être lié par ces Conditions d'Utilisation (\"Conditions\"). Si vous n'êtes pas d'accord avec une partie des conditions, vous ne pouvez pas accéder au Service.",
+        "section2_p1": "Vous acceptez d'utiliser le Service uniquement à des fins légales et conformément à ces Conditions. Vous êtes responsable de tout contenu que vous créez et de votre conduite lors de l'utilisation du Service. Vous acceptez de ne pas utiliser le service pour générer du contenu nuisible, illégal ou contrefait.",
+        "section3_p1": "Vous conservez l'entière propriété du contenu créatif (ébauches de roman, idées, plans, etc.) que vous saisissez et générez avec le Service (\"Votre Contenu\"). Nous ne revendiquons aucune propriété sur Votre Contenu. Le Service lui-même, y compris son logiciel, sa conception et sa marque, est la propriété de {{appTitle}} et de ses concédants de licence et est protégé par les lois sur la propriété intellectuelle.",
+        "section4_p1": "Le Service est fourni \"tel quel\" et \"tel que disponible\" sans aucune garantie d'aucune sorte. Nous ne garantissons pas que le service sera exempt d'erreurs ou ininterrompu. {{appTitle}} ne sera pas responsable des dommages indirects, accessoires, spéciaux, consécutifs ou punitifs résultant de votre accès ou utilisation, ou de votre incapacité à accéder ou utiliser, le service.",
+        "section5_p1": "Nous nous réservons le droit de modifier ces Conditions à tout moment. Nous fournirons un avis des changements importants. Votre utilisation continue du Service après de tels changements constitue votre acceptation des nouvelles Conditions."
+    }
+  },
+  "aboutPage": {
+    "title": "À Propos de Novel Weaver AI",
+    "welcome": "Bienvenue sur {{appTitle}}, où les histoires prennent vie grâce à la puissance de la collaboration IA !",
+    "missionStoryComingSoon": "Notre Mission et Notre Histoire - Bientôt Disponible !",
+    "passionateAboutEmpowering": "Nous sommes passionnés par l'autonomisation des écrivains comme vous. Nous élaborons actuellement cette section pour partager :",
+    "visionBehind": "La vision derrière {{appTitle}} et notre parcours.",
+    "teamAndValues": "Informations sur notre équipe et nos valeurs fondamentales.",
+    "revolutionizeNovelWriting": "Comment nous visons à révolutionner le processus d'écriture de romans grâce à des outils d'IA innovants.",
+    "commitmentToAuthors": "Notre engagement à soutenir les auteurs et à favoriser la créativité.",
+    "stayTuned": "Restez à l'écoute pour en savoir plus sur les personnes et la passion qui animent {{appTitle}}.",
+     "content": {
+        "missionTitle": "Notre Mission (Espace réservé)",
+        "mission_p1": "Notre mission chez {{appTitle}} est de démocratiser la narration en fournissant aux écrivains de tous niveaux des outils intelligents et intuitifs qui augmentent la créativité, surmontent les obstacles courants et rationalisent le processus d'écriture de romans. Nous pensons que chacun a une histoire à raconter, et la technologie peut être un allié puissant pour donner vie à ces histoires.",
+        "visionTitle": "La Vision de {{appTitle}} (Espace réservé)",
+        "vision_p1": "Nous envisageons un monde où la barrière à l'écriture d'un roman est considérablement abaissée, où les auteurs en herbe se sentent responsabilisés et soutenus, et où les écrivains chevronnés peuvent explorer de nouvelles avenues créatives avec la collaboration de l'IA. {{appTitle}} aspire à être plus qu'un simple outil ; nous nous efforçons d'être un partenaire créatif dans votre parcours littéraire."
+    }
+  },
+  "contactPage": {
+    "title": "Contactez-Nous",
+    "loveToHear": "Nous serions ravis d'avoir de vos nouvelles ! Que vous
+ayez une question, des commentaires ou une demande de partenariat, n'hésitez pas à nous contacter.",
+    "contactInfoComingSoon": "Coordonnées et Formulaire - Bientôt Disponible !",
+    "pageWillFeature": "Cette page présentera bientôt :",
+    "emailAddress": "Une adresse e-mail dédiée pour le support et les demandes de renseignements.",
+    "contactForm": "Un formulaire de contact facile à utiliser directement sur cette page.",
+    "socialMediaLinks": "Liens vers nos réseaux sociaux (le cas échéant).",
+    "appreciatePatience": "Nous apprécions votre patience pendant que nous mettons en place ces canaux de communication. Nous avons hâte d'échanger avec vous !",
+    "formSubmitPlaceholderAlert": "Merci pour votre message ! (Ceci est un espace réservé - le formulaire n'est pas encore fonctionnel)"
+  },
+  "seo": {
+    "defaultTagline": "Votre Partenaire Créatif IA pour Romans",
+    "defaultDescription": "Créez des romans captivants de l'idée au brouillon final avec Novel Weaver AI, votre partenaire créatif alimenté par l'IA. Comprend l'idéation par IA, la planification, la co-écriture et les outils de révision.",
+    "home": {
+      "titleSuffix": "Assistant d'Écriture de Romans IA",
+      "description": "Novel Weaver AI : Votre partenaire ultime alimenté par l'IA pour l'écriture de romans. Générez des idées, planifiez des intrigues, co-écrivez des chapitres et révisez votre manuscrit avec des outils intelligents."
+    },
+    "tool": {
+      "defaultTitle": "Éditeur de Roman",
+      "description": "L'Éditeur de Romans {{appTitle}} pour '{{novelTitle}}' - Actuellement à l'étape '{{currentStage}}'. Utilisez les outils d'IA pour la fondation, la planification, l'écriture et la révision."
+    },
+    "pricing": {
+      "title": "Plans Tarifaires",
+      "description": "Explorez des plans tarifaires flexibles pour {{appTitle}}. Choisissez entre Gratuit, Lite ou Pro pour débloquer des fonctionnalités d'écriture de romans IA adaptées à vos besoins créatifs."
+    },
+    "signIn": {
+      "title": "Se Connecter",
+      "description": "Connectez-vous à votre compte {{appTitle}} pour accéder à vos projets de romans, outils d'écriture IA et continuer à créer votre chef-d'œuvre."
+    },
+    "signUp": {
+      "title": "S'inscrire",
+      "description": "Créez votre compte {{appTitle}} pour commencer à utiliser des outils alimentés par l'IA pour l'idéation, la planification, l'écriture et la révision de romans. Commencez votre voyage d'écriture dès aujourd'hui !"
+    },
+    "authCallback": {
+      "title": "Authentification",
+      "description": "Traitement de votre authentification pour {{appTitle}}. Veuillez patienter un instant."
+    },
+    "privacy": {
+      "title": "Politique de Confidentialité",
+      "description": "Lisez la Politique de Confidentialité de {{appTitle}} pour comprendre comment nous collectons, utilisons et protégeons vos informations."
+    },
+    "terms": {
+      "title": "Conditions d'Utilisation",
+      "description": "Consultez les Conditions d'Utilisation de {{appTitle}}. Comprenez vos droits et responsabilités lors de l'utilisation de notre plateforme d'écriture de romans IA."
+    },
+    "about": {
+      "title": "À Propos de Nous",
+      "description": "En savoir plus sur {{appTitle}}, notre mission d'autonomiser les écrivains avec l'IA, et l'équipe derrière les outils innovants d'écriture de romans."
+    },
+    "contact": {
+      "title": "Contactez-Nous",
+      "description": "Prenez contact avec l'équipe {{appTitle}}. Nous accueillons vos questions, commentaires et demandes concernant notre plateforme d'écriture de romans IA."
+    }
+  },
+  "ldJson": {
+    "userPlaceholder": "Écrivain",
+    "seePlans": "Voir les plans sur la page"
+  },
+  "download": {
+    "title": "Titre du Roman",
+    "defaultFilename": "mon_roman_ia",
+    "stage1": {
+        "coreIdea": "Idée Principale",
+        "genre": "Genre",
+        "tone": "Ton",
+        "targetAudience": "Public Cible",
+        "theme": "Thème",
+        "logline": "Logline",
+        "characters": "Personnages",
+        "worldBuilding": "Construction du Monde"
+    },
+    "character": "[FR] (Same structure, needs translation)",
+    "worldBuilding": "[FR] (Same structure, needs translation)",
+    "stage2": "[FR] (Same structure, needs translation)",
+    "stage3": "[FR] (Same structure, needs translation)"
+  },
+  "novel": {
+    "defaultTitle": "Mon Roman IA"
+  },
+  "genres": {
+    "sciFi": { "name": "Science-Fiction", "description": "Explorez les futurs, la technologie et l'espace." },
+    "fantasy": { "name": "Fantasy", "description": "Magie, mythes et quêtes épiques." },
+    "mystery": { "name": "Mystère", "description": "Indices, suspense et rebondissements palpitants." }
+  },
+  "upgradeModal": {
+    "title": "Limite Gratuite Atteinte",
+    "description": "Vous avez utilisé tous vos téléchargements gratuits de romans. Pour continuer à télécharger et débloquer les fonctionnalités premium, veuillez vous connecter ou mettre à niveau votre plan.",
+    "cta": "Se Connecter / Mettre à Niveau",
+    "later": "Peut-être Plus Tard",
+    "signInPrompt": "Veuillez vous connecter ou mettre à niveau pour télécharger plus de romans et accéder aux fonctionnalités premium."
+  }
+}
