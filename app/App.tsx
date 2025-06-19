@@ -1,4 +1,5 @@
 
+
 import React, { useState, useCallback, useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
 import { NovelData, NovelStage, Stage1Data, Stage2Data, Stage3Data, CharacterProfile, Chapter, User, AppView } from './types';
@@ -18,7 +19,7 @@ import { STAGE_INSTRUCTIONS } from './constants'; // Moved up as it's used in do
 const AUTH_USER_KEY = 'novelAuthUser';
 const USER_API_KEY = 'userGeminiApiKey';
 
-const getInitialNovelData = (t: (key: string) => string): NovelData => ({
+export const getInitialNovelData = (t: (key: string) => string): NovelData => ({
   title: t('novel.defaultTitle'), 
   stage1: {
     coreIdea: '', genre: '', tone: '', targetAudience: '', theme: '', logline: '',
@@ -36,7 +37,7 @@ const getInitialNovelData = (t: (key: string) => string): NovelData => ({
         povCharacter: '', coreGoal: '', keyPlotPoints: '', 
         startingScene: '', endingScene: '', atmosphere: '', wordCount: undefined 
     }
-  },
+  } 
 });
 
 const App: React.FC = () => {
@@ -430,7 +431,7 @@ const App: React.FC = () => {
   }, []);
 
   if (authLoading) {
-    return <div className="min-h-screen bg-slate-950 flex items-center justify-center text-white text-xl">{t('loading.application')}</div>;
+    return <div className="min-h-screen bg-background flex items-center justify-center text-foreground text-xl">{t('loading.application')}</div>;
   }
 
   const commonPageProps = {
@@ -476,6 +477,7 @@ const App: React.FC = () => {
               onNavigateToTerms={navigateToTerms}
               onNavigateToAbout={navigateToAbout}
               onNavigateToContact={navigateToContact}
+              getInitialNovelData={getInitialNovelData} // Pass the helper function
            />;
   }
   if (currentView === 'pricing') {
@@ -531,7 +533,7 @@ const App: React.FC = () => {
         onClose={() => setShowUpgradeModal(false)}
         onUpgradeClick={handleUpgradeModalClick}
       />
-      <div className="text-center p-8 text-red-400">{t('error.unknownView')} <button onClick={navigateToHome} className="underline">{t('navigation.goHome')}</button></div>
+      <div className="text-center p-8 text-destructive-foreground">{t('error.unknownView')} <button onClick={navigateToHome} className="underline">{t('navigation.goHome')}</button></div>
     </>
   );
 };

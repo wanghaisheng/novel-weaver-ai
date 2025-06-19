@@ -11,7 +11,7 @@ if (!rootElement) {
 const root = ReactDOM.createRoot(rootElement);
 root.render(
   <React.StrictMode>
-    <Suspense fallback={<div className="min-h-screen bg-slate-950 flex items-center justify-center text-white text-xl">Loading translations...</div>}>
+    <Suspense fallback={<div className="min-h-screen bg-background flex items-center justify-center text-foreground text-xl">Loading translations...</div>}>
       <App />
     </Suspense>
   </React.StrictMode>

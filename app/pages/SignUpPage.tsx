@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import { signUpUser, verifySignUpCode, OPENAUTH_SERVER_URL, OAUTH_REDIRECT_URI, OAUTH_CLIENT_ID } from '../services/authService';
-// import { APP_TITLE } from '../constants'; // Removed
 import { TextInput } from '../components/common/TextInput';
 import { LoadingSpinner } from '../components/common/LoadingSpinner';
 import type { OAuthProvider } from '../types';
@@ -14,11 +13,11 @@ interface SignUpPageProps {
 
 type SignUpStep = 'register' | 'verify';
 
-const oAuthProviders: { id: OAuthProvider; name: string; icon?: string, bgColor: string, textColor: string, hoverBgColor: string }[] = [
-  { id: 'google', name: 'Google', bgColor: 'bg-red-600', hoverBgColor: 'hover:bg-red-700', textColor: 'text-white' },
-  { id: 'microsoft', name: 'Microsoft', bgColor: 'bg-blue-600', hoverBgColor: 'hover:bg-blue-700', textColor: 'text-white' },
-  { id: 'apple', name: 'Apple', bgColor: 'bg-black', hoverBgColor: 'hover:bg-gray-800', textColor: 'text-white' },
-  { id: 'github', name: 'GitHub', bgColor: 'bg-gray-800', hoverBgColor: 'hover:bg-gray-900', textColor: 'text-white' },
+const oAuthProviders: { id: OAuthProvider; name: string; icon?: string, bgColor: string, textColor: string, hoverBgColor: string, focusRingColor: string }[] = [
+  { id: 'google', name: 'Google', bgColor: 'bg-[#DB4437]', hoverBgColor: 'hover:bg-[#C23321]', textColor: 'text-white', focusRingColor: 'focus:ring-[#DB4437]' },
+  { id: 'microsoft', name: 'Microsoft', bgColor: 'bg-[#0078D4]', hoverBgColor: 'hover:bg-[#005A9E]', textColor: 'text-white', focusRingColor: 'focus:ring-[#0078D4]' },
+  { id: 'apple', name: 'Apple', bgColor: 'bg-black', hoverBgColor: 'hover:bg-gray-800', textColor: 'text-white', focusRingColor: 'focus:ring-gray-500' },
+  { id: 'github', name: 'GitHub', bgColor: 'bg-gray-800', hoverBgColor: 'hover:bg-gray-900', textColor: 'text-white', focusRingColor: 'focus:ring-gray-700' },
 ];
 
 const SignUpPage: React.FC<SignUpPageProps> = ({ onNavigateToSignIn, onNavigateHome }) => {
@@ -102,19 +101,19 @@ const SignUpPage: React.FC<SignUpPageProps> = ({ onNavigateToSignIn, onNavigateH
 
 
   return (
-    <div className="min-h-screen bg-slate-950 flex flex-col items-center justify-center p-4">
+    <div className="min-h-screen bg-background flex flex-col items-center justify-center p-4">
       <div className="w-full max-w-md">
         <div className="text-center mb-8 cursor-pointer" onClick={() => { console.log('[SignUpPage.tsx] App title clicked, navigating home.'); onNavigateHome();}}>
-          <h1 className="text-4xl font-extrabold text-sky-400 hover:text-sky-300 transition-colors tracking-tight">
+          <h1 className="text-4xl font-extrabold text-primary hover:text-primary/90 transition-colors tracking-tight">
             {t('appTitle')}
           </h1>
-          <p className="text-slate-400">
+          <p className="text-muted-foreground">
             {currentStep === 'register' ? t('signUpPage.titles.createAccount') : t('signUpPage.titles.verifyEmail')}
           </p>
         </div>
 
         {currentStep === 'register' && (
-            <div className="bg-slate-800 p-8 rounded-xl shadow-2xl border border-slate-700 space-y-6">
+            <div className="bg-card p-8 rounded-xl shadow-2xl border border-border space-y-6">
               <form onSubmit={handleRegistrationSubmit} className="space-y-6">
                 <TextInput
                     label={t('signUpPage.labels.email')}
@@ -148,14 +147,14 @@ const SignUpPage: React.FC<SignUpPageProps> = ({ onNavigateToSignIn, onNavigateH
                     autoComplete="new-password"
                 />
 
-                {error && <p className="text-sm text-red-400 bg-red-900/50 border border-red-700 p-3 rounded-md text-center">{error}</p>}
-                {successMessage && <p className="text-sm text-sky-300 bg-sky-900/50 border border-sky-700 p-3 rounded-md text-center">{successMessage}</p>}
+                {error && <p className="text-sm text-destructive-foreground bg-destructive/50 border border-destructive p-3 rounded-md text-center">{error}</p>}
+                {successMessage && <p className="text-sm text-primary bg-primary/10 border border-primary/30 p-3 rounded-md text-center">{successMessage}</p>}
 
 
                 <button
                     type="submit"
                     disabled={isLoading}
-                    className="w-full px-6 py-3 bg-gradient-to-r from-sky-500 to-cyan-400 hover:from-sky-600 hover:to-cyan-500 text-white font-semibold rounded-lg shadow-lg hover:shadow-cyan-500/30 focus:outline-none focus:ring-2 focus:ring-sky-400 focus:ring-offset-2 focus:ring-offset-slate-800 active:scale-[0.98] disabled:from-slate-600 disabled:to-slate-700 disabled:text-slate-400 disabled:cursor-not-allowed disabled:shadow-none disabled:opacity-70 transition-all duration-200 ease-in-out"
+                    className="w-full px-6 py-3 bg-primary hover:bg-primary/90 text-primary-foreground font-semibold rounded-lg shadow-lg hover:shadow-primary/30 focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 focus:ring-offset-card active:scale-[0.98] disabled:bg-muted disabled:text-muted-foreground disabled:cursor-not-allowed disabled:shadow-none disabled:opacity-70 transition-all duration-200 ease-in-out"
                 >
                     {isLoading ? <LoadingSpinner /> : t('signUpPage.buttons.registerAndSendCode')}
                 </button>
@@ -163,10 +162,10 @@ const SignUpPage: React.FC<SignUpPageProps> = ({ onNavigateToSignIn, onNavigateH
               
               <div className="relative my-2">
                 <div className="absolute inset-0 flex items-center" aria-hidden="true">
-                  <div className="w-full border-t border-slate-600" />
+                  <div className="w-full border-t border-border" />
                 </div>
                 <div className="relative flex justify-center text-sm">
-                  <span className="px-2 bg-slate-800 text-slate-400">{t('signUpPage.orSignUpWith')}</span>
+                  <span className="px-2 bg-card text-muted-foreground">{t('signUpPage.orSignUpWith')}</span>
                 </div>
               </div>
 
@@ -176,7 +175,7 @@ const SignUpPage: React.FC<SignUpPageProps> = ({ onNavigateToSignIn, onNavigateH
                     key={provider.id}
                     type="button"
                     onClick={() => handleOAuthSignUp(provider.id)}
-                    className={`w-full flex justify-center items-center py-2.5 px-4 border border-transparent rounded-lg shadow-sm text-sm font-medium ${provider.textColor} ${provider.bgColor} ${provider.hoverBgColor} focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-slate-800 focus:ring-indigo-500 transition-colors duration-200`}
+                    className={`w-full flex justify-center items-center py-2.5 px-4 border border-transparent rounded-lg shadow-sm text-sm font-medium ${provider.textColor} ${provider.bgColor} ${provider.hoverBgColor} focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-card ${provider.focusRingColor} transition-colors duration-200`}
                   >
                     {provider.id === 'google' && <svg className="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 24 24"><path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" /><path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" /><path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z" /><path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" /><path d="M1 1h22v22H1z" fill="none" /></svg>}
                     {provider.id === 'microsoft' && <svg className="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 24 24"><path d="M11.4 22.5H2.6V13.7h8.8v8.8zm0-9.9H2.6V3.8h8.8v8.8zm9.9 9.9H12.5V13.7h8.8v8.8zm0-9.9H12.5V3.8h8.8v8.8z" /></svg>}
@@ -187,12 +186,12 @@ const SignUpPage: React.FC<SignUpPageProps> = ({ onNavigateToSignIn, onNavigateH
                 ))}
               </div>
 
-              <p className="text-sm text-center text-slate-400">
+              <p className="text-sm text-center text-muted-foreground">
                   {t('signUpPage.alreadyHaveAccount')}{' '}
                   <button
                   type="button"
                   onClick={() => { console.log('[SignUpPage.tsx] Navigating to Sign In.'); onNavigateToSignIn();}}
-                  className="font-medium text-sky-400 hover:text-sky-300 hover:underline focus:outline-none"
+                  className="font-medium text-primary hover:text-primary/90 hover:underline focus:outline-none"
                   >
                   {t('signUpPage.buttons.signIn')}
                   </button>
@@ -203,9 +202,9 @@ const SignUpPage: React.FC<SignUpPageProps> = ({ onNavigateToSignIn, onNavigateH
         {currentStep === 'verify' && (
             <form
             onSubmit={handleVerificationSubmit}
-            className="bg-slate-800 p-8 rounded-xl shadow-2xl border border-slate-700 space-y-6"
+            className="bg-card p-8 rounded-xl shadow-2xl border border-border space-y-6"
             >
-            <p className="text-sm text-slate-300 text-center">
+            <p className="text-sm text-foreground text-center">
                 {t('signUpPage.messages.codeSentTo', { email: email })}
             </p>
             <TextInput
@@ -219,28 +218,28 @@ const SignUpPage: React.FC<SignUpPageProps> = ({ onNavigateToSignIn, onNavigateH
                 autoComplete="one-time-code"
             />
             
-            {error && <p className="text-sm text-red-400 bg-red-900/50 border border-red-700 p-3 rounded-md text-center">{error}</p>}
+            {error && <p className="text-sm text-destructive-foreground bg-destructive/50 border border-destructive p-3 rounded-md text-center">{error}</p>}
             {successMessage && <p className="text-sm text-green-400 bg-green-900/50 border border-green-700 p-3 rounded-md text-center">{successMessage}</p>}
 
 
             <button
                 type="submit"
                 disabled={isLoading}
-                className="w-full px-6 py-3 bg-gradient-to-r from-teal-500 to-cyan-500 hover:from-teal-600 hover:to-cyan-600 text-white font-semibold rounded-lg shadow-lg hover:shadow-cyan-500/30 focus:outline-none focus:ring-2 focus:ring-teal-400 focus:ring-offset-2 focus:ring-offset-slate-800 active:scale-[0.98] disabled:from-slate-600 disabled:to-slate-700 disabled:text-slate-400 disabled:cursor-not-allowed disabled:shadow-none disabled:opacity-70 transition-all duration-200 ease-in-out"
+                className="w-full px-6 py-3 bg-primary hover:bg-primary/90 text-primary-foreground font-semibold rounded-lg shadow-lg hover:shadow-primary/30 focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 focus:ring-offset-card active:scale-[0.98] disabled:bg-muted disabled:text-muted-foreground disabled:cursor-not-allowed disabled:shadow-none disabled:opacity-70 transition-all duration-200 ease-in-out"
             >
                 {isLoading ? <LoadingSpinner /> : t('signUpPage.buttons.verifyCode')}
             </button>
             <button
                 type="button"
                 onClick={() => {console.log('[SignUpPage.tsx] Navigating back to registration step.'); setCurrentStep('register'); setError(null); setSuccessMessage(null);}}
-                className="w-full text-sm text-slate-400 hover:text-sky-300 py-2 focus:outline-none"
+                className="w-full text-sm text-muted-foreground hover:text-primary py-2 focus:outline-none"
             >
                 {t('signUpPage.buttons.backToRegistration')}
             </button>
             </form>
         )}
       </div>
-       <footer className="text-center text-xs text-slate-500 py-10 mt-8">
+       <footer className="text-center text-xs text-muted-foreground py-10 mt-8">
           {t('footer.copyrightSimple', { year: new Date().getFullYear(), appTitle: t('appTitle') })}
         </footer>
     </div>

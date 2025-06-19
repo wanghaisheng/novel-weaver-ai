@@ -1,4 +1,5 @@
 
+
 import React, { useState } from 'react';
 
 interface FAQItem {
@@ -49,30 +50,30 @@ const FAQToolSection: React.FC = () => {
   };
 
   return (
-    <section className="py-12 md:py-16 bg-slate-800 rounded-xl shadow-xl border border-slate-700">
+    <section className="py-12 md:py-16 bg-card rounded-xl shadow-xl border border-border">
       <div className="px-4 md:px-6 max-w-4xl mx-auto">
-        <h2 className="text-3xl md:text-4xl font-bold text-sky-300 mb-8 text-center tracking-tight">
+        <h2 className="text-3xl md:text-4xl font-bold text-primary mb-8 text-center tracking-tight">
           Novel Weaver AI: Your Questions Answered
         </h2>
-        <p className="text-lg text-slate-300 mb-12 text-center leading-relaxed">
+        <p className="text-lg text-foreground mb-12 text-center leading-relaxed">
           Have questions about using the Novel Weaver AI editor? Find answers to common queries below.
         </p>
         <div className="space-y-4">
           {faqs.map((faq, index) => (
-            <div key={index} className="bg-slate-700 rounded-lg shadow-md border border-slate-600">
+            <div key={index} className="bg-secondary rounded-lg shadow-md border border-border">
               <button
                 onClick={() => toggleFAQ(index)}
-                className="flex justify-between items-center w-full p-5 text-left hover:bg-slate-600/50 rounded-t-lg transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-sky-500 focus:ring-offset-2 focus:ring-offset-slate-700"
+                className="flex justify-between items-center w-full p-5 text-left hover:bg-accent/70 rounded-t-lg transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 focus:ring-offset-secondary"
                 aria-expanded={openIndex === index}
               >
-                <span className="text-lg font-medium text-sky-300">{faq.question}</span>
-                <span className={`transform transition-transform duration-200 text-slate-400 ${openIndex === index ? 'rotate-180' : 'rotate-0'}`}>
+                <span className="text-lg font-medium text-primary">{faq.question}</span>
+                <span className={`transform transition-transform duration-200 text-muted-foreground ${openIndex === index ? 'rotate-180' : 'rotate-0'}`}>
                   <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 9l-7 7-7-7"></path></svg>
                 </span>
               </button>
               {openIndex === index && (
-                <div className="p-5 border-t border-slate-600">
-                  <p className="text-slate-300 leading-relaxed whitespace-pre-line">{faq.answer}</p>
+                <div className="p-5 border-t border-border">
+                  <p className="text-foreground leading-relaxed whitespace-pre-line">{faq.answer}</p>
                 </div>
               )}
             </div>

@@ -1,4 +1,5 @@
 
+
 import React, { useState } from 'react';
 import { NovelData, Stage3Data, Chapter } from '../types';
 import { TextInput } from './common/TextInput';
@@ -85,12 +86,12 @@ const Stage3Writing: React.FC<Stage3WritingProps> = ({
 
   return (
     <div className="space-y-8">
-      <div className="p-6 bg-slate-800 border border-slate-700 rounded-xl shadow-xl">
-        <p className="text-md text-slate-300 leading-relaxed">{sections.intro}</p>
+      <div className="p-6 bg-card border border-border rounded-xl shadow-xl">
+        <p className="text-md text-foreground leading-relaxed">{sections.intro}</p>
       </div>
       
-      <div className="p-6 bg-slate-800 rounded-xl shadow-xl border border-slate-700">
-        <h3 className="text-xl font-semibold text-sky-400 mb-4 tracking-tight">
+      <div className="p-6 bg-card rounded-xl shadow-xl border border-border">
+        <h3 className="text-xl font-semibold text-primary mb-4 tracking-tight">
           Draft New Chapter (Next: Chapter {stage3Data.chapters.length + 1})
         </h3>
         <TextInput label="POV Character" id="povCharacter" instruction={sections.pov} value={stage3Data.currentChapterPrompt.povCharacter} onChange={(e) => handlePromptChange('povCharacter', e.target.value)} />
@@ -104,7 +105,7 @@ const Stage3Writing: React.FC<Stage3WritingProps> = ({
         <button
           onClick={handleAddChapter}
           disabled={isLoading}
-          className="mt-4 px-5 py-2.5 bg-cyan-600 hover:bg-cyan-500 text-white font-semibold rounded-lg shadow-md focus:outline-none focus:ring-2 focus:ring-cyan-400 focus:ring-offset-2 focus:ring-offset-slate-800 active:scale-[0.98] disabled:bg-slate-600 disabled:text-slate-400 disabled:cursor-not-allowed disabled:shadow-none disabled:opacity-70 transition-all duration-200 ease-in-out"
+          className="mt-4 px-5 py-2.5 bg-primary hover:bg-primary/90 text-primary-foreground font-semibold rounded-lg shadow-md focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 focus:ring-offset-card active:scale-[0.98] disabled:bg-muted disabled:text-muted-foreground disabled:cursor-not-allowed disabled:shadow-none disabled:opacity-70 transition-all duration-200 ease-in-out"
         >
           {isLoading ? 'Generating...' : `Generate Chapter ${stage3Data.chapters.length + 1}`}
         </button>
@@ -112,10 +113,10 @@ const Stage3Writing: React.FC<Stage3WritingProps> = ({
       </div>
 
       <div>
-        <h3 className="text-2xl font-semibold text-sky-400 my-6 tracking-tight">Written Chapters</h3>
-        {stage3Data.chapters.length === 0 && <p className="text-slate-400">No chapters written yet.</p>}
+        <h3 className="text-2xl font-semibold text-primary my-6 tracking-tight">Written Chapters</h3>
+        {stage3Data.chapters.length === 0 && <p className="text-muted-foreground">No chapters written yet.</p>}
         {stage3Data.chapters.sort((a,b) => a.number - b.number).map((chapter) => (
-          <div key={chapter.id} className="mb-8 p-6 bg-slate-800 rounded-xl shadow-xl border border-slate-700">
+          <div key={chapter.id} className="mb-8 p-6 bg-card rounded-xl shadow-xl border border-border">
             <TextInput 
               label={`Chapter ${chapter.number} Title`} 
               id={`chapter_title_${chapter.id}`} 
@@ -136,7 +137,7 @@ const Stage3Writing: React.FC<Stage3WritingProps> = ({
                     value={chapter.content}
                     onChange={(e) => handleChapterContentChange(chapter.id, e.target.value)}
                     rows={15}
-                    className="text-sm leading-relaxed text-slate-200"
+                    className="text-sm leading-relaxed text-foreground" /* Assuming text-foreground for readability */
                 />
             )}
           </div>

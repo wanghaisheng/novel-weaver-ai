@@ -1,4 +1,5 @@
 
+
 import React from 'react';
 
 const features = [
@@ -42,21 +43,21 @@ const features = [
 
 const FeaturesSection: React.FC = () => {
   return (
-    <section className="py-12 md:py-16 bg-slate-800 rounded-xl shadow-xl border border-slate-700">
+    <section className="py-12 md:py-16 bg-card rounded-xl shadow-xl border border-border">
       <div className="px-4 md:px-6">
-        <h2 className="text-3xl md:text-4xl font-bold text-sky-300 mb-8 text-center tracking-tight">
+        <h2 className="text-3xl md:text-4xl font-bold text-primary mb-8 text-center tracking-tight">
           Unlock Your Storytelling Superpowers
         </h2>
-        <p className="text-lg text-slate-300 mb-12 text-center max-w-3xl mx-auto leading-relaxed">
+        <p className="text-lg text-foreground mb-12 text-center max-w-3xl mx-auto leading-relaxed">
           Novel Weaver AI is packed with features designed to assist you at every stage of the novel writing process. Discover how our intelligent tools can transform your creative workflow.
         </p>
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           {features.map((feature, index) => (
-            <div key={index} className="bg-slate-700 p-6 rounded-xl shadow-lg border border-slate-600 hover:shadow-sky-500/10 hover:border-slate-500 transform hover:-translate-y-1 transition-all duration-300 flex flex-col">
-              <div className="text-4xl mb-4 text-center text-sky-400">{feature.icon}</div>
-              <h3 className="text-xl font-semibold text-slate-100 mb-2 text-center">{feature.title}</h3>
-              <p className="text-slate-400 text-sm mb-3 flex-grow leading-relaxed">{feature.description}</p>
-              <p className="text-sky-400 text-sm font-medium italic mt-auto pt-3 border-t border-slate-600">Benefit: {feature.benefit}</p>
+            <div key={index} className="bg-secondary p-6 rounded-xl shadow-lg border border-border hover:shadow-primary/10 hover:border-accent transform hover:-translate-y-1 transition-all duration-300 flex flex-col">
+              <div className="text-4xl mb-4 text-center text-primary">{feature.icon}</div>
+              <h3 className="text-xl font-semibold text-foreground mb-2 text-center">{feature.title}</h3>
+              <p className="text-muted-foreground text-sm mb-3 flex-grow leading-relaxed">{feature.description}</p>
+              <p className="text-primary text-sm font-medium italic mt-auto pt-3 border-t border-border">Benefit: {feature.benefit}</p>
             </div>
           ))}
         </div>

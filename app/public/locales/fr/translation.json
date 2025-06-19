@@ -234,9 +234,7 @@
   "toolPage": {
     "sections": {
       "novelEditor": { "title": "Éditeur de Roman" },
-      "trendSpark": { "title": "Étincelle de Tendance ✨" },
-      "poemGenerator": { "title": "Générateur de Poèmes (Bientôt)" },
-      "scriptWriter": { "title": "Scénariste (Bientôt)" }
+      "trendSpark": { "title": "Étincelle de Tendance ✨" }
     },
     "subSections": {
         "novelWorkflowEditor": { "title": "Éditeur de Flux de Travail de Roman" },
@@ -496,8 +494,7 @@
   },
   "contactPage": {
     "title": "Contactez-Nous",
-    "loveToHear": "Nous serions ravis d'avoir de vos nouvelles ! Que vous
-ayez une question, des commentaires ou une demande de partenariat, n'hésitez pas à nous contacter.",
+    "loveToHear": "Nous serions ravis d'avoir de vos nouvelles ! Que vous ayez une question, des commentaires ou une demande de partenariat, n'hésitez pas à nous contacter.",
     "contactInfoComingSoon": "Coordonnées et Formulaire - Bientôt Disponible !",
     "pageWillFeature": "Cette page présentera bientôt :",
     "emailAddress": "Une adresse e-mail dédiée pour le support et les demandes de renseignements.",

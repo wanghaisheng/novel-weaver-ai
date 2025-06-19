@@ -8,6 +8,8 @@ export const supportedLngs = {
   ko: '한국어', // Korean
   es: 'Español', // Spanish
   fr: 'Français', // French
+  'zh-CN': '简体中文', // Simplified Chinese
+  ja: '日本語', // Japanese
 };
 
 i18next

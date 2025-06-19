@@ -288,9 +288,7 @@
   "toolPage": {
     "sections": {
       "novelEditor": { "title": "Editor de Novelas" },
-      "trendSpark": { "title": "Chispa de Tendencia ✨" },
-      "poemGenerator": { "title": "Generador de Poemas (Pronto)" },
-      "scriptWriter": { "title": "Escritor de Guiones (Pronto)" }
+      "trendSpark": { "title": "Chispa de Tendencia ✨" }
     },
     "subSections": {
         "novelWorkflowEditor": { "title": "Editor de Flujo de Trabajo de Novela" },

@@ -12,8 +12,8 @@ export const StageNavigator: React.FC<StageNavigatorProps> = ({ currentStage, on
   const { t } = useTranslation();
 
   return (
-    <nav className="w-64 bg-slate-800 p-4 space-y-2 flex-shrink-0 h-full overflow-y-auto border-r border-slate-700">
-      <h2 className="text-xl font-bold text-sky-400 mb-6 px-2 tracking-tight">{t('stageNavigator.title')}</h2>
+    <nav className="w-64 bg-secondary p-4 space-y-2 flex-shrink-0 h-full overflow-y-auto border-r border-border">
+      <h2 className="text-xl font-bold text-primary mb-6 px-2 tracking-tight">{t('stageNavigator.title')}</h2>
       {STAGES_ORDER.map((stageId) => {
         const stageInfo = STAGE_INSTRUCTIONS[stageId];
         const isActive = currentStage === stageId;
@@ -27,10 +27,10 @@ export const StageNavigator: React.FC<StageNavigatorProps> = ({ currentStage, on
           <button
             key={stageId}
             onClick={() => onStageSelect(stageId)}
-            className={`w-full text-left px-3 py-3 rounded-md transition-all duration-200 ease-in-out transform hover:scale-[1.02] focus:outline-none focus:ring-2 focus:ring-sky-500 focus:ring-offset-2 focus:ring-offset-slate-800 ${
+            className={`w-full text-left px-3 py-3 rounded-md transition-all duration-200 ease-in-out transform hover:scale-[1.02] focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 focus:ring-offset-secondary ${
               isActive
-                ? 'bg-sky-600 text-white shadow-md border-l-4 border-sky-400'
-                : 'bg-slate-700 hover:bg-slate-600 text-slate-300 hover:text-white'
+                ? 'bg-primary text-primary-foreground shadow-md border-l-4 border-primary' // primary is gold, text-primary-foreground is dark
+                : 'bg-muted hover:bg-accent text-muted-foreground hover:text-accent-foreground'
             }`}
             title={t(stageInfo.descriptionKey)}
           >

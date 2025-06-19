@@ -1,4 +1,5 @@
 
+
 import React from 'react';
 import { CharacterProfile } from '../types';
 import { TextInput } from './common/TextInput';
@@ -19,15 +20,15 @@ const CharacterInput: React.FC<CharacterInputProps> = ({ character, onChange, on
   const charFields = META_PROMPT_SECTIONS.stage1.characterFields;
 
   return (
-    <div className="p-6 bg-slate-800 border border-slate-700 rounded-xl shadow-xl mb-6">
+    <div className="p-6 bg-card border border-border rounded-xl shadow-xl mb-6">
       <div className="flex justify-between items-center mb-4">
-        <h4 className="text-lg font-semibold text-sky-400">
+        <h4 className="text-lg font-semibold text-primary">
           Character {index + 1}: {character.name || 'New Character'}
           {character.role && ` (${character.role})`}
         </h4>
         <button
           onClick={onRemove}
-          className="px-5 py-2.5 bg-red-600 hover:bg-red-700 text-white text-xs font-semibold rounded-lg shadow-md focus:outline-none focus:ring-2 focus:ring-red-400 focus:ring-offset-2 focus:ring-offset-slate-800 active:scale-[0.98] transition-all duration-200 ease-in-out"
+          className="px-5 py-2.5 bg-destructive hover:bg-destructive/90 text-destructive-foreground text-xs font-semibold rounded-lg shadow-md focus:outline-none focus:ring-2 focus:ring-destructive focus:ring-offset-2 focus:ring-offset-card active:scale-[0.98] transition-all duration-200 ease-in-out"
         >
           Remove
         </button>
@@ -36,7 +37,7 @@ const CharacterInput: React.FC<CharacterInputProps> = ({ character, onChange, on
       <select
         value={character.role}
         onChange={(e) => handleChange('role', e.target.value)}
-        className="w-full p-3 mb-4 border border-slate-600 rounded-lg bg-slate-700 text-slate-100 placeholder-slate-500 focus:outline-none focus:ring-2 focus:ring-sky-500 focus:border-sky-500 transition-colors duration-200 shadow-sm"
+        className="w-full p-3 mb-4 border border-input rounded-lg bg-input text-foreground placeholder-muted-foreground focus:outline-none focus:ring-2 focus:ring-ring focus:border-ring transition-colors duration-200 shadow-sm"
       >
         <option value="">Select Role</option>
         <option value="protagonist">Protagonist</option>

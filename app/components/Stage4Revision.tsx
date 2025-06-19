@@ -18,7 +18,7 @@ const Stage4Revision: React.FC<Stage4RevisionProps> = ({ novelData }) => {
     outputText: '',
     isLoading: false,
   });
-  const sections = META_PROMPT_SECTIONS.stage4; // These are instruction templates, not directly translated UI text.
+  const sections = META_PROMPT_SECTIONS.stage4; 
 
   const handleInputChange = (field: keyof RevisionState, value: string | RevisionTaskType) => {
     setRevisionState(prev => ({ ...prev, [field]: value, outputText: field === 'taskType' || field === 'inputText' ? '' : prev.outputText }));
@@ -42,9 +42,6 @@ const Stage4Revision: React.FC<Stage4RevisionProps> = ({ novelData }) => {
 
   const getTaskInstruction = () => {
     if (!revisionState.taskType) return "";
-    // META_PROMPT_SECTIONS contains detailed English instructions for the AI, not for UI display.
-    // The UI label for the task type itself is handled by REVISION_TASK_OPTIONS and `t()`.
-    // The instruction displayed is part of the AI's meta prompt.
     switch (revisionState.taskType) {
         case RevisionTaskType.CONSISTENCY: return sections.taskConsistency;
         case RevisionTaskType.DESCRIPTION: return sections.taskDescription;
@@ -56,20 +53,19 @@ const Stage4Revision: React.FC<Stage4RevisionProps> = ({ novelData }) => {
 
   return (
     <div className="space-y-8">
-      <div className="p-6 bg-slate-800 border border-slate-700 rounded-xl shadow-xl">
-        {/* sections.intro is an English instruction for the AI. If UI text is needed, use t() */}
-        <p className="text-md text-slate-300 leading-relaxed">{t('stage4revision.introUIText', {defaultValue: sections.intro})}</p>
+      <div className="p-6 bg-card border border-border rounded-xl shadow-xl">
+        <p className="text-md text-foreground leading-relaxed">{t('stage4revision.introUIText', {defaultValue: sections.intro})}</p>
       </div>
       
-      <div className="p-6 bg-slate-800 rounded-xl shadow-xl border border-slate-700">
-        <label htmlFor="revisionTaskType" className="block text-sm font-medium text-slate-300 mb-1.5">
+      <div className="p-6 bg-card rounded-xl shadow-xl border border-border">
+        <label htmlFor="revisionTaskType" className="block text-sm font-medium text-foreground mb-1.5">
           {t('stage4revision.labels.selectTask', {defaultValue: sections.selectTask})}
         </label>
         <select
           id="revisionTaskType"
           value={revisionState.taskType}
           onChange={(e) => handleInputChange('taskType', e.target.value as RevisionTaskType)}
-          className="w-full p-3 mb-4 border border-slate-600 rounded-lg bg-slate-700 text-slate-100 placeholder-slate-500 focus:outline-none focus:ring-2 focus:ring-sky-500 focus:border-sky-500 transition-colors duration-200 shadow-sm"
+          className="w-full p-3 mb-4 border border-input rounded-lg bg-input text-foreground placeholder-muted-foreground focus:outline-none focus:ring-2 focus:ring-ring focus:border-ring transition-colors duration-200 shadow-sm"
         >
           <option value="">{t('stage4revision.placeholders.selectTask')}</option>
           {REVISION_TASK_OPTIONS.map(opt => (
@@ -78,8 +74,7 @@ const Stage4Revision: React.FC<Stage4RevisionProps> = ({ novelData }) => {
         </select>
 
         {revisionState.taskType && (
-            <p className="text-xs text-slate-400 mb-4 italic p-3 bg-slate-700 rounded-md border border-slate-600">
-                {/* getTaskInstruction() returns the AI meta prompt instruction. If you need a UI description, use t() */}
+            <p className="text-xs text-muted-foreground mb-4 italic p-3 bg-muted rounded-md border border-border">
                 {t(`stage4revision.taskDescriptions.${revisionState.taskType}`, {defaultValue: getTaskInstruction().split('[Paste')[0]})}
             </p>
         )}
@@ -96,7 +91,7 @@ const Stage4Revision: React.FC<Stage4RevisionProps> = ({ novelData }) => {
         <button
           onClick={handleSubmitRevision}
           disabled={revisionState.isLoading || !revisionState.taskType || !revisionState.inputText}
-          className="mt-4 px-6 py-3 bg-gradient-to-r from-sky-500 to-cyan-400 hover:from-sky-600 hover:to-cyan-500 text-white font-semibold rounded-lg shadow-lg hover:shadow-cyan-500/30 focus:outline-none focus:ring-2 focus:ring-sky-400 focus:ring-offset-2 focus:ring-offset-slate-800 active:scale-[0.98] disabled:from-slate-600 disabled:to-slate-700 disabled:text-slate-400 disabled:cursor-not-allowed disabled:shadow-none disabled:opacity-70 transition-all duration-200 ease-in-out"
+          className="mt-4 px-6 py-3 bg-primary hover:bg-primary/90 text-primary-foreground font-semibold rounded-lg shadow-lg focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 focus:ring-offset-card active:scale-[0.98] disabled:bg-muted disabled:text-muted-foreground disabled:cursor-not-allowed disabled:shadow-none disabled:opacity-70 transition-all duration-200 ease-in-out"
         >
           {revisionState.isLoading ? t('stage4revision.buttons.processing') : t('stage4revision.buttons.getSuggestions', {defaultValue: sections.getSuggestions})}
         </button>
@@ -104,14 +99,14 @@ const Stage4Revision: React.FC<Stage4RevisionProps> = ({ novelData }) => {
       </div>
 
       {revisionState.outputText && (
-        <div className="mt-8 p-6 bg-slate-800 rounded-xl shadow-xl border border-slate-700">
-          <h3 className="text-xl font-semibold text-cyan-400 mb-3 tracking-tight">{t('stage4revision.titles.aiSuggestions')}:</h3>
-          <div className="prose prose-sm max-w-none p-4 bg-slate-700 rounded-md whitespace-pre-wrap text-slate-200 border border-slate-600">
+        <div className="mt-8 p-6 bg-card rounded-xl shadow-xl border border-border">
+          <h3 className="text-xl font-semibold text-primary mb-3 tracking-tight">{t('stage4revision.titles.aiSuggestions')}:</h3>
+          <div className="prose prose-sm max-w-none p-4 bg-muted rounded-md whitespace-pre-wrap text-foreground border border-border">
             {revisionState.outputText}
           </div>
            <button
             onClick={() => navigator.clipboard.writeText(revisionState.outputText)}
-            className="mt-4 px-5 py-2.5 bg-teal-600 hover:bg-teal-500 text-white text-xs font-semibold rounded-lg shadow-md focus:outline-none focus:ring-2 focus:ring-teal-400 focus:ring-offset-2 focus:ring-offset-slate-800 active:scale-[0.98] transition-all duration-200 ease-in-out"
+            className="mt-4 px-5 py-2.5 bg-accent hover:bg-accent/90 text-accent-foreground text-xs font-semibold rounded-lg shadow-md focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 focus:ring-offset-card active:scale-[0.98] transition-all duration-200 ease-in-out"
           >
             {t('stage4revision.buttons.copyToClipboard')}
           </button>

@@ -1,4 +1,5 @@
 
+
 import React from 'react';
 import { useTranslation } from 'react-i18next';
 import { NovelData, NovelStage, Stage1Data, Stage2Data, Stage3Data, STAGES_ORDER } from '../../types';
@@ -67,15 +68,15 @@ const NovelWorkflowEditor: React.FC<NovelWorkflowEditorProps> = ({
           />
         );
       default:
-        return <p className="text-slate-400">Select a stage to begin.</p>;
+        return <p className="text-muted-foreground">Select a stage to begin.</p>;
     }
   };
 
   const currentStageInfo = STAGE_INSTRUCTIONS[currentStage];
   
   return (
-    <div className="bg-slate-900 rounded-xl shadow-2xl border border-slate-700 mb-16">
-      <div className="bg-slate-800 p-3 sticky top-0 z-10 rounded-t-xl border-b border-slate-700">
+    <div className="bg-card rounded-xl shadow-2xl border border-border mb-16">
+      <div className="bg-secondary p-3 sticky top-0 z-10 rounded-t-xl border-b border-border">
         <div className="hidden md:block">
           <StageTabs
             currentStage={currentStage}
@@ -88,7 +89,7 @@ const NovelWorkflowEditor: React.FC<NovelWorkflowEditorProps> = ({
             id="stage-select-mobile"
             value={currentStage}
             onChange={(e) => onSetCurrentStage(e.target.value as NovelStage)}
-            className="w-full p-3 border border-slate-600 rounded-lg bg-slate-700 text-slate-100 placeholder-slate-500 focus:outline-none focus:ring-2 focus:ring-sky-500 focus:border-sky-500 transition-colors duration-200 shadow-sm"
+            className="w-full p-3 border border-input rounded-lg bg-input text-foreground placeholder-muted-foreground focus:outline-none focus:ring-2 focus:ring-ring focus:border-ring transition-colors duration-200 shadow-sm"
             aria-label="Select novel writing stage"
           >
             {STAGES_ORDER.map((stageId) => {
@@ -103,10 +104,10 @@ const NovelWorkflowEditor: React.FC<NovelWorkflowEditorProps> = ({
         </div>
       </div>
       
-      <div className="px-4 sm:px-6 md:px-8 py-6 md:py-8 bg-slate-900 rounded-b-xl">
-        <div className="mb-8 p-6 bg-slate-800 rounded-xl shadow-lg border border-slate-700">
-          <h2 className="text-2xl md:text-3xl font-bold text-sky-300 mb-2 tracking-tight">{t(currentStageInfo.titleKey)}</h2>
-          <p className="text-slate-300 text-sm md:text-base leading-relaxed">{t(currentStageInfo.descriptionKey)}</p>
+      <div className="px-4 sm:px-6 md:px-8 py-6 md:py-8 bg-card rounded-b-xl"> {/* Changed from bg-slate-900 to bg-card */}
+        <div className="mb-8 p-6 bg-secondary rounded-xl shadow-lg border border-border"> {/* Changed from bg-slate-800 to bg-secondary */}
+          <h2 className="text-2xl md:text-3xl font-bold text-primary mb-2 tracking-tight">{t(currentStageInfo.titleKey)}</h2>
+          <p className="text-foreground text-sm md:text-base leading-relaxed">{t(currentStageInfo.descriptionKey)}</p>
         </div>
         {renderStageContent()}
       </div>

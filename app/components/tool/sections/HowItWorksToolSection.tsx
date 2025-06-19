@@ -1,4 +1,5 @@
 
+
 import React from 'react';
 
 const steps = [
@@ -36,25 +37,25 @@ const steps = [
 
 const HowItWorksToolSection: React.FC = () => {
   return (
-    <section className="py-12 md:py-16 bg-slate-800 rounded-xl shadow-xl border border-slate-700">
+    <section className="py-12 md:py-16 bg-card rounded-xl shadow-xl border border-border">
       <div className="px-4 md:px-6">
-        <h2 className="text-3xl md:text-4xl font-bold text-sky-300 mb-8 text-center tracking-tight">
+        <h2 className="text-3xl md:text-4xl font-bold text-primary mb-8 text-center tracking-tight">
           Your Novel-Writing Journey: From Spark to Story
         </h2>
-        <p className="text-lg text-slate-300 mb-12 text-center max-w-3xl mx-auto leading-relaxed">
+        <p className="text-lg text-foreground mb-12 text-center max-w-3xl mx-auto leading-relaxed">
           Novel Weaver AI offers a structured yet flexible process to guide you from the initial flicker of an idea to a completed manuscript. Here’s how you can leverage the tool:
         </p>
         <div className="space-y-10">
           {steps.map((step) => (
-            <div key={step.id} className="flex flex-col md:flex-row items-start md:items-center bg-slate-700 p-6 rounded-xl shadow-lg border border-slate-600 hover:shadow-sky-500/10 transition-shadow duration-300">
+            <div key={step.id} className="flex flex-col md:flex-row items-start md:items-center bg-secondary p-6 rounded-xl shadow-lg border border-border hover:shadow-primary/10 transition-shadow duration-300">
               <div className="flex-shrink-0 mb-4 md:mb-0 md:mr-6">
-                <span className="text-5xl text-sky-400">{step.icon}</span>
+                <span className="text-5xl text-primary">{step.icon}</span>
               </div>
               <div>
-                <h3 className="text-2xl font-semibold text-slate-100 mb-2">
+                <h3 className="text-2xl font-semibold text-foreground mb-2">
                   Step {step.id}: {step.title}
                 </h3>
-                <p className="text-slate-300 leading-relaxed">{step.description}</p>
+                <p className="text-muted-foreground leading-relaxed">{step.description}</p>
               </div>
             </div>
           ))}

@@ -54,7 +54,7 @@ const NovelToolLandingPage: React.FC<NovelToolLandingPageProps> = ({
   const { t } = useTranslation();
 
   return (
-    <div className="p-4 sm:p-6 md:p-8 space-y-12 md:space-y-16">
+    <div className="p-4 sm:p-6 md:p-8 space-y-12 md:space-y-16 bg-background text-foreground">
       <div id={NOVEL_EDITOR_SUB_SECTIONS.find(s => s.titleKey === 'toolPage.subSections.novelWorkflowEditor.title')?.id || 'novel-workflow-editor-section'} className="scroll-mt-4">
         <NovelWorkflowEditor
           novelData={novelData}
@@ -87,16 +87,16 @@ const NovelToolLandingPage: React.FC<NovelToolLandingPageProps> = ({
         <FAQToolSection />
       </div>
 
-      <footer className="w-full text-center py-10 mt-12 border-t border-slate-700 bg-slate-900 -mx-4 sm:-mx-6 md:-mx-8 px-4 sm:px-6 md:px-8 rounded-b-xl">
-        <p className="text-sm text-slate-500">{t('footer.copyrightToolPage', { year: new Date().getFullYear(), appTitle: t('appTitle') })}</p>
+      <footer className="w-full text-center py-10 mt-12 border-t border-border bg-background -mx-4 sm:-mx-6 md:-mx-8 px-4 sm:px-6 md:px-8 rounded-b-xl">
+        <p className="text-sm text-muted-foreground">{t('footer.copyrightToolPage', { year: new Date().getFullYear(), appTitle: t('appTitle') })}</p>
         
-        <div className="mt-4 mb-3 border-t border-slate-700/50 pt-3">
-          <span className="text-xs text-slate-500 mr-2">{t('footer.toolNavigation')}:</span>
+        <div className="mt-4 mb-3 border-t border-border/50 pt-3">
+          <span className="text-xs text-muted-foreground mr-2">{t('footer.toolNavigation')}:</span>
           {TOOL_PAGE_SECTIONS.map(tool => (
             <button
               key={tool.id}
               onClick={() => onSelectNavigation(tool.id, tool.id)}
-              className="text-xs text-sky-400 hover:text-sky-300 hover:underline transition-colors duration-200 ease-in-out px-2 py-1 focus:outline-none focus:ring-1 focus:ring-sky-500 rounded"
+              className="text-xs text-primary hover:text-primary/80 hover:underline transition-colors duration-200 ease-in-out px-2 py-1 focus:outline-none focus:ring-1 focus:ring-ring rounded"
               aria-label={t(tool.titleKey)}
             >
               {t(tool.titleKey)}
@@ -105,10 +105,10 @@ const NovelToolLandingPage: React.FC<NovelToolLandingPageProps> = ({
         </div>
 
         <div className="mt-4 flex flex-wrap justify-center items-center gap-x-6 gap-y-3">
-            <button onClick={onNavigateToPrivacy} className="text-xs text-slate-400 hover:text-sky-300 hover:underline transition-colors duration-200 ease-in-out">{t('footer.privacyPolicy')}</button>
-            <button onClick={onNavigateToTerms} className="text-xs text-slate-400 hover:text-sky-300 hover:underline transition-colors duration-200 ease-in-out">{t('footer.termsOfService')}</button>
-            <button onClick={onNavigateToAbout} className="text-xs text-slate-400 hover:text-sky-300 hover:underline transition-colors duration-200 ease-in-out">{t('footer.aboutUs')}</button>
-            <button onClick={onNavigateToContact} className="text-xs text-slate-400 hover:text-sky-300 hover:underline transition-colors duration-200 ease-in-out">{t('footer.contactUs')}</button>
+            <button onClick={onNavigateToPrivacy} className="text-xs text-muted-foreground hover:text-primary hover:underline transition-colors duration-200 ease-in-out">{t('footer.privacyPolicy')}</button>
+            <button onClick={onNavigateToTerms} className="text-xs text-muted-foreground hover:text-primary hover:underline transition-colors duration-200 ease-in-out">{t('footer.termsOfService')}</button>
+            <button onClick={onNavigateToAbout} className="text-xs text-muted-foreground hover:text-primary hover:underline transition-colors duration-200 ease-in-out">{t('footer.aboutUs')}</button>
+            <button onClick={onNavigateToContact} className="text-xs text-muted-foreground hover:text-primary hover:underline transition-colors duration-200 ease-in-out">{t('footer.contactUs')}</button>
             <div className="w-full sm:w-auto mt-2 sm:mt-0">
                  <LanguagePicker />
             </div>

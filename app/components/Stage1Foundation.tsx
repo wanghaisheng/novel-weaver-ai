@@ -1,4 +1,5 @@
 
+
 import React, { useState }from 'react';
 import { Stage1Data, CharacterProfile } from '../types';
 import { TextInput } from './common/TextInput';
@@ -107,8 +108,8 @@ const Stage1Foundation: React.FC<Stage1FoundationProps> = ({ data, onChange }) =
   return (
     <div className="space-y-8">
       {/* Auto-fill section */}
-      <div className="p-6 bg-slate-800 border border-slate-700 rounded-xl shadow-xl">
-        <h3 className="text-xl font-semibold text-cyan-400 mb-3 tracking-tight">Quick Start with AI</h3>
+      <div className="p-6 bg-card border border-border rounded-xl shadow-xl">
+        <h3 className="text-xl font-semibold text-primary mb-3 tracking-tight">Quick Start with AI</h3>
         <TextAreaInput
           label="Describe your novel's core concept, a character, or a scene snippet here. AI will attempt to fill in the fields below based on your input."
           id="autoFillStage1Input"
@@ -120,21 +121,21 @@ const Stage1Foundation: React.FC<Stage1FoundationProps> = ({ data, onChange }) =
         <button
           onClick={handleAutoFill}
           disabled={isAutoFilling || !autoFillInput.trim()}
-          className="mt-3 px-6 py-3 bg-gradient-to-r from-sky-500 to-cyan-400 hover:from-sky-600 hover:to-cyan-500 text-white font-semibold rounded-lg shadow-lg hover:shadow-cyan-500/30 focus:outline-none focus:ring-2 focus:ring-sky-400 focus:ring-offset-2 focus:ring-offset-slate-800 active:scale-[0.98] disabled:from-slate-600 disabled:to-slate-700 disabled:text-slate-400 disabled:cursor-not-allowed disabled:shadow-none disabled:opacity-70 transition-all duration-200 ease-in-out"
+          className="mt-3 px-6 py-3 bg-primary hover:bg-primary/90 text-primary-foreground font-semibold rounded-lg shadow-lg focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 focus:ring-offset-card active:scale-[0.98] disabled:bg-muted disabled:text-muted-foreground disabled:cursor-not-allowed disabled:shadow-none disabled:opacity-70 transition-all duration-200 ease-in-out"
         >
           {isAutoFilling ? 'AI is Generating...' : 'Auto-fill Fields with AI'}
         </button>
         {isAutoFilling && <LoadingSpinner />}
-        {autoFillError && <p className="mt-3 text-sm text-red-300 bg-red-900/50 border border-red-700 p-3 rounded-md">{autoFillError}</p>}
+        {autoFillError && <p className="mt-3 text-sm text-destructive-foreground bg-destructive/50 border border-destructive p-3 rounded-md">{autoFillError}</p>}
       </div>
 
 
-      <div className="p-6 bg-slate-800 border border-slate-700 rounded-xl shadow-xl">
-        <h3 className="text-xl font-semibold text-sky-400 mb-1 tracking-tight">Core Idea & Settings</h3>
-        <p className="text-sm text-slate-400 mb-4">{sections.coreIdea.split(':')[0]}</p>
+      <div className="p-6 bg-card border border-border rounded-xl shadow-xl">
+        <h3 className="text-xl font-semibold text-primary mb-1 tracking-tight">Core Idea & Settings</h3>
+        <p className="text-sm text-muted-foreground mb-4">{sections.coreIdea.split(':')[0]}</p>
         <TextAreaInput label="Core Idea" id="coreIdea" value={data.coreIdea} instruction={sections.coreIdea} onChange={(e) => handleChange('coreIdea', e.target.value)} rows={2} />
         
-        <p className="text-sm text-slate-400 mt-6 mb-2">{sections.coreSettings}</p>
+        <p className="text-sm text-muted-foreground mt-6 mb-2">{sections.coreSettings}</p>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-x-6">
             <TextInput label="Genre" id="genre" value={data.genre} instruction={sections.genre} onChange={(e) => handleChange('genre', e.target.value)} />
             <TextInput label="Tone" id="tone" value={data.tone} instruction={sections.tone} onChange={(e) => handleChange('tone', e.target.value)} />
@@ -144,9 +145,9 @@ const Stage1Foundation: React.FC<Stage1FoundationProps> = ({ data, onChange }) =
         <TextAreaInput label="Logline" id="logline" value={data.logline} instruction={sections.logline} onChange={(e) => handleChange('logline', e.target.value)} rows={3}/>
       </div>
 
-      <div className="p-6 bg-slate-800 border border-slate-700 rounded-xl shadow-xl">
-        <h3 className="text-xl font-semibold text-sky-400 mb-1 tracking-tight">Character Profiles</h3>
-        <p className="text-sm text-slate-400 mb-4">{sections.characterProfiles}</p>
+      <div className="p-6 bg-card border border-border rounded-xl shadow-xl">
+        <h3 className="text-xl font-semibold text-primary mb-1 tracking-tight">Character Profiles</h3>
+        <p className="text-sm text-muted-foreground mb-4">{sections.characterProfiles}</p>
         {data.characters.map((char, index) => (
           <CharacterInput
             key={char.id}
@@ -158,15 +159,15 @@ const Stage1Foundation: React.FC<Stage1FoundationProps> = ({ data, onChange }) =
         ))}
         <button
           onClick={addCharacter}
-          className="mt-2 px-5 py-2.5 bg-cyan-600 hover:bg-cyan-500 text-white font-semibold rounded-lg shadow-md focus:outline-none focus:ring-2 focus:ring-cyan-400 focus:ring-offset-2 focus:ring-offset-slate-800 active:scale-[0.98] transition-all duration-200 ease-in-out"
+          className="mt-2 px-5 py-2.5 bg-accent hover:bg-accent/90 text-accent-foreground font-semibold rounded-lg shadow-md focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 focus:ring-offset-card active:scale-[0.98] transition-all duration-200 ease-in-out"
         >
           Add Character
         </button>
       </div>
 
-      <div className="p-6 bg-slate-800 border border-slate-700 rounded-xl shadow-xl">
-        <h3 className="text-xl font-semibold text-sky-400 mb-1 tracking-tight">World-Building</h3>
-        <p className="text-sm text-slate-400 mb-4">{sections.worldBuilding}</p>
+      <div className="p-6 bg-card border border-border rounded-xl shadow-xl">
+        <h3 className="text-xl font-semibold text-primary mb-1 tracking-tight">World-Building</h3>
+        <p className="text-sm text-muted-foreground mb-4">{sections.worldBuilding}</p>
         <TextInput label="Era & Location" id="timeAndPlace" value={data.worldBuilding.timeAndPlace} instruction={sections.timeAndPlace} onChange={(e) => handleWorldBuildingChange('timeAndPlace', e.target.value)} />
         <TextAreaInput label="Core Rules/Laws" id="coreRules" value={data.worldBuilding.coreRules} instruction={sections.coreRules} onChange={(e) => handleWorldBuildingChange('coreRules', e.target.value)} />
         <TextAreaInput label="Social Structure & Culture" id="socialStructure" value={data.worldBuilding.socialStructure} instruction={sections.socialStructure} onChange={(e) => handleWorldBuildingChange('socialStructure', e.target.value)} />

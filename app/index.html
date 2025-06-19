@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#0F172A" /> <!-- Slate-950, matches spec -->
+    <meta name="theme-color" content="#0F172A" /> <!-- Fallback theme color -->
     <meta
       id="meta-description"
       name="description"
@@ -16,32 +16,132 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
     <style>
-      body {
-        font-family: 'Inter', sans-serif;
-        background-color: #0F172A; /* Tailwind slate-950 */
-        color: #CBD5E1; /* Tailwind slate-300 for base body text */
+      :root {
+        --background: 222.2 84% 4.9%;
+        --foreground: 210 40% 98%;
+
+        --card: 222.2 84% 4.9%;
+        --card-foreground: 210 40% 98%;
+
+        --popover: 222.2 84% 4.9%;
+        --popover-foreground: 210 40% 98%;
+
+        --primary: 45 93% 47%; /* Gold/Yellow */
+        --primary-foreground: 222.2 47.4% 11.2%; /* Darker for text on primary */
+
+        --secondary: 217.2 32.6% 17.5%; /* Dark grayish blue */
+        --secondary-foreground: 210 40% 98%;
+
+        --muted: 217.2 32.6% 17.5%;
+        --muted-foreground: 215 20.2% 65.1%; /* Lighter gray for muted text */
+
+        --accent: 217.2 32.6% 17.5%;
+        --accent-foreground: 210 40% 98%;
+
+        --destructive: 0 62.8% 30.6%; /* Reddish */
+        --destructive-foreground: 210 40% 98%;
+
+        --border: 217.2 32.6% 17.5%;
+        --input: 217.2 32.6% 17.5%;
+        --ring: 45 93% 47%; /* Gold/Yellow for rings */
+
+        --radius: 0.75rem;
+
+        --sidebar-background: 240 5.9% 10%;
+        --sidebar-foreground: 240 4.8% 95.9%;
+        --sidebar-primary: 224.3 76.3% 48%; /* Blue */
+        --sidebar-primary-foreground: 0 0% 100%;
+        --sidebar-accent: 240 3.7% 15.9%;
+        --sidebar-accent-foreground: 240 4.8% 95.9%;
+        --sidebar-border: 240 3.7% 15.9%;
+        --sidebar-ring: 217.2 91.2% 59.8%; /* Blue for sidebar rings */
       }
-      /* Custom scrollbar for webkit browsers */
+
+      * {
+        border-color: hsl(var(--border));
+      }
+
+      body {
+        background-color: hsl(var(--background));
+        color: hsl(var(--foreground));
+        font-family: 'Inter', sans-serif; /* Keep Inter from existing setup, fits font-sans */
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+      }
+
+      /* Custom scrollbar using new design system variables */
       ::-webkit-scrollbar {
-        width: 10px;
-        height: 10px;
+        width: 8px;
+        height: 8px;
       }
       ::-webkit-scrollbar-track {
-        background: #1E293B; /* Tailwind slate-800 */
+        background-color: hsl(var(--secondary));
       }
       ::-webkit-scrollbar-thumb {
-        background: #0EA5E9; /* Tailwind sky-500 */
-        border-radius: 5px;
-        border: 2px solid #1E293B; /* Track color as border */
+        background-color: hsl(var(--primary));
+        border-radius: 4px; /* Matches var(--radius) or use a fixed value */
+        border: 2px solid hsl(var(--secondary));
       }
       ::-webkit-scrollbar-thumb:hover {
-        background: #0284C7; /* Tailwind sky-600 */
+        background-color: hsl(var(--primary) / 0.8);
       }
       /* For Firefox */
       * {
         scrollbar-width: thin;
-        scrollbar-color: #0EA5E9 #1E293B; /* thumb color, track color */
+        scrollbar-color: hsl(var(--primary)) hsl(var(--secondary));
       }
+
+      /* Animations */
+      @keyframes float {
+        0%, 100% {
+          transform: translateY(0px);
+        }
+        50% {
+          transform: translateY(-10px); /* Reduced float for subtlety */
+        }
+      }
+
+      @keyframes pulse-glow {
+        0%, 100% {
+          box-shadow: 0 0 5px hsl(var(--primary) / 0.5);
+        }
+        50% {
+          box-shadow: 0 0 15px hsl(var(--primary) / 0.8), 0 0 20px hsl(var(--primary) / 0.4); /* Adjusted glow */
+        }
+      }
+
+      @keyframes gradient-shift {
+        0%, 100% {
+          background-position: 0% 50%;
+        }
+        50% {
+          background-position: 100% 50%;
+        }
+      }
+      .animate-spin-slow {
+        animation: spin 3s linear infinite;
+      }
+
+      .animate-float {
+        animation: float 6s ease-in-out infinite;
+      }
+
+      .animate-pulse-glow {
+        animation: pulse-glow 2s ease-in-out infinite;
+      }
+
+      .animate-gradient-shift {
+        animation: gradient-shift 3s ease-in-out infinite;
+        background-size: 200% 200%; /* For gradient shift to work well */
+      }
+      
+      .gradient-text {
+        background-image: linear-gradient(to right, hsl(var(--primary) / 1), hsl(var(--primary) / 0.8), hsl(var(--primary) / 0.6));
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent;
+      }
+
     </style>
   <script type="importmap">
 {

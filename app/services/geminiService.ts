@@ -1,4 +1,5 @@
 
+
 import { GoogleGenAI, GenerateContentResponse, Part } from "@google/genai";
 import { MODEL_NAME, META_PROMPT_SECTIONS } from '../constants';
 import { NovelData, Chapter, Stage1Data, Stage2Data, RevisionTaskType, CharacterProfile, TrendSparkUserQuery, TrendSparkAIResponse, TrendSparkConcept } from '../types';

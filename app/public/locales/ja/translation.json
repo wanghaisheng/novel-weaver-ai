@@ -1,0 +1,328 @@
+
+{
+  "appTitle": "[JA] Novel Weaver AI",
+  "loading": {
+    "application": "[JA] Loading application...",
+    "translations": "[JA] Loading translations..."
+  },
+  "error": {
+    "unknownView": "[JA] Unknown view. An unexpected error occurred.",
+    "pageNotFound": "[JA] Oops! Page Not Found."
+  },
+  "navigation": {
+    "features": "[JA] Features",
+    "howItWorks": "[JA] How It Works",
+    "pricing": "[JA] Pricing",
+    "testimonials": "[JA] Testimonials",
+    "genreTools": "[JA] Genre Tools",
+    "toolsMegaMenu": "[JA] Genre Prompts",
+    "signIn": "[JA] Sign In",
+    "signOut": "[JA] Sign Out",
+    "signUp": "[JA] Sign Up",
+    "goToTool": "[JA] Go to Tool",
+    "myNovels": "[JA] My Novels",
+    "getStarted": "[JA] Get Started",
+    "startCreating": "[JA] Start Creating",
+    "goHome": "[JA] Go to Home Page"
+  },
+  "footer": {
+    "copyright": "[JA] © {{year}} {{appTitle}}. All rights reserved.",
+    "copyrightSimple": "[JA] © {{year}} {{appTitle}}",
+    "copyrightPricingPage": "[JA] © {{year}} {{appTitle}}. Secure payments via Gumroad.",
+    "copyrightToolPage": "[JA] © {{year}} {{appTitle}}. Your creative partner.",
+    "tagline": "[JA] Crafting Worlds, One Word at a Time.",
+    "privacyPolicy": "[JA] Privacy Policy",
+    "termsOfService": "[JA] Terms of Service",
+    "aboutUs": "[JA] About Us",
+    "contactUs": "[JA] Contact Us",
+    "language": "[JA] Language",
+    "selectLanguageLabel": "[JA] Select language",
+    "toolNavigation": "[JA] Tool Navigation"
+  },
+  "home": {
+    "hero": {
+      "welcome": "[JA] Welcome to",
+      "tagline": "[JA] Your AI-powered partner for crafting compelling novels, from initial idea to final polished draft. Let's weave your story together.",
+      "createNovelNow": "[JA] Create Your Novel Now",
+      "createNovelNowAriaLabel": "[JA] Start creating your novel with Novel Weaver AI"
+    },
+    "features": {
+      "sectionTitle": "[JA] Everything You Need to Write Your Masterpiece with {{appTitle}}",
+      "ideation": {
+        "title": "[JA] AI Ideation & Concept",
+        "description": "[JA] Spark creativity with AI-generated ideas for plots, characters, and settings. Overcome writer's block instantly."
+      },
+      "outlining": {
+        "title": "[JA] Structured Outlining",
+        "description": "[JA] Organize your thoughts with a flexible outlining tool that supports classic structures like the three-act model."
+      },
+      "writing": {
+        "title": "[JA] Collaborative AI Writing",
+        "description": "[JA] Draft chapters faster with AI assistance. Provide prompts and let the AI help you write compelling scenes."
+      },
+      "revision": {
+        "title": "[JA] Insightful Revision Tools",
+        "description": "[JA] Refine your manuscript with AI-powered suggestions for consistency, pacing, descriptions, and dialogue."
+      }
+    },
+    "howItWorks": {
+      "sectionTitle": "[JA] How Novel Weaver AI Works",
+      "spark": {
+        "title": "[JA] 1. Spark Concept",
+        "description": "[JA] Define your core idea, genre, and characters. Use AI to brainstorm or fill in the details manually."
+      },
+      "outline": {
+        "title": "[JA] 2. Outline Plot",
+        "description": "[JA] Structure your story using the guided three-act framework, detailing key plot points and turning points."
+      },
+      "draft": {
+        "title": "[JA] 3. Draft Chapters",
+        "description": "[JA] Write chapter by chapter with AI co-writing assistance, focusing on POV, goals, and key scenes."
+      },
+      "refine": {
+        "title": "[JA] 4. Refine & Polish",
+        "description": "[JA] Utilize AI revision tools to check consistency, enhance descriptions, optimize dialogue, and adjust pacing."
+      }
+    },
+    "megaMenu": {
+        "title": "[JA] Specialized Genre Prompts",
+        "description": "[JA] Explore AI prompts fine-tuned for various genres to kickstart specific story elements.",
+        "alertAccessingTools": "[JA] Accessing {{genreName}} tools..."
+    },
+    "showcase": {
+      "sectionTitle": "[JA] Get Inspired: Novel Showcase",
+      "noMatch": "[JA] No showcases match the current filter."
+    },
+    "testimonials": {
+      "sectionTitle": "[JA] What Our Writers Say",
+      "sectionDescription": "[JA] Hear from authors who have transformed their writing process with {{appTitle}}.",
+      "1": {
+        "quote": "[JA] {{appTitle}} helped me break through a massive writer's block. The ideation tools are a game-changer!",
+        "authorName": "[JA] Alex R.",
+        "authorTitle": "[JA] Sci-Fi Novelist"
+      },
+      "2": {
+        "quote": "[JA] As a new writer, the structured outlining and AI co-writing features were invaluable. I finally finished my first novel!",
+        "authorName": "[JA] Jamie L.",
+        "authorTitle": "[JA] Fantasy Author"
+      },
+      "3": {
+        "quote": "[JA] The revision tools are incredibly insightful. My manuscript is so much stronger thanks to the AI's suggestions on pacing and description.",
+        "authorName": "[JA] Sam K.",
+        "authorTitle": "[JA] Mystery Writer"
+      }
+    },
+    "genreTools": {
+        "sectionTitle": "[JA] Tailor Your Story with Specialized Genre Tools",
+        "sectionDescription": "[JA] {{appTitle}} understands that different genres have unique needs. Our specialized tools, powered by fine-tuned meta prompts, help you nail the conventions and atmosphere of your chosen genre.",
+        "toolFocusLabel": "[JA] Tool Focus",
+        "sciFi": {
+            "name": "[JA] Science Fiction",
+            "description": "[JA] Explore futuristic societies, advanced technology, and the far reaches of space.",
+            "toolFocus": "[JA] Prompts for tech concepts, alien species, future societies, and philosophical quandaries."
+        },
+        "fantasy": {
+            "name": "[JA] Fantasy",
+            "description": "[JA] Weave tales of magic, mythical creatures, and epic quests in imaginative realms.",
+            "toolFocus": "[JA] World-building prompts for epic scope, magic system rules, mythical races, and prophecy arcs."
+        },
+        "mystery": {
+            "name": "[JA] Mystery & Thriller",
+            "description": "[JA] Craft suspenseful narratives filled with clues, red herrings, and shocking twists.",
+            "toolFocus": "[JA] Prompts for clue dropping, suspect development, plot twists, and building suspenseful pacing."
+        },
+        "customPrompt": {
+            "title": "[JA] Unlock the Custom Meta Prompt Builder",
+            "description": "[JA] Paid users gain access to our powerful Custom Meta Prompt Builder. Define your own unique story structures, AI instructions, and genre parameters for unparalleled control over your novel's development.",
+            "cta": "[JA] Explore Premium Plans"
+        }
+    },
+    "seoSection": {
+        "title": "[JA] Unlock Your Creative Potential with AI Novel Writing",
+        "paragraph1": "[JA] Novel Weaver AI is your ultimate partner in the creative journey of novel writing. Whether you're an aspiring author or a seasoned writer, our AI-powered tools are designed to streamline your process, from brainstorming initial concepts to polishing your final draft. With features like AI story generation, character creation, plot development, and intelligent revision suggestions, {{appTitle}} helps you overcome writer's block and bring your fictional worlds to life.",
+        "paragraph2": "[JA] Our platform supports a variety of genres, offering specialized assistance for Sci-Fi, Fantasy, Mystery, and more. Utilize our structured outlining tools to build a compelling narrative framework, and then dive into chapter writing with AI co-writing support that understands your vision. {{appTitle}} focuses on collaboration, ensuring your unique voice remains at the heart of your story while leveraging AI to enhance productivity and creativity.",
+        "paragraph3": "[JA] Experience the future of novel writing. Join a community of authors who are transforming their creative process with {{appTitle}}. Start crafting your masterpiece today, and let our AI assist you in weaving intricate plots, developing memorable characters, and creating immersive worlds that captivate your readers."
+    }
+  },
+  "pricing": {
+    "pageTitle": "[JA] Find the Perfect Plan for Your Story",
+    "currencyAutoDetectMessage": "[JA] Currency ({{currencyCode}}) auto-detected. You can change it.",
+    "currencySelectedMessage": "[JA] Currency set to {{currencyCode}}.",
+    "perMonth": "[JA] / month",
+    "billedAnnually": "[JA] billed annually",
+    "polloApiNote": "[JA] Payment processing is illustrative and uses placeholder Gumroad links.",
+    "polloApiLinkText": "[JA] Learn more about Gumroad.",
+    "paymentSafety": "[JA] Secure and encrypted payments.",
+    "morePaymentMethods": "[JA] and more",
+    "gumroadLinkUnavailableAlert": "[JA] Gumroad link for {{planName}} ({{cycle}}) is not available yet.",
+    "joinUsersSection": {
+        "title": "[JA] Join Thousands of Writers on {{appTitle}}",
+        "ctaLoggedIn": "[JA] Go to My Novels",
+        "ctaLoggedOut": "[JA] Start Your Free Plan Today"
+    },
+    "selectCurrencyAriaLabel": "[JA] Select currency for pricing display",
+    "plans": {
+      "free": {
+        "name": "[JA] Free Weaver",
+        "features": [
+          "[JA] 1 Novel Project",
+          "[JA] Basic AI Ideation",
+          "[JA] Standard Plot Outlining",
+          "[JA] AI Co-Writing (Limited)",
+          "[JA] Basic Revision Suggestions",
+          "[JA] Up to 10,000 words per novel",
+          "[JA] Community Access",
+          "[JA] Download as .txt",
+          "[JA] Limited AI Model Access"
+        ],
+        "cta": "[JA] Start for Free"
+      },
+      "lite": {
+        "name": "[JA] Lite Weaver",
+        "features": [
+          "[JA] Everything in Free, plus:",
+          "[JA] 3 Novel Projects",
+          "[JA] Advanced AI Ideation",
+          "[JA] Enhanced Plot Outlining",
+          "[JA] AI Co-Writing (Moderate)",
+          "[JA] Standard Revision Suite",
+          "[JA] Up to 50,000 words per novel",
+          "[JA] Priority Community Support",
+          "[JA] Genre-Specific Prompts (Basic)",
+          "[JA] Standard AI Model Access"
+        ],
+        "cta": "[JA] Choose Lite"
+      },
+      "pro": {
+        "name": "[JA] Pro Weaver",
+        "features": [
+          "[JA] Everything in Lite, plus:",
+          "[JA] Unlimited Novel Projects",
+          "[JA] Expert AI Ideation & Brainstorming",
+          "[JA] Customizable Plot Structures",
+          "[JA] AI Co-Writing (Extensive)",
+          "[JA] Full AI Revision Suite",
+          "[JA] Unlimited words per novel",
+          "[JA] Dedicated Support",
+          "[JA] Full Genre-Specific Prompt Library",
+          "[JA] Custom Meta Prompt Builder",
+          "[JA] Premium AI Model Access"
+        ],
+        "cta": "[JA] Go Pro"
+      }
+    }
+  },
+  "billingCycle": {
+    "monthly": "[JA] Monthly",
+    "yearly": "[JA] Yearly",
+    "saveBadgeYearly": "[JA] Save 20%"
+  },
+  "faqs": {
+    "general": {
+      "sectionTitle": "[JA] Frequently Asked Questions"
+    },
+    "pricing": {
+      "sectionTitle": "[JA] Pricing FAQs"
+    },
+    "tool": {
+        "sectionTitle": "[JA] Novel Weaver AI: Your Questions Answered",
+        "sectionDescription": "[JA] Have questions about using the Novel Weaver AI editor? Find answers to common queries below."
+    }
+  },
+  "general.faqs": [
+      {
+        "question": "[JA] What is Novel Weaver AI?",
+        "answer": "[JA] Novel Weaver AI is an AI-powered web application designed to assist writers in every stage of the novel creation process, from ideation and outlining to chapter writing and revision. It combines structured tools with advanced AI to help you craft compelling stories."
+      },
+      {
+        "question": "[JA] How does the AI help with writing a novel?",
+        "answer": "[JA] The AI can help brainstorm ideas, suggest plot points, develop characters, generate draft content for chapters based on your prompts, and provide suggestions for revising your work (e.g., improving descriptions, checking consistency, optimizing dialogue)."
+      },
+      {
+        "question": "[JA] Is Novel Weaver AI suitable for all genres?",
+        "answer": "[JA] Yes! While we offer specialized prompts for popular genres like Sci-Fi, Fantasy, and Mystery, the core tools are versatile and can be adapted for any genre you're passionate about. The Custom Meta Prompt Builder (Pro plan) allows even deeper genre customization."
+      },
+      {
+        "question": "[JA] Do I own the content I create with Novel Weaver AI?",
+        "answer": "[JA] Absolutely. You retain full ownership of all content you create and input into Novel Weaver AI, as well as the narratives generated with AI assistance based on your inputs. We believe your story is yours."
+      },
+      {
+        "question": "[JA] How is my data saved and is it secure?",
+        "answer": "[JA] Your novel data is primarily saved in your browser's local storage for quick access. While convenient, we strongly recommend frequently using the 'Download Novel' feature to save a .txt backup to your computer. For authenticated users, future updates may include cloud storage options. We are committed to data security, but local storage is inherently tied to your browser."
+      },
+      {
+        "question": "[JA] Can I use Novel Weaver AI for free?",
+        "answer": "[JA] Yes, we offer a 'Free Weaver' plan with basic features and limitations, perfect for trying out the platform. For more advanced capabilities and fewer restrictions, we offer affordable paid plans."
+      }
+  ],
+  "pricing.faqs": [
+    {
+      "question": "[JA] What payment methods do you accept?",
+      "answer": "[JA] We accept major credit cards (Visa, Mastercard, American Express), PayPal, Apple Pay, Google Pay, and other payment methods supported by Gumroad, our payment processing partner."
+    },
+    {
+      "question": "[JA] Can I cancel my subscription at any time?",
+      "answer": "[JA] Yes, you can cancel your monthly or yearly subscription at any time. If you cancel, you'll retain access to your plan's features until the end of your current billing period. No refunds are provided for partial periods."
+    },
+    {
+      "question": "[JA] What happens if I upgrade or downgrade my plan?",
+      "answer": "[JA] Upgrades are typically effective immediately, with a prorated charge for the new plan. Downgrades take effect at the end ofyour current billing cycle. Specifics are handled by Gumroad's subscription management."
+    },
+    {
+      "question": "[JA] Is there a free trial for paid plans?",
+      "answer": "[JA] We offer a comprehensive Free plan that allows you to experience the core functionalities of Novel Weaver AI. We currently do not offer separate time-limited free trials for paid plans."
+    },
+    {
+      "question": "[JA] What does 'Limited' vs 'Full' AI Model Access mean?",
+      "answer": "[JA] Free and Lite plans may use standard AI models. Pro plans get access to our premium, more powerful AI models, which can result in higher quality suggestions, more nuanced writing, and better understanding of complex prompts."
+    },
+    {
+      "question": "[JA] What is the Custom Meta Prompt Builder?",
+      "answer": "[JA] Available on the Pro plan, this powerful tool allows you to define your own unique story structures, AI instructions, and parameters for novel generation, giving you unparalleled control over the AI's creative process to match very specific needs."
+    },
+    {
+      "question": "[JA] Are there any word count limits on paid plans?",
+      "answer": "[JA] The 'Lite Weaver' plan has a generous word count limit per novel (e.g., 50,000 words). The 'Pro Weaver' plan offers unlimited words per novel, allowing you to write epics without restriction."
+    }
+  ],
+  "toolPage": {
+    "sections": {
+      "novelEditor": { "title": "[JA] Novel Editor" },
+      "trendSpark": { "title": "[JA] Trend Spark ✨" }
+    },
+    "subSections": {
+        "novelWorkflowEditor": { "title": "[JA] Novel Workflow Editor" },
+        "features": { "title": "[JA] Editor Features" },
+        "howItWorks": { "title": "[JA] Editor Guide" },
+        "showcase": { "title": "[JA] Editor Examples" },
+        "faq": { "title": "[JA] Editor FAQs" }
+    }
+  },
+  "trendSparkTool": {
+    "title": "[JA] Trend Spark: AI Novel Concept Generator",
+    "description": "[JA] Analyze current novel trends and generate monetizable story ideas. Input popular themes, tropes, or platform trends below, and let AI spark your next bestseller!",
+    "inputLabel": "[JA] Describe Current Novel Trends:",
+    "inputPlaceholder": "[JA] e.g., 'System cultivation with academy arcs', 'Enemies-to-lovers in modern fantasy on WebNovel', 'Regressor MC with unique skill on RoyalRoad', 'LitRPG with crafting and guild building popular on ScribbleHub'...",
+    "inputInstruction": "[JA] Be specific! Mention genres, tropes, target platforms, or anything you've noticed gaining traction.",
+    "buttonGenerate": "[JA] Analyze Trends & Generate Ideas",
+    "buttonLoading": "[JA] AI is Brainstorming...",
+    "buttonDevelopConcept": "[JA] Develop this Idea in Novel Editor",
+    "generatedConceptsTitle": "[JA] AI-Generated Novel Concepts:",
+    "conceptCard": {
+      "genre": "[JA] Suggested Genre",
+      "targetAudience": "[JA] Target Audience/Platform",
+      "sellingPoints": "[JA] Key Selling Points / Monetization Angles"
+    },
+    "errors": {
+      "noTrendsProvided": "[JA] Please describe some novel trends first.",
+      "apiError": "[JA] An error occurred while communicating with the AI. Please try again.",
+      "noConceptsGenerated": "[JA] The AI couldn't generate concepts based on your input. Try rephrasing or adding more details about the trends."
+    }
+  },
+  "stageNavigator": {
+    "title": "[JA] Novel Stages"
+  },
+  "stage": {
+    "foundation": {
+      "title": "[JA] Stage 1: Foundation & Ideation",
+      "description": "[JA] Define your core idea, genre, characters,

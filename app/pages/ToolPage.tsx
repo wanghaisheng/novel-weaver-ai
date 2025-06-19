@@ -1,10 +1,15 @@
+
+
 import React, { useState, useEffect, useCallback } from 'react';
+import { useTranslation } from 'react-i18next';
 import { NovelData, NovelStage, Stage1Data, Stage2Data, Stage3Data, Chapter, User, TrendSparkConcept } from '../types';
 import type { ToolSectionId } from '../types';
 import { ToolSidebar } from '../components/tool/ToolSidebar';
 import NovelToolLandingPage from '../components/tool/NovelToolLandingPage'; 
-import TrendSparkTool from '../components/tool/TrendSparkTool'; // Import TrendSparkTool
+import TrendSparkTool from '../components/tool/TrendSparkTool';
 import { TOOL_PAGE_SECTIONS, NOVEL_EDITOR_SUB_SECTIONS } from '../constants';
+import { getInitialNovelData as getInitialNovelDataFromApp } from '../App';
+
 
 interface ToolPageProps {
   novelData: NovelData;
@@ -27,12 +32,17 @@ interface ToolPageProps {
   onNavigateToTerms: () => void;
   onNavigateToAbout: () => void;
   onNavigateToContact: () => void;
+  getInitialNovelData: (t: (key: string) => string) => NovelData; // Add this prop
 }
 
 const ToolPage: React.FC<ToolPageProps> = (props) => {
+  const { t } = useTranslation();
   const defaultToolId = TOOL_PAGE_SECTIONS[0]?.id || 'novel-editor';
   const [activeToolId, setActiveToolId] = useState<ToolSectionId>(defaultToolId);
-  const [activeDisplayId, setActiveDisplayId] = useState<string>(defaultToolId); // For novel editor, this can be sub-section ID
+  const [activeDisplayId, setActiveDisplayId] = useState<string>(
+    defaultToolId === 'novel-editor' ? NOVEL_EDITOR_SUB_SECTIONS[0]?.id || 'novel-workflow-editor-section' : defaultToolId
+  );
+
 
   const [isSidebarCollapsed, setIsSidebarCollapsed] = useState<boolean>(() => {
     const savedState = localStorage.getItem('sidebarCollapsed');
@@ -52,37 +62,34 @@ const ToolPage: React.FC<ToolPageProps> = (props) => {
   };
 
   const handleSelectNavigation = useCallback((toolId: ToolSectionId, displayId: string) => {
-    console.log(`[ToolPage.tsx] handleSelectNavigation called. toolId: ${toolId}, displayId: ${displayId}`);
     setActiveToolId(toolId);
-    setActiveDisplayId(displayId); // For TrendSpark, displayId will be 'trend-spark' itself.
+    setActiveDisplayId(displayId); 
 
     if (toolId === 'novel-editor') {
         requestAnimationFrame(() => {
             const element = document.getElementById(displayId);
             if (element) {
-                console.log(`[ToolPage.tsx] Scrolling to element: ${displayId}`);
-                const headerOffset = 0; 
-                const elementPosition = element.getBoundingClientRect().top;
+                const headerOffset = 80; // Approximate height of sticky header/tabs if any
                 const scrollableContainer = document.querySelector('main.flex-1.overflow-y-auto');
-
+                
                 if (scrollableContainer) {
-                    const containerTop = scrollableContainer.getBoundingClientRect().top;
-                    const scrollTop = (elementPosition + scrollableContainer.scrollTop) - containerTop - headerOffset;
-                    console.log(`[ToolPage.tsx] Scrolling container. Element top: ${elementPosition}, Container top: ${containerTop}, ScrollTop target: ${scrollTop}`);
+                    const elementRect = element.getBoundingClientRect();
+                    const containerRect = scrollableContainer.getBoundingClientRect();
+                    // Calculate scroll position relative to the container's current scroll top
+                    const scrollTopTarget = elementRect.top - containerRect.top + scrollableContainer.scrollTop - headerOffset;
+                    
                     scrollableContainer.scrollTo({
-                        top: scrollTop,
+                        top: scrollTopTarget,
                         behavior: 'smooth'
                     });
                 } else {
-                    console.log('[ToolPage.tsx] Scrollable container not found, scrolling window.');
-                    window.scrollTo({ top: elementPosition + window.pageYOffset - headerOffset, behavior: 'smooth'});
+                     // Fallback to window scroll if specific container not found
+                    const elementPosition = element.getBoundingClientRect().top + window.pageYOffset;
+                    window.scrollTo({ top: elementPosition - headerOffset, behavior: 'smooth'});
                 }
-            } else {
-                console.warn(`[ToolPage.tsx] Element with ID ${displayId} not found for scrolling.`);
             }
         });
-    } else if (toolId === 'trend-spark') {
-        // For TrendSpark or other tools that are single pages, scroll to top of the main content area
+    } else { // For TrendSpark or other single-page tools
         const scrollableContainer = document.querySelector('main.flex-1.overflow-y-auto');
         if (scrollableContainer) {
             scrollableContainer.scrollTo({ top: 0, behavior: 'smooth' });
@@ -91,51 +98,34 @@ const ToolPage: React.FC<ToolPageProps> = (props) => {
   }, []);
   
   const handleDevelopConcept = useCallback((concept: TrendSparkConcept) => {
+    const initialNovelStructure = props.getInitialNovelData(t);
     props.onSetNovelData(prevData => ({
-      ...prevData,
+      ...prevData, // Keep existing top-level data like user preferences if any
       title: concept.title,
       stage1: {
-        ...prevData.stage1,
+        ...initialNovelStructure.stage1, // Start with a clean Stage 1 structure
         coreIdea: concept.blurb,
         genre: concept.genreSuggestion,
         targetAudience: concept.targetAudiencePlatform,
-        // Reset other stage 1 fields or fill with defaults
-        theme: '',
-        logline: '',
-        characters: [],
-        worldBuilding: { timeAndPlace: '', coreRules: '', socialStructure: '', keyLocations: '' },
+        // Ensure other Stage 1 fields are explicitly reset or from initial structure
+        theme: '', // Reset
+        logline: '', // Reset
+        characters: [], // Reset
+        worldBuilding: { timeAndPlace: '', coreRules: '', socialStructure: '', keyLocations: '' }, // Reset
       },
-      // Optionally reset stage 2 and 3 data or keep them if user wants to merge
-      stage2: getInitialNovelData(s => s).stage2, // Reset to initial empty structure
-      stage3: getInitialNovelData(s => s).stage3, // Reset to initial empty structure
+      stage2: initialNovelStructure.stage2, // Reset Stage 2
+      stage3: initialNovelStructure.stage3, // Reset Stage 3
     }));
     props.onSetCurrentStage(NovelStage.FOUNDATION);
-    // Switch to Novel Editor view, specifically the workflow editor section
     const novelEditorWorkflowId = NOVEL_EDITOR_SUB_SECTIONS.find(s => s.titleKey === 'toolPage.subSections.novelWorkflowEditor.title')?.id || 'novel-workflow-editor-section';
     handleSelectNavigation('novel-editor', novelEditorWorkflowId);
-  }, [props.onSetNovelData, props.onSetCurrentStage, handleSelectNavigation]);
-
-  // Helper function to get initial novel data structures (simplified from App.tsx)
-  const getInitialNovelData = (t: (key: string) => string) => ({
-    stage2: {
-      act1: { stasis: '', incitingIncident: '', debate: '', turningPoint1: '' },
-      act2: { testsAlliesEnemies: '', midpoint: '', risingAction: '', allIsLost: '', turningPoint2: '' },
-      act3: { runUpToClimax: '', climax: '', fallingAction: '', resolution: '' },
-    },
-    stage3: {
-      chapters: [] as Chapter[],
-      currentChapterPrompt: { 
-          povCharacter: '', coreGoal: '', keyPlotPoints: '', 
-          startingScene: '', endingScene: '', atmosphere: '', wordCount: undefined 
-      }
-    },
-  });
+  }, [props.onSetNovelData, props.onSetCurrentStage, handleSelectNavigation, props.getInitialNovelData, t]);
 
 
   const renderActiveSection = () => {
     const commonLandingPageProps = {
       ...props,
-      onSelectNavigation: handleSelectNavigation, // Pass down for footer links
+      onSelectNavigation: handleSelectNavigation, 
     };
     switch (activeToolId) {
       case 'novel-editor':
@@ -157,10 +147,10 @@ const ToolPage: React.FC<ToolPageProps> = (props) => {
   };
 
   return (
-    <div className="flex h-screen bg-slate-950 overflow-hidden">
+    <div className="flex h-screen bg-background overflow-hidden">
       <ToolSidebar
         activeToolId={activeToolId}
-        activeDisplayId={activeDisplayId} // This will be relevant for 'novel-editor' sub-sections
+        activeDisplayId={activeDisplayId}
         userApiKey={props.userApiKey}
         onSetUserApiKey={props.onSetUserApiKey}
         onSelectNavigation={handleSelectNavigation}
@@ -170,7 +160,7 @@ const ToolPage: React.FC<ToolPageProps> = (props) => {
         currentUser={props.currentUser}
         onSignOut={props.onSignOut}
       />
-      <main className="flex-1 overflow-y-auto bg-slate-900">
+      <main className="flex-1 overflow-y-auto bg-background"> {/* Updated bg-background */}
         {renderActiveSection()}
       </main>
     </div>

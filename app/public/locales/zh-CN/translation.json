@@ -1,0 +1,694 @@
+
+{
+  "appTitle": "[ZH-CN] Novel Weaver AI",
+  "loading": {
+    "application": "[ZH-CN] Loading application...",
+    "translations": "[ZH-CN] Loading translations..."
+  },
+  "error": {
+    "unknownView": "[ZH-CN] Unknown view. An unexpected error occurred.",
+    "pageNotFound": "[ZH-CN] Oops! Page Not Found."
+  },
+  "navigation": {
+    "features": "[ZH-CN] Features",
+    "howItWorks": "[ZH-CN] How It Works",
+    "pricing": "[ZH-CN] Pricing",
+    "testimonials": "[ZH-CN] Testimonials",
+    "genreTools": "[ZH-CN] Genre Tools",
+    "toolsMegaMenu": "[ZH-CN] Genre Prompts",
+    "signIn": "[ZH-CN] Sign In",
+    "signOut": "[ZH-CN] Sign Out",
+    "signUp": "[ZH-CN] Sign Up",
+    "goToTool": "[ZH-CN] Go to Tool",
+    "myNovels": "[ZH-CN] My Novels",
+    "getStarted": "[ZH-CN] Get Started",
+    "startCreating": "[ZH-CN] Start Creating",
+    "goHome": "[ZH-CN] Go to Home Page"
+  },
+  "footer": {
+    "copyright": "[ZH-CN] © {{year}} {{appTitle}}. All rights reserved.",
+    "copyrightSimple": "[ZH-CN] © {{year}} {{appTitle}}",
+    "copyrightPricingPage": "[ZH-CN] © {{year}} {{appTitle}}. Secure payments via Gumroad.",
+    "copyrightToolPage": "[ZH-CN] © {{year}} {{appTitle}}. Your creative partner.",
+    "tagline": "[ZH-CN] Crafting Worlds, One Word at a Time.",
+    "privacyPolicy": "[ZH-CN] Privacy Policy",
+    "termsOfService": "[ZH-CN] Terms of Service",
+    "aboutUs": "[ZH-CN] About Us",
+    "contactUs": "[ZH-CN] Contact Us",
+    "language": "[ZH-CN] Language",
+    "selectLanguageLabel": "[ZH-CN] Select language",
+    "toolNavigation": "[ZH-CN] Tool Navigation"
+  },
+  "home": {
+    "hero": {
+      "welcome": "[ZH-CN] Welcome to",
+      "tagline": "[ZH-CN] Your AI-powered partner for crafting compelling novels, from initial idea to final polished draft. Let's weave your story together.",
+      "createNovelNow": "[ZH-CN] Create Your Novel Now",
+      "createNovelNowAriaLabel": "[ZH-CN] Start creating your novel with Novel Weaver AI"
+    },
+    "features": {
+      "sectionTitle": "[ZH-CN] Everything You Need to Write Your Masterpiece with {{appTitle}}",
+      "ideation": {
+        "title": "[ZH-CN] AI Ideation & Concept",
+        "description": "[ZH-CN] Spark creativity with AI-generated ideas for plots, characters, and settings. Overcome writer's block instantly."
+      },
+      "outlining": {
+        "title": "[ZH-CN] Structured Outlining",
+        "description": "[ZH-CN] Organize your thoughts with a flexible outlining tool that supports classic structures like the three-act model."
+      },
+      "writing": {
+        "title": "[ZH-CN] Collaborative AI Writing",
+        "description": "[ZH-CN] Draft chapters faster with AI assistance. Provide prompts and let the AI help you write compelling scenes."
+      },
+      "revision": {
+        "title": "[ZH-CN] Insightful Revision Tools",
+        "description": "[ZH-CN] Refine your manuscript with AI-powered suggestions for consistency, pacing, descriptions, and dialogue."
+      }
+    },
+    "howItWorks": {
+      "sectionTitle": "[ZH-CN] How Novel Weaver AI Works",
+      "spark": {
+        "title": "[ZH-CN] 1. Spark Concept",
+        "description": "[ZH-CN] Define your core idea, genre, and characters. Use AI to brainstorm or fill in the details manually."
+      },
+      "outline": {
+        "title": "[ZH-CN] 2. Outline Plot",
+        "description": "[ZH-CN] Structure your story using the guided three-act framework, detailing key plot points and turning points."
+      },
+      "draft": {
+        "title": "[ZH-CN] 3. Draft Chapters",
+        "description": "[ZH-CN] Write chapter by chapter with AI co-writing assistance, focusing on POV, goals, and key scenes."
+      },
+      "refine": {
+        "title": "[ZH-CN] 4. Refine & Polish",
+        "description": "[ZH-CN] Utilize AI revision tools to check consistency, enhance descriptions, optimize dialogue, and adjust pacing."
+      }
+    },
+    "megaMenu": {
+        "title": "[ZH-CN] Specialized Genre Prompts",
+        "description": "[ZH-CN] Explore AI prompts fine-tuned for various genres to kickstart specific story elements.",
+        "alertAccessingTools": "[ZH-CN] Accessing {{genreName}} tools..."
+    },
+    "showcase": {
+      "sectionTitle": "[ZH-CN] Get Inspired: Novel Showcase",
+      "noMatch": "[ZH-CN] No showcases match the current filter."
+    },
+    "testimonials": {
+      "sectionTitle": "[ZH-CN] What Our Writers Say",
+      "sectionDescription": "[ZH-CN] Hear from authors who have transformed their writing process with {{appTitle}}.",
+      "1": {
+        "quote": "[ZH-CN] {{appTitle}} helped me break through a massive writer's block. The ideation tools are a game-changer!",
+        "authorName": "[ZH-CN] Alex R.",
+        "authorTitle": "[ZH-CN] Sci-Fi Novelist"
+      },
+      "2": {
+        "quote": "[ZH-CN] As a new writer, the structured outlining and AI co-writing features were invaluable. I finally finished my first novel!",
+        "authorName": "[ZH-CN] Jamie L.",
+        "authorTitle": "[ZH-CN] Fantasy Author"
+      },
+      "3": {
+        "quote": "[ZH-CN] The revision tools are incredibly insightful. My manuscript is so much stronger thanks to the AI's suggestions on pacing and description.",
+        "authorName": "[ZH-CN] Sam K.",
+        "authorTitle": "[ZH-CN] Mystery Writer"
+      }
+    },
+    "genreTools": {
+        "sectionTitle": "[ZH-CN] Tailor Your Story with Specialized Genre Tools",
+        "sectionDescription": "[ZH-CN] {{appTitle}} understands that different genres have unique needs. Our specialized tools, powered by fine-tuned meta prompts, help you nail the conventions and atmosphere of your chosen genre.",
+        "toolFocusLabel": "[ZH-CN] Tool Focus",
+        "sciFi": {
+            "name": "[ZH-CN] Science Fiction",
+            "description": "[ZH-CN] Explore futuristic societies, advanced technology, and the far reaches of space.",
+            "toolFocus": "[ZH-CN] Prompts for tech concepts, alien species, future societies, and philosophical quandaries."
+        },
+        "fantasy": {
+            "name": "[ZH-CN] Fantasy",
+            "description": "[ZH-CN] Weave tales of magic, mythical creatures, and epic quests in imaginative realms.",
+            "toolFocus": "[ZH-CN] World-building prompts for epic scope, magic system rules, mythical races, and prophecy arcs."
+        },
+        "mystery": {
+            "name": "[ZH-CN] Mystery & Thriller",
+            "description": "[ZH-CN] Craft suspenseful narratives filled with clues, red herrings, and shocking twists.",
+            "toolFocus": "[ZH-CN] Prompts for clue dropping, suspect development, plot twists, and building suspenseful pacing."
+        },
+        "customPrompt": {
+            "title": "[ZH-CN] Unlock the Custom Meta Prompt Builder",
+            "description": "[ZH-CN] Paid users gain access to our powerful Custom Meta Prompt Builder. Define your own unique story structures, AI instructions, and genre parameters for unparalleled control over your novel's development.",
+            "cta": "[ZH-CN] Explore Premium Plans"
+        }
+    },
+    "seoSection": {
+        "title": "[ZH-CN] Unlock Your Creative Potential with AI Novel Writing",
+        "paragraph1": "[ZH-CN] Novel Weaver AI is your ultimate partner in the creative journey of novel writing. Whether you're an aspiring author or a seasoned writer, our AI-powered tools are designed to streamline your process, from brainstorming initial concepts to polishing your final draft. With features like AI story generation, character creation, plot development, and intelligent revision suggestions, {{appTitle}} helps you overcome writer's block and bring your fictional worlds to life.",
+        "paragraph2": "[ZH-CN] Our platform supports a variety of genres, offering specialized assistance for Sci-Fi, Fantasy, Mystery, and more. Utilize our structured outlining tools to build a compelling narrative framework, and then dive into chapter writing with AI co-writing support that understands your vision. {{appTitle}} focuses on collaboration, ensuring your unique voice remains at the heart of your story while leveraging AI to enhance productivity and creativity.",
+        "paragraph3": "[ZH-CN] Experience the future of novel writing. Join a community of authors who are transforming their creative process with {{appTitle}}. Start crafting your masterpiece today, and let our AI assist you in weaving intricate plots, developing memorable characters, and creating immersive worlds that captivate your readers."
+    }
+  },
+  "pricing": {
+    "pageTitle": "[ZH-CN] Find the Perfect Plan for Your Story",
+    "currencyAutoDetectMessage": "[ZH-CN] Currency ({{currencyCode}}) auto-detected. You can change it.",
+    "currencySelectedMessage": "[ZH-CN] Currency set to {{currencyCode}}.",
+    "perMonth": "[ZH-CN] / month",
+    "billedAnnually": "[ZH-CN] billed annually",
+    "polloApiNote": "[ZH-CN] Payment processing is illustrative and uses placeholder Gumroad links.",
+    "polloApiLinkText": "[ZH-CN] Learn more about Gumroad.",
+    "paymentSafety": "[ZH-CN] Secure and encrypted payments.",
+    "morePaymentMethods": "[ZH-CN] and more",
+    "gumroadLinkUnavailableAlert": "[ZH-CN] Gumroad link for {{planName}} ({{cycle}}) is not available yet.",
+    "joinUsersSection": {
+        "title": "[ZH-CN] Join Thousands of Writers on {{appTitle}}",
+        "ctaLoggedIn": "[ZH-CN] Go to My Novels",
+        "ctaLoggedOut": "[ZH-CN] Start Your Free Plan Today"
+    },
+    "selectCurrencyAriaLabel": "[ZH-CN] Select currency for pricing display",
+    "plans": {
+      "free": {
+        "name": "[ZH-CN] Free Weaver",
+        "features": [
+          "[ZH-CN] 1 Novel Project",
+          "[ZH-CN] Basic AI Ideation",
+          "[ZH-CN] Standard Plot Outlining",
+          "[ZH-CN] AI Co-Writing (Limited)",
+          "[ZH-CN] Basic Revision Suggestions",
+          "[ZH-CN] Up to 10,000 words per novel",
+          "[ZH-CN] Community Access",
+          "[ZH-CN] Download as .txt",
+          "[ZH-CN] Limited AI Model Access"
+        ],
+        "cta": "[ZH-CN] Start for Free"
+      },
+      "lite": {
+        "name": "[ZH-CN] Lite Weaver",
+        "features": [
+          "[ZH-CN] Everything in Free, plus:",
+          "[ZH-CN] 3 Novel Projects",
+          "[ZH-CN] Advanced AI Ideation",
+          "[ZH-CN] Enhanced Plot Outlining",
+          "[ZH-CN] AI Co-Writing (Moderate)",
+          "[ZH-CN] Standard Revision Suite",
+          "[ZH-CN] Up to 50,000 words per novel",
+          "[ZH-CN] Priority Community Support",
+          "[ZH-CN] Genre-Specific Prompts (Basic)",
+          "[ZH-CN] Standard AI Model Access"
+        ],
+        "cta": "[ZH-CN] Choose Lite"
+      },
+      "pro": {
+        "name": "[ZH-CN] Pro Weaver",
+        "features": [
+          "[ZH-CN] Everything in Lite, plus:",
+          "[ZH-CN] Unlimited Novel Projects",
+          "[ZH-CN] Expert AI Ideation & Brainstorming",
+          "[ZH-CN] Customizable Plot Structures",
+          "[ZH-CN] AI Co-Writing (Extensive)",
+          "[ZH-CN] Full AI Revision Suite",
+          "[ZH-CN] Unlimited words per novel",
+          "[ZH-CN] Dedicated Support",
+          "[ZH-CN] Full Genre-Specific Prompt Library",
+          "[ZH-CN] Custom Meta Prompt Builder",
+          "[ZH-CN] Premium AI Model Access"
+        ],
+        "cta": "[ZH-CN] Go Pro"
+      }
+    }
+  },
+  "billingCycle": {
+    "monthly": "[ZH-CN] Monthly",
+    "yearly": "[ZH-CN] Yearly",
+    "saveBadgeYearly": "[ZH-CN] Save 20%"
+  },
+  "faqs": {
+    "general": {
+      "sectionTitle": "[ZH-CN] Frequently Asked Questions"
+    },
+    "pricing": {
+      "sectionTitle": "[ZH-CN] Pricing FAQs"
+    },
+    "tool": {
+        "sectionTitle": "[ZH-CN] Novel Weaver AI: Your Questions Answered",
+        "sectionDescription": "[ZH-CN] Have questions about using the Novel Weaver AI editor? Find answers to common queries below."
+    }
+  },
+  "general.faqs": [
+      {
+        "question": "[ZH-CN] What is Novel Weaver AI?",
+        "answer": "[ZH-CN] Novel Weaver AI is an AI-powered web application designed to assist writers in every stage of the novel creation process, from ideation and outlining to chapter writing and revision. It combines structured tools with advanced AI to help you craft compelling stories."
+      },
+      {
+        "question": "[ZH-CN] How does the AI help with writing a novel?",
+        "answer": "[ZH-CN] The AI can help brainstorm ideas, suggest plot points, develop characters, generate draft content for chapters based on your prompts, and provide suggestions for revising your work (e.g., improving descriptions, checking consistency, optimizing dialogue)."
+      },
+      {
+        "question": "[ZH-CN] Is Novel Weaver AI suitable for all genres?",
+        "answer": "[ZH-CN] Yes! While we offer specialized prompts for popular genres like Sci-Fi, Fantasy, and Mystery, the core tools are versatile and can be adapted for any genre you're passionate about. The Custom Meta Prompt Builder (Pro plan) allows even deeper genre customization."
+      },
+      {
+        "question": "[ZH-CN] Do I own the content I create with Novel Weaver AI?",
+        "answer": "[ZH-CN] Absolutely. You retain full ownership of all content you create and input into Novel Weaver AI, as well as the narratives generated with AI assistance based on your inputs. We believe your story is yours."
+      },
+      {
+        "question": "[ZH-CN] How is my data saved and is it secure?",
+        "answer": "[ZH-CN] Your novel data is primarily saved in your browser's local storage for quick access. While convenient, we strongly recommend frequently using the 'Download Novel' feature to save a .txt backup to your computer. For authenticated users, future updates may include cloud storage options. We are committed to data security, but local storage is inherently tied to your browser."
+      },
+      {
+        "question": "[ZH-CN] Can I use Novel Weaver AI for free?",
+        "answer": "[ZH-CN] Yes, we offer a 'Free Weaver' plan with basic features and limitations, perfect for trying out the platform. For more advanced capabilities and fewer restrictions, we offer affordable paid plans."
+      }
+  ],
+  "pricing.faqs": [
+    {
+      "question": "[ZH-CN] What payment methods do you accept?",
+      "answer": "[ZH-CN] We accept major credit cards (Visa, Mastercard, American Express), PayPal, Apple Pay, Google Pay, and other payment methods supported by Gumroad, our payment processing partner."
+    },
+    {
+      "question": "[ZH-CN] Can I cancel my subscription at any time?",
+      "answer": "[ZH-CN] Yes, you can cancel your monthly or yearly subscription at any time. If you cancel, you'll retain access to your plan's features until the end of your current billing period. No refunds are provided for partial periods."
+    },
+    {
+      "question": "[ZH-CN] What happens if I upgrade or downgrade my plan?",
+      "answer": "[ZH-CN] Upgrades are typically effective immediately, with a prorated charge for the new plan. Downgrades take effect at the end ofyour current billing cycle. Specifics are handled by Gumroad's subscription management."
+    },
+    {
+      "question": "[ZH-CN] Is there a free trial for paid plans?",
+      "answer": "[ZH-CN] We offer a comprehensive Free plan that allows you to experience the core functionalities of Novel Weaver AI. We currently do not offer separate time-limited free trials for paid plans."
+    },
+    {
+      "question": "[ZH-CN] What does 'Limited' vs 'Full' AI Model Access mean?",
+      "answer": "[ZH-CN] Free and Lite plans may use standard AI models. Pro plans get access to our premium, more powerful AI models, which can result in higher quality suggestions, more nuanced writing, and better understanding of complex prompts."
+    },
+    {
+      "question": "[ZH-CN] What is the Custom Meta Prompt Builder?",
+      "answer": "[ZH-CN] Available on the Pro plan, this powerful tool allows you to define your own unique story structures, AI instructions, and parameters for novel generation, giving you unparalleled control over the AI's creative process to match very specific needs."
+    },
+    {
+      "question": "[ZH-CN] Are there any word count limits on paid plans?",
+      "answer": "[ZH-CN] The 'Lite Weaver' plan has a generous word count limit per novel (e.g., 50,000 words). The 'Pro Weaver' plan offers unlimited words per novel, allowing you to write epics without restriction."
+    }
+  ],
+  "toolPage": {
+    "sections": {
+      "novelEditor": { "title": "[ZH-CN] Novel Editor" },
+      "trendSpark": { "title": "[ZH-CN] Trend Spark ✨" }
+    },
+    "subSections": {
+        "novelWorkflowEditor": { "title": "[ZH-CN] Novel Workflow Editor" },
+        "features": { "title": "[ZH-CN] Editor Features" },
+        "howItWorks": { "title": "[ZH-CN] Editor Guide" },
+        "showcase": { "title": "[ZH-CN] Editor Examples" },
+        "faq": { "title": "[ZH-CN] Editor FAQs" }
+    }
+  },
+  "trendSparkTool": {
+    "title": "[ZH-CN] Trend Spark: AI Novel Concept Generator",
+    "description": "[ZH-CN] Analyze current novel trends and generate monetizable story ideas. Input popular themes, tropes, or platform trends below, and let AI spark your next bestseller!",
+    "inputLabel": "[ZH-CN] Describe Current Novel Trends:",
+    "inputPlaceholder": "[ZH-CN] e.g., 'System cultivation with academy arcs', 'Enemies-to-lovers in modern fantasy on WebNovel', 'Regressor MC with unique skill on RoyalRoad', 'LitRPG with crafting and guild building popular on ScribbleHub'...",
+    "inputInstruction": "[ZH-CN] Be specific! Mention genres, tropes, target platforms, or anything you've noticed gaining traction.",
+    "buttonGenerate": "[ZH-CN] Analyze Trends & Generate Ideas",
+    "buttonLoading": "[ZH-CN] AI is Brainstorming...",
+    "buttonDevelopConcept": "[ZH-CN] Develop this Idea in Novel Editor",
+    "generatedConceptsTitle": "[ZH-CN] AI-Generated Novel Concepts:",
+    "conceptCard": {
+      "genre": "[ZH-CN] Suggested Genre",
+      "targetAudience": "[ZH-CN] Target Audience/Platform",
+      "sellingPoints": "[ZH-CN] Key Selling Points / Monetization Angles"
+    },
+    "errors": {
+      "noTrendsProvided": "[ZH-CN] Please describe some novel trends first.",
+      "apiError": "[ZH-CN] An error occurred while communicating with the AI. Please try again.",
+      "noConceptsGenerated": "[ZH-CN] The AI couldn't generate concepts based on your input. Try rephrasing or adding more details about the trends."
+    }
+  },
+  "stageNavigator": {
+    "title": "[ZH-CN] Novel Stages"
+  },
+  "stage": {
+    "foundation": {
+      "title": "[ZH-CN] Stage 1: Foundation & Ideation",
+      "description": "[ZH-CN] Define your core idea, genre, characters, and world. Lay the groundwork for your story."
+    },
+    "outline": {
+      "title": "[ZH-CN] Stage 2: Plot Outlining",
+      "description": "[ZH-CN] Structure your narrative using the three-act model. Detail key plot points, turning points, and the overall story arc."
+    },
+    "writing": {
+      "title": "[ZH-CN] Stage 3: Chapter Writing",
+      "description": "[ZH-CN] Draft your novel chapter by chapter. Utilize AI co-writing assistance based on your prompts and outline."
+    },
+    "revision": {
+      "title": "[ZH-CN] Stage 4: Revision & Polishing",
+      "description": "[ZH-CN] Refine your manuscript. Use AI tools for consistency checks, description enhancement, dialogue optimization, and pacing adjustments."
+    },
+    "finalizeExport": {
+      "title": "[ZH-CN] Stage 5: Finalize & Export",
+      "description": "[ZH-CN] Review your completed novel, give it a final title, and download your work."
+    }
+  },
+  "revisionTool": {
+    "task": {
+      "consistency": "[ZH-CN] Consistency Check",
+      "description": "[ZH-CN] Description Enhancement",
+      "dialogue": "[ZH-CN] Dialogue Optimization",
+      "pacing": "[ZH-CN] Pacing Adjustment"
+    }
+  },
+  "stage4revision": {
+    "introUIText": "[ZH-CN] I have a draft, please act as a senior editor and help me with one ofthe following tasks. Select a task, paste your text, and get AI suggestions.",
+    "labels": {
+        "selectTask": "[ZH-CN] Select Revision Task:",
+        "pasteText": "[ZH-CN] Paste the text to be revised here:"
+    },
+    "placeholders": {
+        "selectTask": "[ZH-CN] -- Select a Revision Task --",
+        "pasteText": "[ZH-CN] Enter or paste the text you want the AI to revise..."
+    },
+    "buttons": {
+        "processing": "[ZH-CN] AI is Revising...",
+        "getSuggestions": "[ZH-CN] Get AI Suggestions",
+        "copyToClipboard": "[ZH-CN] Copy Suggestions"
+    },
+    "titles": {
+        "aiSuggestions": "[ZH-CN] AI Revision Suggestions"
+    },
+    "alerts": {
+        "selectTaskAndText": "[ZH-CN] Please select a revision task and paste some text to revise."
+    },
+    "errors": {
+        "failedToGetRevision": "[ZH-CN] Failed to get revision suggestions from AI.",
+        "errorPrefix": "[ZH-CN] Error"
+    },
+    "taskDescriptions": {
+        "Consistency Check": "[ZH-CN] AI will check for plot holes, inconsistent character behavior, or contradictions with world-building.",
+        "Description Enhancement": "[ZH-CN] AI will rewrite descriptions to be more vivid and sensory, using the five senses and 'show, don't tell'.",
+        "Dialogue Optimization": "[ZH-CN] AI will make dialogue more natural, aligned with character personalities, and advance the plot.",
+        "Pacing Adjustment": "[ZH-CN] AI will assess pacing. If slow, it helps cut redundancy; if fast, it helps add detail."
+    }
+  },
+  "finalizeExport": {
+    "congratulations": "[ZH-CN] 🎉 Congratulations! 🎉",
+    "reachedFinalStage": "[ZH-CN] You've reached the final stage. Your novel is ready for its grand title and to be downloaded.",
+    "novelTitleLabel": "[ZH-CN] Your Novel's Title",
+    "novelTitlePlaceholder": "[ZH-CN] Enter the final title for your masterpiece",
+    "novelTitleInstruction": "[ZH-CN] This title will be used in the downloaded file.",
+    "downloadButton": "[ZH-CN] Download Your Novel (.txt)",
+    "downloadAriaLabel": "[ZH-CN] Download your completed novel as a text file",
+    "thankYouMessage": "[ZH-CN] Thank you for using {{appTitle}} to weave your story. Happy writing!"
+  },
+  "toolSidebar": {
+    "backToHomeTitle": "[ZH-CN] Back to {{appTitle}} Home",
+    "creativeStudio": "[ZH-CN] Creative Studio",
+    "expandAriaLabel": "[ZH-CN] Expand sidebar",
+    "collapseAriaLabel": "[ZH-CN] Collapse sidebar",
+    "expandTitle": "[ZH-CN] Expand",
+    "collapseTitle": "[ZH-CN] Collapse",
+    "navigationTitle": "[ZH-CN] Other Tools",
+    "homePageNavTitle": "[ZH-CN] Home Page",
+    "homePageNavTitleCollapsed": "[ZH-CN] Go to Home Page",
+    "settingsTitle": "[ZH-CN] Settings",
+    "apiKey": {
+      "label": "[ZH-CN] Custom Gemini API Key (Optional)",
+      "placeholder": "[ZH-CN] Enter your API key",
+      "saveButton": "[ZH-CN] Save Key",
+      "clearButton": "[ZH-CN] Clear Key",
+      "description": "[ZH-CN] Uses environment key by default. Your key is stored locally in your browser.",
+      "customSaved": "[ZH-CN] Custom API Key saved.",
+      "customCleared": "[ZH-CN] Custom API Key cleared. Using default."
+    },
+    "user": {
+        "signedInAs": "[ZH-CN] Signed in as",
+        "signOut": "[ZH-CN] Sign Out"
+    }
+  },
+  "signInPage": {
+    "title": "[ZH-CN] Sign In to Your Account",
+    "labels": {
+      "email": "[ZH-CN] Email Address",
+      "password": "[ZH-CN] Password"
+    },
+    "placeholders": {
+      "email": "[ZH-CN] you@example.com"
+    },
+    "buttons": {
+      "signIn": "[ZH-CN] Sign In",
+      "signInWith": "[ZH-CN] Sign in with {{providerName}}",
+      "signUp": "[ZH-CN] Sign Up Now"
+    },
+    "orContinueWith": "[ZH-CN] Or continue with",
+    "dontHaveAccount": "[ZH-CN] Don't have an account?",
+    "errors": {
+      "unknownError": "[ZH-CN] An unknown error occurred during sign-in. Please try again."
+    }
+  },
+  "signUpPage": {
+    "titles": {
+        "createAccount": "[ZH-CN] Create Your Account",
+        "verifyEmail": "[ZH-CN] Verify Your Email"
+    },
+    "labels": {
+      "email": "[ZH-CN] Email Address",
+      "password": "[ZH-CN] Password",
+      "confirmPassword": "[ZH-CN] Confirm Password",
+      "verificationCode": "[ZH-CN] Verification Code"
+    },
+    "placeholders": {
+      "email": "[ZH-CN] you@example.com",
+      "verificationCode": "[ZH-CN] Enter code from email"
+    },
+    "instructions": {
+        "passwordMinLength": "[ZH-CN] Minimum 6 characters."
+    },
+    "buttons": {
+      "registerAndSendCode": "[ZH-CN] Register & Send Code",
+      "verifyCode": "[ZH-CN] Verify Code",
+      "backToRegistration": "[ZH-CN] Back to Registration",
+      "signUpWith": "[ZH-CN] Sign up with {{providerName}}",
+      "signIn": "[ZH-CN] Sign In"
+    },
+    "orSignUpWith": "[ZH-CN] Or sign up with",
+    "alreadyHaveAccount": "[ZH-CN] Already have an account?",
+    "messages": {
+        "verificationSent": "[ZH-CN] Verification code sent to your email. Please check your inbox (and spam folder).",
+        "verificationSuccess": "[ZH-CN] Account verified successfully! Redirecting to sign in...",
+        "signInAfterVerification": "[ZH-CN] Your account is verified. Please sign in to continue."
+    },
+    "errors": {
+        "passwordsMismatch": "[ZH-CN] Passwords do not match.",
+        "passwordTooShort": "[ZH-CN] Password must be at least 6 characters long.",
+        "codeEmpty": "[ZH-CN] Verification code cannot be empty.",
+        "unknownInitiationError": "[ZH-CN] An unknown error occurred during sign-up initiation.",
+        "unknownVerificationError": "[ZH-CN] An unknown error occurred during verification."
+    }
+  },
+  "authCallbackPage": {
+    "processing": "[ZH-CN] Processing authentication...",
+    "verifyingToken": "[ZH-CN] Verifying your identity...",
+    "failed": "[ZH-CN] Authentication failed: {{error}}",
+    "signInRetryMessage": "[ZH-CN] Authentication failed: {{error}}. Please try signing in again.",
+    "buttons": {
+        "trySignInAgain": "[ZH-CN] Try Signing In Again"
+    },
+    "errors": {
+        "oauthProviderError": "[ZH-CN] Error from authentication provider.",
+        "tokenNotFound": "[ZH-CN] Access token not found in authentication response.",
+        "unknownError": "[ZH-CN] An unknown authentication error occurred."
+    }
+  },
+  "staticPages": {
+    "backToHome": "[ZH-CN] Back to Home",
+    "returnToHomepage": "[ZH-CN] Return to Homepage"
+  },
+  "privacyPage": {
+    "title": "[ZH-CN] Privacy Policy",
+    "thankYou": "[ZH-CN] Thank you for choosing {{appTitle}}! We are committed to protecting your privacy and handling your data transparently.",
+    "contentComingSoonTitle": "[ZH-CN] Detailed Privacy Policy Coming Soon!",
+    "workingOnDetails": "[ZH-CN] We are currently finalizing the detailed legal text for our Privacy Policy. This page will soon provide comprehensive information about:",
+    "infoWeCollect": "[ZH-CN] What information we collect (e.g., account data, novel content stored locally, usage analytics).",
+    "howWeUseInfo": "[ZH-CN] How we use your information (e.g., to provide and improve the service, personalize your experience, communicate with you).",
+    "howWeProtectInfo": "[ZH-CN] How we protect your information (e.g., security measures for any data we might handle, local storage considerations).",
+    "yourRights": "[ZH-CN] Your rights regarding your data (e.g., access, correction, deletion).",
+    "andMore": "[ZH-CN] Cookies, third-party services, policy updates, and more.",
+    "checkBackSoon": "[ZH-CN] Please check back soon for the full Privacy Policy. Your trust is important to us."
+  },
+  "termsPage": {
+    "title": "[ZH-CN] Terms of Service",
+    "welcome": "[ZH-CN] Welcome to {{appTitle}}! By using our services, you agree to these terms.",
+    "contentComingSoonTitle": "[ZH-CN] Full Terms of Service Coming Soon!",
+    "finalizingLegalFramework": "[ZH-CN] We are diligently working on our comprehensive Terms of Service. This document will outline:",
+    "userResponsibilities": "[ZH-CN] Your responsibilities as a user of {{appTitle}}.",
+    "providerResponsibilities": "[ZH-CN] Our responsibilities as the service provider.",
+    "contentOwnership": "[ZH-CN] Clarifications on content ownership and intellectual property.",
+    "acceptableUse": "[ZH-CN] Policies regarding acceptable use of the platform.",
+    "disclaimers": "[ZH-CN] Disclaimers of warranties and limitations of liability.",
+    "otherLegalInfo": "[ZH-CN] Other important legal information, including governing law and dispute resolution.",
+    "checkBackSoon": "[ZH-CN] We appreciate your patience and encourage you to review this page again shortly for the complete Terms ofService.",
+    "content": {
+        "section1_p1": "[ZH-CN] By accessing or using {{appTitle}} (\"Service\"), you agree to be bound by these Terms of Service (\"Terms\"). If you disagree with any part of the terms, then you may not access the Service.",
+        "section2_p1": "[ZH-CN] You agree to use the Service only for lawful purposes and in accordance with these Terms. You are responsible for any content you create and for your conduct while using the Service. You agree not to use the service to generate harmful, illegal, or infringing content.",
+        "section3_p1": "[ZH-CN] You retain full ownership of the creative content (novel drafts, ideas, outlines, etc.) you input into and generate with the Service (\"Your Content\"). We claim no ownership over Your Content. The Service itself, including its software, design, and branding, is the property of {{appTitle}} and its licensors and is protected by intellectual property laws.",
+        "section4_p1": "[ZH-CN] The Service is provided \"as is\" and \"as available\" without any warranties of any kind. We do not warrant that the service will be error-free or uninterrupted. {{appTitle}} shall not be liable for any indirect, incidental, special, consequential or punitive damages resulting from your access to or use of, or inability to access or use, the service.",
+        "section5_p1": "[ZH-CN] We reserve the right to modify these Terms at any time. We will provide notice of material changes. Your continued use of the Service after such changes constitutes your acceptance of the new Terms."
+    }
+  },
+  "aboutPage": {
+    "title": "[ZH-CN] About Novel Weaver AI",
+    "welcome": "[ZH-CN] Welcome to {{appTitle}}, where stories come to life with the power of AI collaboration!",
+    "missionStoryComingSoon": "[ZH-CN] Our Mission & Story - Coming Soon!",
+    "passionateAboutEmpowering": "[ZH-CN] We are passionate about empowering writers like you. We are currently crafting this section to share:",
+    "visionBehind": "[ZH-CN] The vision behind {{appTitle}} and our journey.",
+    "teamAndValues": "[ZH-CN] Information about our team and core values.",
+    "revolutionizeNovelWriting": "[ZH-CN] How we aim to revolutionize the novel writing process through innovative AI tools.",
+    "commitmentToAuthors": "[ZH-CN] Our commitment to supporting authors and fostering creativity.",
+    "stayTuned": "[ZH-CN] Stay tuned to learn more about the people and passion driving {{appTitle}}.",
+     "content": {
+        "missionTitle": "[ZH-CN] Our Mission (Placeholder)",
+        "mission_p1": "[ZH-CN] Our mission at {{appTitle}} is to democratize storytelling by providing writers of all levels with intelligent, intuitive tools that augment creativity, overcome common hurdles, and streamline the novel-writing process. We believe that everyone has a story to tell, and technology can be a powerful ally in bringing those stories to life.",
+        "visionTitle": "[ZH-CN] The {{appTitle}} Vision (Placeholder)",
+        "vision_p1": "[ZH-CN] We envision a world where the barrier to writing a novel is significantly lowered, where aspiring authors feel empowered and supported, and where seasoned writers can explore new creative avenues with AI collaboration. {{appTitle}} aims to be more than just a tool; we strive to be a creative partner in your literary journey."
+    }
+  },
+  "contactPage": {
+    "title": "[ZH-CN] Contact Us",
+    "loveToHear": "[ZH-CN] We'd love to hear from you! Whether you have a question, feedback, or a partnership inquiry, please feel free to reach out.",
+    "contactInfoComingSoon": "[ZH-CN] Contact Information & Form - Coming Soon!",
+    "pageWillFeature": "[ZH-CN] This page will soon feature:",
+    "emailAddress": "[ZH-CN] A dedicated email address for support and inquiries.",
+    "contactForm": "[ZH-CN] An easy-to-use contact form directly on this page.",
+    "socialMediaLinks": "[ZH-CN] Links to our social media channels (if applicable).",
+    "appreciatePatience": "[ZH-CN] We appreciate your patience as we set up these communication channels. We look forward to connecting with you!",
+    "formSubmitPlaceholderAlert": "[ZH-CN] Thank you for your message! (This is a placeholder - form not yet functional)"
+  },
+  "seo": {
+    "defaultTagline": "[ZH-CN] Your AI Creative Partner for Novels",
+    "defaultDescription": "[ZH-CN] Craft compelling novels from idea to final draft with Novel Weaver AI, your AI-powered creative partner. Features AI ideation, outlining, co-writing, and revision tools.",
+    "home": {
+      "titleSuffix": "[ZH-CN] AI Novel Writing Assistant",
+      "description": "[ZH-CN] Novel Weaver AI: Your ultimate AI-powered partner for novel writing. Generate ideas, outline plots, co-write chapters, and revise your manuscript with intelligent tools."
+    },
+    "tool": {
+      "defaultTitle": "[ZH-CN] Novel Editor",
+      "description": "[ZH-CN] The {{appTitle}} Novel Editor for '{{novelTitle}}' - Currently at the '{{currentStage}}' stage. Utilize AI tools for foundation, outlining, writing, and revision."
+    },
+    "pricing": {
+      "title": "[ZH-CN] Pricing Plans",
+      "description": "[ZH-CN] Explore flexible pricing plans for {{appTitle}}. Choose from Free, Lite, or Pro to unlock AI novel writing features that suit your creative needs."
+    },
+    "signIn": {
+      "title": "[ZH-CN] Sign In",
+      "description": "[ZH-CN] Sign in to your {{appTitle}} account to access your novel projects, AI writing tools, and continue crafting your masterpiece."
+    },
+    "signUp": {
+      "title": "[ZH-CN] Sign Up",
+      "description": "[ZH-CN] Create your {{appTitle}} account to start using AI-powered tools for novel ideation, outlining, writing, and revision. Begin your writing journey today!"
+    },
+    "authCallback": {
+      "title": "[ZH-CN] Authenticating",
+      "description": "[ZH-CN] Processing your authentication for {{appTitle}}. Please wait a moment."
+    },
+    "privacy": {
+      "title": "[ZH-CN] Privacy Policy",
+      "description": "[ZH-CN] Read the Privacy Policy for {{appTitle}} to understand how we collect, use, and protect your information."
+    },
+    "terms": {
+      "title": "[ZH-CN] Terms of Service",
+      "description": "[ZH-CN] Review the Terms of Service for {{appTitle}}. Understand your rights and responsibilities when using our AI novel writing platform."
+    },
+    "about": {
+      "title": "[ZH-CN] About Us",
+      "description": "[ZH-CN] Learn more about {{appTitle}}, our mission to empower writers with AI, and the team behind the innovative novel writing tools."
+    },
+    "contact": {
+      "title": "[ZH-CN] Contact Us",
+      "description": "[ZH-CN] Get in touch with the {{appTitle}} team. We welcome your questions, feedback, and inquiries about our AI novel writing platform."
+    }
+  },
+  "ldJson": {
+    "userPlaceholder": "[ZH-CN] Writer",
+    "seePlans": "[ZH-CN] See plans on page"
+  },
+  "download": {
+    "title": "[ZH-CN] Novel Title",
+    "defaultFilename": "[ZH-CN] my_ai_novel",
+    "stage1": {
+        "coreIdea": "[ZH-CN] Core Idea",
+        "genre": "[ZH-CN] Genre",
+        "tone": "[ZH-CN] Tone",
+        "targetAudience": "[ZH-CN] Target Audience",
+        "theme": "[ZH-CN] Theme",
+        "logline": "[ZH-CN] Logline",
+        "characters": "[ZH-CN] Characters",
+        "worldBuilding": "[ZH-CN] World-Building"
+    },
+    "character": {
+        "name": "[ZH-CN] Name",
+        "fields": {
+            "identity": "[ZH-CN] Identity",
+            "appearance": "[ZH-CN] Appearance",
+            "personality": "[ZH-CN] Personality",
+            "want": "[ZH-CN] Want",
+            "need": "[ZH-CN] Need",
+            "flaw": "[ZH-CN] Flaw",
+            "backstory": "[ZH-CN] Backstory",
+            "arc": "[ZH-CN] Arc",
+            "motivation": "[ZH-CN] Motivation (Antagonist)",
+            "relationshipToProtagonist": "[ZH-CN] Relationship to Protagonist (Antagonist)",
+            "functionInStory": "[ZH-CN] Function in Story (Supporting)",
+            "briefDescription": "[ZH-CN] Brief Description (Supporting)"
+        }
+    },
+    "worldBuilding": {
+        "fields": {
+            "timeAndPlace": "[ZH-CN] Time & Place",
+            "coreRules": "[ZH-CN] Core Rules",
+            "socialStructure": "[ZH-CN] Social Structure",
+            "keyLocations": "[ZH-CN] Key Locations"
+        }
+    },
+    "stage2": {
+        "actKey": {
+            "act1": "[ZH-CN] Act I",
+            "act2": "[ZH-CN] Act II",
+            "act3": "[ZH-CN] Act III"
+        },
+        "plotPointKey": {
+            "stasis": "[ZH-CN] Stasis",
+            "incitingIncident": "[ZH-CN] Inciting Incident",
+            "debate": "[ZH-CN] Debate",
+            "turningPoint1": "[ZH-CN] Turning Point 1",
+            "testsAlliesEnemies": "[ZH-CN] Tests, Allies, Enemies",
+            "midpoint": "[ZH-CN] Midpoint",
+            "risingAction": "[ZH-CN] Rising Action",
+            "allIsLost": "[ZH-CN] All Is Lost",
+            "turningPoint2": "[ZH-CN] Turning Point 2",
+            "runUpToClimax": "[ZH-CN] Run-up to Climax",
+            "climax": "[ZH-CN] Climax",
+            "fallingAction": "[ZH-CN] Falling Action",
+            "resolution": "[ZH-CN] Resolution"
+        }
+    },
+    "stage3": {
+        "chapter": "[ZH-CN] Chapter",
+        "pov": "[ZH-CN] POV Character",
+        "goal": "[ZH-CN] Core Goal",
+        "keyPlotPoints": "[ZH-CN] Key Plot Points",
+        "startingScene": "[ZH-CN] Starting Scene",
+        "endingScene": "[ZH-CN] Ending Scene",
+        "atmosphere": "[ZH-CN] Atmosphere",
+        "targetWordCount": "[ZH-CN] Target Word Count"
+    }
+  },
+  "novel": {
+    "defaultTitle": "[ZH-CN] My AI Novel"
+  },
+  "genres": {
+    "sciFi": { "name": "[ZH-CN] Sci-Fi", "description": "[ZH-CN] Explore futures, tech, and space." },
+    "fantasy": { "name": "[ZH-CN] Fantasy", "description": "[ZH-CN] Magic, myths, and epic quests." },
+    "mystery": { "name": "[ZH-CN] Mystery", "description": "[ZH-CN] Clues, suspense, and thrilling twists." }
+  },
+  "upgradeModal": {
+    "title": "[ZH-CN] Free Limit Reached",
+    "description": "[ZH-CN] You've used all your free novel downloads. To continue downloading and unlock premium features, please sign in or upgrade.",
+    "cta": "[ZH-CN] Sign In / Upgrade",
+    "later": "[ZH-CN] Maybe Later",
+    "signInPrompt": "[ZH-CN] Please sign in or upgrade to download more novels and access premium features."
+  }
+}

@@ -1,4 +1,5 @@
 
+
 import React from 'react';
 import { useTranslation } from 'react-i18next';
 import { NovelStage, STAGES_ORDER } from '../../types';
@@ -12,7 +13,7 @@ interface StageTabsProps {
 const StageTabs: React.FC<StageTabsProps> = ({ currentStage, onStageSelect }) => {
   const { t } = useTranslation();
   return (
-    <div className="flex space-x-1 border-b-2 border-slate-700" role="tablist" aria-label="Novel Stages">
+    <div className="flex space-x-1 border-b-2 border-border" role="tablist" aria-label="Novel Stages">
       {STAGES_ORDER.map((stageId) => {
         const stageInfo = STAGE_INSTRUCTIONS[stageId];
         const isActive = currentStage === stageId;
@@ -30,11 +31,11 @@ const StageTabs: React.FC<StageTabsProps> = ({ currentStage, onStageSelect }) =>
             aria-selected={isActive}
             aria-controls={`stage-panel-${stageId}`} 
             id={`stage-tab-${stageId}`}
-            className={`px-4 py-3 font-semibold text-sm rounded-t-md transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-opacity-70 focus:ring-offset-0 focus:ring-offset-slate-800 relative 
+            className={`px-4 py-3 font-semibold text-sm rounded-t-md transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-opacity-70 focus:ring-offset-0 focus:ring-offset-secondary relative 
               ${
                 isActive
-                  ? 'bg-slate-900 text-sky-400 border-x-2 border-t-2 border-slate-700 border-b-2 border-b-slate-900 focus:ring-sky-400 -mb-0.5' // -mb-0.5 to align with border-b-2
-                  : 'text-slate-400 hover:text-sky-400 hover:bg-slate-700/70 border-2 border-transparent focus:ring-slate-500'
+                  ? 'bg-card text-primary border-x-2 border-t-2 border-border border-b-2 border-b-card focus:ring-ring -mb-0.5' 
+                  : 'text-muted-foreground hover:text-primary hover:bg-accent/70 border-2 border-transparent focus:ring-ring'
               }
             `}
             title={t(stageInfo.descriptionKey)}

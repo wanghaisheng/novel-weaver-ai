@@ -1,4 +1,5 @@
 
+
 export interface CharacterProfile {
   id: string;
   name: string;
@@ -74,12 +75,12 @@ export interface Chapter {
   atmosphere: string;
   wordCount?: number;
   content: string;
-  isWriting?: boolean; // To show loading state for this specific chapter
+  isWriting?: boolean; // Optional: true if AI is currently writing this chapter
 }
 
 export interface Stage3Data {
   chapters: Chapter[];
-  currentChapterPrompt: { // For the form inputs
+  currentChapterPrompt: {
     povCharacter: string;
     coreGoal: string;
     keyPlotPoints: string;
@@ -87,14 +88,32 @@ export interface Stage3Data {
     endingScene: string;
     atmosphere: string;
     wordCount?: number;
-  }
+  };
 }
+
+export enum RevisionTaskType {
+  CONSISTENCY = 'Consistency Check',
+  DESCRIPTION = 'Description Enhancement',
+  DIALOGUE = 'Dialogue Optimization',
+  PACING = 'Pacing Adjustment',
+}
+
+export interface RevisionState {
+  taskType: RevisionTaskType | '';
+  inputText: string;
+  outputText: string;
+  isLoading: boolean;
+}
+
 
 export interface NovelData {
   title: string;
   stage1: Stage1Data;
   stage2: Stage2Data;
   stage3: Stage3Data;
+  // Stage 4 (Revision) is interactive and doesn't store data in NovelData directly,
+  // but relies on Stage 3's chapter content.
+  // Stage 5 (Finalize & Export) primarily uses existing novelData.title and triggers download.
 }
 
 export enum NovelStage {
@@ -105,7 +124,7 @@ export enum NovelStage {
   FINALIZE_EXPORT = 'Finalize & Export',
 }
 
-export const STAGES_ORDER = [
+export const STAGES_ORDER: NovelStage[] = [
   NovelStage.FOUNDATION,
   NovelStage.OUTLINE,
   NovelStage.WRITING,
@@ -115,76 +134,36 @@ export const STAGES_ORDER = [
 
 export interface StageInfo {
   id: NovelStage;
-  titleKey: string; // Changed from title to titleKey
-  descriptionKey: string; // Changed from description to descriptionKey
+  titleKey: string;
+  descriptionKey: string;
 }
 
-export enum RevisionTaskType {
-  CONSISTENCY = "Consistency Check",
-  DESCRIPTION = "Description Enhancement",
-  DIALOGUE = "Dialogue Optimization",
-  PACING = "Pacing Adjustment",
-}
+export type AppView = 'home' | 'tool' | 'pricing' | 'signIn' | 'signUp' | 'authCallback' | 'privacy' | 'terms' | 'about' | 'contact';
 
-export interface RevisionState {
-  taskType: RevisionTaskType | '';
-  inputText: string;
-  outputText: string;
-  isLoading: boolean;
-}
-
-// Defines the primary tools navigable from the main ToolSidebar
-export type ToolSectionId = 'novel-editor' | 'poem-generator' | 'script-writer' | 'trend-spark'; // Added 'trend-spark'
-
-// Types for Pricing Page
-export type BillingCycle = 'monthly' | 'yearly';
-
-export interface PricingPlan {
-  id: string;
-  nameKey: string; // Changed from name to nameKey
-  prices: { [currencyCode: string]: string }; 
-  priceMonthly: string; 
-  priceYearly?: string; 
-  originalPrices?: { [currencyCode: string]: string }; 
-  originalPriceMonthly?: string; 
-  currencySymbol: string; 
-  currencyCode: string; 
-  featureKeys: string[]; // Changed from features (string[]) to featureKeys (string[])
-  ctaTextKey: string; // Changed from ctaText to ctaTextKey
-  isHighlighted?: boolean; 
-  highlightBadgeKey?: string; // Changed from highlightBadge to highlightBadgeKey
-  monthlyPriceId?: string; 
-  yearlyPriceId?: string; 
-  gumroadLinkMonthly?: string;
-  gumroadLinkYearly?: string;
-}
-
-export interface FAQItem {
-  questionKey: string; // Changed from question to questionKey
-  answerKey: string; // Changed from answer to answerKey
-}
-
-// Authentication Types
-export interface User {
-  id: string; 
-  email: string; 
-}
-
-export interface AuthState {
-  currentUser: (User & { token: string }) | null;
-  isLoading: boolean;
-  error: string | null;
-}
-
+// This is the user object from OpenAuth provider
 export interface OpenAuthUser {
-  id: string;
-  email?: string; 
+  id: string; // Typically a UUID from OpenAuth
+  email?: string; // Email might be optional depending on provider
+  // other fields from provider...
+}
+
+// This is the user object we'll use in our app's state
+export interface User {
+  id: string; // User's unique ID (from OpenAuth system, consistent across providers)
+  email: string; // User's email address (should be present for our app's use)
+  // other app-specific fields like subscription status can be added here
 }
 
 export interface AuthResponse {
   token: string;
-  user: User; 
+  user: User; // Use our app's User type
   message?: string;
+}
+
+export interface AuthErrorResponse {
+  error?: string;
+  error_description?: string;
+  message?: string; // Often used by OpenAuth for more user-friendly messages
 }
 
 export interface SignUpInitiateResponse {
@@ -192,49 +171,51 @@ export interface SignUpInitiateResponse {
 }
 
 export interface VerificationResponse {
-    message: string;
-    user?: User; 
-}
-
-
-export interface AuthErrorResponse {
   message: string;
-  error?: string; 
-  error_description?: string; 
+  user?: OpenAuthUser; // Server might return some user info
 }
 
 export type OAuthProvider = 'google' | 'microsoft' | 'apple' | 'github';
 
-// App View Types
-export type AppView = 
-  | 'home' 
-  | 'tool' 
-  | 'pricing' 
-  | 'signIn' 
-  | 'signUp' 
-  | 'authCallback'
-  | 'privacy'
-  | 'terms'
-  | 'about'
-  | 'contact';
 
-// For i18n
-export interface LangInfo {
-  code: string;
-  name: string;
+export type ToolSectionId = 'novel-editor' | 'trend-spark'; // Removed 'sitemap-generator'
+
+export interface PricingPlan {
+  id: string;
+  nameKey: string;
+  prices: { [currencyCode: string]: string }; // e.g. { "KRW": "10000", "USD": "10" }
+  priceMonthly: string; // Base monthly price in primary currency (e.g., KRW or USD)
+  priceYearly?: string; // Optional: if yearly pricing differs structurally beyond discount
+  originalPrices?: { [currencyCode: string]: string };
+  originalPriceMonthly?: string;
+  currencySymbol: string; // Default, will be updated by selectedCurrency
+  currencyCode: string; // Default, will be updated
+  featureKeys: string[];
+  ctaTextKey: string;
+  isHighlighted?: boolean;
+  highlightBadgeKey?: string;
+  gumroadLinkMonthly: string;
+  gumroadLinkYearly?: string;
 }
 
-// For Trend Spark Tool
+export type BillingCycle = 'monthly' | 'yearly';
+
+export interface FAQItem {
+  questionKey: string;
+  answerKey: string;
+}
+
+// Trend Spark Types
 export interface TrendSparkUserQuery {
-  trends: string; // User-inputted text describing observed trends
+  trends: string; // User's description of current trends
 }
 
 export interface TrendSparkConcept {
   id: string; // Unique ID for the concept
   title: string;
-  blurb: string; // Short premise
+  blurb: string; // Short premise/hook
   genreSuggestion: string;
-  targetAudiencePlatform: string; // e.g., "Young adults on WebNovel"
+  targetAudiencePlatform: string;
   sellingPoints: string[]; // Key aspects for monetization/popularity
 }
 

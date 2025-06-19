@@ -288,9 +288,7 @@
   "toolPage": {
     "sections": {
       "novelEditor": { "title": "소설 편집기" },
-      "trendSpark": { "title": "트렌드 스파크 ✨" },
-      "poemGenerator": { "title": "시 생성기 (출시 예정)" },
-      "scriptWriter": { "title": "대본 작성기 (출시 예정)" }
+      "trendSpark": { "title": "트렌드 스파크 ✨" }
     },
     "subSections": {
         "novelWorkflowEditor": { "title": "소설 워크플로우 편집기" },
@@ -522,7 +520,14 @@
     "acceptableUse": "플랫폼의 허용 가능한 사용에 관한 정책.",
     "disclaimers": "보증 부인 및 책임 제한.",
     "otherLegalInfo": "준거법 및 분쟁 해결을 포함한 기타 중요한 법적 정보.",
-    "checkBackSoon": "잠시만 기다려주시면 감사하겠습니다. 곧 전체 서비스 이용약관을 다시 확인해주세요."
+    "checkBackSoon": "잠시만 기다려주시면 감사하겠습니다. 곧 전체 서비스 이용약관을 다시 확인해주세요.",
+    "content": {
+        "section1_p1": "Al acceder o utilizar {{appTitle}} (\"Servicio\"), aceptas estar sujeto a estos Términos de Servicio (\"Términos\"). Si no estás de acuerdo con alguna parte de los términos, entonces no podrás acceder al Servicio.",
+        "section2_p1": "Aceptas usar el Servicio solo para fines lícitos y de acuerdo con estos Términos. Eres responsable de cualquier contenido que crees y de tu conducta mientras usas el Servicio. Aceptas no usar el servicio para generar contenido dañino, ilegal o infractor.",
+        "section3_p1": "Conservarás la propiedad total del contenido creativo (borradores de novelas, ideas, esquemas, etc.) que ingreses y generes con el Servicio (\"Tu Contenido\"). No reclamamos ninguna propiedad sobre Tu Contenido. El Servicio en sí, incluido su software, diseño y marca, es propiedad de {{appTitle}} y sus licenciantes y está protegido por las leyes de propiedad intelectual.",
+        "section4_p1": "El Servicio se proporciona \"tal cual\" y \"según esté disponible\" sin garantías de ningún tipo. No garantizamos que el servicio esté libre de errores o sea ininterrumpido. {{appTitle}} no será responsable de ningún daño indirecto, incidental, especial, consecuente o punitivo que resulte de tu acceso o uso, o incapacidad de acceder o usar, el servicio.",
+        "section5_p1": "Nos reservamos el derecho de modificar estos Términos en cualquier momento. Proporcionaremos aviso de cambios materiales. Tu uso continuado del Servicio después de dichos cambios constituye tu aceptación de los nuevos Términos."
+    }
   },
   "aboutPage": {
     "title": "Novel Weaver AI 소개",
@@ -533,7 +538,13 @@
     "teamAndValues": "저희 팀과 핵심 가치에 대한 정보.",
     "revolutionizeNovelWriting": "혁신적인 AI 도구를 통해 소설 쓰기 과정을 혁신하는 방법.",
     "commitmentToAuthors": "작가 지원 및 창의성 육성에 대한 저희의 약속.",
-    "stayTuned": "{{appTitle}}를 이끄는 사람들과 열정에 대해 더 자세히 알아보려면 계속 지켜봐 주세요."
+    "stayTuned": "{{appTitle}}를 이끄는 사람들과 열정에 대해 더 자세히 알아보려면 계속 지켜봐 주세요.",
+     "content": {
+        "missionTitle": "Our Mission (Placeholder)",
+        "mission_p1": "Our mission at {{appTitle}} is to democratize storytelling by providing writers of all levels with intelligent, intuitive tools that augment creativity, overcome common hurdles, and streamline the novel-writing process. We believe that everyone has a story to tell, and technology can be a powerful ally in bringing those stories to life.",
+        "visionTitle": "The {{appTitle}} Vision (Placeholder)",
+        "vision_p1": "We envision a world where the barrier to writing a novel is significantly lowered, where aspiring authors feel empowered and supported, and where seasoned writers can explore new creative avenues with AI collaboration. {{appTitle}} aims to be more than just a tool; we strive to be a creative partner in your literary journey."
+    }
   },
   "contactPage": {
     "title": "문의하기",
@@ -543,7 +554,8 @@
     "emailAddress": "지원 및 문의를 위한 전용 이메일 주소.",
     "contactForm": "이 페이지에서 직접 사용할 수 있는 사용하기 쉬운 문의 양식.",
     "socialMediaLinks": "소셜 미디어 채널 링크 (해당되는 경우).",
-    "appreciatePatience": "이러한 소통 채널을 설정하는 동안 잠시만 기다려주시면 감사하겠습니다. 여러분과의 소통을 기대합니다!"
+    "appreciatePatience": "이러한 소통 채널을 설정하는 동안 잠시만 기다려주시면 감사하겠습니다. 여러분과의 소통을 기대합니다!",
+    "formSubmitPlaceholderAlert": "Thank you for your message! (This is a placeholder - form not yet functional)"
   },
   "seo": {
     "defaultTagline": "AI 창작 소설 파트너",
