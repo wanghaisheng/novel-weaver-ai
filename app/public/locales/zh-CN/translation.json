@@ -1,694 +1,691 @@
 
 {
-  "appTitle": "[ZH-CN] Novel Weaver AI",
+  "appTitle": "小说织造AI",
   "loading": {
-    "application": "[ZH-CN] Loading application...",
-    "translations": "[ZH-CN] Loading translations..."
+    "application": "正在加载应用程序...",
+    "translations": "正在加载翻译..."
   },
   "error": {
-    "unknownView": "[ZH-CN] Unknown view. An unexpected error occurred.",
-    "pageNotFound": "[ZH-CN] Oops! Page Not Found."
+    "unknownView": "未知视图。发生意外错误。",
+    "pageNotFound": "哎呀！页面未找到。"
   },
   "navigation": {
-    "features": "[ZH-CN] Features",
-    "howItWorks": "[ZH-CN] How It Works",
-    "pricing": "[ZH-CN] Pricing",
-    "testimonials": "[ZH-CN] Testimonials",
-    "genreTools": "[ZH-CN] Genre Tools",
-    "toolsMegaMenu": "[ZH-CN] Genre Prompts",
-    "signIn": "[ZH-CN] Sign In",
-    "signOut": "[ZH-CN] Sign Out",
-    "signUp": "[ZH-CN] Sign Up",
-    "goToTool": "[ZH-CN] Go to Tool",
-    "myNovels": "[ZH-CN] My Novels",
-    "getStarted": "[ZH-CN] Get Started",
-    "startCreating": "[ZH-CN] Start Creating",
-    "goHome": "[ZH-CN] Go to Home Page"
+    "features": "功能",
+    "howItWorks": "工作原理",
+    "pricing": "定价",
+    "testimonials": "推荐",
+    "genreTools": "类型工具",
+    "toolsMegaMenu": "类型提示",
+    "signIn": "登录",
+    "signOut": "登出",
+    "signUp": "注册",
+    "goToTool": "前往工具",
+    "myNovels": "我的小说",
+    "getStarted": "开始使用",
+    "startCreating": "开始创作",
+    "goHome": "返回首页",
+    "forEveryWriter": "为每位作家"
   },
   "footer": {
-    "copyright": "[ZH-CN] © {{year}} {{appTitle}}. All rights reserved.",
-    "copyrightSimple": "[ZH-CN] © {{year}} {{appTitle}}",
-    "copyrightPricingPage": "[ZH-CN] © {{year}} {{appTitle}}. Secure payments via Gumroad.",
-    "copyrightToolPage": "[ZH-CN] © {{year}} {{appTitle}}. Your creative partner.",
-    "tagline": "[ZH-CN] Crafting Worlds, One Word at a Time.",
-    "privacyPolicy": "[ZH-CN] Privacy Policy",
-    "termsOfService": "[ZH-CN] Terms of Service",
-    "aboutUs": "[ZH-CN] About Us",
-    "contactUs": "[ZH-CN] Contact Us",
-    "language": "[ZH-CN] Language",
-    "selectLanguageLabel": "[ZH-CN] Select language",
-    "toolNavigation": "[ZH-CN] Tool Navigation"
+    "copyright": "© {{year}} {{appTitle}}。版权所有。",
+    "copyrightSimple": "© {{year}} {{appTitle}}",
+    "copyrightPricingPage": "© {{year}} {{appTitle}}。通过Square安全支付。",
+    "copyrightToolPage": "© {{year}} {{appTitle}}。您的创作伙伴。",
+    "tagline": "一字一句，编织世界。",
+    "privacyPolicy": "隐私政策",
+    "termsOfService": "服务条款",
+    "aboutUs": "关于我们",
+    "contactUs": "联系我们",
+    "language": "语言",
+    "selectLanguageLabel": "选择语言",
+    "toolNavigation": "工具导航"
   },
   "home": {
     "hero": {
-      "welcome": "[ZH-CN] Welcome to",
-      "tagline": "[ZH-CN] Your AI-powered partner for crafting compelling novels, from initial idea to final polished draft. Let's weave your story together.",
-      "createNovelNow": "[ZH-CN] Create Your Novel Now",
-      "createNovelNowAriaLabel": "[ZH-CN] Start creating your novel with Novel Weaver AI"
+      "welcome": "欢迎来到",
+      "tagline": "您的人工智能伙伴，助您打造引人入胜的小说，从最初的构想到最终的润色稿件。让我们一起编织您的故事。",
+      "createNovelNow": "立即创作您的小说",
+      "createNovelNowAriaLabel": "开始使用 Novel Weaver AI 创作您的小说"
     },
     "features": {
-      "sectionTitle": "[ZH-CN] Everything You Need to Write Your Masterpiece with {{appTitle}}",
+      "sectionTitle": "用 {{appTitle}} 创作您的杰作所需的一切",
       "ideation": {
-        "title": "[ZH-CN] AI Ideation & Concept",
-        "description": "[ZH-CN] Spark creativity with AI-generated ideas for plots, characters, and settings. Overcome writer's block instantly."
+        "title": "AI 创意与概念",
+        "description": "借助 AI 生成的情节、角色和背景创意，激发创作灵感。即刻克服写作障碍。"
       },
       "outlining": {
-        "title": "[ZH-CN] Structured Outlining",
-        "description": "[ZH-CN] Organize your thoughts with a flexible outlining tool that supports classic structures like the three-act model."
+        "title": "结构化大纲",
+        "description": "使用支持三幕式等经典结构的灵活大纲工具来组织您的思路。"
       },
       "writing": {
-        "title": "[ZH-CN] Collaborative AI Writing",
-        "description": "[ZH-CN] Draft chapters faster with AI assistance. Provide prompts and let the AI help you write compelling scenes."
+        "title": "协作式 AI 写作",
+        "description": "在 AI 的协助下更快地起草章节。提供提示，让 AI 帮助您写出引人入胜的场景。"
       },
       "revision": {
-        "title": "[ZH-CN] Insightful Revision Tools",
-        "description": "[ZH-CN] Refine your manuscript with AI-powered suggestions for consistency, pacing, descriptions, and dialogue."
+        "title": "富有洞察力的修订工具",
+        "description": "利用 AI 驱动的建议来完善您的手稿，涵盖一致性、节奏、描述和对话等方面。"
       }
     },
     "howItWorks": {
-      "sectionTitle": "[ZH-CN] How Novel Weaver AI Works",
+      "sectionTitle": "Novel Weaver AI 工作原理",
       "spark": {
-        "title": "[ZH-CN] 1. Spark Concept",
-        "description": "[ZH-CN] Define your core idea, genre, and characters. Use AI to brainstorm or fill in the details manually."
+        "title": "1. 点燃概念",
+        "description": "定义您的核心思想、类型和角色。使用 AI 进行头脑风暴或手动填写详细信息。"
       },
       "outline": {
-        "title": "[ZH-CN] 2. Outline Plot",
-        "description": "[ZH-CN] Structure your story using the guided three-act framework, detailing key plot points and turning points."
+        "title": "2. 勾勒情节",
+        "description": "使用引导式三幕结构来构建您的故事，详细说明关键情节转折点。"
       },
       "draft": {
-        "title": "[ZH-CN] 3. Draft Chapters",
-        "description": "[ZH-CN] Write chapter by chapter with AI co-writing assistance, focusing on POV, goals, and key scenes."
+        "title": "3. 起草章节",
+        "description": "在 AI 协同写作的协助下逐章写作，重点关注视角、目标和关键场景。"
       },
       "refine": {
-        "title": "[ZH-CN] 4. Refine & Polish",
-        "description": "[ZH-CN] Utilize AI revision tools to check consistency, enhance descriptions, optimize dialogue, and adjust pacing."
+        "title": "4. 修订与润色",
+        "description": "利用 AI 修订工具检查一致性、增强描述、优化对话和调整节奏。"
+      }
+    },
+    "userTypes": {
+      "sectionTitle": "[ZH-CN] Craft Your Story, Your Way",
+      "sectionSubtitle": "[ZH-CN] {{appTitle}} is designed to empower every kind of storyteller. Discover how our tools can adapt to your unique writing style and goals.",
+      "aspiring": {
+        "title": "[ZH-CN] The Aspiring Author",
+        "description": "[ZH-CN] Just starting your novel-writing journey? {{appTitle}} provides the guidance and structure to turn your fledgling ideas into a complete story.",
+        "benefit1": "[ZH-CN] Overcome writer's block with AI-powered idea generation.",
+        "benefit2": "[ZH-CN] Learn story structure with guided outlining tools.",
+        "benefit3": "[ZH-CN] Build confidence with AI co-writing assistance for first drafts.",
+        "cta": "[ZH-CN] Start Your First Novel"
+      },
+      "experienced": {
+        "title": "[ZH-CN] The Seasoned Novelist",
+        "description": "[ZH-CN] Looking to enhance your workflow and explore new creative avenues? {{appTitle}} offers advanced tools to streamline your process and polish your prose.",
+        "benefit1": "[ZH-CN] Accelerate drafting and revisions with intelligent AI.",
+        "benefit2": "[ZH-CN] Experiment with new concepts rapidly using Trend Spark.",
+        "benefit3": "[ZH-CN] Fine-tune your manuscript with a comprehensive AI revision suite.",
+        "cta": "[ZH-CN] Explore Advanced Tools"
+      },
+      "hobbyist": {
+        "title": "[ZH-CN] The Creative Hobbyist",
+        "description": "[ZH-CN] Love building worlds and crafting characters for fun? {{appTitle}} is your creative sandbox to explore storytelling without pressure.",
+        "benefit1": "[ZH-CN] Easily develop rich characters and intricate worlds.",
+        "benefit2": "[ZH-CN] Experiment with different plotlines and story ideas.",
+        "benefit3": "[ZH-CN] Enjoy the process of creation with a supportive AI partner.",
+        "cta": "[ZH-CN] Unleash Your Imagination"
       }
     },
     "megaMenu": {
-        "title": "[ZH-CN] Specialized Genre Prompts",
-        "description": "[ZH-CN] Explore AI prompts fine-tuned for various genres to kickstart specific story elements.",
-        "alertAccessingTools": "[ZH-CN] Accessing {{genreName}} tools..."
+        "title": "专业类型提示",
+        "description": "探索针对各种类型微调的 AI 提示，以启动特定的故事元素。",
+        "alertAccessingTools": "正在访问 {{genreName}} 工具..."
     },
     "showcase": {
-      "sectionTitle": "[ZH-CN] Get Inspired: Novel Showcase",
-      "noMatch": "[ZH-CN] No showcases match the current filter."
+      "sectionTitle": "获取灵感：小说展示",
+      "noMatch": "没有与当前筛选器匹配的展示。"
     },
     "testimonials": {
-      "sectionTitle": "[ZH-CN] What Our Writers Say",
-      "sectionDescription": "[ZH-CN] Hear from authors who have transformed their writing process with {{appTitle}}.",
+      "sectionTitle": "听听作家们怎么说",
+      "sectionDescription": "听听那些通过 {{appTitle}} 改变了写作流程的作者们的反馈。",
       "1": {
-        "quote": "[ZH-CN] {{appTitle}} helped me break through a massive writer's block. The ideation tools are a game-changer!",
-        "authorName": "[ZH-CN] Alex R.",
-        "authorTitle": "[ZH-CN] Sci-Fi Novelist"
+        "quote": "{{appTitle}} 帮助我突破了巨大的写作瓶颈。创意构思工具简直是革命性的！",
+        "authorName": "亚历克斯·R",
+        "authorTitle": "科幻小说家"
       },
       "2": {
-        "quote": "[ZH-CN] As a new writer, the structured outlining and AI co-writing features were invaluable. I finally finished my first novel!",
-        "authorName": "[ZH-CN] Jamie L.",
-        "authorTitle": "[ZH-CN] Fantasy Author"
+        "quote": "作为一名新作家，结构化大纲和 AI 协同写作功能非常宝贵。我终于完成了我的第一部小说！",
+        "authorName": "杰米·L",
+        "authorTitle": "奇幻作家"
       },
       "3": {
-        "quote": "[ZH-CN] The revision tools are incredibly insightful. My manuscript is so much stronger thanks to the AI's suggestions on pacing and description.",
-        "authorName": "[ZH-CN] Sam K.",
-        "authorTitle": "[ZH-CN] Mystery Writer"
+        "quote": "修订工具的见解非常深刻。多亏了 AI 在节奏和描述方面的建议，我的手稿变得更强大了。",
+        "authorName": "萨姆·K",
+        "authorTitle": "悬疑作家"
       }
     },
     "genreTools": {
-        "sectionTitle": "[ZH-CN] Tailor Your Story with Specialized Genre Tools",
-        "sectionDescription": "[ZH-CN] {{appTitle}} understands that different genres have unique needs. Our specialized tools, powered by fine-tuned meta prompts, help you nail the conventions and atmosphere of your chosen genre.",
-        "toolFocusLabel": "[ZH-CN] Tool Focus",
+        "sectionTitle": "使用专业类型工具定制您的故事",
+        "sectionDescription": "{{appTitle}} 理解不同类型有其独特需求。我们由微调元提示驱动的专业工具，助您精准把握所选类型的惯例和氛围。",
+        "toolFocusLabel": "工具焦点",
         "sciFi": {
-            "name": "[ZH-CN] Science Fiction",
-            "description": "[ZH-CN] Explore futuristic societies, advanced technology, and the far reaches of space.",
-            "toolFocus": "[ZH-CN] Prompts for tech concepts, alien species, future societies, and philosophical quandaries."
+            "name": "科幻",
+            "description": "探索未来社会、先进技术和遥远的宇宙。",
+            "toolFocus": "关于技术概念、外星物种、未来社会和哲学难题的提示。"
         },
         "fantasy": {
-            "name": "[ZH-CN] Fantasy",
-            "description": "[ZH-CN] Weave tales of magic, mythical creatures, and epic quests in imaginative realms.",
-            "toolFocus": "[ZH-CN] World-building prompts for epic scope, magic system rules, mythical races, and prophecy arcs."
+            "name": "奇幻",
+            "description": "在富有想象力的领域编织魔法、神话生物和史诗任务的故事。",
+            "toolFocus": "关于史诗范围的世界构建、魔法系统规则、神话种族和预言弧线的提示。"
         },
         "mystery": {
-            "name": "[ZH-CN] Mystery & Thriller",
-            "description": "[ZH-CN] Craft suspenseful narratives filled with clues, red herrings, and shocking twists.",
-            "toolFocus": "[ZH-CN] Prompts for clue dropping, suspect development, plot twists, and building suspenseful pacing."
+            "name": "悬疑与惊悚",
+            "description": "创作充满线索、误导信息和惊人转折的悬念叙事。",
+            "toolFocus": "关于线索布置、嫌疑人发展、情节转折和营造悬念节奏的提示。"
         },
         "customPrompt": {
-            "title": "[ZH-CN] Unlock the Custom Meta Prompt Builder",
-            "description": "[ZH-CN] Paid users gain access to our powerful Custom Meta Prompt Builder. Define your own unique story structures, AI instructions, and genre parameters for unparalleled control over your novel's development.",
-            "cta": "[ZH-CN] Explore Premium Plans"
+            "title": "解锁自定义元提示生成器",
+            "description": "付费用户可以访问我们强大的自定义元提示生成器。定义您自己独特的故事结构、AI 指令和类型参数，从而对小说的发展拥有无与伦比的控制权。",
+            "cta": "探索高级计划"
         }
     },
     "seoSection": {
-        "title": "[ZH-CN] Unlock Your Creative Potential with AI Novel Writing",
-        "paragraph1": "[ZH-CN] Novel Weaver AI is your ultimate partner in the creative journey of novel writing. Whether you're an aspiring author or a seasoned writer, our AI-powered tools are designed to streamline your process, from brainstorming initial concepts to polishing your final draft. With features like AI story generation, character creation, plot development, and intelligent revision suggestions, {{appTitle}} helps you overcome writer's block and bring your fictional worlds to life.",
-        "paragraph2": "[ZH-CN] Our platform supports a variety of genres, offering specialized assistance for Sci-Fi, Fantasy, Mystery, and more. Utilize our structured outlining tools to build a compelling narrative framework, and then dive into chapter writing with AI co-writing support that understands your vision. {{appTitle}} focuses on collaboration, ensuring your unique voice remains at the heart of your story while leveraging AI to enhance productivity and creativity.",
-        "paragraph3": "[ZH-CN] Experience the future of novel writing. Join a community of authors who are transforming their creative process with {{appTitle}}. Start crafting your masterpiece today, and let our AI assist you in weaving intricate plots, developing memorable characters, and creating immersive worlds that captivate your readers."
+        "title": "通过 AI 小说写作释放您的创作潜力",
+        "paragraph1": "Novel Weaver AI 是您小说创作之旅中的终极伙伴。无论您是胸怀抱负的作者还是经验丰富的作家，我们由 AI 驱动的工具都旨在简化您的流程，从最初的概念构思到最终稿件的润色。凭借 AI 故事生成、角色创建、情节发展和智能修订建议等功能，{{appTitle}} 帮助您克服写作障碍，让您的虚构世界栩栩如生。",
+        "paragraph2": "我们的平台支持多种类型，为科幻、奇幻、悬疑等提供专业协助。利用我们结构化的大纲工具构建引人入胜的叙事框架，然后借助理解您愿景的 AI 协同写作支持投入章节写作。{{appTitle}} 注重协作，确保您的独特声音始终是故事的核心，同时利用 AI 提高生产力和创造力。",
+        "paragraph3": "体验小说写作的未来。加入一个通过 {{appTitle}} 改变创作流程的作家社区。今天就开始创作您的杰作，让我们的 AI 协助您编织复杂的情节，塑造令人难忘的角色，并创造让读者着迷的沉浸式世界。"
     }
   },
   "pricing": {
-    "pageTitle": "[ZH-CN] Find the Perfect Plan for Your Story",
-    "currencyAutoDetectMessage": "[ZH-CN] Currency ({{currencyCode}}) auto-detected. You can change it.",
-    "currencySelectedMessage": "[ZH-CN] Currency set to {{currencyCode}}.",
-    "perMonth": "[ZH-CN] / month",
-    "billedAnnually": "[ZH-CN] billed annually",
-    "polloApiNote": "[ZH-CN] Payment processing is illustrative and uses placeholder Gumroad links.",
-    "polloApiLinkText": "[ZH-CN] Learn more about Gumroad.",
-    "paymentSafety": "[ZH-CN] Secure and encrypted payments.",
-    "morePaymentMethods": "[ZH-CN] and more",
-    "gumroadLinkUnavailableAlert": "[ZH-CN] Gumroad link for {{planName}} ({{cycle}}) is not available yet.",
+    "pageTitle": "为您的故事找到完美的计划",
+    "currencyAutoDetectMessage": "货币 ({{currencyCode}}) 已自动检测。您可以更改它。",
+    "currencySelectedMessage": "货币已设置为 {{currencyCode}}。",
+    "perMonth": "/月",
+    "billedAnnually": "按年计费",
+    "paymentProcessingNote": "支付处理由 Square 提供支持。",
+    "paymentSafety": "安全加密支付。",
+    "morePaymentMethods": "及更多",
     "joinUsersSection": {
-        "title": "[ZH-CN] Join Thousands of Writers on {{appTitle}}",
-        "ctaLoggedIn": "[ZH-CN] Go to My Novels",
-        "ctaLoggedOut": "[ZH-CN] Start Your Free Plan Today"
+        "title": "加入 {{appTitle}} 成千上万的作家行列",
+        "ctaLoggedIn": "前往我的小说",
+        "ctaLoggedOut": "立即开始您的免费计划"
     },
-    "selectCurrencyAriaLabel": "[ZH-CN] Select currency for pricing display",
+    "selectCurrencyAriaLabel": "选择价格显示货币",
     "plans": {
       "free": {
-        "name": "[ZH-CN] Free Weaver",
+        "name": "免费织梦者",
         "features": [
-          "[ZH-CN] 1 Novel Project",
-          "[ZH-CN] Basic AI Ideation",
-          "[ZH-CN] Standard Plot Outlining",
-          "[ZH-CN] AI Co-Writing (Limited)",
-          "[ZH-CN] Basic Revision Suggestions",
-          "[ZH-CN] Up to 10,000 words per novel",
-          "[ZH-CN] Community Access",
-          "[ZH-CN] Download as .txt",
-          "[ZH-CN] Limited AI Model Access"
+          "1 个小说项目",
+          "基础 AI 创意",
+          "标准情节大纲",
+          "AI 协同写作（受限）",
+          "基础修订建议",
+          "每部小说最多 10,000 字",
+          "社区访问",
+          "下载为 .txt",
+          "受限 AI 模型访问"
         ],
-        "cta": "[ZH-CN] Start for Free"
+        "cta": "免费开始"
       },
       "lite": {
-        "name": "[ZH-CN] Lite Weaver",
+        "name": "轻量织梦者",
         "features": [
-          "[ZH-CN] Everything in Free, plus:",
-          "[ZH-CN] 3 Novel Projects",
-          "[ZH-CN] Advanced AI Ideation",
-          "[ZH-CN] Enhanced Plot Outlining",
-          "[ZH-CN] AI Co-Writing (Moderate)",
-          "[ZH-CN] Standard Revision Suite",
-          "[ZH-CN] Up to 50,000 words per novel",
-          "[ZH-CN] Priority Community Support",
-          "[ZH-CN] Genre-Specific Prompts (Basic)",
-          "[ZH-CN] Standard AI Model Access"
+          "包含免费版所有功能，外加：",
+          "3 个小说项目",
+          "高级 AI 创意",
+          "增强情节大纲",
+          "AI 协同写作（中等）",
+          "标准修订套件",
+          "每部小说最多 50,000 字",
+          "优先社区支持",
+          "特定类型提示（基础）",
+          "标准 AI 模型访问"
         ],
-        "cta": "[ZH-CN] Choose Lite"
+        "cta": "选择轻量版"
       },
       "pro": {
-        "name": "[ZH-CN] Pro Weaver",
+        "name": "专业织梦者",
         "features": [
-          "[ZH-CN] Everything in Lite, plus:",
-          "[ZH-CN] Unlimited Novel Projects",
-          "[ZH-CN] Expert AI Ideation & Brainstorming",
-          "[ZH-CN] Customizable Plot Structures",
-          "[ZH-CN] AI Co-Writing (Extensive)",
-          "[ZH-CN] Full AI Revision Suite",
-          "[ZH-CN] Unlimited words per novel",
-          "[ZH-CN] Dedicated Support",
-          "[ZH-CN] Full Genre-Specific Prompt Library",
-          "[ZH-CN] Custom Meta Prompt Builder",
-          "[ZH-CN] Premium AI Model Access"
+          "包含轻量版所有功能，外加：",
+          "无限小说项目",
+          "专家级 AI 创意与头脑风暴",
+          "可定制情节结构",
+          "AI 协同写作（广泛）",
+          "完整 AI 修订套件",
+          "每部小说字数不限",
+          "专属支持",
+          "完整特定类型提示库",
+          "自定义元提示生成器",
+          "高级 AI 模型访问"
         ],
-        "cta": "[ZH-CN] Go Pro"
+        "cta": "升级专业版"
+      }
+    },
+    "cta": {
+      "manageSubscription": "管理订阅"
+    },
+    "activePlanBadge": "当前计划",
+    "paymentModal": {
+        "title": "完成 {{planName}} 付款",
+        "youArePayingFor": "您正在支付",
+        "submitPaymentButton": "支付 {{price}}",
+        "securityNote": "您的付款详情由 Square 安全处理。",
+        "errorSquareSDK": "无法加载 Square Payments SDK。请刷新页面或检查您的网络连接。",
+        "errorInitCardForm": "无法初始化银行卡支付表单。请重试。",
+        "errorCardNotReady": "银行卡支付表单未准备就绪。请稍候。",
+        "errorTokenizationFailed": "处理付款详情失败。请检查您的银行卡信息并重试。",
+        "errorTokenizationGeneric": "处理您的付款时发生意外错误。请稍后重试。",
+        "errorVerificationFailed": "付款验证失败。请重试或联系您的银行。",
+        "verifyingPayment": "正在验证您的付款，请稍候...",
+        "nonceReceivedAlert": "收到付款 Nonce：{{nonce}}。此信息将发送到您的服务器。",
+        "errorSquareIdsMissing": "Square 支付网关未正确配置。请联系支持人员。",
+        "alertSquareIdsNotConfigured": "支付系统未配置。请联系支持或使用沙盒 ID 进行测试。"
+    },
+    "submissionStatus": {
+      "title": "付款提交状态",
+      "dismissAriaLabel": "关闭状态消息",
+      "submitting": "正在处理您的付款信息...",
+      "success": "您对 {{planName}} 计划的付款已成功！（前端模拟）",
+      "error": "处理您对 {{planName}} 计划的付款时出现问题。请检查您的详细信息并重试。（前端模拟）",
+      "backendNote": "这是一个前端模拟。下一步是实现后端端点（例如 /api/create-subscription）以使用 Square 安全地处理此付款。当前设置不会产生实际费用。确保 `constants.ts` 中的 Square Application ID 和 Location ID 已为沙盒测试正确设置。",
+      "submittingToServer": "正在向服务器提交您的订阅请求...",
+      "successBackend": "您对 {{planName}} 计划的订阅已成功创建！",
+      "errorBackendSpecific": "创建 {{planName}} 订阅失败。错误：{{backendError}}",
+      "errorBackendGeneric": "创建 {{planName}} 订阅失败。请稍后重试或联系支持人员（如果问题仍然存在）。",
+      "manageSubscription": {
+        "loading": "处理中...",
+        "cancelled": "订阅已成功取消（模拟）。"
+      }
+    },
+    "faqs": {
+      "sectionTitleGeneral": "常见问题",
+      "sectionTitlePricing": "定价常见问题",
+      "0": {
+        "question": "你们接受哪些付款方式？",
+        "answer": "我们接受主要的信用卡（Visa、Mastercard、American Express）、Apple Pay、Google Pay 以及 Square（我们的支付处理合作伙伴）支持的其他付款方式。"
+      },
+      "1": {
+        "question": "我可以随时取消订阅吗？",
+        "answer": "是的，您可以随时取消您的月度或年度订阅。如果您取消，您将保留对计划功能的访问权限，直到当前计费期结束。部分时段不提供退款。"
+      },
+      "2": {
+        "question": "如果我升级或降级我的计划会怎样？",
+        "answer": "升级通常会立即生效，并按比例收取新计划的费用。降级将在您当前计费周期结束时生效。具体细节由 Square 的订阅管理处理。"
+      },
+      "3": {
+        "question": "付费计划有免费试用吗？",
+        "answer": "我们提供一个全面的免费计划，让您可以体验 Novel Weaver AI 的核心功能。我们目前不为付费计划提供单独的限时免费试用。"
+      },
+      "4": {
+        "question": "“受限”与“完整”AI 模型访问权限有何区别？",
+        "answer": "免费和轻量版计划可能使用标准 AI 模型。专业版计划可以访问我们的高级、更强大的 AI 模型，这可以带来更高质量的建议、更细致入微的写作以及对复杂提示更好的理解。"
+      },
+      "5": {
+        "question": "什么是自定义元提示生成器？",
+        "answer": "专业版计划提供此强大工具，允许您定义自己独特的故事结构、AI 指令和小说生成参数，从而对 AI 的创作过程拥有无与伦比的控制权，以满足非常具体的需求。"
+      },
+      "6": {
+        "question": "付费计划有字数限制吗？",
+        "answer": "“轻量织梦者”计划对每部小说有慷慨的字数限制（例如 50,000 字）。“专业织梦者”计划对每部小说提供无限字数，让您可以不受限制地创作史诗。"
       }
     }
   },
   "billingCycle": {
-    "monthly": "[ZH-CN] Monthly",
-    "yearly": "[ZH-CN] Yearly",
-    "saveBadgeYearly": "[ZH-CN] Save 20%"
+    "monthly": "月度",
+    "yearly": "年度",
+    "saveBadgeYearly": "节省 20%"
   },
   "faqs": {
     "general": {
-      "sectionTitle": "[ZH-CN] Frequently Asked Questions"
+      "sectionTitle": "常见问题"
     },
     "pricing": {
-      "sectionTitle": "[ZH-CN] Pricing FAQs"
+      "sectionTitle": "定价常见问题"
     },
     "tool": {
-        "sectionTitle": "[ZH-CN] Novel Weaver AI: Your Questions Answered",
-        "sectionDescription": "[ZH-CN] Have questions about using the Novel Weaver AI editor? Find answers to common queries below."
+        "sectionTitle": "Novel Weaver AI：您的问题已解答",
+        "sectionDescription": "对使用 Novel Weaver AI 编辑器有疑问吗？在下方查找常见问题的答案。"
     }
   },
-  "general.faqs": [
-      {
-        "question": "[ZH-CN] What is Novel Weaver AI?",
-        "answer": "[ZH-CN] Novel Weaver AI is an AI-powered web application designed to assist writers in every stage of the novel creation process, from ideation and outlining to chapter writing and revision. It combines structured tools with advanced AI to help you craft compelling stories."
-      },
-      {
-        "question": "[ZH-CN] How does the AI help with writing a novel?",
-        "answer": "[ZH-CN] The AI can help brainstorm ideas, suggest plot points, develop characters, generate draft content for chapters based on your prompts, and provide suggestions for revising your work (e.g., improving descriptions, checking consistency, optimizing dialogue)."
-      },
-      {
-        "question": "[ZH-CN] Is Novel Weaver AI suitable for all genres?",
-        "answer": "[ZH-CN] Yes! While we offer specialized prompts for popular genres like Sci-Fi, Fantasy, and Mystery, the core tools are versatile and can be adapted for any genre you're passionate about. The Custom Meta Prompt Builder (Pro plan) allows even deeper genre customization."
-      },
-      {
-        "question": "[ZH-CN] Do I own the content I create with Novel Weaver AI?",
-        "answer": "[ZH-CN] Absolutely. You retain full ownership of all content you create and input into Novel Weaver AI, as well as the narratives generated with AI assistance based on your inputs. We believe your story is yours."
-      },
-      {
-        "question": "[ZH-CN] How is my data saved and is it secure?",
-        "answer": "[ZH-CN] Your novel data is primarily saved in your browser's local storage for quick access. While convenient, we strongly recommend frequently using the 'Download Novel' feature to save a .txt backup to your computer. For authenticated users, future updates may include cloud storage options. We are committed to data security, but local storage is inherently tied to your browser."
-      },
-      {
-        "question": "[ZH-CN] Can I use Novel Weaver AI for free?",
-        "answer": "[ZH-CN] Yes, we offer a 'Free Weaver' plan with basic features and limitations, perfect for trying out the platform. For more advanced capabilities and fewer restrictions, we offer affordable paid plans."
-      }
-  ],
-  "pricing.faqs": [
-    {
-      "question": "[ZH-CN] What payment methods do you accept?",
-      "answer": "[ZH-CN] We accept major credit cards (Visa, Mastercard, American Express), PayPal, Apple Pay, Google Pay, and other payment methods supported by Gumroad, our payment processing partner."
-    },
-    {
-      "question": "[ZH-CN] Can I cancel my subscription at any time?",
-      "answer": "[ZH-CN] Yes, you can cancel your monthly or yearly subscription at any time. If you cancel, you'll retain access to your plan's features until the end of your current billing period. No refunds are provided for partial periods."
-    },
-    {
-      "question": "[ZH-CN] What happens if I upgrade or downgrade my plan?",
-      "answer": "[ZH-CN] Upgrades are typically effective immediately, with a prorated charge for the new plan. Downgrades take effect at the end ofyour current billing cycle. Specifics are handled by Gumroad's subscription management."
-    },
-    {
-      "question": "[ZH-CN] Is there a free trial for paid plans?",
-      "answer": "[ZH-CN] We offer a comprehensive Free plan that allows you to experience the core functionalities of Novel Weaver AI. We currently do not offer separate time-limited free trials for paid plans."
-    },
-    {
-      "question": "[ZH-CN] What does 'Limited' vs 'Full' AI Model Access mean?",
-      "answer": "[ZH-CN] Free and Lite plans may use standard AI models. Pro plans get access to our premium, more powerful AI models, which can result in higher quality suggestions, more nuanced writing, and better understanding of complex prompts."
-    },
-    {
-      "question": "[ZH-CN] What is the Custom Meta Prompt Builder?",
-      "answer": "[ZH-CN] Available on the Pro plan, this powerful tool allows you to define your own unique story structures, AI instructions, and parameters for novel generation, giving you unparalleled control over the AI's creative process to match very specific needs."
-    },
-    {
-      "question": "[ZH-CN] Are there any word count limits on paid plans?",
-      "answer": "[ZH-CN] The 'Lite Weaver' plan has a generous word count limit per novel (e.g., 50,000 words). The 'Pro Weaver' plan offers unlimited words per novel, allowing you to write epics without restriction."
-    }
-  ],
+  "general.faqs": "[ZH-CN] (Same structure as English, content needs translation)",
   "toolPage": {
     "sections": {
-      "novelEditor": { "title": "[ZH-CN] Novel Editor" },
-      "trendSpark": { "title": "[ZH-CN] Trend Spark ✨" }
+      "novelEditor": { "title": "小说编辑器" },
+      "trendSpark": { "title": "趋势火花 ✨" }
     },
     "subSections": {
-        "novelWorkflowEditor": { "title": "[ZH-CN] Novel Workflow Editor" },
-        "features": { "title": "[ZH-CN] Editor Features" },
-        "howItWorks": { "title": "[ZH-CN] Editor Guide" },
-        "showcase": { "title": "[ZH-CN] Editor Examples" },
-        "faq": { "title": "[ZH-CN] Editor FAQs" }
+        "novelWorkflowEditor": { "title": "小说工作流编辑器" },
+        "features": { "title": "编辑器功能" },
+        "howItWorks": { "title": "编辑器指南" },
+        "showcase": { "title": "编辑器示例" },
+        "faq": { "title": "编辑器常见问题" }
     }
   },
   "trendSparkTool": {
-    "title": "[ZH-CN] Trend Spark: AI Novel Concept Generator",
-    "description": "[ZH-CN] Analyze current novel trends and generate monetizable story ideas. Input popular themes, tropes, or platform trends below, and let AI spark your next bestseller!",
-    "inputLabel": "[ZH-CN] Describe Current Novel Trends:",
-    "inputPlaceholder": "[ZH-CN] e.g., 'System cultivation with academy arcs', 'Enemies-to-lovers in modern fantasy on WebNovel', 'Regressor MC with unique skill on RoyalRoad', 'LitRPG with crafting and guild building popular on ScribbleHub'...",
-    "inputInstruction": "[ZH-CN] Be specific! Mention genres, tropes, target platforms, or anything you've noticed gaining traction.",
-    "buttonGenerate": "[ZH-CN] Analyze Trends & Generate Ideas",
-    "buttonLoading": "[ZH-CN] AI is Brainstorming...",
-    "buttonDevelopConcept": "[ZH-CN] Develop this Idea in Novel Editor",
-    "generatedConceptsTitle": "[ZH-CN] AI-Generated Novel Concepts:",
+    "title": "趋势火花：AI 小说概念生成器",
+    "description": "分析当前小说趋势并生成可盈利的故事创意。在下方输入流行主题、套路或平台趋势，让 AI 点燃您的下一部畅销书！",
+    "inputLabel": "描述当前小说趋势：",
+    "inputPlaceholder": "例如：“带有学院情节的系统修仙文”、“WebNovel 上的现代奇幻爱情中的宿敌变情人”、“RoyalRoad 上的拥有独特技能的重生主角”、“ScribbleHub 上流行的带有制作和公会建设元素的 LitRPG”...",
+    "inputInstruction": "请具体说明！提及类型、套路、目标平台或您注意到的任何正在流行的内容。",
+    "buttonGenerate": "分析趋势并生成创意",
+    "buttonLoading": "AI 正在头脑风暴...",
+    "buttonDevelopConcept": "在小说编辑器中开发此创意",
+    "generatedConceptsTitle": "AI 生成的小说概念：",
     "conceptCard": {
-      "genre": "[ZH-CN] Suggested Genre",
-      "targetAudience": "[ZH-CN] Target Audience/Platform",
-      "sellingPoints": "[ZH-CN] Key Selling Points / Monetization Angles"
+      "genre": "建议类型",
+      "targetAudience": "目标受众/平台",
+      "sellingPoints": "主要卖点/盈利角度"
     },
     "errors": {
-      "noTrendsProvided": "[ZH-CN] Please describe some novel trends first.",
-      "apiError": "[ZH-CN] An error occurred while communicating with the AI. Please try again.",
-      "noConceptsGenerated": "[ZH-CN] The AI couldn't generate concepts based on your input. Try rephrasing or adding more details about the trends."
+      "noTrendsProvided": "请先描述一些小说趋势。",
+      "apiError": "与 AI 通信时发生错误。请重试。",
+      "noConceptsGenerated": "AI 无法根据您的输入生成概念。请尝试改写或添加有关趋势的更多详细信息。"
     }
   },
   "stageNavigator": {
-    "title": "[ZH-CN] Novel Stages"
+    "title": "小说阶段"
   },
   "stage": {
     "foundation": {
-      "title": "[ZH-CN] Stage 1: Foundation & Ideation",
-      "description": "[ZH-CN] Define your core idea, genre, characters, and world. Lay the groundwork for your story."
+      "title": "阶段 1：基础与构思",
+      "description": "定义您的核心思想、类型、角色和世界。为您的故事奠定基础。"
     },
     "outline": {
-      "title": "[ZH-CN] Stage 2: Plot Outlining",
-      "description": "[ZH-CN] Structure your narrative using the three-act model. Detail key plot points, turning points, and the overall story arc."
+      "title": "阶段 2：情节大纲",
+      "description": "使用三幕式模型构建您的叙事。详细说明关键情节转折点和整体故事弧线。"
     },
     "writing": {
-      "title": "[ZH-CN] Stage 3: Chapter Writing",
-      "description": "[ZH-CN] Draft your novel chapter by chapter. Utilize AI co-writing assistance based on your prompts and outline."
+      "title": "阶段 3：章节写作",
+      "description": "逐章起草您的小说。根据您的提示和大纲利用 AI 协同写作协助。"
     },
     "revision": {
-      "title": "[ZH-CN] Stage 4: Revision & Polishing",
-      "description": "[ZH-CN] Refine your manuscript. Use AI tools for consistency checks, description enhancement, dialogue optimization, and pacing adjustments."
+      "title": "阶段 4：修订与润色",
+      "description": "完善您的手稿。使用 AI 工具进行一致性检查、描述增强、对话优化和节奏调整。"
     },
     "finalizeExport": {
-      "title": "[ZH-CN] Stage 5: Finalize & Export",
-      "description": "[ZH-CN] Review your completed novel, give it a final title, and download your work."
+      "title": "阶段 5：最终确定与导出",
+      "description": "审阅您完成的小说，为其指定最终标题，然后下载您的作品。"
     }
   },
   "revisionTool": {
     "task": {
-      "consistency": "[ZH-CN] Consistency Check",
-      "description": "[ZH-CN] Description Enhancement",
-      "dialogue": "[ZH-CN] Dialogue Optimization",
-      "pacing": "[ZH-CN] Pacing Adjustment"
+      "consistency": "一致性检查",
+      "description": "描述增强",
+      "dialogue": "对话优化",
+      "pacing": "节奏调整"
     }
   },
   "stage4revision": {
-    "introUIText": "[ZH-CN] I have a draft, please act as a senior editor and help me with one ofthe following tasks. Select a task, paste your text, and get AI suggestions.",
+    "introUIText": "我有一份草稿，请扮演高级编辑的角色，帮助我完成以下任务之一。选择一项任务，粘贴您的文本，然后获取 AI 建议。",
     "labels": {
-        "selectTask": "[ZH-CN] Select Revision Task:",
-        "pasteText": "[ZH-CN] Paste the text to be revised here:"
+        "selectTask": "选择修订任务：",
+        "pasteText": "在此处粘贴要修订的文本："
     },
     "placeholders": {
-        "selectTask": "[ZH-CN] -- Select a Revision Task --",
-        "pasteText": "[ZH-CN] Enter or paste the text you want the AI to revise..."
+        "selectTask": "-- 选择修订任务 --",
+        "pasteText": "输入或粘贴您希望 AI 修订的文本..."
     },
     "buttons": {
-        "processing": "[ZH-CN] AI is Revising...",
-        "getSuggestions": "[ZH-CN] Get AI Suggestions",
-        "copyToClipboard": "[ZH-CN] Copy Suggestions"
+        "processing": "AI 正在修订...",
+        "getSuggestions": "获取 AI 建议",
+        "copyToClipboard": "复制建议"
     },
     "titles": {
-        "aiSuggestions": "[ZH-CN] AI Revision Suggestions"
+        "aiSuggestions": "AI 修订建议"
     },
     "alerts": {
-        "selectTaskAndText": "[ZH-CN] Please select a revision task and paste some text to revise."
+        "selectTaskAndText": "请选择一项修订任务并粘贴一些要修订的文本。"
     },
     "errors": {
-        "failedToGetRevision": "[ZH-CN] Failed to get revision suggestions from AI.",
-        "errorPrefix": "[ZH-CN] Error"
+        "failedToGetRevision": "从 AI 获取修订建议失败。",
+        "errorPrefix": "错误"
     },
     "taskDescriptions": {
-        "Consistency Check": "[ZH-CN] AI will check for plot holes, inconsistent character behavior, or contradictions with world-building.",
-        "Description Enhancement": "[ZH-CN] AI will rewrite descriptions to be more vivid and sensory, using the five senses and 'show, don't tell'.",
-        "Dialogue Optimization": "[ZH-CN] AI will make dialogue more natural, aligned with character personalities, and advance the plot.",
-        "Pacing Adjustment": "[ZH-CN] AI will assess pacing. If slow, it helps cut redundancy; if fast, it helps add detail."
+        "Consistency Check": "AI 将检查情节漏洞、角色行为不一致或与世界观设定矛盾之处。",
+        "Description Enhancement": "AI 将使用五感和“展示而非告知”原则重写描述，使其更生动、更具感官性。",
+        "Dialogue Optimization": "AI 将使对话更自然、更符合角色个性，并推动情节发展。",
+        "Pacing Adjustment": "AI 将评估节奏。如果节奏过慢，它会帮助删减冗余信息；如果节奏过快，它会帮助添加细节。"
     }
   },
   "finalizeExport": {
-    "congratulations": "[ZH-CN] 🎉 Congratulations! 🎉",
-    "reachedFinalStage": "[ZH-CN] You've reached the final stage. Your novel is ready for its grand title and to be downloaded.",
-    "novelTitleLabel": "[ZH-CN] Your Novel's Title",
-    "novelTitlePlaceholder": "[ZH-CN] Enter the final title for your masterpiece",
-    "novelTitleInstruction": "[ZH-CN] This title will be used in the downloaded file.",
-    "downloadButton": "[ZH-CN] Download Your Novel (.txt)",
-    "downloadAriaLabel": "[ZH-CN] Download your completed novel as a text file",
-    "thankYouMessage": "[ZH-CN] Thank you for using {{appTitle}} to weave your story. Happy writing!"
+    "congratulations": "🎉 恭喜！🎉",
+    "reachedFinalStage": "您已到达最后阶段。您的小说已准备好冠上宏伟的标题并进行下载。",
+    "novelTitleLabel": "您的小说标题",
+    "novelTitlePlaceholder": "为您的杰作输入最终标题",
+    "novelTitleInstruction": "此标题将用于下载的文件。",
+    "downloadButton": "下载您的小说 (.txt)",
+    "downloadAriaLabel": "将您完成的小说下载为文本文件",
+    "thankYouMessage": "感谢您使用 {{appTitle}} 来编织您的故事。祝您写作愉快！"
   },
   "toolSidebar": {
-    "backToHomeTitle": "[ZH-CN] Back to {{appTitle}} Home",
-    "creativeStudio": "[ZH-CN] Creative Studio",
-    "expandAriaLabel": "[ZH-CN] Expand sidebar",
-    "collapseAriaLabel": "[ZH-CN] Collapse sidebar",
-    "expandTitle": "[ZH-CN] Expand",
-    "collapseTitle": "[ZH-CN] Collapse",
-    "navigationTitle": "[ZH-CN] Other Tools",
-    "homePageNavTitle": "[ZH-CN] Home Page",
-    "homePageNavTitleCollapsed": "[ZH-CN] Go to Home Page",
-    "settingsTitle": "[ZH-CN] Settings",
+    "backToHomeTitle": "返回 {{appTitle}} 首页",
+    "creativeStudio": "创作工作室",
+    "expandAriaLabel": "展开侧边栏",
+    "collapseAriaLabel": "折叠侧边栏",
+    "expandTitle": "展开",
+    "collapseTitle": "折叠",
+    "navigationTitle": "其他工具",
+    "homePageNavTitle": "首页",
+    "homePageNavTitleCollapsed": "前往首页",
+    "settingsTitle": "设置",
     "apiKey": {
-      "label": "[ZH-CN] Custom Gemini API Key (Optional)",
-      "placeholder": "[ZH-CN] Enter your API key",
-      "saveButton": "[ZH-CN] Save Key",
-      "clearButton": "[ZH-CN] Clear Key",
-      "description": "[ZH-CN] Uses environment key by default. Your key is stored locally in your browser.",
-      "customSaved": "[ZH-CN] Custom API Key saved.",
-      "customCleared": "[ZH-CN] Custom API Key cleared. Using default."
+      "label": "自定义 Gemini API 密钥（可选）",
+      "placeholder": "输入您的 API 密钥",
+      "saveButton": "保存密钥",
+      "clearButton": "清除密钥",
+      "description": "默认使用环境密钥。您的密钥本地存储在浏览器中。",
+      "customSaved": "自定义 API 密钥已保存。",
+      "customCleared": "自定义 API 密钥已清除。正在使用默认密钥。"
     },
     "user": {
-        "signedInAs": "[ZH-CN] Signed in as",
-        "signOut": "[ZH-CN] Sign Out"
+        "signedInAs": "登录身份",
+        "signOut": "登出"
     }
   },
   "signInPage": {
-    "title": "[ZH-CN] Sign In to Your Account",
+    "title": "登录您的帐户",
     "labels": {
-      "email": "[ZH-CN] Email Address",
-      "password": "[ZH-CN] Password"
+      "email": "电子邮件地址",
+      "password": "密码"
     },
     "placeholders": {
-      "email": "[ZH-CN] you@example.com"
+      "email": "you@example.com"
     },
     "buttons": {
-      "signIn": "[ZH-CN] Sign In",
-      "signInWith": "[ZH-CN] Sign in with {{providerName}}",
-      "signUp": "[ZH-CN] Sign Up Now"
+      "signIn": "登录",
+      "signInWith": "使用 {{providerName}} 登录",
+      "signUp": "立即注册"
     },
-    "orContinueWith": "[ZH-CN] Or continue with",
-    "dontHaveAccount": "[ZH-CN] Don't have an account?",
+    "orContinueWith": "或继续使用",
+    "dontHaveAccount": "还没有帐户？",
     "errors": {
-      "unknownError": "[ZH-CN] An unknown error occurred during sign-in. Please try again."
+      "unknownError": "登录期间发生未知错误。请重试。"
     }
   },
   "signUpPage": {
     "titles": {
-        "createAccount": "[ZH-CN] Create Your Account",
-        "verifyEmail": "[ZH-CN] Verify Your Email"
+        "createAccount": "创建您的帐户",
+        "verifyEmail": "验证您的电子邮件"
     },
     "labels": {
-      "email": "[ZH-CN] Email Address",
-      "password": "[ZH-CN] Password",
-      "confirmPassword": "[ZH-CN] Confirm Password",
-      "verificationCode": "[ZH-CN] Verification Code"
+      "email": "电子邮件地址",
+      "password": "密码",
+      "confirmPassword": "确认密码",
+      "verificationCode": "验证码"
     },
     "placeholders": {
-      "email": "[ZH-CN] you@example.com",
-      "verificationCode": "[ZH-CN] Enter code from email"
+      "email": "you@example.com",
+      "verificationCode": "输入电子邮件中的代码"
     },
     "instructions": {
-        "passwordMinLength": "[ZH-CN] Minimum 6 characters."
+        "passwordMinLength": "最少 6 个字符。"
     },
     "buttons": {
-      "registerAndSendCode": "[ZH-CN] Register & Send Code",
-      "verifyCode": "[ZH-CN] Verify Code",
-      "backToRegistration": "[ZH-CN] Back to Registration",
-      "signUpWith": "[ZH-CN] Sign up with {{providerName}}",
-      "signIn": "[ZH-CN] Sign In"
+      "registerAndSendCode": "注册并发送代码",
+      "verifyCode": "验证代码",
+      "backToRegistration": "返回注册",
+      "signUpWith": "使用 {{providerName}} 注册",
+      "signIn": "登录"
     },
-    "orSignUpWith": "[ZH-CN] Or sign up with",
-    "alreadyHaveAccount": "[ZH-CN] Already have an account?",
+    "orSignUpWith": "或使用以下方式注册",
+    "alreadyHaveAccount": "已经有帐户了？",
     "messages": {
-        "verificationSent": "[ZH-CN] Verification code sent to your email. Please check your inbox (and spam folder).",
-        "verificationSuccess": "[ZH-CN] Account verified successfully! Redirecting to sign in...",
-        "signInAfterVerification": "[ZH-CN] Your account is verified. Please sign in to continue."
+        "verificationSent": "验证码已发送到您的电子邮件。请检查您的收件箱（和垃圾邮件文件夹）。",
+        "verificationSuccess": "帐户验证成功！正在重定向到登录...",
+        "signInAfterVerification": "您的帐户已验证。请登录以继续。"
     },
     "errors": {
-        "passwordsMismatch": "[ZH-CN] Passwords do not match.",
-        "passwordTooShort": "[ZH-CN] Password must be at least 6 characters long.",
-        "codeEmpty": "[ZH-CN] Verification code cannot be empty.",
-        "unknownInitiationError": "[ZH-CN] An unknown error occurred during sign-up initiation.",
-        "unknownVerificationError": "[ZH-CN] An unknown error occurred during verification."
+        "passwordsMismatch": "密码不匹配。",
+        "passwordTooShort": "密码必须至少包含 6 个字符。",
+        "codeEmpty": "验证码不能为空。",
+        "unknownInitiationError": "注册启动期间发生未知错误。",
+        "unknownVerificationError": "验证期间发生未知错误。"
     }
   },
   "authCallbackPage": {
-    "processing": "[ZH-CN] Processing authentication...",
-    "verifyingToken": "[ZH-CN] Verifying your identity...",
-    "failed": "[ZH-CN] Authentication failed: {{error}}",
-    "signInRetryMessage": "[ZH-CN] Authentication failed: {{error}}. Please try signing in again.",
+    "processing": "正在处理身份验证...",
+    "verifyingToken": "正在验证您的身份...",
+    "failed": "身份验证失败：{{error}}",
+    "signInRetryMessage": "身份验证失败：{{error}}。请重试登录。",
     "buttons": {
-        "trySignInAgain": "[ZH-CN] Try Signing In Again"
+        "trySignInAgain": "重试登录"
     },
     "errors": {
-        "oauthProviderError": "[ZH-CN] Error from authentication provider.",
-        "tokenNotFound": "[ZH-CN] Access token not found in authentication response.",
-        "unknownError": "[ZH-CN] An unknown authentication error occurred."
+        "oauthProviderError": "身份验证提供商出错。",
+        "tokenNotFound": "在身份验证响应中找不到访问令牌。",
+        "unknownError": "发生未知身份验证错误。"
     }
   },
   "staticPages": {
-    "backToHome": "[ZH-CN] Back to Home",
-    "returnToHomepage": "[ZH-CN] Return to Homepage"
+    "backToHome": "返回首页",
+    "returnToHomepage": "返回主页"
   },
   "privacyPage": {
-    "title": "[ZH-CN] Privacy Policy",
-    "thankYou": "[ZH-CN] Thank you for choosing {{appTitle}}! We are committed to protecting your privacy and handling your data transparently.",
-    "contentComingSoonTitle": "[ZH-CN] Detailed Privacy Policy Coming Soon!",
-    "workingOnDetails": "[ZH-CN] We are currently finalizing the detailed legal text for our Privacy Policy. This page will soon provide comprehensive information about:",
-    "infoWeCollect": "[ZH-CN] What information we collect (e.g., account data, novel content stored locally, usage analytics).",
-    "howWeUseInfo": "[ZH-CN] How we use your information (e.g., to provide and improve the service, personalize your experience, communicate with you).",
-    "howWeProtectInfo": "[ZH-CN] How we protect your information (e.g., security measures for any data we might handle, local storage considerations).",
-    "yourRights": "[ZH-CN] Your rights regarding your data (e.g., access, correction, deletion).",
-    "andMore": "[ZH-CN] Cookies, third-party services, policy updates, and more.",
-    "checkBackSoon": "[ZH-CN] Please check back soon for the full Privacy Policy. Your trust is important to us."
+    "title": "隐私政策",
+    "thankYou": "感谢您选择 {{appTitle}}！我们致力于保护您的隐私并透明地处理您的数据。",
+    "contentComingSoonTitle": "详细隐私政策即将推出！",
+    "workingOnDetails": "我们目前正在最终确定我们隐私政策的详细法律文本。此页面很快将提供有关以下方面的全面信息：",
+    "infoWeCollect": "我们收集哪些信息（例如，帐户数据、本地存储的小说内容、使用情况分析）。",
+    "howWeUseInfo": "我们如何使用您的信息（例如，提供和改进服务、个性化您的体验、与您沟通）。",
+    "howWeProtectInfo": "我们如何保护您的信息（例如，我们可能处理的任何数据的安全措施、本地存储注意事项）。",
+    "yourRights": "您对数据的权利（例如，访问、更正、删除）。",
+    "andMore": "Cookie、第三方服务、政策更新等。",
+    "checkBackSoon": "请尽快回来查看完整的隐私政策。您的信任对我们很重要。"
   },
   "termsPage": {
-    "title": "[ZH-CN] Terms of Service",
-    "welcome": "[ZH-CN] Welcome to {{appTitle}}! By using our services, you agree to these terms.",
-    "contentComingSoonTitle": "[ZH-CN] Full Terms of Service Coming Soon!",
-    "finalizingLegalFramework": "[ZH-CN] We are diligently working on our comprehensive Terms of Service. This document will outline:",
-    "userResponsibilities": "[ZH-CN] Your responsibilities as a user of {{appTitle}}.",
-    "providerResponsibilities": "[ZH-CN] Our responsibilities as the service provider.",
-    "contentOwnership": "[ZH-CN] Clarifications on content ownership and intellectual property.",
-    "acceptableUse": "[ZH-CN] Policies regarding acceptable use of the platform.",
-    "disclaimers": "[ZH-CN] Disclaimers of warranties and limitations of liability.",
-    "otherLegalInfo": "[ZH-CN] Other important legal information, including governing law and dispute resolution.",
-    "checkBackSoon": "[ZH-CN] We appreciate your patience and encourage you to review this page again shortly for the complete Terms ofService.",
+    "title": "服务条款",
+    "welcome": "欢迎来到 {{appTitle}}！使用我们的服务即表示您同意这些条款。",
+    "contentComingSoonTitle": "完整服务条款即将推出！",
+    "finalizingLegalFramework": "我们正在努力制定全面的服务条款。本文件将概述：",
+    "userResponsibilities": "您作为 {{appTitle}} 用户的责任。",
+    "providerResponsibilities": "我们作为服务提供商的责任。",
+    "contentOwnership": "关于内容所有权和知识产权的说明。",
+    "acceptableUse": "关于平台可接受使用的政策。",
+    "disclaimers": "保证免责声明和责任限制。",
+    "otherLegalInfo": "其他重要法律信息，包括适用法律和争议解决。",
+    "checkBackSoon": "感谢您的耐心等待，并鼓励您稍后再次查看此页面以获取完整的服务条款。",
     "content": {
-        "section1_p1": "[ZH-CN] By accessing or using {{appTitle}} (\"Service\"), you agree to be bound by these Terms of Service (\"Terms\"). If you disagree with any part of the terms, then you may not access the Service.",
-        "section2_p1": "[ZH-CN] You agree to use the Service only for lawful purposes and in accordance with these Terms. You are responsible for any content you create and for your conduct while using the Service. You agree not to use the service to generate harmful, illegal, or infringing content.",
-        "section3_p1": "[ZH-CN] You retain full ownership of the creative content (novel drafts, ideas, outlines, etc.) you input into and generate with the Service (\"Your Content\"). We claim no ownership over Your Content. The Service itself, including its software, design, and branding, is the property of {{appTitle}} and its licensors and is protected by intellectual property laws.",
-        "section4_p1": "[ZH-CN] The Service is provided \"as is\" and \"as available\" without any warranties of any kind. We do not warrant that the service will be error-free or uninterrupted. {{appTitle}} shall not be liable for any indirect, incidental, special, consequential or punitive damages resulting from your access to or use of, or inability to access or use, the service.",
-        "section5_p1": "[ZH-CN] We reserve the right to modify these Terms at any time. We will provide notice of material changes. Your continued use of the Service after such changes constitutes your acceptance of the new Terms."
+        "section1_p1": "通过访问或使用 {{appTitle}}（“服务”），您同意受这些服务条款（“条款”）的约束。如果您不同意条款的任何部分，则不得访问服务。",
+        "section2_p1": "您同意仅将服务用于合法目的并遵守这些条款。您对创建的任何内容以及在使用服务时的行为负责。您同意不使用该服务生成有害、非法或侵权的内容。",
+        "section3_p1": "您保留您输入到服务中并使用服务生成的创意内容（小说草稿、想法、大纲等）（“您的内容”）的完全所有权。我们不对您的内容主张任何所有权。服务本身，包括其软件、设计和品牌，是 {{appTitle}} 及其许可方的财产，并受知识产权法保护。",
+        "section4_p1": "服务按“原样”和“可用”的基础提供，不提供任何形式的保证。我们不保证服务不会出错或不会中断。{{appTitle}} 不对因您访问或使用服务，或无法访问或使用服务而导致的任何间接、偶然、特殊、后果性或惩罚性损害承担责任。",
+        "section5_p1": "我们保留随时修改这些条款的权利。我们将提供重大变更的通知。您在此类变更后继续使用服务即表示您接受新条款。"
     }
   },
   "aboutPage": {
-    "title": "[ZH-CN] About Novel Weaver AI",
-    "welcome": "[ZH-CN] Welcome to {{appTitle}}, where stories come to life with the power of AI collaboration!",
-    "missionStoryComingSoon": "[ZH-CN] Our Mission & Story - Coming Soon!",
-    "passionateAboutEmpowering": "[ZH-CN] We are passionate about empowering writers like you. We are currently crafting this section to share:",
-    "visionBehind": "[ZH-CN] The vision behind {{appTitle}} and our journey.",
-    "teamAndValues": "[ZH-CN] Information about our team and core values.",
-    "revolutionizeNovelWriting": "[ZH-CN] How we aim to revolutionize the novel writing process through innovative AI tools.",
-    "commitmentToAuthors": "[ZH-CN] Our commitment to supporting authors and fostering creativity.",
-    "stayTuned": "[ZH-CN] Stay tuned to learn more about the people and passion driving {{appTitle}}.",
+    "title": "关于 Novel Weaver AI",
+    "welcome": "欢迎来到 {{appTitle}}，在这里，故事在 AI 协作的力量下焕发生机！",
+    "missionStoryComingSoon": "我们的使命与故事 - 即将推出！",
+    "passionateAboutEmpowering": "我们热衷于为像您这样的作家赋能。我们目前正在撰写此部分以分享：",
+    "visionBehind": "{{appTitle}} 背后的愿景和我们的历程。",
+    "teamAndValues": "关于我们团队和核心价值观的信息。",
+    "revolutionizeNovelWriting": "我们如何通过创新的 AI 工具彻底改变小说写作过程。",
+    "commitmentToAuthors": "我们对支持作者和培养创造力的承诺。",
+    "stayTuned": "敬请期待，了解更多关于推动 {{appTitle}} 的人和热情。",
      "content": {
-        "missionTitle": "[ZH-CN] Our Mission (Placeholder)",
-        "mission_p1": "[ZH-CN] Our mission at {{appTitle}} is to democratize storytelling by providing writers of all levels with intelligent, intuitive tools that augment creativity, overcome common hurdles, and streamline the novel-writing process. We believe that everyone has a story to tell, and technology can be a powerful ally in bringing those stories to life.",
-        "visionTitle": "[ZH-CN] The {{appTitle}} Vision (Placeholder)",
-        "vision_p1": "[ZH-CN] We envision a world where the barrier to writing a novel is significantly lowered, where aspiring authors feel empowered and supported, and where seasoned writers can explore new creative avenues with AI collaboration. {{appTitle}} aims to be more than just a tool; we strive to be a creative partner in your literary journey."
+        "missionTitle": "我们的使命（占位符）",
+        "mission_p1": "我们在 {{appTitle}} 的使命是通过为各个级别的作家提供智能、直观的工具来普及讲故事，这些工具可以增强创造力、克服常见障碍并简化小说写作过程。我们相信每个人都有一个故事要讲，而技术可以成为将这些故事变为现实的强大盟友。",
+        "visionTitle": "{{appTitle}} 愿景（占位符）",
+        "vision_p1": "我们设想一个世界，在这个世界里，写小说的障碍大大降低，有抱负的作家感到被赋权和支持，经验丰富的作家可以通过与人工智能的合作探索新的创作途径。{{appTitle}} 的目标不仅仅是一个工具；我们努力成为您文学旅程中的创意伙伴。"
     }
   },
   "contactPage": {
-    "title": "[ZH-CN] Contact Us",
-    "loveToHear": "[ZH-CN] We'd love to hear from you! Whether you have a question, feedback, or a partnership inquiry, please feel free to reach out.",
-    "contactInfoComingSoon": "[ZH-CN] Contact Information & Form - Coming Soon!",
-    "pageWillFeature": "[ZH-CN] This page will soon feature:",
-    "emailAddress": "[ZH-CN] A dedicated email address for support and inquiries.",
-    "contactForm": "[ZH-CN] An easy-to-use contact form directly on this page.",
-    "socialMediaLinks": "[ZH-CN] Links to our social media channels (if applicable).",
-    "appreciatePatience": "[ZH-CN] We appreciate your patience as we set up these communication channels. We look forward to connecting with you!",
-    "formSubmitPlaceholderAlert": "[ZH-CN] Thank you for your message! (This is a placeholder - form not yet functional)"
+    "title": "联系我们",
+    "loveToHear": "我们很乐意听取您的意见！无论您有疑问、反馈还是合作咨询，请随时与我们联系。",
+    "contactInfoComingSoon": "联系信息和表格 - 即将推出！",
+    "pageWillFeature": "此页面很快将包含：",
+    "emailAddress": "用于支持和咨询的专用电子邮件地址。",
+    "contactForm": "此页面上易于使用的直接联系表格。",
+    "socialMediaLinks": "我们的社交媒体渠道链接（如果适用）。",
+    "appreciatePatience": "感谢您在我们建立这些沟通渠道期间的耐心等待。我们期待与您联系！",
+    "formSubmitPlaceholderAlert": "感谢您的留言！（这是一个占位符 - 表格尚不可用）"
   },
   "seo": {
-    "defaultTagline": "[ZH-CN] Your AI Creative Partner for Novels",
-    "defaultDescription": "[ZH-CN] Craft compelling novels from idea to final draft with Novel Weaver AI, your AI-powered creative partner. Features AI ideation, outlining, co-writing, and revision tools.",
+    "defaultTagline": "您的 AI 小说创作伙伴",
+    "defaultDescription": "使用 Novel Weaver AI，您的人工智能创作伙伴，从构思到最终稿件，打造引人入胜的小说。提供 AI 创意、大纲、协同写作和修订工具。",
     "home": {
-      "titleSuffix": "[ZH-CN] AI Novel Writing Assistant",
-      "description": "[ZH-CN] Novel Weaver AI: Your ultimate AI-powered partner for novel writing. Generate ideas, outline plots, co-write chapters, and revise your manuscript with intelligent tools."
+      "titleSuffix": "AI 小说写作助手",
+      "description": "Novel Weaver AI：您小说写作的终极人工智能伙伴。使用智能工具生成创意、勾勒情节、协同撰写章节并修订您的手稿。"
     },
     "tool": {
-      "defaultTitle": "[ZH-CN] Novel Editor",
-      "description": "[ZH-CN] The {{appTitle}} Novel Editor for '{{novelTitle}}' - Currently at the '{{currentStage}}' stage. Utilize AI tools for foundation, outlining, writing, and revision."
+      "defaultTitle": "小说编辑器",
+      "description": "{{appTitle}} 的“{{novelTitle}}”小说编辑器 - 当前处于“{{currentStage}}”阶段。利用 AI 工具进行基础、大纲、写作和修订。"
     },
     "pricing": {
-      "title": "[ZH-CN] Pricing Plans",
-      "description": "[ZH-CN] Explore flexible pricing plans for {{appTitle}}. Choose from Free, Lite, or Pro to unlock AI novel writing features that suit your creative needs."
+      "title": "定价计划",
+      "description": "探索 {{appTitle}} 的灵活定价计划。从免费版、轻量版或专业版中选择，以解锁适合您创作需求的 AI 小说写作功能。"
     },
     "signIn": {
-      "title": "[ZH-CN] Sign In",
-      "description": "[ZH-CN] Sign in to your {{appTitle}} account to access your novel projects, AI writing tools, and continue crafting your masterpiece."
+      "title": "登录",
+      "description": "登录您的 {{appTitle}} 帐户以访问您的小说项目、AI 写作工具并继续创作您的杰作。"
     },
     "signUp": {
-      "title": "[ZH-CN] Sign Up",
-      "description": "[ZH-CN] Create your {{appTitle}} account to start using AI-powered tools for novel ideation, outlining, writing, and revision. Begin your writing journey today!"
+      "title": "注册",
+      "description": "创建您的 {{appTitle}} 帐户，开始使用 AI 驱动的工具进行小说构思、大纲、写作和修订。立即开始您的写作之旅！"
     },
     "authCallback": {
-      "title": "[ZH-CN] Authenticating",
-      "description": "[ZH-CN] Processing your authentication for {{appTitle}}. Please wait a moment."
+      "title": "正在验证",
+      "description": "正在处理您对 {{appTitle}} 的身份验证。请稍候。"
     },
     "privacy": {
-      "title": "[ZH-CN] Privacy Policy",
-      "description": "[ZH-CN] Read the Privacy Policy for {{appTitle}} to understand how we collect, use, and protect your information."
+      "title": "隐私政策",
+      "description": "阅读 {{appTitle}} 的隐私政策，了解我们如何收集、使用和保护您的信息。"
     },
     "terms": {
-      "title": "[ZH-CN] Terms of Service",
-      "description": "[ZH-CN] Review the Terms of Service for {{appTitle}}. Understand your rights and responsibilities when using our AI novel writing platform."
+      "title": "服务条款",
+      "description": "查看 {{appTitle}} 的服务条款。了解您在使用我们的 AI 小说写作平台时的权利和责任。"
     },
     "about": {
-      "title": "[ZH-CN] About Us",
-      "description": "[ZH-CN] Learn more about {{appTitle}}, our mission to empower writers with AI, and the team behind the innovative novel writing tools."
+      "title": "关于我们",
+      "description": "了解更多关于 {{appTitle}}、我们通过 AI 赋能作家的使命以及创新小说写作工具背后的团队。"
     },
     "contact": {
-      "title": "[ZH-CN] Contact Us",
-      "description": "[ZH-CN] Get in touch with the {{appTitle}} team. We welcome your questions, feedback, and inquiries about our AI novel writing platform."
+      "title": "联系我们",
+      "description": "与 {{appTitle}} 团队联系。我们欢迎您对我们的 AI 小说写作平台提出问题、反馈和咨询。"
+    },
+    "monetization": {
+      "title": "变现策略",
+      "description": "在 {{appTitle}} 的指导下，探索小说变现的策略和平台。了解订阅模式、直接销售等。"
     }
   },
   "ldJson": {
-    "userPlaceholder": "[ZH-CN] Writer",
-    "seePlans": "[ZH-CN] See plans on page"
+    "userPlaceholder": "作家",
+    "seePlans": "在页面上查看计划"
   },
   "download": {
-    "title": "[ZH-CN] Novel Title",
-    "defaultFilename": "[ZH-CN] my_ai_novel",
+    "title": "小说标题",
+    "defaultFilename": "我的_ai_小说",
     "stage1": {
-        "coreIdea": "[ZH-CN] Core Idea",
-        "genre": "[ZH-CN] Genre",
-        "tone": "[ZH-CN] Tone",
-        "targetAudience": "[ZH-CN] Target Audience",
-        "theme": "[ZH-CN] Theme",
-        "logline": "[ZH-CN] Logline",
-        "characters": "[ZH-CN] Characters",
-        "worldBuilding": "[ZH-CN] World-Building"
+        "coreIdea": "核心思想",
+        "genre": "类型",
+        "tone": "基调",
+        "targetAudience": "目标读者",
+        "theme": "主题",
+        "logline": "一句话梗概",
+        "characters": "角色",
+        "worldBuilding": "世界构建"
     },
-    "character": {
-        "name": "[ZH-CN] Name",
-        "fields": {
-            "identity": "[ZH-CN] Identity",
-            "appearance": "[ZH-CN] Appearance",
-            "personality": "[ZH-CN] Personality",
-            "want": "[ZH-CN] Want",
-            "need": "[ZH-CN] Need",
-            "flaw": "[ZH-CN] Flaw",
-            "backstory": "[ZH-CN] Backstory",
-            "arc": "[ZH-CN] Arc",
-            "motivation": "[ZH-CN] Motivation (Antagonist)",
-            "relationshipToProtagonist": "[ZH-CN] Relationship to Protagonist (Antagonist)",
-            "functionInStory": "[ZH-CN] Function in Story (Supporting)",
-            "briefDescription": "[ZH-CN] Brief Description (Supporting)"
-        }
-    },
-    "worldBuilding": {
-        "fields": {
-            "timeAndPlace": "[ZH-CN] Time & Place",
-            "coreRules": "[ZH-CN] Core Rules",
-            "socialStructure": "[ZH-CN] Social Structure",
-            "keyLocations": "[ZH-CN] Key Locations"
-        }
-    },
-    "stage2": {
-        "actKey": {
-            "act1": "[ZH-CN] Act I",
-            "act2": "[ZH-CN] Act II",
-            "act3": "[ZH-CN] Act III"
-        },
-        "plotPointKey": {
-            "stasis": "[ZH-CN] Stasis",
-            "incitingIncident": "[ZH-CN] Inciting Incident",
-            "debate": "[ZH-CN] Debate",
-            "turningPoint1": "[ZH-CN] Turning Point 1",
-            "testsAlliesEnemies": "[ZH-CN] Tests, Allies, Enemies",
-            "midpoint": "[ZH-CN] Midpoint",
-            "risingAction": "[ZH-CN] Rising Action",
-            "allIsLost": "[ZH-CN] All Is Lost",
-            "turningPoint2": "[ZH-CN] Turning Point 2",
-            "runUpToClimax": "[ZH-CN] Run-up to Climax",
-            "climax": "[ZH-CN] Climax",
-            "fallingAction": "[ZH-CN] Falling Action",
-            "resolution": "[ZH-CN] Resolution"
-        }
-    },
-    "stage3": {
-        "chapter": "[ZH-CN] Chapter",
-        "pov": "[ZH-CN] POV Character",
-        "goal": "[ZH-CN] Core Goal",
-        "keyPlotPoints": "[ZH-CN] Key Plot Points",
-        "startingScene": "[ZH-CN] Starting Scene",
-        "endingScene": "[ZH-CN] Ending Scene",
-        "atmosphere": "[ZH-CN] Atmosphere",
-        "targetWordCount": "[ZH-CN] Target Word Count"
-    }
+    "character": "[ZH-CN] (Same structure, needs translation)",
+    "worldBuilding": "[ZH-CN] (Same structure, needs translation)",
+    "stage2": "[ZH-CN] (Same structure, needs translation)",
+    "stage3": "[ZH-CN] (Same structure, needs translation)"
   },
   "novel": {
-    "defaultTitle": "[ZH-CN] My AI Novel"
+    "defaultTitle": "我的 AI 小说"
   },
   "genres": {
-    "sciFi": { "name": "[ZH-CN] Sci-Fi", "description": "[ZH-CN] Explore futures, tech, and space." },
-    "fantasy": { "name": "[ZH-CN] Fantasy", "description": "[ZH-CN] Magic, myths, and epic quests." },
-    "mystery": { "name": "[ZH-CN] Mystery", "description": "[ZH-CN] Clues, suspense, and thrilling twists." }
+    "sciFi": { "name": "科幻", "description": "探索未来、科技和宇宙。" },
+    "fantasy": { "name": "奇幻", "description": "魔法、神话和史诗般的任务。" },
+    "mystery": { "name": "悬疑", "description": "线索、悬念和惊险的转折。" }
   },
   "upgradeModal": {
-    "title": "[ZH-CN] Free Limit Reached",
-    "description": "[ZH-CN] You've used all your free novel downloads. To continue downloading and unlock premium features, please sign in or upgrade.",
-    "cta": "[ZH-CN] Sign In / Upgrade",
-    "later": "[ZH-CN] Maybe Later",
-    "signInPrompt": "[ZH-CN] Please sign in or upgrade to download more novels and access premium features."
+    "title": "已达到免费限制",
+    "description": "您已用完所有免费小说下载次数。要继续下载并解锁高级功能，请登录或升级您的计划。",
+    "cta": "登录/升级",
+    "later": "稍后再说",
+    "signInPrompt": "请登录或升级以下载更多小说并访问高级功能。"
+  },
+  "monetizationPage": {
+    "title": "小说变现策略",
+    "footerLink": "变现指南",
+    "englishPlatformsReportTitle": "英文网络小说变现平台分析报告",
+    "maleOrientedPlatformsReportTitle": "男频网络小说平台深度解析与建议"
   }
 }

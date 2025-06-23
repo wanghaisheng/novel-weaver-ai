@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#0F172A" /> <!-- Fallback theme color -->
+    <meta name="theme-color" content="#0F172A" /> <!-- Updated theme color -->
     <meta
       id="meta-description"
       name="description"
@@ -15,46 +15,58 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <!-- Square Web Payments SDK -->
+    <script type="text/javascript" src="https://sandbox.web.squarecdn.com/v1/square.js"></script>
     <style>
       :root {
-        --background: 222.2 84% 4.9%;
-        --foreground: 210 40% 98%;
+        /* Base Slate Palette from design_spec.md (Dark Theme) */
+        --background: hsl(222.2 84% 4.9%); /* slate-950 */
+        --foreground: hsl(210 40% 98%); /* slate-50 / slate-100 */
 
-        --card: 222.2 84% 4.9%;
-        --card-foreground: 210 40% 98%;
+        --card: hsl(222.2 47.4% 11.2%); /* slate-800 */
+        --card-foreground: hsl(210 40% 98%); /* slate-50 */
 
-        --popover: 222.2 84% 4.9%;
-        --popover-foreground: 210 40% 98%;
+        --popover: hsl(222.2 47.4% 11.2%); /* slate-800 */
+        --popover-foreground: hsl(210 40% 98%); /* slate-50 */
+        
+        /* Primary Accent (Sky Blue) */
+        --primary: hsl(203.3 89.5% 52.7%); /* sky-500 */
+        --primary-foreground: hsl(210 40% 98%); /* slate-50 for text on primary buttons */
 
-        --primary: 45 93% 47%; /* Gold/Yellow */
-        --primary-foreground: 222.2 47.4% 11.2%; /* Darker for text on primary */
+        /* Secondary Content Areas & Hovers (Darker Slates) */
+        --secondary: hsl(220 39.3% 14.9%); /* slate-900 */
+        --secondary-foreground: hsl(210 20% 90%); /* slate-200 for text on secondary */
+        
+        /* Muted Text & Placeholders (Lighter Slates) */
+        --muted: hsl(215 27.9% 16.9%); /* slate-700 (e.g., input backgrounds) */
+        --muted-foreground: hsl(215.4 16.3% 56.9%); /* slate-400 (subtle text) */
 
-        --secondary: 217.2 32.6% 17.5%; /* Dark grayish blue */
-        --secondary-foreground: 210 40% 98%;
+        /* Accent (Cyan for secondary CTAs/highlights) */
+        --accent: hsl(187.3 92.1% 43.5%); /* cyan-500 */
+        --accent-foreground: hsl(210 40% 98%); /* slate-50 for text on accent */
+        
+        /* Destructive (Red) */
+        --destructive: hsl(0 72.2% 50.6%); /* red-600 */
+        --destructive-foreground: hsl(0 0% 98%); /* slate-50 for text on destructive */
 
-        --muted: 217.2 32.6% 17.5%;
-        --muted-foreground: 215 20.2% 65.1%; /* Lighter gray for muted text */
+        /* Borders & Dividers (Subtle Slates) */
+        --border: hsl(215 27.9% 16.9%); /* slate-700 */
+        --input: hsl(217.2 32.6% 25.5%); /* slate-600 for input field border */
+        
+        /* Rings (Focus states - Primary Accent) */
+        --ring: hsl(203.3 89.5% 52.7%); /* sky-500 */
 
-        --accent: 217.2 32.6% 17.5%;
-        --accent-foreground: 210 40% 98%;
+        --radius: 0.5rem; /* Tailwind default rounded-lg is 0.5rem */
 
-        --destructive: 0 62.8% 30.6%; /* Reddish */
-        --destructive-foreground: 210 40% 98%;
-
-        --border: 217.2 32.6% 17.5%;
-        --input: 217.2 32.6% 17.5%;
-        --ring: 45 93% 47%; /* Gold/Yellow for rings */
-
-        --radius: 0.75rem;
-
-        --sidebar-background: 240 5.9% 10%;
-        --sidebar-foreground: 240 4.8% 95.9%;
-        --sidebar-primary: 224.3 76.3% 48%; /* Blue */
-        --sidebar-primary-foreground: 0 0% 100%;
-        --sidebar-accent: 240 3.7% 15.9%;
-        --sidebar-accent-foreground: 240 4.8% 95.9%;
-        --sidebar-border: 240 3.7% 15.9%;
-        --sidebar-ring: 217.2 91.2% 59.8%; /* Blue for sidebar rings */
+        /* Sidebar Specific Theme Variables */
+        --sidebar-background: hsl(220 25% 8%); /* Very dark slate, slightly bluer */
+        --sidebar-foreground: hsl(210 30% 85%); /* Lighter slate for text */
+        --sidebar-primary: hsl(203.3 89.5% 52.7%); /* sky-500, same as main primary */
+        --sidebar-primary-foreground: hsl(0 0% 100%); /* White for text on primary */
+        --sidebar-accent: hsl(220 30% 18%); /* Slightly lighter dark slate for hover */
+        --sidebar-accent-foreground: hsl(210 30% 90%); /* Text on accent hover */
+        --sidebar-border: hsl(220 20% 12%); /* Border within sidebar */
+        --sidebar-ring: hsl(203.3 89.5% 60%); /* Lighter sky for focus rings */
       }
 
       * {
@@ -64,82 +76,82 @@
       body {
         background-color: hsl(var(--background));
         color: hsl(var(--foreground));
-        font-family: 'Inter', sans-serif; /* Keep Inter from existing setup, fits font-sans */
+        font-family: 'Inter', sans-serif;
         -webkit-font-smoothing: antialiased;
         -moz-osx-font-smoothing: grayscale;
       }
 
       /* Custom scrollbar using new design system variables */
       ::-webkit-scrollbar {
-        width: 8px;
-        height: 8px;
+        width: 10px; /* Slightly wider for a more modern feel */
+        height: 10px;
       }
       ::-webkit-scrollbar-track {
-        background-color: hsl(var(--secondary));
+        background-color: hsl(var(--background)); /* Matches body background */
       }
       ::-webkit-scrollbar-thumb {
-        background-color: hsl(var(--primary));
-        border-radius: 4px; /* Matches var(--radius) or use a fixed value */
-        border: 2px solid hsl(var(--secondary));
+        background-color: hsl(var(--muted)); /* Using muted for thumb, can be primary too */
+        border-radius: var(--radius);
+        border: 3px solid hsl(var(--background)); /* Creates padding around thumb */
       }
       ::-webkit-scrollbar-thumb:hover {
-        background-color: hsl(var(--primary) / 0.8);
+        background-color: hsl(var(--primary)); /* Primary color on hover */
       }
       /* For Firefox */
       * {
-        scrollbar-width: thin;
-        scrollbar-color: hsl(var(--primary)) hsl(var(--secondary));
+        scrollbar-width: auto; /* Or 'thin' if preferred */
+        scrollbar-color: hsl(var(--muted)) hsl(var(--background));
+      }
+      *:hover {
+        scrollbar-color: hsl(var(--primary)) hsl(var(--background));
       }
 
-      /* Animations */
+
+      /* Animations from design_spec.md */
       @keyframes float {
-        0%, 100% {
-          transform: translateY(0px);
-        }
-        50% {
-          transform: translateY(-10px); /* Reduced float for subtlety */
-        }
+        0%, 100% { transform: translateY(0px); }
+        50% { transform: translateY(-8px); } /* Subtle float */
       }
 
       @keyframes pulse-glow {
-        0%, 100% {
-          box-shadow: 0 0 5px hsl(var(--primary) / 0.5);
-        }
-        50% {
-          box-shadow: 0 0 15px hsl(var(--primary) / 0.8), 0 0 20px hsl(var(--primary) / 0.4); /* Adjusted glow */
-        }
+        0%, 100% { box-shadow: 0 0 8px hsl(var(--primary) / 0.4); }
+        50% { box-shadow: 0 0 18px hsl(var(--primary) / 0.7), 0 0 25px hsl(var(--primary) / 0.3); }
       }
 
       @keyframes gradient-shift {
-        0%, 100% {
-          background-position: 0% 50%;
-        }
-        50% {
-          background-position: 100% 50%;
-        }
+        0%, 100% { background-position: 0% 50%; }
+        50% { background-position: 100% 50%; }
       }
+      
       .animate-spin-slow {
         animation: spin 3s linear infinite;
       }
 
       .animate-float {
-        animation: float 6s ease-in-out infinite;
+        animation: float 5s ease-in-out infinite;
       }
 
       .animate-pulse-glow {
-        animation: pulse-glow 2s ease-in-out infinite;
+        animation: pulse-glow 2.5s ease-in-out infinite;
       }
 
       .animate-gradient-shift {
-        animation: gradient-shift 3s ease-in-out infinite;
-        background-size: 200% 200%; /* For gradient shift to work well */
+        animation: gradient-shift 4s ease-in-out infinite;
+        background-size: 250% 250%;
       }
       
       .gradient-text {
-        background-image: linear-gradient(to right, hsl(var(--primary) / 1), hsl(var(--primary) / 0.8), hsl(var(--primary) / 0.6));
+        background-image: linear-gradient(to right, hsl(var(--primary)), hsl(var(--accent)), hsl(var(--primary) / 0.8));
         -webkit-background-clip: text;
         background-clip: text;
         color: transparent;
+      }
+
+      .hero-gradient {
+        background: linear-gradient(135deg, hsl(var(--background)) 0%, hsl(var(--secondary) / 0.8) 50%, hsl(var(--background)) 100%),
+                    radial-gradient(circle at top left, hsl(var(--primary) / 0.1), transparent 40%),
+                    radial-gradient(circle at bottom right, hsl(var(--accent) / 0.1), transparent 40%);
+        background-blend-mode: screen;
       }
 
     </style>

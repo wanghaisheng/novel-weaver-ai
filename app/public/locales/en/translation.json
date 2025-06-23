@@ -23,12 +23,13 @@
     "myNovels": "My Novels",
     "getStarted": "Get Started",
     "startCreating": "Start Creating",
-    "goHome": "Go to Home Page"
+    "goHome": "Go to Home Page",
+    "forEveryWriter": "For Every Writer"
   },
   "footer": {
     "copyright": "© {{year}} {{appTitle}}. All rights reserved.",
     "copyrightSimple": "© {{year}} {{appTitle}}",
-    "copyrightPricingPage": "© {{year}} {{appTitle}}. Secure payments via Gumroad.",
+    "copyrightPricingPage": "© {{year}} {{appTitle}}. Secure payments via Square.",
     "copyrightToolPage": "© {{year}} {{appTitle}}. Your creative partner.",
     "tagline": "Crafting Worlds, One Word at a Time.",
     "privacyPolicy": "Privacy Policy",
@@ -82,6 +83,34 @@
       "refine": {
         "title": "4. Refine & Polish",
         "description": "Utilize AI revision tools to check consistency, enhance descriptions, optimize dialogue, and adjust pacing."
+      }
+    },
+    "userTypes": {
+      "sectionTitle": "Craft Your Story, Your Way",
+      "sectionSubtitle": "{{appTitle}} is designed to empower every kind of storyteller. Discover how our tools can adapt to your unique writing style and goals.",
+      "aspiring": {
+        "title": "The Aspiring Author",
+        "description": "Just starting your novel-writing journey? {{appTitle}} provides the guidance and structure to turn your fledgling ideas into a complete story.",
+        "benefit1": "Overcome writer's block with AI-powered idea generation.",
+        "benefit2": "Learn story structure with guided outlining tools.",
+        "benefit3": "Build confidence with AI co-writing assistance for first drafts.",
+        "cta": "Start Your First Novel"
+      },
+      "experienced": {
+        "title": "The Seasoned Novelist",
+        "description": "Looking to enhance your workflow and explore new creative avenues? {{appTitle}} offers advanced tools to streamline your process and polish your prose.",
+        "benefit1": "Accelerate drafting and revisions with intelligent AI.",
+        "benefit2": "Experiment with new concepts rapidly using Trend Spark.",
+        "benefit3": "Fine-tune your manuscript with a comprehensive AI revision suite.",
+        "cta": "Explore Advanced Tools"
+      },
+      "hobbyist": {
+        "title": "The Creative Hobbyist",
+        "description": "Love building worlds and crafting characters for fun? {{appTitle}} is your creative sandbox to explore storytelling without pressure.",
+        "benefit1": "Easily develop rich characters and intricate worlds.",
+        "benefit2": "Experiment with different plotlines and story ideas.",
+        "benefit3": "Enjoy the process of creation with a supportive AI partner.",
+        "cta": "Unleash Your Imagination"
       }
     },
     "megaMenu": {
@@ -150,11 +179,9 @@
     "currencySelectedMessage": "Currency set to {{currencyCode}}.",
     "perMonth": "/ month",
     "billedAnnually": "billed annually",
-    "polloApiNote": "Payment processing is illustrative and uses placeholder Gumroad links.",
-    "polloApiLinkText": "Learn more about Gumroad.",
+    "paymentProcessingNote": "Payment processing powered by Square.",
     "paymentSafety": "Secure and encrypted payments.",
     "morePaymentMethods": "and more",
-    "gumroadLinkUnavailableAlert": "Gumroad link for {{planName}} ({{cycle}}) is not available yet.",
     "joinUsersSection": {
         "title": "Join Thousands of Writers on {{appTitle}}",
         "ctaLoggedIn": "Go to My Novels",
@@ -210,6 +237,74 @@
         ],
         "cta": "Go Pro"
       }
+    },
+    "cta": {
+      "manageSubscription": "Manage Subscription"
+    },
+    "activePlanBadge": "Active Plan",
+    "paymentModal": {
+        "title": "Complete Payment for {{planName}}",
+        "youArePayingFor": "You are paying for",
+        "submitPaymentButton": "Pay {{price}}",
+        "securityNote": "Your payment details are securely processed by Square.",
+        "errorSquareSDK": "Square Payments SDK could not be loaded. Please refresh the page or check your internet connection.",
+        "errorInitCardForm": "Could not initialize the card payment form. Please try again.",
+        "errorCardNotReady": "Card payment form is not ready. Please wait a moment.",
+        "errorTokenizationFailed": "Failed to process payment details. Please check your card information and try again.",
+        "errorTokenizationGeneric": "An unexpected error occurred while processing your payment. Please try again later.",
+        "errorVerificationFailed": "Payment verification failed. Please try again or contact your bank.",
+        "verifyingPayment": "Verifying your payment, please wait...",
+        "nonceReceivedAlert": "Payment Nonce Received: {{nonce}}. This would be sent to your server.",
+        "errorSquareIdsMissing": "Square payment gateway is not configured correctly. Please contact support.",
+        "alertSquareIdsNotConfigured": "Payment system is not configured. Please contact support or use the sandbox IDs for testing."
+    },
+    "submissionStatus": {
+      "title": "Payment Submission Status",
+      "dismissAriaLabel": "Dismiss status message",
+      "submitting": "Processing your payment information...",
+      "success": "Your payment for the {{planName}} plan was successful! (Frontend Simulation)",
+      "error": "There was an issue processing your payment for the {{planName}} plan. Please check your details and try again. (Frontend Simulation)",
+      "backendNote": "This is a frontend simulation. The next step is to implement a backend endpoint (e.g., /api/create-subscription) to securely process this payment with Square. No actual charges will be made with this current setup. Ensure your Square Application ID and Location ID in `constants.ts` are correctly set up for Sandbox testing.",
+      "submittingToServer": "Submitting your subscription request to the server...",
+      "successBackend": "Your subscription to the {{planName}} plan has been successfully created!",
+      "errorBackendSpecific": "Failed to create your subscription for {{planName}}. Error: {{backendError}}",
+      "errorBackendGeneric": "Failed to create your subscription for {{planName}}. Please try again later or contact support if the issue persists.",
+      "manageSubscription": {
+        "loading": "Processing...",
+        "cancelled": "Subscription successfully canceled (simulation)."
+      }
+    },
+    "faqs": {
+      "sectionTitleGeneral": "Frequently Asked Questions",
+      "sectionTitlePricing": "Pricing FAQs",
+      "0": {
+        "question": "What payment methods do you accept?",
+        "answer": "We accept major credit cards (Visa, Mastercard, American Express), Apple Pay, Google Pay, and other payment methods supported by Square, our payment processing partner."
+      },
+      "1": {
+        "question": "Can I cancel my subscription at any time?",
+        "answer": "Yes, you can cancel your monthly or yearly subscription at any time. If you cancel, you'll retain access to your plan's features until the end of your current billing period. No refunds are provided for partial periods."
+      },
+      "2": {
+        "question": "What happens if I upgrade or downgrade my plan?",
+        "answer": "Upgrades are typically effective immediately, with a prorated charge for the new plan. Downgrades take effect at the end of your current billing cycle. Specifics are handled by Square's subscription management."
+      },
+      "3": {
+        "question": "Is there a free trial for paid plans?",
+        "answer": "We offer a comprehensive Free plan that allows you to experience the core functionalities of Novel Weaver AI. We currently do not offer separate time-limited free trials for paid plans."
+      },
+      "4": {
+        "question": "What does 'Limited' vs 'Full' AI Model Access mean?",
+        "answer": "Free and Lite plans may use standard AI models. Pro plans get access to our premium, more powerful AI models, which can result in higher quality suggestions, more nuanced writing, and better understanding of complex prompts."
+      },
+      "5": {
+        "question": "What is the Custom Meta Prompt Builder?",
+        "answer": "Available on the Pro plan, this powerful tool allows you to define your own unique story structures, AI instructions, and parameters for novel generation, giving you unparalleled control over the AI's creative process to match very specific needs."
+      },
+      "6": {
+        "question": "Are there any word count limits on paid plans?",
+        "answer": "The 'Lite Weaver' plan has a generous word count limit per novel (e.g., 50,000 words). The 'Pro Weaver' plan offers unlimited words per novel, allowing you to write epics without restriction."
+      }
     }
   },
   "billingCycle": {
@@ -254,36 +349,6 @@
         "question": "Can I use Novel Weaver AI for free?",
         "answer": "Yes, we offer a 'Free Weaver' plan with basic features and limitations, perfect for trying out the platform. For more advanced capabilities and fewer restrictions, we offer affordable paid plans."
       }
-  ],
-  "pricing.faqs": [
-    {
-      "question": "What payment methods do you accept?",
-      "answer": "We accept major credit cards (Visa, Mastercard, American Express), PayPal, Apple Pay, Google Pay, and other payment methods supported by Gumroad, our payment processing partner."
-    },
-    {
-      "question": "Can I cancel my subscription at any time?",
-      "answer": "Yes, you can cancel your monthly or yearly subscription at any time. If you cancel, you'll retain access to your plan's features until the end of your current billing period. No refunds are provided for partial periods."
-    },
-    {
-      "question": "What happens if I upgrade or downgrade my plan?",
-      "answer": "Upgrades are typically effective immediately, with a prorated charge for the new plan. Downgrades take effect at the end ofyour current billing cycle. Specifics are handled by Gumroad's subscription management."
-    },
-    {
-      "question": "Is there a free trial for paid plans?",
-      "answer": "We offer a comprehensive Free plan that allows you to experience the core functionalities of Novel Weaver AI. We currently do not offer separate time-limited free trials for paid plans."
-    },
-    {
-      "question": "What does 'Limited' vs 'Full' AI Model Access mean?",
-      "answer": "Free and Lite plans may use standard AI models. Pro plans get access to our premium, more powerful AI models, which can result in higher quality suggestions, more nuanced writing, and better understanding of complex prompts."
-    },
-    {
-      "question": "What is the Custom Meta Prompt Builder?",
-      "answer": "Available on the Pro plan, this powerful tool allows you to define your own unique story structures, AI instructions, and parameters for novel generation, giving you unparalleled control over the AI's creative process to match very specific needs."
-    },
-    {
-      "question": "Are there any word count limits on paid plans?",
-      "answer": "The 'Lite Weaver' plan has a generous word count limit per novel (e.g., 50,000 words). The 'Pro Weaver' plan offers unlimited words per novel, allowing you to write epics without restriction."
-    }
   ],
   "toolPage": {
     "sections": {
@@ -440,10 +505,8 @@
     }
   },
   "signUpPage": {
-    "titles": {
-        "createAccount": "Create Your Account",
-        "verifyEmail": "Verify Your Email"
-    },
+    "titleRegister": "Create Your Account",
+    "titleVerify": "Verify Your Email",
     "labels": {
       "email": "Email Address",
       "password": "Password",
@@ -452,12 +515,16 @@
     },
     "placeholders": {
       "email": "you@example.com",
+      "password": "••••••••",
+      "confirmPassword": "••••••••",
       "verificationCode": "Enter code from email"
     },
     "instructions": {
         "passwordMinLength": "Minimum 6 characters."
     },
     "buttons": {
+      "register": "Register",
+      "verify": "Verify",
       "registerAndSendCode": "Register & Send Code",
       "verifyCode": "Verify Code",
       "backToRegistration": "Back to Registration",
@@ -469,7 +536,8 @@
     "messages": {
         "verificationSent": "Verification code sent to your email. Please check your inbox (and spam folder).",
         "verificationSuccess": "Account verified successfully! Redirecting to sign in...",
-        "signInAfterVerification": "Your account is verified. Please sign in to continue."
+        "signInAfterVerification": "Your account is verified. Please sign in to continue.",
+        "verificationInstructions": "A verification code has been sent to {{email}}. Please enter it below."
     },
     "errors": {
         "passwordsMismatch": "Passwords do not match.",
@@ -566,7 +634,8 @@
     },
     "tool": {
       "defaultTitle": "Novel Editor",
-      "description": "The {{appTitle}} Novel Editor for '{{novelTitle}}' - Currently at the '{{currentStage}}' stage. Utilize AI tools for foundation, outlining, writing, and revision."
+      "description": "The {{appTitle}} Novel Editor for '{{novelTitle}}' - Currently at the '{{currentStage}}' stage. Utilize AI tools for foundation, outlining, writing, and revision.",
+      "yourNovel": "your novel"
     },
     "pricing": {
       "title": "Pricing Plans",
@@ -599,6 +668,10 @@
     "contact": {
       "title": "Contact Us",
       "description": "Get in touch with the {{appTitle}} team. We welcome your questions, feedback, and inquiries about our AI novel writing platform."
+    },
+    "monetization": {
+      "title": "Monetization Strategies",
+      "description": "Discover strategies and platforms for monetizing your novel with guidance from {{appTitle}}. Learn about subscription models, direct sales, and more."
     }
   },
   "ldJson": {
@@ -606,89 +679,95 @@
     "seePlans": "See plans on page"
   },
   "download": {
-    "title": "Novel Title",
-    "defaultFilename": "my_ai_novel",
+    "title": "小説タイトル",
+    "defaultFilename": "私のAI小説",
     "stage1": {
-        "coreIdea": "Core Idea",
-        "genre": "Genre",
-        "tone": "Tone",
-        "targetAudience": "Target Audience",
-        "theme": "Theme",
-        "logline": "Logline",
-        "characters": "Characters",
-        "worldBuilding": "World-Building"
+        "coreIdea": "中心となるアイデア",
+        "genre": "ジャンル",
+        "tone": "トーン",
+        "targetAudience": "対象読者",
+        "theme": "テーマ",
+        "logline": "ログライン",
+        "characters": "登場人物",
+        "worldBuilding": "世界観設定"
     },
     "character": {
-        "name": "Name",
+        "name": "名前",
         "fields": {
-            "identity": "Identity",
-            "appearance": "Appearance",
-            "personality": "Personality",
-            "want": "Want",
-            "need": "Need",
-            "flaw": "Flaw",
-            "backstory": "Backstory",
-            "arc": "Arc",
-            "motivation": "Motivation (Antagonist)",
-            "relationshipToProtagonist": "Relationship to Protagonist (Antagonist)",
-            "functionInStory": "Function in Story (Supporting)",
-            "briefDescription": "Brief Description (Supporting)"
+            "identity": "アイデンティティ/職業",
+            "appearance": "外見",
+            "personality": "性格",
+            "want": "主な欲求/目標",
+            "need": "内なる欲求",
+            "flaw": "弱点/致命的な欠陥",
+            "backstory": "背景設定の断片",
+            "arc": "キャラクターアーク",
+            "motivation": "動機 (敵役)",
+            "relationshipToProtagonist": "主人公との関係 (敵役)",
+            "functionInStory": "物語における機能 (脇役)",
+            "briefDescription": "簡単な説明 (脇役)"
         }
     },
     "worldBuilding": {
         "fields": {
-            "timeAndPlace": "Time & Place",
-            "coreRules": "Core Rules",
-            "socialStructure": "Social Structure",
-            "keyLocations": "Key Locations"
+            "timeAndPlace": "時代と場所",
+            "coreRules": "中心となるルール/法則",
+            "socialStructure": "社会構造と文化",
+            "keyLocations": "主要な場所"
         }
     },
     "stage2": {
         "actKey": {
-            "act1": "Act I",
-            "act2": "Act II",
-            "act3": "Act III"
+            "act1": "第一幕",
+            "act2": "第二幕",
+            "act3": "第三幕"
         },
         "plotPointKey": {
-            "stasis": "Stasis",
-            "incitingIncident": "Inciting Incident",
-            "debate": "Debate",
-            "turningPoint1": "Turning Point 1",
-            "testsAlliesEnemies": "Tests, Allies, Enemies",
-            "midpoint": "Midpoint",
-            "risingAction": "Rising Action",
-            "allIsLost": "All Is Lost",
-            "turningPoint2": "Turning Point 2",
-            "runUpToClimax": "Run-up to Climax",
-            "climax": "Climax",
-            "fallingAction": "Falling Action",
-            "resolution": "Resolution"
+            "stasis": "日常",
+            "incitingIncident": "発端となる出来事",
+            "debate": "葛藤",
+            "turningPoint1": "第一の転換点",
+            "testsAlliesEnemies": "試練、仲間、敵",
+            "midpoint": "中間点",
+            "risingAction": "高まるアクション/危機",
+            "allIsLost": "すべてを失う/魂の暗夜",
+            "turningPoint2": "第二の転換点",
+            "runUpToClimax": "クライマックスへの助走",
+            "climax": "クライマックス",
+            "fallingAction": "終息",
+            "resolution": "解決と新たな日常"
         }
     },
     "stage3": {
-        "chapter": "Chapter",
-        "pov": "POV Character",
-        "goal": "Core Goal",
-        "keyPlotPoints": "Key Plot Points",
-        "startingScene": "Starting Scene",
-        "endingScene": "Ending Scene",
-        "atmosphere": "Atmosphere",
-        "targetWordCount": "Target Word Count"
+        "chapter": "第",
+        "pov": "視点キャラクター",
+        "goal": "この章の主な目標",
+        "keyPlotPoints": "この章に含めるべき主要なプロットポイント",
+        "startingScene": "この章の開始シーン",
+        "endingScene": "この章の終了シーン (サスペンスまたはフック)",
+        "atmosphere": "この章で強調する雰囲気/感情",
+        "targetWordCount": "目標単語数"
     }
   },
   "novel": {
-    "defaultTitle": "My AI Novel"
+    "defaultTitle": "私のAI小説"
   },
   "genres": {
-    "sciFi": { "name": "Sci-Fi", "description": "Explore futures, tech, and space." },
-    "fantasy": { "name": "Fantasy", "description": "Magic, myths, and epic quests." },
-    "mystery": { "name": "Mystery", "description": "Clues, suspense, and thrilling twists." }
+    "sciFi": { "name": "SF", "description": "未来、テクノロジー、宇宙を探求します。" },
+    "fantasy": { "name": "ファンタジー", "description": "魔法、神話、壮大な冒険。" },
+    "mystery": { "name": "ミステリー", "description": "手がかり、サスペンス、スリリングな展開。" }
   },
   "upgradeModal": {
-    "title": "Free Limit Reached",
-    "description": "You've used all your free novel downloads. To continue downloading and unlock premium features, please sign in or upgrade.",
-    "cta": "Sign In / Upgrade",
-    "later": "Maybe Later",
-    "signInPrompt": "Please sign in or upgrade to download more novels and access premium features."
+    "title": "無料制限に達しました",
+    "description": "無料の小説ダウンロードをすべて使用しました。ダウンロードを続け、プレミアム機能のロックを解除するには、サインインするかプランをアップグレードしてください。",
+    "cta": "サインイン/アップグレード",
+    "later": "後で",
+    "signInPrompt": "より多くの小説をダウンロードし、プレミアム機能にアクセスするには、サインインするかプランをアップグレードしてください。"
+  },
+  "monetizationPage": {
+    "title": "小説の収益化戦略",
+    "footerLink": "収益化ガイド",
+    "englishPlatformsReportTitle": "英語ウェブ小説収益化プラットフォーム分析レポート",
+    "maleOrientedPlatformsReportTitle": "男性向けウェブ小説プラットフォーム詳細分析と提案"
   }
 }

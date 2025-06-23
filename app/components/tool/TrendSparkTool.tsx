@@ -7,7 +7,7 @@ import { generateTrendSparkIdeas } from '../../services/geminiService';
 import { TextAreaInput } from '../common/TextAreaInput';
 import { LoadingSpinner } from '../common/LoadingSpinner';
 import LanguagePicker from '../common/LanguagePicker';
-import { TOOL_PAGE_SECTIONS } from '../../constants';
+import { TOOL_PAGE_SECTIONS, NOVEL_EDITOR_SUB_SECTIONS } from '../../constants';
 
 interface TrendSparkToolProps {
   userApiKey: string | null;
@@ -17,6 +17,7 @@ interface TrendSparkToolProps {
   onNavigateToTerms: () => void;
   onNavigateToAbout: () => void;
   onNavigateToContact: () => void;
+  onNavigateToMonetization: () => void;
 }
 
 const TrendSparkTool: React.FC<TrendSparkToolProps> = ({ 
@@ -26,7 +27,8 @@ const TrendSparkTool: React.FC<TrendSparkToolProps> = ({
   onNavigateToPrivacy,
   onNavigateToTerms,
   onNavigateToAbout,
-  onNavigateToContact
+  onNavigateToContact,
+  onNavigateToMonetization
  }) => {
   const { t } = useTranslation();
   const [userTrends, setUserTrends] = useState('');
@@ -77,7 +79,7 @@ const TrendSparkTool: React.FC<TrendSparkToolProps> = ({
           rows={5}
           placeholder={t('trendSparkTool.inputPlaceholder')}
           instruction={t('trendSparkTool.inputInstruction')}
-          className="mb-4"
+          className="mb-4 bg-muted"
         />
 
         <button
@@ -89,7 +91,7 @@ const TrendSparkTool: React.FC<TrendSparkToolProps> = ({
         </button>
 
         {isLoading && <LoadingSpinner />}
-        {error && <p className="mt-4 text-sm text-destructive-foreground bg-destructive/50 border border-destructive p-3 rounded-md">{error}</p>}
+        {error && <p className="mt-4 text-sm text-destructive-foreground bg-destructive/80 border border-destructive p-3 rounded-md">{error}</p>}
       </div>
 
       {generatedConcepts.length > 0 && (
@@ -140,7 +142,7 @@ const TrendSparkTool: React.FC<TrendSparkToolProps> = ({
           {TOOL_PAGE_SECTIONS.map(tool => (
             <button
               key={tool.id}
-              onClick={() => onSelectNavigation(tool.id, tool.id)}
+              onClick={() => onSelectNavigation(tool.id, tool.id === 'novel-editor' ? (NOVEL_EDITOR_SUB_SECTIONS[0]?.id || 'novel-workflow-editor-section') : tool.id)}
               className="text-xs text-primary hover:text-primary/80 hover:underline transition-colors duration-200 ease-in-out px-2 py-1 focus:outline-none focus:ring-1 focus:ring-ring rounded"
               aria-label={t(tool.titleKey)}
             >
@@ -154,6 +156,7 @@ const TrendSparkTool: React.FC<TrendSparkToolProps> = ({
             <button onClick={onNavigateToTerms} className="text-xs text-muted-foreground hover:text-primary hover:underline transition-colors duration-200 ease-in-out">{t('footer.termsOfService')}</button>
             <button onClick={onNavigateToAbout} className="text-xs text-muted-foreground hover:text-primary hover:underline transition-colors duration-200 ease-in-out">{t('footer.aboutUs')}</button>
             <button onClick={onNavigateToContact} className="text-xs text-muted-foreground hover:text-primary hover:underline transition-colors duration-200 ease-in-out">{t('footer.contactUs')}</button>
+            <button onClick={onNavigateToMonetization} className="text-xs text-muted-foreground hover:text-primary hover:underline transition-colors duration-200 ease-in-out">{t('monetizationPage.footerLink')}</button>
             <div className="w-full sm:w-auto mt-2 sm:mt-0">
                  <LanguagePicker />
             </div>

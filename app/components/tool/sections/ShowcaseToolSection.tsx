@@ -17,7 +17,7 @@ const showcases = [
     userInput: "The protagonist discovers the seemingly benevolent corporation is actually harvesting alien life force for profit.",
     aiOutputLabel: "AI-Generated Elaboration Snippet:",
     aiOutput: "The data logs flickered, each entry a nail in the coffin of her naivety. 'Project Chimera' wasn't about sustainable energy; it was about draining the very essence of the Xylosians. The shimmering, life-giving crystals they revered were being systematically shattered, their light siphoned into the corporation's insatiable war machine. The weight of this knowledge pressed down, heavier than any planet's gravity.",
-    borderColorClass: "border-accent" // Example, could be another semantic color
+    borderColorClass: "border-accent" 
   },
   {
     title: "Stage 3: AI Co-Drafting a Chapter Scene",

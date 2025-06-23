@@ -29,13 +29,13 @@ export const StageNavigator: React.FC<StageNavigatorProps> = ({ currentStage, on
             onClick={() => onStageSelect(stageId)}
             className={`w-full text-left px-3 py-3 rounded-md transition-all duration-200 ease-in-out transform hover:scale-[1.02] focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 focus:ring-offset-secondary ${
               isActive
-                ? 'bg-primary text-primary-foreground shadow-md border-l-4 border-primary' // primary is gold, text-primary-foreground is dark
+                ? 'bg-primary text-primary-foreground shadow-md border-l-4 border-primary' 
                 : 'bg-muted hover:bg-accent text-muted-foreground hover:text-accent-foreground'
             }`}
             title={t(stageInfo.descriptionKey)}
           >
             <span className="font-semibold">{mainTitlePart}</span>
-            {subTitlePart && `: ${subTitlePart}`}
+            {subTitlePart && <span className="text-sm">{`: ${subTitlePart}`}</span>}
           </button>
         );
       })}

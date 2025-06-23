@@ -5,6 +5,14 @@ import type { ToolSectionId } from './types';
 
 // APP_TITLE is now handled by i18n key 'appTitle'
 
+// ###################################################################################
+// # IMPORTANT: Replace these with your actual Square Sandbox Application ID and     #
+// # Location ID from your Square Developer Dashboard.                               #
+// # The payment form will NOT work correctly with these placeholder values.         #
+// ###################################################################################
+export const SQUARE_APPLICATION_ID = 'YOUR_SQUARE_SANDBOX_APPLICATION_ID'; 
+export const SQUARE_LOCATION_ID = 'YOUR_SQUARE_SANDBOX_LOCATION_ID';
+
 export const STAGE_INSTRUCTIONS: Record<NovelStage, StageInfo> = {
   [NovelStage.FOUNDATION]: {
     id: NovelStage.FOUNDATION,
@@ -161,7 +169,6 @@ export const PRICING_PLANS: PricingPlan[] = [
       'pricing.plans.free.features.6', 'pricing.plans.free.features.7', 'pricing.plans.free.features.8',
     ],
     ctaTextKey: 'pricing.plans.free.cta',
-    gumroadLinkMonthly: '#',
   },
   {
     id: 'pro',
@@ -181,8 +188,6 @@ export const PRICING_PLANS: PricingPlan[] = [
     ctaTextKey: 'pricing.plans.pro.cta',
     isHighlighted: true,
     highlightBadgeKey: 'billingCycle.saveBadgeYearly', // Same key as yearly save badge
-    gumroadLinkMonthly: 'https://novelweaver.gumroad.com/l/pro-monthly-placeholder',
-    gumroadLinkYearly: 'https://novelweaver.gumroad.com/l/pro-yearly-placeholder',
   },
   {
     id: 'lite',
@@ -200,8 +205,6 @@ export const PRICING_PLANS: PricingPlan[] = [
       'pricing.plans.lite.features.6', 'pricing.plans.lite.features.7', 'pricing.plans.lite.features.8', 'pricing.plans.lite.features.9',
     ],
     ctaTextKey: 'pricing.plans.lite.cta',
-    gumroadLinkMonthly: 'https://novelweaver.gumroad.com/l/lite-monthly-placeholder',
-    gumroadLinkYearly: 'https://novelweaver.gumroad.com/l/lite-yearly-placeholder',
   }
 ];
 

@@ -1,13 +1,14 @@
 
 
 import React, { useState } from 'react';
+import { useTranslation } from 'react-i18next';
 
 interface FAQItem {
   question: string;
   answer: string;
 }
 
-const faqs: FAQItem[] = [
+const faqsContent: FAQItem[] = [ // Renamed to avoid conflict with component name
   {
     question: "How much control do I really have over the AI's suggestions?",
     answer: "You have full control. The AI provides drafts, suggestions, and ideas. You can edit them, ignore them, rewrite them, or use them as a starting point for your own creativity. Novel Weaver AI is a tool to assist, not replace, your unique voice."
@@ -43,6 +44,7 @@ const faqs: FAQItem[] = [
 ];
 
 const FAQToolSection: React.FC = () => {
+  const { t } = useTranslation();
   const [openIndex, setOpenIndex] = useState<number | null>(null);
 
   const toggleFAQ = (index: number) => {
@@ -53,18 +55,19 @@ const FAQToolSection: React.FC = () => {
     <section className="py-12 md:py-16 bg-card rounded-xl shadow-xl border border-border">
       <div className="px-4 md:px-6 max-w-4xl mx-auto">
         <h2 className="text-3xl md:text-4xl font-bold text-primary mb-8 text-center tracking-tight">
-          Novel Weaver AI: Your Questions Answered
+          {t('faqs.tool.sectionTitle')}
         </h2>
         <p className="text-lg text-foreground mb-12 text-center leading-relaxed">
-          Have questions about using the Novel Weaver AI editor? Find answers to common queries below.
+          {t('faqs.tool.sectionDescription')}
         </p>
         <div className="space-y-4">
-          {faqs.map((faq, index) => (
+          {faqsContent.map((faq, index) => ( // Use faqsContent here
             <div key={index} className="bg-secondary rounded-lg shadow-md border border-border">
               <button
                 onClick={() => toggleFAQ(index)}
                 className="flex justify-between items-center w-full p-5 text-left hover:bg-accent/70 rounded-t-lg transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 focus:ring-offset-secondary"
                 aria-expanded={openIndex === index}
+                aria-controls={`faq-tool-answer-${index}`}
               >
                 <span className="text-lg font-medium text-primary">{faq.question}</span>
                 <span className={`transform transition-transform duration-200 text-muted-foreground ${openIndex === index ? 'rotate-180' : 'rotate-0'}`}>
@@ -72,7 +75,7 @@ const FAQToolSection: React.FC = () => {
                 </span>
               </button>
               {openIndex === index && (
-                <div className="p-5 border-t border-border">
+                <div id={`faq-tool-answer-${index}`} className="p-5 border-t border-border">
                   <p className="text-foreground leading-relaxed whitespace-pre-line">{faq.answer}</p>
                 </div>
               )}

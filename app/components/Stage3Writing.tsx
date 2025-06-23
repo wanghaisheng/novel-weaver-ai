@@ -105,7 +105,7 @@ const Stage3Writing: React.FC<Stage3WritingProps> = ({
         <button
           onClick={handleAddChapter}
           disabled={isLoading}
-          className="mt-4 px-5 py-2.5 bg-primary hover:bg-primary/90 text-primary-foreground font-semibold rounded-lg shadow-md focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 focus:ring-offset-card active:scale-[0.98] disabled:bg-muted disabled:text-muted-foreground disabled:cursor-not-allowed disabled:shadow-none disabled:opacity-70 transition-all duration-200 ease-in-out"
+          className="mt-4 px-6 py-3 bg-primary hover:bg-primary/90 text-primary-foreground font-semibold rounded-lg shadow-lg focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 focus:ring-offset-card active:scale-[0.98] disabled:bg-muted disabled:text-muted-foreground disabled:cursor-not-allowed disabled:shadow-none disabled:opacity-70 transition-all duration-200 ease-in-out"
         >
           {isLoading ? 'Generating...' : `Generate Chapter ${stage3Data.chapters.length + 1}`}
         </button>
@@ -137,7 +137,7 @@ const Stage3Writing: React.FC<Stage3WritingProps> = ({
                     value={chapter.content}
                     onChange={(e) => handleChapterContentChange(chapter.id, e.target.value)}
                     rows={15}
-                    className="text-sm leading-relaxed text-foreground" /* Assuming text-foreground for readability */
+                    className="text-sm leading-relaxed text-foreground bg-muted" 
                 />
             )}
           </div>

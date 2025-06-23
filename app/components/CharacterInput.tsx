@@ -20,15 +20,15 @@ const CharacterInput: React.FC<CharacterInputProps> = ({ character, onChange, on
   const charFields = META_PROMPT_SECTIONS.stage1.characterFields;
 
   return (
-    <div className="p-6 bg-card border border-border rounded-xl shadow-xl mb-6">
+    <div className="p-6 bg-card border border-border rounded-xl shadow-lg mb-6">
       <div className="flex justify-between items-center mb-4">
         <h4 className="text-lg font-semibold text-primary">
           Character {index + 1}: {character.name || 'New Character'}
-          {character.role && ` (${character.role})`}
+          {character.role && <span className="text-sm text-muted-foreground ml-2">({character.role})</span>}
         </h4>
         <button
           onClick={onRemove}
-          className="px-5 py-2.5 bg-destructive hover:bg-destructive/90 text-destructive-foreground text-xs font-semibold rounded-lg shadow-md focus:outline-none focus:ring-2 focus:ring-destructive focus:ring-offset-2 focus:ring-offset-card active:scale-[0.98] transition-all duration-200 ease-in-out"
+          className="px-4 py-2 bg-destructive hover:bg-destructive/90 text-destructive-foreground text-xs font-semibold rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 focus:ring-offset-card active:scale-[0.98] transition-all duration-150 ease-in-out"
         >
           Remove
         </button>
@@ -37,7 +37,8 @@ const CharacterInput: React.FC<CharacterInputProps> = ({ character, onChange, on
       <select
         value={character.role}
         onChange={(e) => handleChange('role', e.target.value)}
-        className="w-full p-3 mb-4 border border-input rounded-lg bg-input text-foreground placeholder-muted-foreground focus:outline-none focus:ring-2 focus:ring-ring focus:border-ring transition-colors duration-200 shadow-sm"
+        className="w-full p-3 mb-4 border border-input rounded-lg bg-muted text-foreground placeholder-muted-foreground focus:outline-none focus:ring-2 focus:ring-ring focus:border-ring transition-colors duration-200 shadow-sm"
+        aria-label={`Character ${index + 1} role`}
       >
         <option value="">Select Role</option>
         <option value="protagonist">Protagonist</option>

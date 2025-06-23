@@ -21,6 +21,7 @@ const routes = [
   { url: '/terms-of-service', changefreq: 'yearly', priority: 0.3 },
   { url: '/about-us', changefreq: 'monthly', priority: 0.4 },
   { url: '/contact-us', changefreq: 'yearly', priority: 0.3 },
+  { url: '/monetization-strategies', changefreq: 'monthly', priority: 0.6 }, // Added
   // Add other publicly accessible routes here
 ];
 

@@ -65,7 +65,7 @@ const Stage4Revision: React.FC<Stage4RevisionProps> = ({ novelData }) => {
           id="revisionTaskType"
           value={revisionState.taskType}
           onChange={(e) => handleInputChange('taskType', e.target.value as RevisionTaskType)}
-          className="w-full p-3 mb-4 border border-input rounded-lg bg-input text-foreground placeholder-muted-foreground focus:outline-none focus:ring-2 focus:ring-ring focus:border-ring transition-colors duration-200 shadow-sm"
+          className="w-full p-3 mb-4 border border-input rounded-lg bg-muted text-foreground placeholder-muted-foreground focus:outline-none focus:ring-2 focus:ring-ring focus:border-ring transition-colors duration-200 shadow-sm"
         >
           <option value="">{t('stage4revision.placeholders.selectTask')}</option>
           {REVISION_TASK_OPTIONS.map(opt => (
@@ -74,7 +74,7 @@ const Stage4Revision: React.FC<Stage4RevisionProps> = ({ novelData }) => {
         </select>
 
         {revisionState.taskType && (
-            <p className="text-xs text-muted-foreground mb-4 italic p-3 bg-muted rounded-md border border-border">
+            <p className="text-xs text-muted-foreground mb-4 italic p-3 bg-secondary rounded-md border border-border">
                 {t(`stage4revision.taskDescriptions.${revisionState.taskType}`, {defaultValue: getTaskInstruction().split('[Paste')[0]})}
             </p>
         )}
@@ -86,6 +86,7 @@ const Stage4Revision: React.FC<Stage4RevisionProps> = ({ novelData }) => {
           onChange={(e) => handleInputChange('inputText', e.target.value)}
           rows={10}
           placeholder={t('stage4revision.placeholders.pasteText')}
+          className="bg-muted"
         />
 
         <button
@@ -101,7 +102,7 @@ const Stage4Revision: React.FC<Stage4RevisionProps> = ({ novelData }) => {
       {revisionState.outputText && (
         <div className="mt-8 p-6 bg-card rounded-xl shadow-xl border border-border">
           <h3 className="text-xl font-semibold text-primary mb-3 tracking-tight">{t('stage4revision.titles.aiSuggestions')}:</h3>
-          <div className="prose prose-sm max-w-none p-4 bg-muted rounded-md whitespace-pre-wrap text-foreground border border-border">
+          <div className="prose prose-sm max-w-none p-4 bg-secondary rounded-md whitespace-pre-wrap text-foreground border border-border">
             {revisionState.outputText}
           </div>
            <button

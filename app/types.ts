@@ -138,7 +138,7 @@ export interface StageInfo {
   descriptionKey: string;
 }
 
-export type AppView = 'home' | 'tool' | 'pricing' | 'signIn' | 'signUp' | 'authCallback' | 'privacy' | 'terms' | 'about' | 'contact';
+export type AppView = 'home' | 'tool' | 'pricing' | 'signIn' | 'signUp' | 'authCallback' | 'privacy' | 'terms' | 'about' | 'contact' | 'monetization';
 
 // This is the user object from OpenAuth provider
 export interface OpenAuthUser {
@@ -194,8 +194,6 @@ export interface PricingPlan {
   ctaTextKey: string;
   isHighlighted?: boolean;
   highlightBadgeKey?: string;
-  gumroadLinkMonthly: string;
-  gumroadLinkYearly?: string;
 }
 
 export type BillingCycle = 'monthly' | 'yearly';

@@ -20,7 +20,7 @@ export const TextAreaInput: React.FC<TextAreaInputProps> = ({ label, id, rows = 
         id={id}
         rows={rows}
         {...props}
-        className={`w-full p-3 border border-input rounded-lg bg-input text-foreground placeholder-muted-foreground focus:outline-none focus:ring-2 focus:ring-ring focus:border-ring transition-colors duration-200 shadow-sm ${props.className || ''}`}
+        className={`w-full p-3 border border-input rounded-lg bg-muted text-foreground placeholder-muted-foreground focus:outline-none focus:ring-2 focus:ring-ring focus:border-ring transition-colors duration-200 shadow-sm ${props.className || ''}`}
       />
     </div>
   );

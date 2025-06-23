@@ -126,7 +126,7 @@ const Stage1Foundation: React.FC<Stage1FoundationProps> = ({ data, onChange }) =
           {isAutoFilling ? 'AI is Generating...' : 'Auto-fill Fields with AI'}
         </button>
         {isAutoFilling && <LoadingSpinner />}
-        {autoFillError && <p className="mt-3 text-sm text-destructive-foreground bg-destructive/50 border border-destructive p-3 rounded-md">{autoFillError}</p>}
+        {autoFillError && <p className="mt-3 text-sm text-destructive-foreground bg-destructive/80 border border-destructive p-3 rounded-md">{autoFillError}</p>}
       </div>
 
 

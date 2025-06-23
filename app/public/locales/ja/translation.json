@@ -1,328 +1,576 @@
 
 {
-  "appTitle": "[JA] Novel Weaver AI",
+  "appTitle": "ノベルウィーバーAI",
   "loading": {
-    "application": "[JA] Loading application...",
-    "translations": "[JA] Loading translations..."
+    "application": "アプリケーションを読み込んでいます...",
+    "translations": "翻訳を読み込んでいます..."
   },
   "error": {
-    "unknownView": "[JA] Unknown view. An unexpected error occurred.",
-    "pageNotFound": "[JA] Oops! Page Not Found."
+    "unknownView": "不明なビューです。予期しないエラーが発生しました。",
+    "pageNotFound": "おっと！ページが見つかりません。"
   },
   "navigation": {
-    "features": "[JA] Features",
-    "howItWorks": "[JA] How It Works",
-    "pricing": "[JA] Pricing",
-    "testimonials": "[JA] Testimonials",
-    "genreTools": "[JA] Genre Tools",
-    "toolsMegaMenu": "[JA] Genre Prompts",
-    "signIn": "[JA] Sign In",
-    "signOut": "[JA] Sign Out",
-    "signUp": "[JA] Sign Up",
-    "goToTool": "[JA] Go to Tool",
-    "myNovels": "[JA] My Novels",
-    "getStarted": "[JA] Get Started",
-    "startCreating": "[JA] Start Creating",
-    "goHome": "[JA] Go to Home Page"
+    "features": "機能",
+    "howItWorks": "仕組み",
+    "pricing": "価格",
+    "testimonials": "お客様の声",
+    "genreTools": "ジャンルツール",
+    "toolsMegaMenu": "ジャンルプロンプト",
+    "signIn": "サインイン",
+    "signOut": "サインアウト",
+    "signUp": "サインアップ",
+    "goToTool": "ツールへ移動",
+    "myNovels": "マイノベル",
+    "getStarted": "始める",
+    "startCreating": "作成開始",
+    "goHome": "ホームページへ",
+    "forEveryWriter": "すべての作家のために"
   },
   "footer": {
-    "copyright": "[JA] © {{year}} {{appTitle}}. All rights reserved.",
-    "copyrightSimple": "[JA] © {{year}} {{appTitle}}",
-    "copyrightPricingPage": "[JA] © {{year}} {{appTitle}}. Secure payments via Gumroad.",
-    "copyrightToolPage": "[JA] © {{year}} {{appTitle}}. Your creative partner.",
-    "tagline": "[JA] Crafting Worlds, One Word at a Time.",
-    "privacyPolicy": "[JA] Privacy Policy",
-    "termsOfService": "[JA] Terms of Service",
-    "aboutUs": "[JA] About Us",
-    "contactUs": "[JA] Contact Us",
-    "language": "[JA] Language",
-    "selectLanguageLabel": "[JA] Select language",
-    "toolNavigation": "[JA] Tool Navigation"
+    "copyright": "© {{year}} {{appTitle}}. 全著作権所有。",
+    "copyrightSimple": "© {{year}} {{appTitle}}",
+    "copyrightPricingPage": "© {{year}} {{appTitle}}. Square経由の安全な支払い。",
+    "copyrightToolPage": "© {{year}} {{appTitle}}. あなたのクリエイティブパートナー。",
+    "tagline": "言葉を紡ぎ、世界を織りなす。",
+    "privacyPolicy": "プライバシーポリシー",
+    "termsOfService": "利用規約",
+    "aboutUs": "会社概要",
+    "contactUs": "お問い合わせ",
+    "language": "言語",
+    "selectLanguageLabel": "言語を選択",
+    "toolNavigation": "ツールナビゲーション"
   },
   "home": {
     "hero": {
-      "welcome": "[JA] Welcome to",
-      "tagline": "[JA] Your AI-powered partner for crafting compelling novels, from initial idea to final polished draft. Let's weave your story together.",
-      "createNovelNow": "[JA] Create Your Novel Now",
-      "createNovelNowAriaLabel": "[JA] Start creating your novel with Novel Weaver AI"
+      "welcome": "ようこそ",
+      "tagline": "初期アイデアから最終的な推敲済み原稿まで、魅力的な小説を作成するためのAI搭載パートナー。一緒にあなたの物語を紡ぎましょう。",
+      "createNovelNow": "今すぐ小説を作成",
+      "createNovelNowAriaLabel": "Novel Weaver AIで小説作成を開始する"
     },
     "features": {
-      "sectionTitle": "[JA] Everything You Need to Write Your Masterpiece with {{appTitle}}",
+      "sectionTitle": "{{appTitle}}で傑作を書くために必要なすべて",
       "ideation": {
-        "title": "[JA] AI Ideation & Concept",
-        "description": "[JA] Spark creativity with AI-generated ideas for plots, characters, and settings. Overcome writer's block instantly."
+        "title": "AIによるアイデア発想とコンセプト",
+        "description": "AIが生成したプロット、キャラクター、設定のアイデアで創造性を刺激します。作家の壁を即座に克服します。"
       },
       "outlining": {
-        "title": "[JA] Structured Outlining",
-        "description": "[JA] Organize your thoughts with a flexible outlining tool that supports classic structures like the three-act model."
+        "title": "構造化されたアウトライン作成",
+        "description": "三幕構成などの古典的な構造をサポートする柔軟なアウトラインツールで思考を整理します。"
       },
       "writing": {
-        "title": "[JA] Collaborative AI Writing",
-        "description": "[JA] Draft chapters faster with AI assistance. Provide prompts and let the AI help you write compelling scenes."
+        "title": "協調的なAIライティング",
+        "description": "AIの支援により、章をより速く下書きします。プロンプトを提供し、AIに魅力的なシーンの作成を手伝ってもらいます。"
       },
       "revision": {
-        "title": "[JA] Insightful Revision Tools",
-        "description": "[JA] Refine your manuscript with AI-powered suggestions for consistency, pacing, descriptions, and dialogue."
+        "title": "洞察に満ちた校正ツール",
+        "description": "一貫性、ペース、説明、会話についてAIを活用した提案で原稿を洗練します。"
       }
     },
     "howItWorks": {
-      "sectionTitle": "[JA] How Novel Weaver AI Works",
+      "sectionTitle": "Novel Weaver AIの仕組み",
       "spark": {
-        "title": "[JA] 1. Spark Concept",
-        "description": "[JA] Define your core idea, genre, and characters. Use AI to brainstorm or fill in the details manually."
+        "title": "1. コンセプトの着火",
+        "description": "中心となるアイデア、ジャンル、キャラクターを定義します。AIを使用してブレインストーミングを行うか、手動で詳細を入力します。"
       },
       "outline": {
-        "title": "[JA] 2. Outline Plot",
-        "description": "[JA] Structure your story using the guided three-act framework, detailing key plot points and turning points."
+        "title": "2. プロットのアウトライン",
+        "description": "ガイド付きの三幕構成フレームワークを使用してストーリーを構成し、主要なプロットポイントとターニングポイントを詳述します。"
       },
       "draft": {
-        "title": "[JA] 3. Draft Chapters",
-        "description": "[JA] Write chapter by chapter with AI co-writing assistance, focusing on POV, goals, and key scenes."
+        "title": "3. 章の下書き",
+        "description": "POV、目標、主要なシーンに焦点を当て、AI共同執筆支援を受けて章ごとに執筆します。"
       },
       "refine": {
-        "title": "[JA] 4. Refine & Polish",
-        "description": "[JA] Utilize AI revision tools to check consistency, enhance descriptions, optimize dialogue, and adjust pacing."
+        "title": "4. 洗練と推敲",
+        "description": "AI校正ツールを利用して一貫性を確認し、説明を強化し、会話を最適化し、ペースを調整します。"
+      }
+    },
+    "userTypes": {
+      "sectionTitle": "[JA] Craft Your Story, Your Way",
+      "sectionSubtitle": "[JA] {{appTitle}} is designed to empower every kind of storyteller. Discover how our tools can adapt to your unique writing style and goals.",
+      "aspiring": {
+        "title": "[JA] The Aspiring Author",
+        "description": "[JA] Just starting your novel-writing journey? {{appTitle}} provides the guidance and structure to turn your fledgling ideas into a complete story.",
+        "benefit1": "[JA] Overcome writer's block with AI-powered idea generation.",
+        "benefit2": "[JA] Learn story structure with guided outlining tools.",
+        "benefit3": "[JA] Build confidence with AI co-writing assistance for first drafts.",
+        "cta": "[JA] Start Your First Novel"
+      },
+      "experienced": {
+        "title": "[JA] The Seasoned Novelist",
+        "description": "[JA] Looking to enhance your workflow and explore new creative avenues? {{appTitle}} offers advanced tools to streamline your process and polish your prose.",
+        "benefit1": "[JA] Accelerate drafting and revisions with intelligent AI.",
+        "benefit2": "[JA] Experiment with new concepts rapidly using Trend Spark.",
+        "benefit3": "[JA] Fine-tune your manuscript with a comprehensive AI revision suite.",
+        "cta": "[JA] Explore Advanced Tools"
+      },
+      "hobbyist": {
+        "title": "[JA] The Creative Hobbyist",
+        "description": "[JA] Love building worlds and crafting characters for fun? {{appTitle}} is your creative sandbox to explore storytelling without pressure.",
+        "benefit1": "[JA] Easily develop rich characters and intricate worlds.",
+        "benefit2": "[JA] Experiment with different plotlines and story ideas.",
+        "benefit3": "[JA] Enjoy the process of creation with a supportive AI partner.",
+        "cta": "[JA] Unleash Your Imagination"
       }
     },
     "megaMenu": {
-        "title": "[JA] Specialized Genre Prompts",
-        "description": "[JA] Explore AI prompts fine-tuned for various genres to kickstart specific story elements.",
-        "alertAccessingTools": "[JA] Accessing {{genreName}} tools..."
+        "title": "専門ジャンルプロンプト",
+        "description": "様々なジャンルに合わせて微調整されたAIプロンプトを探索し、特定の物語要素を始動させましょう。",
+        "alertAccessingTools": "{{genreName}}ツールにアクセスしています..."
     },
     "showcase": {
-      "sectionTitle": "[JA] Get Inspired: Novel Showcase",
-      "noMatch": "[JA] No showcases match the current filter."
+      "sectionTitle": "インスピレーションを得る：小説ショーケース",
+      "noMatch": "現在のフィルターに一致するショーケースはありません。"
     },
     "testimonials": {
-      "sectionTitle": "[JA] What Our Writers Say",
-      "sectionDescription": "[JA] Hear from authors who have transformed their writing process with {{appTitle}}.",
+      "sectionTitle": "作家の声",
+      "sectionDescription": "{{appTitle}}で執筆プロセスを変革した作家の声をお聞きください。",
       "1": {
-        "quote": "[JA] {{appTitle}} helped me break through a massive writer's block. The ideation tools are a game-changer!",
-        "authorName": "[JA] Alex R.",
-        "authorTitle": "[JA] Sci-Fi Novelist"
+        "quote": "{{appTitle}}は、大きな作家の壁を乗り越えるのに役立ちました。アイデア発想ツールは画期的です！",
+        "authorName": "アレックス・R",
+        "authorTitle": "SF小説家"
       },
       "2": {
-        "quote": "[JA] As a new writer, the structured outlining and AI co-writing features were invaluable. I finally finished my first novel!",
-        "authorName": "[JA] Jamie L.",
-        "authorTitle": "[JA] Fantasy Author"
+        "quote": "新人作家として、構造化されたアウトライン作成とAI共同執筆機能は非常に貴重でした。ついに最初の小説を完成させました！",
+        "authorName": "ジェイミー・L",
+        "authorTitle": "ファンタジー作家"
       },
       "3": {
-        "quote": "[JA] The revision tools are incredibly insightful. My manuscript is so much stronger thanks to the AI's suggestions on pacing and description.",
-        "authorName": "[JA] Sam K.",
-        "authorTitle": "[JA] Mystery Writer"
+        "quote": "校正ツールは信じられないほど洞察に満ちています。ペースと説明に関するAIの提案のおかげで、私の原稿はずっと良くなりました。",
+        "authorName": "サム・K",
+        "authorTitle": "ミステリー作家"
       }
     },
     "genreTools": {
-        "sectionTitle": "[JA] Tailor Your Story with Specialized Genre Tools",
-        "sectionDescription": "[JA] {{appTitle}} understands that different genres have unique needs. Our specialized tools, powered by fine-tuned meta prompts, help you nail the conventions and atmosphere of your chosen genre.",
-        "toolFocusLabel": "[JA] Tool Focus",
+        "sectionTitle": "専門ジャンルツールで物語をカスタマイズ",
+        "sectionDescription": "{{appTitle}}は、ジャンルごとに固有のニーズがあることを理解しています。微調整されたメタプロンプトを搭載した当社の専門ツールは、選択したジャンルの慣習と雰囲気を捉えるのに役立ちます。",
+        "toolFocusLabel": "ツールの焦点",
         "sciFi": {
-            "name": "[JA] Science Fiction",
-            "description": "[JA] Explore futuristic societies, advanced technology, and the far reaches of space.",
-            "toolFocus": "[JA] Prompts for tech concepts, alien species, future societies, and philosophical quandaries."
+            "name": "SF",
+            "description": "未来の社会、高度なテクノロジー、宇宙の果てを探求しましょう。",
+            "toolFocus": "技術コンセプト、エイリアン種、未来社会、哲学的難問のプロンプト。"
         },
         "fantasy": {
-            "name": "[JA] Fantasy",
-            "description": "[JA] Weave tales of magic, mythical creatures, and epic quests in imaginative realms.",
-            "toolFocus": "[JA] World-building prompts for epic scope, magic system rules, mythical races, and prophecy arcs."
+            "name": "ファンタジー",
+            "description": "想像力豊かな領域で、魔法、神話上の生き物、壮大なクエストの物語を紡ぎましょう。",
+            "toolFocus": "壮大なスケールの世界構築、魔法システムのルール、神話上の種族、予言の弧のプロンプト。"
         },
         "mystery": {
-            "name": "[JA] Mystery & Thriller",
-            "description": "[JA] Craft suspenseful narratives filled with clues, red herrings, and shocking twists.",
-            "toolFocus": "[JA] Prompts for clue dropping, suspect development, plot twists, and building suspenseful pacing."
+            "name": "ミステリー＆スリラー",
+            "description": "手がかり、ミスリード、衝撃的な展開に満ちたサスペンスフルな物語を作り上げましょう。",
+            "toolFocus": "手がかりの配置、容疑者の設定、プロットのねじれ、サスペンスフルなペース構築のプロンプト。"
         },
         "customPrompt": {
-            "title": "[JA] Unlock the Custom Meta Prompt Builder",
-            "description": "[JA] Paid users gain access to our powerful Custom Meta Prompt Builder. Define your own unique story structures, AI instructions, and genre parameters for unparalleled control over your novel's development.",
-            "cta": "[JA] Explore Premium Plans"
+            "title": "カスタムメタプロンプトビルダーのロックを解除",
+            "description": "有料ユーザーは、強力なカスタムメタプロンプトビルダーにアクセスできます。独自のストーリー構造、AI命令、ジャンルパラメータを定義して、小説開発を比類のないレベルで制御できます。",
+            "cta": "プレミアムプランを探索"
         }
     },
     "seoSection": {
-        "title": "[JA] Unlock Your Creative Potential with AI Novel Writing",
-        "paragraph1": "[JA] Novel Weaver AI is your ultimate partner in the creative journey of novel writing. Whether you're an aspiring author or a seasoned writer, our AI-powered tools are designed to streamline your process, from brainstorming initial concepts to polishing your final draft. With features like AI story generation, character creation, plot development, and intelligent revision suggestions, {{appTitle}} helps you overcome writer's block and bring your fictional worlds to life.",
-        "paragraph2": "[JA] Our platform supports a variety of genres, offering specialized assistance for Sci-Fi, Fantasy, Mystery, and more. Utilize our structured outlining tools to build a compelling narrative framework, and then dive into chapter writing with AI co-writing support that understands your vision. {{appTitle}} focuses on collaboration, ensuring your unique voice remains at the heart of your story while leveraging AI to enhance productivity and creativity.",
-        "paragraph3": "[JA] Experience the future of novel writing. Join a community of authors who are transforming their creative process with {{appTitle}}. Start crafting your masterpiece today, and let our AI assist you in weaving intricate plots, developing memorable characters, and creating immersive worlds that captivate your readers."
+        "title": "AI小説執筆で創造的な可能性を解き放つ",
+        "paragraph1": "Novel Weaver AIは、小説執筆という創造的な旅における究極のパートナーです。あなたが意欲的な作家であろうと経験豊富な作家であろうと、当社のAI搭載ツールは、初期のコンセプトのブレインストーミングから最終稿の推敲まで、あなたのプロセスを合理化するように設計されています。AIストーリー生成、キャラクター作成、プロット開発、インテリジェントな校正提案などの機能を備えた{{appTitle}}は、作家の壁を乗り越え、あなたの架空の世界に命を吹き込むのに役立ちます。",
+        "paragraph2": "当社のプラットフォームは、SF、ファンタジー、ミステリーなど、さまざまなジャンルをサポートし、専門的な支援を提供します。当社の構造化されたアウトラインツールを利用して説得力のある物語の枠組みを構築し、あなたのビジョンを理解するAI共同執筆サポートを受けて章の執筆に没頭してください。{{appTitle}}はコラボレーションに重点を置き、生産性と創造性を向上させるためにAIを活用しながら、あなたのユニークな声が物語の中心であり続けることを保証します。",
+        "paragraph3": "小説執筆の未来を体験してください。{{appTitle}}で創造的なプロセスを変革している作家のコミュニティに参加してください。今日から傑作の作成を開始し、複雑なプロットを紡ぎ、記憶に残るキャラクターを開発し、読者を魅了する没入型の世界を作成する際に、当社のAIに支援させてください。"
     }
   },
   "pricing": {
-    "pageTitle": "[JA] Find the Perfect Plan for Your Story",
-    "currencyAutoDetectMessage": "[JA] Currency ({{currencyCode}}) auto-detected. You can change it.",
-    "currencySelectedMessage": "[JA] Currency set to {{currencyCode}}.",
-    "perMonth": "[JA] / month",
-    "billedAnnually": "[JA] billed annually",
-    "polloApiNote": "[JA] Payment processing is illustrative and uses placeholder Gumroad links.",
-    "polloApiLinkText": "[JA] Learn more about Gumroad.",
-    "paymentSafety": "[JA] Secure and encrypted payments.",
-    "morePaymentMethods": "[JA] and more",
-    "gumroadLinkUnavailableAlert": "[JA] Gumroad link for {{planName}} ({{cycle}}) is not available yet.",
+    "pageTitle": "あなたの物語にぴったりのプランを見つけましょう",
+    "currencyAutoDetectMessage": "通貨（{{currencyCode}}）が自動検出されました。変更できます。",
+    "currencySelectedMessage": "通貨が{{currencyCode}}に設定されました。",
+    "perMonth": "/月",
+    "billedAnnually": "年払い",
+    "paymentProcessingNote": "Squareによる支払い処理。",
+    "paymentSafety": "安全で暗号化された支払い。",
+    "morePaymentMethods": "など",
     "joinUsersSection": {
-        "title": "[JA] Join Thousands of Writers on {{appTitle}}",
-        "ctaLoggedIn": "[JA] Go to My Novels",
-        "ctaLoggedOut": "[JA] Start Your Free Plan Today"
+        "title": "{{appTitle}}で何千人もの作家に加わりましょう",
+        "ctaLoggedIn": "マイノベルへ",
+        "ctaLoggedOut": "今すぐ無料プランを開始"
     },
-    "selectCurrencyAriaLabel": "[JA] Select currency for pricing display",
+    "selectCurrencyAriaLabel": "価格表示通貨を選択",
     "plans": {
       "free": {
-        "name": "[JA] Free Weaver",
+        "name": "フリーウィーバー",
         "features": [
-          "[JA] 1 Novel Project",
-          "[JA] Basic AI Ideation",
-          "[JA] Standard Plot Outlining",
-          "[JA] AI Co-Writing (Limited)",
-          "[JA] Basic Revision Suggestions",
-          "[JA] Up to 10,000 words per novel",
-          "[JA] Community Access",
-          "[JA] Download as .txt",
-          "[JA] Limited AI Model Access"
+          "小説プロジェクト1件",
+          "基本的なAIアイデア発想",
+          "標準的なプロットアウトライン作成",
+          "AI共同執筆（制限付き）",
+          "基本的な校正提案",
+          "小説あたり最大10,000語",
+          "コミュニティアクセス",
+          ".txtとしてダウンロード",
+          "制限付きAIモデルアクセス"
         ],
-        "cta": "[JA] Start for Free"
+        "cta": "無料で始める"
       },
       "lite": {
-        "name": "[JA] Lite Weaver",
+        "name": "ライトウィーバー",
         "features": [
-          "[JA] Everything in Free, plus:",
-          "[JA] 3 Novel Projects",
-          "[JA] Advanced AI Ideation",
-          "[JA] Enhanced Plot Outlining",
-          "[JA] AI Co-Writing (Moderate)",
-          "[JA] Standard Revision Suite",
-          "[JA] Up to 50,000 words per novel",
-          "[JA] Priority Community Support",
-          "[JA] Genre-Specific Prompts (Basic)",
-          "[JA] Standard AI Model Access"
+          "フリープランのすべてに加えて：",
+          "小説プロジェクト3件",
+          "高度なAIアイデア発想",
+          "強化されたプロットアウトライン作成",
+          "AI共同執筆（中程度）",
+          "標準校正スイート",
+          "小説あたり最大50,000語",
+          "優先コミュニティサポート",
+          "ジャンル別プロンプト（基本）",
+          "標準AIモデルアクセス"
         ],
-        "cta": "[JA] Choose Lite"
+        "cta": "ライトを選択"
       },
       "pro": {
-        "name": "[JA] Pro Weaver",
+        "name": "プロウィーバー",
         "features": [
-          "[JA] Everything in Lite, plus:",
-          "[JA] Unlimited Novel Projects",
-          "[JA] Expert AI Ideation & Brainstorming",
-          "[JA] Customizable Plot Structures",
-          "[JA] AI Co-Writing (Extensive)",
-          "[JA] Full AI Revision Suite",
-          "[JA] Unlimited words per novel",
-          "[JA] Dedicated Support",
-          "[JA] Full Genre-Specific Prompt Library",
-          "[JA] Custom Meta Prompt Builder",
-          "[JA] Premium AI Model Access"
+          "ライトプランのすべてに加えて：",
+          "無制限の小説プロジェクト",
+          "専門家レベルのAIアイデア発想とブレインストーミング",
+          "カスタマイズ可能なプロット構造",
+          "AI共同執筆（広範囲）",
+          "完全なAI校正スイート",
+          "小説あたりの単語数無制限",
+          "専用サポート",
+          "完全なジャンル別プロンプトライブラリ",
+          "カスタムメタプロンプトビルダー",
+          "プレミアムAIモデルアクセス"
         ],
-        "cta": "[JA] Go Pro"
+        "cta": "プロへ進む"
+      }
+    },
+    "cta": {
+      "manageSubscription": "サブスクリプションを管理"
+    },
+    "activePlanBadge": "有効なプラン",
+    "paymentModal": {
+        "title": "{{planName}}の支払いを完了する",
+        "youArePayingFor": "支払い対象",
+        "submitPaymentButton": "{{price}}を支払う",
+        "securityNote": "お支払い詳細はSquareによって安全に処理されます。",
+        "errorSquareSDK": "Square Payments SDKを読み込めませんでした。ページを更新するか、インターネット接続を確認してください。",
+        "errorInitCardForm": "カード支払いフォームを初期化できませんでした。もう一度お試しください。",
+        "errorCardNotReady": "カード支払いフォームの準備ができていません。しばらくお待ちください。",
+        "errorTokenizationFailed": "支払い情報の処理に失敗しました。カード情報を確認してもう一度お試しください。",
+        "errorTokenizationGeneric": "お支払いの処理中に予期しないエラーが発生しました。後でもう一度お試しください。",
+        "errorVerificationFailed": "支払い認証に失敗しました。もう一度試すか、銀行にお問い合わせください。",
+        "verifyingPayment": "お支払いを認証中です。しばらくお待ちください...",
+        "nonceReceivedAlert": "支払いNonce受信：{{nonce}}。これはサーバーに送信されます。",
+        "errorSquareIdsMissing": "Square決済ゲートウェイが正しく設定されていません。サポートにお問い合わせください。",
+        "alertSquareIdsNotConfigured": "決済システムが設定されていません。サポートにお問い合わせいただくか、テスト用のサンドボックスIDをご利用ください。"
+    },
+    "submissionStatus": {
+      "title": "支払い送信状況",
+      "dismissAriaLabel": "ステータスメッセージを閉じる",
+      "submitting": "お支払い情報を処理しています...",
+      "success": "{{planName}}プランのお支払いが正常に完了しました！（フロントエンドシミュレーション）",
+      "error": "{{planName}}プランのお支払い処理中に問題が発生しました。詳細を確認して再試行してください。（フロントエンドシミュレーション）",
+      "backendNote": "これはフロントエンドのシミュレーションです。次のステップは、この支払いをSquareで安全に処理するためのバックエンドエンドポイント（例：/api/create-subscription）を実装することです。現在の設定では実際の請求は行われません。サンドボックステストのために、`constants.ts`のSquare Application IDとLocation IDが正しく設定されていることを確認してください。",
+      "submittingToServer": "サブスクリプションリクエストをサーバーに送信しています...",
+      "successBackend": "{{planName}}プランへのサブスクリプションが正常に作成されました！",
+      "errorBackendSpecific": "{{planName}}のサブスクリプション作成に失敗しました。エラー：{{backendError}}",
+      "errorBackendGeneric": "{{planName}}のサブスクリプション作成に失敗しました。後でもう一度試すか、問題が解決しない場合はサポートにお問い合わせください。",
+      "manageSubscription": {
+        "loading": "処理中...",
+        "cancelled": "サブスクリプションが正常にキャンセルされました（シミュレーション）。"
+      }
+    },
+    "faqs": {
+      "sectionTitleGeneral": "よくある質問",
+      "sectionTitlePricing": "価格に関するFAQ",
+      "0": {
+        "question": "[JA] What payment methods do you accept?",
+        "answer": "[JA] We accept major credit cards (Visa, Mastercard, American Express), Apple Pay, Google Pay, and other payment methods supported by Square, our payment processing partner."
+      },
+      "1": {
+        "question": "[JA] Can I cancel my subscription at any time?",
+        "answer": "[JA] Yes, you can cancel your monthly or yearly subscription at any time. If you cancel, you'll retain access to your plan's features until the end of your current billing period. No refunds are provided for partial periods."
+      },
+      "2": {
+        "question": "[JA] What happens if I upgrade or downgrade my plan?",
+        "answer": "[JA] Upgrades are typically effective immediately, with a prorated charge for the new plan. Downgrades take effect at the end of your current billing cycle. Specifics are handled by Square's subscription management."
+      },
+      "3": {
+        "question": "[JA] Is there a free trial for paid plans?",
+        "answer": "[JA] We offer a comprehensive Free plan that allows you to experience the core functionalities of Novel Weaver AI. We currently do not offer separate time-limited free trials for paid plans."
+      },
+      "4": {
+        "question": "[JA] What does 'Limited' vs 'Full' AI Model Access mean?",
+        "answer": "[JA] Free and Lite plans may use standard AI models. Pro plans get access to our premium, more powerful AI models, which can result in higher quality suggestions, more nuanced writing, and better understanding of complex prompts."
+      },
+      "5": {
+        "question": "[JA] What is the Custom Meta Prompt Builder?",
+        "answer": "[JA] Available on the Pro plan, this powerful tool allows you to define your own unique story structures, AI instructions, and parameters for novel generation, giving you unparalleled control over the AI's creative process to match very specific needs."
+      },
+      "6": {
+        "question": "[JA] Are there any word count limits on paid plans?",
+        "answer": "[JA] The 'Lite Weaver' plan has a generous word count limit per novel (e.g., 50,000 words). The 'Pro Weaver' plan offers unlimited words per novel, allowing you to write epics without restriction."
       }
     }
   },
   "billingCycle": {
-    "monthly": "[JA] Monthly",
-    "yearly": "[JA] Yearly",
-    "saveBadgeYearly": "[JA] Save 20%"
+    "monthly": "月払い",
+    "yearly": "年払い",
+    "saveBadgeYearly": "20%割引"
   },
   "faqs": {
     "general": {
-      "sectionTitle": "[JA] Frequently Asked Questions"
+      "sectionTitle": "よくある質問"
     },
     "pricing": {
-      "sectionTitle": "[JA] Pricing FAQs"
+      "sectionTitle": "価格に関するFAQ"
     },
     "tool": {
-        "sectionTitle": "[JA] Novel Weaver AI: Your Questions Answered",
-        "sectionDescription": "[JA] Have questions about using the Novel Weaver AI editor? Find answers to common queries below."
+        "sectionTitle": "Novel Weaver AI：ご質問にお答えします",
+        "sectionDescription": "Novel Weaver AIエディタの使用についてご不明な点がありますか？以下で一般的なクエリへの回答をご覧ください。"
     }
   },
-  "general.faqs": [
-      {
-        "question": "[JA] What is Novel Weaver AI?",
-        "answer": "[JA] Novel Weaver AI is an AI-powered web application designed to assist writers in every stage of the novel creation process, from ideation and outlining to chapter writing and revision. It combines structured tools with advanced AI to help you craft compelling stories."
-      },
-      {
-        "question": "[JA] How does the AI help with writing a novel?",
-        "answer": "[JA] The AI can help brainstorm ideas, suggest plot points, develop characters, generate draft content for chapters based on your prompts, and provide suggestions for revising your work (e.g., improving descriptions, checking consistency, optimizing dialogue)."
-      },
-      {
-        "question": "[JA] Is Novel Weaver AI suitable for all genres?",
-        "answer": "[JA] Yes! While we offer specialized prompts for popular genres like Sci-Fi, Fantasy, and Mystery, the core tools are versatile and can be adapted for any genre you're passionate about. The Custom Meta Prompt Builder (Pro plan) allows even deeper genre customization."
-      },
-      {
-        "question": "[JA] Do I own the content I create with Novel Weaver AI?",
-        "answer": "[JA] Absolutely. You retain full ownership of all content you create and input into Novel Weaver AI, as well as the narratives generated with AI assistance based on your inputs. We believe your story is yours."
-      },
-      {
-        "question": "[JA] How is my data saved and is it secure?",
-        "answer": "[JA] Your novel data is primarily saved in your browser's local storage for quick access. While convenient, we strongly recommend frequently using the 'Download Novel' feature to save a .txt backup to your computer. For authenticated users, future updates may include cloud storage options. We are committed to data security, but local storage is inherently tied to your browser."
-      },
-      {
-        "question": "[JA] Can I use Novel Weaver AI for free?",
-        "answer": "[JA] Yes, we offer a 'Free Weaver' plan with basic features and limitations, perfect for trying out the platform. For more advanced capabilities and fewer restrictions, we offer affordable paid plans."
-      }
-  ],
-  "pricing.faqs": [
-    {
-      "question": "[JA] What payment methods do you accept?",
-      "answer": "[JA] We accept major credit cards (Visa, Mastercard, American Express), PayPal, Apple Pay, Google Pay, and other payment methods supported by Gumroad, our payment processing partner."
-    },
-    {
-      "question": "[JA] Can I cancel my subscription at any time?",
-      "answer": "[JA] Yes, you can cancel your monthly or yearly subscription at any time. If you cancel, you'll retain access to your plan's features until the end of your current billing period. No refunds are provided for partial periods."
-    },
-    {
-      "question": "[JA] What happens if I upgrade or downgrade my plan?",
-      "answer": "[JA] Upgrades are typically effective immediately, with a prorated charge for the new plan. Downgrades take effect at the end ofyour current billing cycle. Specifics are handled by Gumroad's subscription management."
-    },
-    {
-      "question": "[JA] Is there a free trial for paid plans?",
-      "answer": "[JA] We offer a comprehensive Free plan that allows you to experience the core functionalities of Novel Weaver AI. We currently do not offer separate time-limited free trials for paid plans."
-    },
-    {
-      "question": "[JA] What does 'Limited' vs 'Full' AI Model Access mean?",
-      "answer": "[JA] Free and Lite plans may use standard AI models. Pro plans get access to our premium, more powerful AI models, which can result in higher quality suggestions, more nuanced writing, and better understanding of complex prompts."
-    },
-    {
-      "question": "[JA] What is the Custom Meta Prompt Builder?",
-      "answer": "[JA] Available on the Pro plan, this powerful tool allows you to define your own unique story structures, AI instructions, and parameters for novel generation, giving you unparalleled control over the AI's creative process to match very specific needs."
-    },
-    {
-      "question": "[JA] Are there any word count limits on paid plans?",
-      "answer": "[JA] The 'Lite Weaver' plan has a generous word count limit per novel (e.g., 50,000 words). The 'Pro Weaver' plan offers unlimited words per novel, allowing you to write epics without restriction."
-    }
-  ],
+  "general.faqs": "[JA] (Same structure as English, content needs translation)",
   "toolPage": {
     "sections": {
-      "novelEditor": { "title": "[JA] Novel Editor" },
-      "trendSpark": { "title": "[JA] Trend Spark ✨" }
+      "novelEditor": { "title": "小説エディタ" },
+      "trendSpark": { "title": "トレンドスパーク ✨" }
     },
     "subSections": {
-        "novelWorkflowEditor": { "title": "[JA] Novel Workflow Editor" },
-        "features": { "title": "[JA] Editor Features" },
-        "howItWorks": { "title": "[JA] Editor Guide" },
-        "showcase": { "title": "[JA] Editor Examples" },
-        "faq": { "title": "[JA] Editor FAQs" }
+        "novelWorkflowEditor": { "title": "小説ワークフローエディタ" },
+        "features": { "title": "エディタ機能" },
+        "howItWorks": { "title": "エディタガイド" },
+        "showcase": { "title": "エディタ例" },
+        "faq": { "title": "エディタFAQ" }
     }
   },
   "trendSparkTool": {
-    "title": "[JA] Trend Spark: AI Novel Concept Generator",
-    "description": "[JA] Analyze current novel trends and generate monetizable story ideas. Input popular themes, tropes, or platform trends below, and let AI spark your next bestseller!",
-    "inputLabel": "[JA] Describe Current Novel Trends:",
-    "inputPlaceholder": "[JA] e.g., 'System cultivation with academy arcs', 'Enemies-to-lovers in modern fantasy on WebNovel', 'Regressor MC with unique skill on RoyalRoad', 'LitRPG with crafting and guild building popular on ScribbleHub'...",
-    "inputInstruction": "[JA] Be specific! Mention genres, tropes, target platforms, or anything you've noticed gaining traction.",
-    "buttonGenerate": "[JA] Analyze Trends & Generate Ideas",
-    "buttonLoading": "[JA] AI is Brainstorming...",
-    "buttonDevelopConcept": "[JA] Develop this Idea in Novel Editor",
-    "generatedConceptsTitle": "[JA] AI-Generated Novel Concepts:",
+    "title": "トレンドスパーク：AI小説コンセプトジェネレーター",
+    "description": "現在の小説トレンドを分析し、収益化可能なストーリーアイデアを生成します。人気のテーマ、決まり文句、またはプラットフォームのトレンドを以下に入力し、AIに次のベストセラーの火花を散らさせましょう！",
+    "inputLabel": "現在の小説トレンドを記述してください：",
+    "inputPlaceholder": "例：「アカデミーアークのあるシステム育成」、「WebNovelでの現代ファンタジーにおける敵から恋人へ」、「RoyalRoadでのユニークなスキルを持つ回帰者MC」、「ScribbleHubで人気のクラフトとギルド構築のあるLitRPG」...",
+    "inputInstruction": "具体的に記述してください！ジャンル、決まり文句、ターゲットプラットフォーム、または注目を集めているものがあれば何でも言及してください。",
+    "buttonGenerate": "トレンドを分析してアイデアを生成",
+    "buttonLoading": "AIがブレインストーミング中...",
+    "buttonDevelopConcept": "小説エディタでこのアイデアを開発する",
+    "generatedConceptsTitle": "AI生成小説コンセプト：",
     "conceptCard": {
-      "genre": "[JA] Suggested Genre",
-      "targetAudience": "[JA] Target Audience/Platform",
-      "sellingPoints": "[JA] Key Selling Points / Monetization Angles"
+      "genre": "推奨ジャンル",
+      "targetAudience": "ターゲット読者/プラットフォーム",
+      "sellingPoints": "主要なセールスポイント/収益化の角度"
     },
     "errors": {
-      "noTrendsProvided": "[JA] Please describe some novel trends first.",
-      "apiError": "[JA] An error occurred while communicating with the AI. Please try again.",
-      "noConceptsGenerated": "[JA] The AI couldn't generate concepts based on your input. Try rephrasing or adding more details about the trends."
+      "noTrendsProvided": "最初にいくつかの小説トレンドを記述してください。",
+      "apiError": "AIとの通信中にエラーが発生しました。もう一度お試しください。",
+      "noConceptsGenerated": "AIは入力に基づいてコンセプトを生成できませんでした。トレンドに関する表現を変更するか、詳細を追加してみてください。"
     }
   },
   "stageNavigator": {
-    "title": "[JA] Novel Stages"
+    "title": "小説の段階"
   },
   "stage": {
     "foundation": {
-      "title": "[JA] Stage 1: Foundation & Ideation",
-      "description": "[JA] Define your core idea, genre, characters,
+      "title": "第1段階：基礎とアイデア発想",
+      "description": "中心となるアイデア、ジャンル、キャラクター、世界を定義します。物語の基礎を築きましょう。"
+    },
+    "outline": {
+      "title": "第2段階：プロットのアウトライン作成",
+      "description": "三幕構成モデルを使用して物語を構成します。主要なプロットポイント、ターニングポイント、全体的なストーリー展開を詳述します。"
+    },
+    "writing": {
+      "title": "第3段階：章の執筆",
+      "description": "小説を章ごとに下書きします。プロンプトとアウトラインに基づいてAI共同執筆支援を活用します。"
+    },
+    "revision": {
+      "title": "第4段階：校正と推敲",
+      "description": "原稿を洗練します。一貫性チェック、説明の強化、会話の最適化、ペース調整のためにAIツールを使用します。"
+    },
+    "finalizeExport": {
+      "title": "第5段階：最終処理とエクスポート",
+      "description": "完成した小説を確認し、最終的なタイトルを付けて作品をダウンロードします。"
+    }
+  },
+  "revisionTool": {
+    "task": {
+      "consistency": "一貫性チェック",
+      "description": "説明の強化",
+      "dialogue": "会話の最適化",
+      "pacing": "ペース調整"
+    }
+  },
+  "stage4revision": {
+    "introUIText": "下書きがあります。シニアエディターとして、以下のタスクのいずれかを手伝ってください。タスクを選択し、テキストを貼り付けてAIの提案を入手してください。",
+    "labels": {
+        "selectTask": "校正タスクを選択：",
+        "pasteText": "校正するテキストをここに貼り付け："
+    },
+    "placeholders": {
+        "selectTask": "-- 校正タスクを選択 --",
+        "pasteText": "AIに校正させたいテキストを入力または貼り付け..."
+    },
+    "buttons": {
+        "processing": "AIが校正中...",
+        "getSuggestions": "AIの提案を入手",
+        "copyToClipboard": "提案をコピー"
+    },
+    "titles": {
+        "aiSuggestions": "AI校正提案"
+    },
+    "alerts": {
+        "selectTaskAndText": "校正タスクを選択し、校正するテキストを貼り付けてください。"
+    },
+    "errors": {
+        "failedToGetRevision": "AIから校正提案を取得できませんでした。",
+        "errorPrefix": "エラー"
+    },
+    "taskDescriptions": {
+        "Consistency Check": "AIはプロットの穴、一貫性のないキャラクターの行動、または世界観との矛盾をチェックします。",
+        "Description Enhancement": "AIは五感と「語るな、見せろ」の原則を使用して、説明をより鮮やかで感覚的に書き直します。",
+        "Dialogue Optimization": "AIは会話をより自然にし、キャラクターの個性に合わせて、プロットを進展させます。",
+        "Pacing Adjustment": "AIはペースを評価します。遅い場合は冗長性を削減し、速い場合は詳細を追加します。"
+    }
+  },
+  "finalizeExport": {
+    "congratulations": "🎉 おめでとうございます！🎉",
+    "reachedFinalStage": "最終段階に到達しました。あなたの小説は素晴らしいタイトルを付けてダウンロードする準備ができています。",
+    "novelTitleLabel": "あなたの小説のタイトル",
+    "novelTitlePlaceholder": "傑作の最終タイトルを入力してください",
+    "novelTitleInstruction": "このタイトルはダウンロードファイルで使用されます。",
+    "downloadButton": "あなたの小説をダウンロード（.txt）",
+    "downloadAriaLabel": "完成した小説をテキストファイルとしてダウンロードします",
+    "thankYouMessage": "{{appTitle}}を使用して物語を紡いでいただきありがとうございます。執筆を楽しんでください！"
+  },
+  "toolSidebar": {
+    "backToHomeTitle": "{{appTitle}}ホームに戻る",
+    "creativeStudio": "クリエイティブスタジオ",
+    "expandAriaLabel": "サイドバーを展開",
+    "collapseAriaLabel": "サイドバーを折りたたむ",
+    "expandTitle": "展開",
+    "collapseTitle": "折りたたむ",
+    "navigationTitle": "その他のツール",
+    "homePageNavTitle": "ホームページ",
+    "homePageNavTitleCollapsed": "ホームページへ移動",
+    "settingsTitle": "設定",
+    "apiKey": {
+      "label": "カスタムGemini APIキー（オプション）",
+      "placeholder": "APIキーを入力",
+      "saveButton": "キーを保存",
+      "clearButton": "キーをクリア",
+      "description": "デフォルトでは環境キーを使用します。キーはブラウザにローカル保存されます。",
+      "customSaved": "カスタムAPIキーが保存されました。",
+      "customCleared": "カスタムAPIキーがクリアされました。デフォルトを使用しています。"
+    },
+    "user": {
+        "signedInAs": "サインイン済みのアカウント",
+        "signOut": "サインアウト"
+    }
+  },
+  "signInPage": {
+    "title": "アカウントにサインイン",
+    "labels": {
+      "email": "メールアドレス",
+      "password": "パスワード"
+    },
+    "placeholders": {
+      "email": "you@example.com"
+    },
+    "buttons": {
+      "signIn": "サインイン",
+      "signInWith": "{{providerName}}でサインイン",
+      "signUp": "今すぐサインアップ"
+    },
+    "orContinueWith": "または続ける",
+    "dontHaveAccount": "アカウントをお持ちではありませんか？",
+    "errors": {
+      "unknownError": "サインイン中に不明なエラーが発生しました。もう一度お試しください。"
+    }
+  },
+  "signUpPage": {
+    "titles": {
+        "createAccount": "アカウントを作成",
+        "verifyEmail": "メールアドレスを認証"
+    },
+    "labels": {
+      "email": "メールアドレス",
+      "password": "パスワード",
+      "confirmPassword": "パスワードを確認",
+      "verificationCode": "認証コード"
+    },
+    "placeholders": {
+      "email": "you@example.com",
+      "verificationCode": "メールのコードを入力"
+    },
+    "instructions": {
+        "passwordMinLength": "最低6文字。"
+    },
+    "buttons": {
+      "registerAndSendCode": "登録してコードを送信",
+      "verifyCode": "コードを認証",
+      "backToRegistration": "登録に戻る",
+      "signUpWith": "{{providerName}}でサインアップ",
+      "signIn": "サインイン"
+    },
+    "orSignUpWith": "または以下でサインアップ",
+    "alreadyHaveAccount": "既にアカウントをお持ちですか？",
+    "messages": {
+        "verificationSent": "認証コードがメールに送信されました。受信トレイ（およびスパムフォルダ）を確認してください。",
+        "verificationSuccess": "アカウントが正常に認証されました！サインインにリダイレクトしています...",
+        "signInAfterVerification": "アカウントは認証済みです。続行するにはサインインしてください。"
+    },
+    "errors": {
+        "passwordsMismatch": "パスワードが一致しません。",
+        "passwordTooShort": "パスワードは6文字以上である必要があります。",
+        "codeEmpty": "認証コードは空にできません。",
+        "unknownInitiationError": "サインアップ開始中に不明なエラーが発生しました。",
+        "unknownVerificationError": "認証中に不明なエラーが発生しました。"
+    }
+  },
+  "authCallbackPage": {
+    "processing": "認証を処理しています...",
+    "verifyingToken": "本人確認中です...",
+    "failed": "認証に失敗しました：{{error}}",
+    "signInRetryMessage": "認証に失敗しました：{{error}}。もう一度サインインしてください。",
+    "buttons": {
+        "trySignInAgain": "もう一度サインインする"
+    },
+    "errors": {
+        "oauthProviderError": "認証プロバイダーからのエラー。",
+        "tokenNotFound": "認証応答にアクセストークンが見つかりません。",
+        "unknownError": "不明な認証エラーが発生しました。"
+    }
+  },
+  "staticPages": {
+    "backToHome": "ホームに戻る",
+    "returnToHomepage": "ホームページに戻る"
+  },
+  "privacyPage": {
+    "title": "プライバシーポリシー",
+    "thankYou": "{{appTitle}}をご利用いただきありがとうございます！お客様のプライバシーを保護し、データを透明性をもって取り扱うことをお約束します。",
+    "contentComingSoonTitle": "詳細なプライバシーポリシーは近日公開予定です！",
+    "workingOnDetails": "現在、プライバシーポリシーの詳細な法的文書を最終調整中です。このページではまもなく以下の包括的な情報を提供する予定です：",
+    "infoWeCollect": "収集する情報（例：アカウントデータ、ローカル保存された小説コンテンツ、利用状況分析）。",
+    "howWeUseInfo": "情報の利用方法（例：サービスの提供と改善、体験のパーソナライズ、お客様との連絡）。",
+    "howWeProtectInfo": "情報の保護方法（例：取り扱う可能性のあるすべてのデータに対するセキュリティ対策、ローカルストレージに関する考慮事項）。",
+    "yourRights": "お客様のデータに関する権利（例：アクセス、修正、削除）。",
+    "andMore": "Cookie、サードパーティサービス、ポリシーの更新など。",
+    "checkBackSoon": "完全なプライバシーポリシーについては、まもなく再度ご確認ください。お客様の信頼は私たちにとって重要です。"
+  },
+  "termsPage": {
+    "title": "利用規約",
+    "welcome": "{{appTitle}}へようこそ！当社のサービスを利用することにより、これらの規約に同意したものとみなされます。",
+    "contentComingSoonTitle": "完全な利用規約は近日公開予定です！",
+    "finalizingLegalFramework": "私たちは包括的な利用規約の作成に鋭意取り組んでいます。この文書では以下を概説します：",
+    "userResponsibilities": "{{appTitle}}ユーザーとしてのあなたの責任。",
+    "providerResponsibilities": "サービスプロバイダーとしての私たちの責任。",
+    "contentOwnership": "コンテンツの所有権と知的財産権に関する明確化。",
+    "acceptableUse": "プラットフォームの許容可能な使用に関するポリシー。",
+    "disclaimers": "保証の否認と責任の制限。",
+    "otherLegalInfo": "準拠法や紛争解決を含むその他の重要な法的情報。",
+    "checkBackSoon": "しばらくお待ちください。完全な利用規約については、まもなくこのページを再度ご確認ください。",
+    "content": {
+        "section1_p1": "{{appTitle}}（「本サービス」）にアクセスまたは利用することにより、お客様はこれらの利用規約（「本規約」）に拘束されることに同意するものとします。本規約のいずれかの部分に同意しない場合は、本サービスにアクセスすることはできません。",
+        "section2_p1": "お客様は、合法的な目的のためにのみ、かつ本規約に従って本サービスを利用することに同意するものとします。お客様は、作成したコンテンツおよび本サービスの利用中の行為について責任を負います。お客様は、有害、違法、または権利を侵害するコンテンツを生成するために本サービスを利用しないことに同意するものとします。",
+        "section3_p1": "お客様は、本サービスに入力し、本サービスで生成した創作コンテンツ（小説の草稿、アイデア、アウトラインなど）（「お客様のコンテンツ」）の完全な所有権を保持します。当社は、お客様のコンテンツに対していかなる所有権も主張しません。本サービス自体（そのソフトウェア、デザイン、ブランドを含む）は、{{appTitle}}およびそのライセンサーの財産であり、知的財産法によって保護されています。",
+        "section4_p1": "本サービスは、「現状有姿」かつ「提供可能な範囲」で提供され、いかなる種類の保証もありません。当社は、本サービスにエラーがないこと、または中断されないことを保証しません。{{appTitle}}は、お客様の本サービスへのアクセスもしくは利用、または本サービスへのアクセスもしくは利用ができなかったことに起因する間接的、付随的、特別、結果的、または懲罰的損害について、一切責任を負わないものとします。",
+        "section5_p1": "当社は、いつでも本規約を変更する権利を留保します。重大な変更については通知を行います。かかる変更後にお客様が本サービスを継続して利用した場合、新しい規約に同意したものとみなされます。"
+    }
+  },
+  "aboutPage": {
+    "title": "Novel Weaver AIについて",
+    "welcome": "AIコラボレーションの力で物語が生まれる{{appTitle}}へようこそ！",
+    "missionStoryComingSoon": "私たちの使命と物語 - 近日公開！",
+    "passionateAboutEmpowering": "私たちはあなたのような作家を力づけることに情熱を注いでいます。現在、このセクションを作成して

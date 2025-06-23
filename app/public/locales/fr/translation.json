@@ -23,12 +23,13 @@
     "myNovels": "Mes Romans",
     "getStarted": "Commencer",
     "startCreating": "Commencer à Créer",
-    "goHome": "Aller à la Page d'Accueil"
+    "goHome": "Aller à la Page d'Accueil",
+    "forEveryWriter": "Pour Chaque Écrivain"
   },
   "footer": {
     "copyright": "© {{year}} {{appTitle}}. Tous droits réservés.",
     "copyrightSimple": "© {{year}} {{appTitle}}",
-    "copyrightPricingPage": "© {{year}} {{appTitle}}. Paiements sécurisés via Gumroad.",
+    "copyrightPricingPage": "© {{year}} {{appTitle}}. Paiements sécurisés via Square.",
     "copyrightToolPage": "© {{year}} {{appTitle}}. Votre partenaire créatif.",
     "tagline": "Façonner des Mondes, Mot par Mot.",
     "privacyPolicy": "Politique de Confidentialité",
@@ -82,6 +83,34 @@
       "refine": {
         "title": "4. Affinez & Polissez",
         "description": "Utilisez les outils de révision de l'IA pour vérifier la cohérence, améliorer les descriptions, optimiser les dialogues et ajuster le rythme."
+      }
+    },
+    "userTypes": {
+      "sectionTitle": "[FR] Craft Your Story, Your Way",
+      "sectionSubtitle": "[FR] {{appTitle}} is designed to empower every kind of storyteller. Discover how our tools can adapt to your unique writing style and goals.",
+      "aspiring": {
+        "title": "[FR] The Aspiring Author",
+        "description": "[FR] Just starting your novel-writing journey? {{appTitle}} provides the guidance and structure to turn your fledgling ideas into a complete story.",
+        "benefit1": "[FR] Overcome writer's block with AI-powered idea generation.",
+        "benefit2": "[FR] Learn story structure with guided outlining tools.",
+        "benefit3": "[FR] Build confidence with AI co-writing assistance for first drafts.",
+        "cta": "[FR] Start Your First Novel"
+      },
+      "experienced": {
+        "title": "[FR] The Seasoned Novelist",
+        "description": "[FR] Looking to enhance your workflow and explore new creative avenues? {{appTitle}} offers advanced tools to streamline your process and polish your prose.",
+        "benefit1": "[FR] Accelerate drafting and revisions with intelligent AI.",
+        "benefit2": "[FR] Experiment with new concepts rapidly using Trend Spark.",
+        "benefit3": "[FR] Fine-tune your manuscript with a comprehensive AI revision suite.",
+        "cta": "[FR] Explore Advanced Tools"
+      },
+      "hobbyist": {
+        "title": "[FR] The Creative Hobbyist",
+        "description": "[FR] Love building worlds and crafting characters for fun? {{appTitle}} is your creative sandbox to explore storytelling without pressure.",
+        "benefit1": "[FR] Easily develop rich characters and intricate worlds.",
+        "benefit2": "[FR] Experiment with different plotlines and story ideas.",
+        "benefit3": "[FR] Enjoy the process of creation with a supportive AI partner.",
+        "cta": "[FR] Unleash Your Imagination"
       }
     },
     "megaMenu": {
@@ -150,11 +179,9 @@
     "currencySelectedMessage": "Devise définie sur {{currencyCode}}.",
     "perMonth": "/ mois",
     "billedAnnually": "facturé annuellement",
-    "polloApiNote": "Le traitement des paiements est illustratif et utilise des liens Gumroad de remplacement.",
-    "polloApiLinkText": "En savoir plus sur Gumroad.",
+    "paymentProcessingNote": "Traitement des paiements optimisé par Square.",
     "paymentSafety": "Paiements sécurisés et cryptés.",
     "morePaymentMethods": "et plus",
-    "gumroadLinkUnavailableAlert": "Le lien Gumroad pour {{planName}} ({{cycle}}) n'est pas encore disponible.",
     "joinUsersSection": {
         "title": "Rejoignez des Milliers d'Écrivains sur {{appTitle}}",
         "ctaLoggedIn": "Aller à Mes Romans",
@@ -210,6 +237,74 @@
         ],
         "cta": "Passer Pro"
       }
+    },
+    "cta": {
+      "manageSubscription": "Gérer l'Abonnement"
+    },
+    "activePlanBadge": "Plan Actif",
+    "paymentModal": {
+        "title": "Finaliser le Paiement pour {{planName}}",
+        "youArePayingFor": "Vous payez pour",
+        "submitPaymentButton": "Payer {{price}}",
+        "securityNote": "Vos informations de paiement sont traitées de manière sécurisée par Square.",
+        "errorSquareSDK": "Le SDK de Paiements Square n'a pas pu être chargé. Veuillez rafraîchir la page ou vérifier votre connexion internet.",
+        "errorInitCardForm": "Impossible d'initialiser le formulaire de paiement par carte. Veuillez réessayer.",
+        "errorCardNotReady": "Le formulaire de paiement par carte n'est pas prêt. Veuillez patienter un instant.",
+        "errorTokenizationFailed": "Échec du traitement des informations de paiement. Veuillez vérifier les informations de votre carte et réessayer.",
+        "errorTokenizationGeneric": "Une erreur inattendue s'est produite lors du traitement de votre paiement. Veuillez réessayer plus tard.",
+        "errorVerificationFailed": "La vérification du paiement a échoué. Veuillez réessayer ou contacter votre banque.",
+        "verifyingPayment": "Vérification de votre paiement, veuillez patienter...",
+        "nonceReceivedAlert": "Nonce de Paiement Reçu : {{nonce}}. Ceci serait envoyé à votre serveur.",
+        "errorSquareIdsMissing": "La passerelle de paiement Square n'est pas configurée correctement. Veuillez contacter le support.",
+        "alertSquareIdsNotConfigured": "Le système de paiement n'est pas configuré. Veuillez contacter le support ou utiliser les identifiants sandbox pour les tests."
+    },
+    "submissionStatus": {
+      "title": "Statut de Soumission du Paiement",
+      "dismissAriaLabel": "Rejeter le message d'état",
+      "submitting": "Traitement de vos informations de paiement...",
+      "success": "Votre paiement pour le plan {{planName}} a réussi ! (Simulation Frontend)",
+      "error": "Un problème est survenu lors du traitement de votre paiement pour le plan {{planName}}. Veuillez vérifier vos informations et réessayer. (Simulation Frontend)",
+      "backendNote": "Ceci est une simulation frontend. La prochaine étape consiste à implémenter un point de terminaison backend (par ex. /api/create-subscription) pour traiter ce paiement de manière sécurisée avec Square. Aucun frais réel ne sera appliqué avec cette configuration actuelle. Assurez-vous que votre ID d'application Square et votre ID de localisation dans `constants.ts` sont correctement configurés pour les tests Sandbox.",
+      "submittingToServer": "Soumission de votre demande d'abonnement au serveur...",
+      "successBackend": "Votre abonnement au plan {{planName}} a été créé avec succès !",
+      "errorBackendSpecific": "Échec de la création de votre abonnement pour {{planName}}. Erreur : {{backendError}}",
+      "errorBackendGeneric": "Échec de la création de votre abonnement pour {{planName}}. Veuillez réessayer plus tard ou contacter le support si le problème persiste.",
+      "manageSubscription": {
+        "loading": "Traitement...",
+        "cancelled": "Abonnement annulé avec succès (simulation)."
+      }
+    },
+    "faqs": {
+      "sectionTitleGeneral": "Questions Fréquemment Posées",
+      "sectionTitlePricing": "FAQ Tarification",
+      "0": {
+        "question": "[FR] What payment methods do you accept?",
+        "answer": "[FR] We accept major credit cards (Visa, Mastercard, American Express), Apple Pay, Google Pay, and other payment methods supported by Square, our payment processing partner."
+      },
+      "1": {
+        "question": "[FR] Can I cancel my subscription at any time?",
+        "answer": "[FR] Yes, you can cancel your monthly or yearly subscription at any time. If you cancel, you'll retain access to your plan's features until the end of your current billing period. No refunds are provided for partial periods."
+      },
+      "2": {
+        "question": "[FR] What happens if I upgrade or downgrade my plan?",
+        "answer": "[FR] Upgrades are typically effective immediately, with a prorated charge for the new plan. Downgrades take effect at the end of your current billing cycle. Specifics are handled by Square's subscription management."
+      },
+      "3": {
+        "question": "[FR] Is there a free trial for paid plans?",
+        "answer": "[FR] We offer a comprehensive Free plan that allows you to experience the core functionalities of Novel Weaver AI. We currently do not offer separate time-limited free trials for paid plans."
+      },
+      "4": {
+        "question": "[FR] What does 'Limited' vs 'Full' AI Model Access mean?",
+        "answer": "[FR] Free and Lite plans may use standard AI models. Pro plans get access to our premium, more powerful AI models, which can result in higher quality suggestions, more nuanced writing, and better understanding of complex prompts."
+      },
+      "5": {
+        "question": "[FR] What is the Custom Meta Prompt Builder?",
+        "answer": "[FR] Available on the Pro plan, this powerful tool allows you to define your own unique story structures, AI instructions, and parameters for novel generation, giving you unparalleled control over the AI's creative process to match very specific needs."
+      },
+      "6": {
+        "question": "[FR] Are there any word count limits on paid plans?",
+        "answer": "[FR] The 'Lite Weaver' plan has a generous word count limit per novel (e.g., 50,000 words). The 'Pro Weaver' plan offers unlimited words per novel, allowing you to write epics without restriction."
+      }
     }
   },
   "billingCycle": {
@@ -230,7 +325,6 @@
     }
   },
   "general.faqs": "[FR] (Same structure as English, content needs translation)",
-  "pricing.faqs": "[FR] (Same structure as English, content needs translation)",
   "toolPage": {
     "sections": {
       "novelEditor": { "title": "Éditeur de Roman" },
@@ -445,7 +539,7 @@
   },
   "privacyPage": {
     "title": "Politique de Confidentialité",
-    "thankYou": "Merci d'avoir choisi {{appTitle}} ! Nous nous engageons à protéger votre vie privée et à traiter vos données de manière transparente.",
+    "thankYou": "Merci d'avoir choisi {{appTitle}} ! Nous nous engageons à proteger votre vie privée et à traiter vos données de manière transparente.",
     "contentComingSoonTitle": "Politique de Confidentialité Détaillée Bientôt Disponible !",
     "workingOnDetails": "Nous finalisons actuellement le texte juridique détaillé de notre Politique de Confidentialité. Cette page fournira bientôt des informations complètes sur :",
     "infoWeCollect": "Quelles informations nous collectons (par ex., données de compte, contenu de roman stocké localement, analyses d'utilisation).",
@@ -494,29 +588,29 @@
   },
   "contactPage": {
     "title": "Contactez-Nous",
-    "loveToHear": "Nous serions ravis d'avoir de vos nouvelles ! Que vous ayez une question, des commentaires ou une demande de partenariat, n'hésitez pas à nous contacter.",
-    "contactInfoComingSoon": "Coordonnées et Formulaire - Bientôt Disponible !",
-    "pageWillFeature": "Cette page présentera bientôt :",
+    "loveToHear": "Nous aimerions avoir de vos nouvelles ! Que vous ayez une question, des commentaires ou une demande de partenariat, n'hésitez pas à nous contacter.",
+    "contactInfoComingSoon": "Informations de Contact et Formulaire - Bientôt Disponible !",
+    "pageWillFeature": "Cette page comprendra bientôt :",
     "emailAddress": "Une adresse e-mail dédiée pour le support et les demandes de renseignements.",
     "contactForm": "Un formulaire de contact facile à utiliser directement sur cette page.",
     "socialMediaLinks": "Liens vers nos réseaux sociaux (le cas échéant).",
-    "appreciatePatience": "Nous apprécions votre patience pendant que nous mettons en place ces canaux de communication. Nous avons hâte d'échanger avec vous !",
+    "appreciatePatience": "Nous apprécions votre patience pendant que nous mettons en place ces canaux de communication. Nous avons hâte de communiquer avec vous !",
     "formSubmitPlaceholderAlert": "Merci pour votre message ! (Ceci est un espace réservé - le formulaire n'est pas encore fonctionnel)"
   },
   "seo": {
     "defaultTagline": "Votre Partenaire Créatif IA pour Romans",
-    "defaultDescription": "Créez des romans captivants de l'idée au brouillon final avec Novel Weaver AI, votre partenaire créatif alimenté par l'IA. Comprend l'idéation par IA, la planification, la co-écriture et les outils de révision.",
+    "defaultDescription": "Créez des romans captivants de l'idée au brouillon final avec Novel Weaver AI, votre partenaire créatif alimenté par l'IA. Comprend des outils d'idéation IA, de planification, de co-écriture et de révision.",
     "home": {
       "titleSuffix": "Assistant d'Écriture de Romans IA",
       "description": "Novel Weaver AI : Votre partenaire ultime alimenté par l'IA pour l'écriture de romans. Générez des idées, planifiez des intrigues, co-écrivez des chapitres et révisez votre manuscrit avec des outils intelligents."
     },
     "tool": {
       "defaultTitle": "Éditeur de Roman",
-      "description": "L'Éditeur de Romans {{appTitle}} pour '{{novelTitle}}' - Actuellement à l'étape '{{currentStage}}'. Utilisez les outils d'IA pour la fondation, la planification, l'écriture et la révision."
+      "description": "L'Éditeur de Roman {{appTitle}} pour '{{novelTitle}}' - Actuellement à l'étape '{{currentStage}}'. Utilisez les outils IA pour la fondation, la planification, l'écriture et la révision."
     },
     "pricing": {
       "title": "Plans Tarifaires",
-      "description": "Explorez des plans tarifaires flexibles pour {{appTitle}}. Choisissez entre Gratuit, Lite ou Pro pour débloquer des fonctionnalités d'écriture de romans IA adaptées à vos besoins créatifs."
+      "description": "Explorez les plans tarifaires flexibles de {{appTitle}}. Choisissez parmi Gratuit, Lite ou Pro pour débloquer les fonctionnalités d'écriture de romans IA adaptées à vos besoins créatifs."
     },
     "signIn": {
       "title": "Se Connecter",
@@ -524,7 +618,7 @@
     },
     "signUp": {
       "title": "S'inscrire",
-      "description": "Créez votre compte {{appTitle}} pour commencer à utiliser des outils alimentés par l'IA pour l'idéation, la planification, l'écriture et la révision de romans. Commencez votre voyage d'écriture dès aujourd'hui !"
+      "description": "Créez votre compte {{appTitle}} pour commencer à utiliser les outils alimentés par l'IA pour l'idéation, la planification, l'écriture et la révision de romans. Commencez votre voyage d'écriture dès aujourd'hui !"
     },
     "authCallback": {
       "title": "Authentification",
@@ -540,11 +634,15 @@
     },
     "about": {
       "title": "À Propos de Nous",
-      "description": "En savoir plus sur {{appTitle}}, notre mission d'autonomiser les écrivains avec l'IA, et l'équipe derrière les outils innovants d'écriture de romans."
+      "description": "Apprenez-en davantage sur {{appTitle}}, notre mission d'autonomiser les écrivains avec l'IA, et l'équipe derrière les outils innovants d'écriture de romans."
     },
     "contact": {
       "title": "Contactez-Nous",
-      "description": "Prenez contact avec l'équipe {{appTitle}}. Nous accueillons vos questions, commentaires et demandes concernant notre plateforme d'écriture de romans IA."
+      "description": "Prenez contact avec l'équipe de {{appTitle}}. Nous accueillons vos questions, commentaires et demandes concernant notre plateforme d'écriture de romans IA."
+    },
+    "monetization": {
+      "title": "Stratégies de Monétisation",
+      "description": "Découvrez des stratégies et des plateformes pour monétiser votre roman avec les conseils de {{appTitle}}. Apprenez-en plus sur les modèles d'abonnement, les ventes directes, et plus encore."
     }
   },
   "ldJson": {
@@ -583,5 +681,11 @@
     "cta": "Se Connecter / Mettre à Niveau",
     "later": "Peut-être Plus Tard",
     "signInPrompt": "Veuillez vous connecter ou mettre à niveau pour télécharger plus de romans et accéder aux fonctionnalités premium."
+  },
+  "monetizationPage": {
+    "title": "Stratégies de Monétisation de Romans",
+    "footerLink": "Guide de Monétisation",
+    "englishPlatformsReportTitle": "Rapport d'Analyse des Plateformes de Monétisation de Romans Web en Anglais",
+    "maleOrientedPlatformsReportTitle": "Analyse Détaillée et Suggestions pour les Plateformes de Romans Web Orientées Masculin"
   }
 }

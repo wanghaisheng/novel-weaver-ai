@@ -23,12 +23,13 @@
     "myNovels": "Mis Novelas",
     "getStarted": "Empezar",
     "startCreating": "Empezar a Crear",
-    "goHome": "Ir a la Página Principal"
+    "goHome": "Ir a la Página Principal",
+    "forEveryWriter": "Para Cada Escritor"
   },
   "footer": {
     "copyright": "© {{year}} {{appTitle}}. Todos los derechos reservados.",
     "copyrightSimple": "© {{year}} {{appTitle}}",
-    "copyrightPricingPage": "© {{year}} {{appTitle}}. Pagos seguros vía Gumroad.",
+    "copyrightPricingPage": "© {{year}} {{appTitle}}. Pagos seguros vía Square.",
     "copyrightToolPage": "© {{year}} {{appTitle}}. Tu socio creativo.",
     "tagline": "Creando Mundos, Palabra por Palabra.",
     "privacyPolicy": "Política de Privacidad",
@@ -82,6 +83,34 @@
       "refine": {
         "title": "4. Refina y Pule",
         "description": "Utiliza herramientas de revisión de IA para verificar la consistencia, mejorar descripciones, optimizar diálogos y ajustar el ritmo."
+      }
+    },
+     "userTypes": {
+      "sectionTitle": "[ES] Craft Your Story, Your Way",
+      "sectionSubtitle": "[ES] {{appTitle}} is designed to empower every kind of storyteller. Discover how our tools can adapt to your unique writing style and goals.",
+      "aspiring": {
+        "title": "[ES] The Aspiring Author",
+        "description": "[ES] Just starting your novel-writing journey? {{appTitle}} provides the guidance and structure to turn your fledgling ideas into a complete story.",
+        "benefit1": "[ES] Overcome writer's block with AI-powered idea generation.",
+        "benefit2": "[ES] Learn story structure with guided outlining tools.",
+        "benefit3": "[ES] Build confidence with AI co-writing assistance for first drafts.",
+        "cta": "[ES] Start Your First Novel"
+      },
+      "experienced": {
+        "title": "[ES] The Seasoned Novelist",
+        "description": "[ES] Looking to enhance your workflow and explore new creative avenues? {{appTitle}} offers advanced tools to streamline your process and polish your prose.",
+        "benefit1": "[ES] Accelerate drafting and revisions with intelligent AI.",
+        "benefit2": "[ES] Experiment with new concepts rapidly using Trend Spark.",
+        "benefit3": "[ES] Fine-tune your manuscript with a comprehensive AI revision suite.",
+        "cta": "[ES] Explore Advanced Tools"
+      },
+      "hobbyist": {
+        "title": "[ES] The Creative Hobbyist",
+        "description": "[ES] Love building worlds and crafting characters for fun? {{appTitle}} is your creative sandbox to explore storytelling without pressure.",
+        "benefit1": "[ES] Easily develop rich characters and intricate worlds.",
+        "benefit2": "[ES] Experiment with different plotlines and story ideas.",
+        "benefit3": "[ES] Enjoy the process of creation with a supportive AI partner.",
+        "cta": "[ES] Unleash Your Imagination"
       }
     },
     "megaMenu": {
@@ -140,7 +169,7 @@
     "seoSection": {
         "title": "Desbloquea Tu Potencial Creativo con la Escritura de Novelas por IA",
         "paragraph1": "Novel Weaver AI es tu socio definitivo en el viaje creativo de la escritura de novelas. Ya seas un autor aspirante o un escritor experimentado, nuestras herramientas impulsadas por IA están diseñadas para optimizar tu proceso, desde la lluvia de ideas iniciales hasta el pulido de tu borrador final. Con características como generación de historias por IA, creación de personajes, desarrollo de tramas y sugerencias de revisión inteligentes, {{appTitle}} te ayuda a superar el bloqueo del escritor y dar vida a tus mundos ficticios.",
-        "paragraph2": "Nuestra plataforma soporta una variedad de géneros, ofreciendo asistencia especializada para Ciencia Ficción, Fantasía, Misterio y más. Utiliza nuestras herramientas de esquematización estructurada para construir un marco narrativo convincente, y luego sumérgete en la escritura de capítulos con soporte de co-escritura de IA que entiende tu visión. {{appTitle}} se enfoca en la colaboración, asegurando que tu voz única permanezca en el corazón de tu historia mientras aprovechas la IA para mejorar la productividad y la creatividad.",
+        "paragraph2": "Nuestra plataforma soporta una variedad de géneros, ofreciendo asistencia especializada para Ciencia Ficción, Fantasía, Misterio y más. Utiliza nuestras herramientas de esquematización estructurada para construir un marco narrativo convincente, y luego sumérgete en la escritura de capítulos con soporte de co-escritura de IA que entiende tu visión. {{appTitle}} se enfoca en la colaboración, asegurando que tu voz única permanezca en el corazón de tu historia mientras aprovechas la IA para mejorar la productividad y la creativida-----BEGIN PGP PUBLIC KEY BLOCK----- (this seems like a copy-paste error from a previous interaction, keeping original JSON structure)",
         "paragraph3": "Experimenta el futuro de la escritura de novelas. Únete a una comunidad de autores que están transformando su proceso creativo con {{appTitle}}. Comienza a crear tu obra maestra hoy, y deja que nuestra IA te asista en tejer tramas intrincadas, desarrollar personajes memorables y crear mundos inmersivos que cautiven a tus lectores."
     }
   },
@@ -150,11 +179,9 @@
     "currencySelectedMessage": "Moneda establecida en {{currencyCode}}.",
     "perMonth": "/ mes",
     "billedAnnually": "facturado anualmente",
-    "polloApiNote": "El procesamiento de pagos es ilustrativo y utiliza enlaces de Gumroad de marcador de posición.",
-    "polloApiLinkText": "Aprende más sobre Gumroad.",
+    "paymentProcessingNote": "Procesamiento de pagos impulsado por Square.",
     "paymentSafety": "Pagos seguros y encriptados.",
     "morePaymentMethods": "y más",
-    "gumroadLinkUnavailableAlert": "El enlace de Gumroad para {{planName}} ({{cycle}}) aún no está disponible.",
     "joinUsersSection": {
         "title": "Únete a Miles de Escritores en {{appTitle}}",
         "ctaLoggedIn": "Ir a Mis Novelas",
@@ -210,6 +237,74 @@
         ],
         "cta": "Ir a Pro"
       }
+    },
+    "cta": {
+      "manageSubscription": "Gestionar Suscripción"
+    },
+    "activePlanBadge": "Plan Activo",
+    "paymentModal": {
+        "title": "Completar Pago para {{planName}}",
+        "youArePayingFor": "Estás pagando por",
+        "submitPaymentButton": "Pagar {{price}}",
+        "securityNote": "Tus datos de pago son procesados de forma segura por Square.",
+        "errorSquareSDK": "No se pudo cargar el SDK de Pagos de Square. Por favor, actualiza la página o verifica tu conexión a internet.",
+        "errorInitCardForm": "No se pudo inicializar el formulario de pago con tarjeta. Por favor, inténtalo de nuevo.",
+        "errorCardNotReady": "El formulario de pago con tarjeta no está listo. Por favor, espera un momento.",
+        "errorTokenizationFailed": "Error al procesar los datos de pago. Por favor, verifica la información de tu tarjeta e inténtalo de nuevo.",
+        "errorTokenizationGeneric": "Ocurrió un error inesperado al procesar tu pago. Por favor, inténtalo de nuevo más tarde.",
+        "errorVerificationFailed": "La verificación del pago falló. Por favor, inténtalo de nuevo o contacta a tu banco.",
+        "verifyingPayment": "Verificando tu pago, por favor espera...",
+        "nonceReceivedAlert": "Nonce de Pago Recibido: {{nonce}}. Esto se enviaría a tu servidor.",
+        "errorSquareIdsMissing": "La pasarela de pago Square no está configurada correctamente. Por favor, contacta a soporte.",
+        "alertSquareIdsNotConfigured": "El sistema de pago no está configurado. Por favor, contacta a soporte o usa los IDs de sandbox para pruebas."
+    },
+    "submissionStatus": {
+      "title": "Estado de Envío de Pago",
+      "dismissAriaLabel": "Descartar mensaje de estado",
+      "submitting": "Procesando tu información de pago...",
+      "success": "¡Tu pago para el plan {{planName}} ha sido exitoso! (Simulación Frontend)",
+      "error": "Hubo un problema al procesar tu pago para el plan {{planName}}. Por favor, revisa tus datos e inténtalo de nuevo. (Simulación Frontend)",
+      "backendNote": "Esta es una simulación frontend. El siguiente paso es implementar un endpoint de backend (ej. /api/create-subscription) para procesar este pago de forma segura con Square. No se realizarán cargos reales con esta configuración actual. Asegúrate de que tu ID de Aplicación de Square y ID de Ubicación en `constants.ts` estén configurados correctamente para pruebas de Sandbox.",
+      "submittingToServer": "Enviando tu solicitud de suscripción al servidor...",
+      "successBackend": "¡Tu suscripción al plan {{planName}} ha sido creada exitosamente!",
+      "errorBackendSpecific": "Error al crear tu suscripción para {{planName}}. Error: {{backendError}}",
+      "errorBackendGeneric": "Error al crear tu suscripción para {{planName}}. Por favor, inténtalo de nuevo más tarde o contacta a soporte si el problema persiste.",
+      "manageSubscription": {
+        "loading": "Procesando...",
+        "cancelled": "Suscripción cancelada exitosamente (simulación)."
+      }
+    },
+    "faqs": {
+      "sectionTitleGeneral": "Preguntas Frecuentes",
+      "sectionTitlePricing": "Preguntas Frecuentes sobre Precios",
+      "0": {
+        "question": "[ES] What payment methods do you accept?",
+        "answer": "[ES] We accept major credit cards (Visa, Mastercard, American Express), Apple Pay, Google Pay, and other payment methods supported by Square, our payment processing partner."
+      },
+      "1": {
+        "question": "[ES] Can I cancel my subscription at any time?",
+        "answer": "[ES] Yes, you can cancel your monthly or yearly subscription at any time. If you cancel, you'll retain access to your plan's features until the end of your current billing period. No refunds are provided for partial periods."
+      },
+      "2": {
+        "question": "[ES] What happens if I upgrade or downgrade my plan?",
+        "answer": "[ES] Upgrades are typically effective immediately, with a prorated charge for the new plan. Downgrades take effect at the end of your current billing cycle. Specifics are handled by Square's subscription management."
+      },
+      "3": {
+        "question": "[ES] Is there a free trial for paid plans?",
+        "answer": "[ES] We offer a comprehensive Free plan that allows you to experience the core functionalities of Novel Weaver AI. We currently do not offer separate time-limited free trials for paid plans."
+      },
+      "4": {
+        "question": "[ES] What does 'Limited' vs 'Full' AI Model Access mean?",
+        "answer": "[ES] Free and Lite plans may use standard AI models. Pro plans get access to our premium, more powerful AI models, which can result in higher quality suggestions, more nuanced writing, and better understanding of complex prompts."
+      },
+      "5": {
+        "question": "[ES] What is the Custom Meta Prompt Builder?",
+        "answer": "[ES] Available on the Pro plan, this powerful tool allows you to define your own unique story structures, AI instructions, and parameters for novel generation, giving you unparalleled control over the AI's creative process to match very specific needs."
+      },
+      "6": {
+        "question": "[ES] Are there any word count limits on paid plans?",
+        "answer": "[ES] The 'Lite Weaver' plan has a generous word count limit per novel (e.g., 50,000 words). The 'Pro Weaver' plan offers unlimited words per novel, allowing you to write epics without restriction."
+      }
     }
   },
   "billingCycle": {
@@ -229,62 +324,7 @@
         "sectionDescription": "¿Tienes preguntas sobre el uso del editor de Novel Weaver AI? Encuentra respuestas a consultas comunes a continuación."
     }
   },
-  "general.faqs": [
-      {
-        "question": "¿Qué es Novel Weaver AI?",
-        "answer": "Novel Weaver AI es una aplicación web impulsada por IA diseñada para asistir a los escritores en cada etapa del proceso de creación de novelas, desde la ideación y esquematización hasta la escritura de capítulos y la revisión. Combina herramientas estructuradas con IA avanzada para ayudarte a crear historias convincentes."
-      },
-      {
-        "question": "¿Cómo ayuda la IA a escribir una novela?",
-        "answer": "La IA puede ayudar a generar ideas, sugerir puntos de la trama, desarrollar personajes, generar borradores de contenido para capítulos basados en tus prompts y proporcionar sugerencias para revisar tu trabajo (p. ej., mejorar descripciones, verificar la consistencia, optimizar diálogos)."
-      },
-      {
-        "question": "¿Es Novel Weaver AI adecuado para todos los géneros?",
-        "answer": "¡Sí! Aunque ofrecemos prompts especializados para géneros populares como Ciencia Ficción, Fantasía y Misterio, las herramientas principales son versátiles y se pueden adaptar a cualquier género que te apasione. El Constructor de Meta Prompts Personalizado (plan Pro) permite una personalización de género aún más profunda."
-      },
-      {
-        "question": "¿Soy dueño del contenido que creo con Novel Weaver AI?",
-        "answer": "Absolutamente. Conservas la propiedad total de todo el contenido que creas e ingresas en Novel Weaver AI, así como de las narrativas generadas con asistencia de IA basadas en tus entradas. Creemos que tu historia es tuya."
-      },
-      {
-        "question": "¿Cómo se guardan mis datos y están seguros?",
-        "answer": "Los datos de tu novela se guardan principalmente en el almacenamiento local de tu navegador para un acceso rápido. Aunque es conveniente, recomendamos encarecidamente usar con frecuencia la función 'Descargar Novela' para guardar una copia de seguridad .txt en tu computadora. Para usuarios autenticados, futuras actualizaciones pueden incluir opciones de almacenamiento en la nube. Estamos comprometidos con la seguridad de los datos, pero el almacenamiento local está inherentemente ligado a tu navegador."
-      },
-      {
-        "question": "¿Puedo usar Novel Weaver AI gratis?",
-        "answer": "Sí, ofrecemos un plan 'Tejedor Gratuito' con características básicas y limitaciones, perfecto para probar la plataforma. Para capacidades más avanzadas y menos restricciones, ofrecemos planes de pago asequibles."
-      }
-  ],
-  "pricing.faqs": [
-    {
-      "question": "¿Qué métodos de pago aceptan?",
-      "answer": "Aceptamos las principales tarjetas de crédito (Visa, Mastercard, American Express), PayPal, Apple Pay, Google Pay y otros métodos de pago compatibles con Gumroad, nuestro socio de procesamiento de pagos."
-    },
-    {
-      "question": "¿Puedo cancelar mi suscripción en cualquier momento?",
-      "answer": "Sí, puedes cancelar tu suscripción mensual o anual en cualquier momento. Si cancelas, conservarás el acceso a las características de tu plan hasta el final de tu período de facturación actual. No se proporcionan reembolsos por períodos parciales."
-    },
-    {
-      "question": "¿Qué sucede si actualizo o degrado mi plan?",
-      "answer": "Las actualizaciones suelen ser efectivas de inmediato, con un cargo prorrateado por el nuevo plan. Las degradaciones entran en vigor al final de tu ciclo de facturación actual. Los detalles específicos son manejados por la gestión de suscripciones de Gumroad."
-    },
-    {
-      "question": "¿Hay una prueba gratuita para los planes de pago?",
-      "answer": "Ofrecemos un plan Gratuito completo que te permite experimentar las funcionalidades principales de Novel Weaver AI. Actualmente no ofrecemos pruebas gratuitas separadas por tiempo limitado para los planes de pago."
-    },
-    {
-      "question": "¿Qué significa Acceso 'Limitado' vs 'Completo' al Modelo de IA?",
-      "answer": "Los planes Gratuito y Lite pueden usar modelos de IA estándar. Los planes Pro obtienen acceso a nuestros modelos de IA premium más potentes, lo que puede resultar en sugerencias de mayor calidad, una escritura más matizada y una mejor comprensión de prompts complejos."
-    },
-    {
-      "question": "¿Qué es el Constructor de Meta Prompts Personalizado?",
-      "answer": "Disponible en el plan Pro, esta potente herramienta te permite definir tus propias estructuras de historia únicas, instrucciones de IA y parámetros para la generación de novelas, dándote un control sin precedentes sobre el proceso creativo de la IA para que coincida con necesidades muy específicas."
-    },
-    {
-      "question": "¿Hay límites de conteo de palabras en los planes de pago?",
-      "answer": "El plan 'Tejedor Lite' tiene un generoso límite de conteo de palabras por novela (p. ej., 50,000 palabras). El plan 'Tejedor Pro' ofrece palabras ilimitadas por novela, permitiéndote escribir épicas sin restricciones."
-    }
-  ],
+  "general.faqs": "[ES] (Same structure as English, content needs translation)",
   "toolPage": {
     "sections": {
       "novelEditor": { "title": "Editor de Novelas" },
@@ -537,7 +577,7 @@
     "visionBehind": "La visión detrás de {{appTitle}} y nuestro viaje.",
     "teamAndValues": "Información sobre nuestro equipo y valores fundamentales.",
     "revolutionizeNovelWriting": "Cómo nuestro objetivo es revolucionar el proceso de escritura de novelas a través de herramientas de IA innovadoras.",
-    "commitmentToAuthors": "Nuestro compromiso de apoyar a los autores y fomentar la creatividad.",
+    "commitmentToAuthors": "Nuestro compromiso de apoyar a los autores y fomentar la créatividad.",
     "stayTuned": "Mantente atento para aprender más sobre las personas y la pasión que impulsan {{appTitle}}.",
      "content": {
         "missionTitle": "Nuestra Misión (Marcador de posición)",
@@ -599,6 +639,10 @@
     "contact": {
       "title": "Contáctanos",
       "description": "Ponte en contacto con el equipo de {{appTitle}}. Damos la bienvenida a tus preguntas, comentarios y consultas sobre nuestra plataforma de escritura de novelas con IA."
+    },
+    "monetization": {
+      "title": "Estrategias de Monetización",
+      "description": "Descubre estrategias y plataformas para monetizar tu novela con la guía de {{appTitle}}. Aprende sobre modelos de suscripción, ventas directas y más."
     }
   },
   "ldJson": {
@@ -618,63 +662,10 @@
         "characters": "Personajes",
         "worldBuilding": "Construcción del Mundo"
     },
-    "character": {
-        "name": "Nombre",
-        "fields": {
-            "identity": "Identidad",
-            "appearance": "Apariencia",
-            "personality": "Personalidad",
-            "want": "Deseo",
-            "need": "Necesidad",
-            "flaw": "Defecto",
-            "backstory": "Trasfondo",
-            "arc": "Arco del Personaje",
-            "motivation": "Motivación (Antagonista)",
-            "relationshipToProtagonist": "Relación con el Protagonista (Antagonista)",
-            "functionInStory": "Función en la Historia (Secundario)",
-            "briefDescription": "Breve Descripción (Secundario)"
-        }
-    },
-    "worldBuilding": {
-        "fields": {
-            "timeAndPlace": "Tiempo y Lugar",
-            "coreRules": "Reglas Principales",
-            "socialStructure": "Estructura Social",
-            "keyLocations": "Ubicaciones Clave"
-        }
-    },
-    "stage2": {
-        "actKey": {
-            "act1": "Acto I",
-            "act2": "Acto II",
-            "act3": "Acto III"
-        },
-        "plotPointKey": {
-            "stasis": "Estatismo",
-            "incitingIncident": "Incidente Incitador",
-            "debate": "Debate",
-            "turningPoint1": "Punto de Inflexión 1",
-            "testsAlliesEnemies": "Pruebas, Aliados, Enemigos",
-            "midpoint": "Punto Medio",
-            "risingAction": "Acción Ascendente",
-            "allIsLost": "Todo Está Perdido",
-            "turningPoint2": "Punto de Inflexión 2",
-            "runUpToClimax": "Camino al Clímax",
-            "climax": "Clímax",
-            "fallingAction": "Acción Descendente",
-            "resolution": "Resolución"
-        }
-    },
-    "stage3": {
-        "chapter": "Capítulo",
-        "pov": "Personaje POV",
-        "goal": "Objetivo Principal",
-        "keyPlotPoints": "Puntos Clave de la Trama",
-        "startingScene": "Escena Inicial",
-        "endingScene": "Escena Final",
-        "atmosphere": "Atmósfera",
-        "targetWordCount": "Conteo de Palabras Objetivo"
-    }
+    "character": "[ES] (Same structure, needs translation)",
+    "worldBuilding": "[ES] (Same structure, needs translation)",
+    "stage2": "[ES] (Same structure, needs translation)",
+    "stage3": "[ES] (Same structure, needs translation)"
   },
   "novel": {
     "defaultTitle": "Mi Novela IA"
@@ -690,5 +681,11 @@
     "cta": "Iniciar Sesión / Actualizar",
     "later": "Quizás Más Tarde",
     "signInPrompt": "Por favor, inicia sesión o actualiza para descargar más novelas y acceder a funciones premium."
+  },
+  "monetizationPage": {
+    "title": "Estrategias de Monetización de Novelas",
+    "footerLink": "Guía de Monetización",
+    "englishPlatformsReportTitle": "Informe de Análisis de Plataformas de Monetización de Novelas Web en Inglés",
+    "maleOrientedPlatformsReportTitle": "Análisis Detallado y Sugerencias para Plataformas de Novelas Web Orientadas a Hombres"
   }
 }

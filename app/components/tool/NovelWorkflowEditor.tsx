@@ -89,7 +89,7 @@ const NovelWorkflowEditor: React.FC<NovelWorkflowEditorProps> = ({
             id="stage-select-mobile"
             value={currentStage}
             onChange={(e) => onSetCurrentStage(e.target.value as NovelStage)}
-            className="w-full p-3 border border-input rounded-lg bg-input text-foreground placeholder-muted-foreground focus:outline-none focus:ring-2 focus:ring-ring focus:border-ring transition-colors duration-200 shadow-sm"
+            className="w-full p-3 border border-input rounded-lg bg-muted text-foreground placeholder-muted-foreground focus:outline-none focus:ring-2 focus:ring-ring focus:border-ring transition-colors duration-200 shadow-sm"
             aria-label="Select novel writing stage"
           >
             {STAGES_ORDER.map((stageId) => {
@@ -104,8 +104,8 @@ const NovelWorkflowEditor: React.FC<NovelWorkflowEditorProps> = ({
         </div>
       </div>
       
-      <div className="px-4 sm:px-6 md:px-8 py-6 md:py-8 bg-card rounded-b-xl"> {/* Changed from bg-slate-900 to bg-card */}
-        <div className="mb-8 p-6 bg-secondary rounded-xl shadow-lg border border-border"> {/* Changed from bg-slate-800 to bg-secondary */}
+      <div className="px-4 sm:px-6 md:px-8 py-6 md:py-8 bg-card rounded-b-xl">
+        <div className="mb-8 p-6 bg-secondary rounded-xl shadow-lg border border-border">
           <h2 className="text-2xl md:text-3xl font-bold text-primary mb-2 tracking-tight">{t(currentStageInfo.titleKey)}</h2>
           <p className="text-foreground text-sm md:text-base leading-relaxed">{t(currentStageInfo.descriptionKey)}</p>
         </div>

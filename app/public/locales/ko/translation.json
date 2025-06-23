@@ -23,12 +23,13 @@
     "myNovels": "내 소설",
     "getStarted": "시작하기",
     "startCreating": "창작 시작",
-    "goHome": "홈페이지로 이동"
+    "goHome": "홈페이지로 이동",
+    "forEveryWriter": "모든 작가를 위해"
   },
   "footer": {
     "copyright": "© {{year}} {{appTitle}}. 모든 권리 보유.",
     "copyrightSimple": "© {{year}} {{appTitle}}",
-    "copyrightPricingPage": "© {{year}} {{appTitle}}. Gumroad를 통한 안전한 결제.",
+    "copyrightPricingPage": "© {{year}} {{appTitle}}. Square를 통한 안전한 결제.",
     "copyrightToolPage": "© {{year}} {{appTitle}}. 당신의 창작 파트너.",
     "tagline": "한 단어, 한 단어로 세상을 엮습니다.",
     "privacyPolicy": "개인정보 처리방침",
@@ -82,6 +83,34 @@
       "refine": {
         "title": "4. 수정 및 교정",
         "description": "AI 교정 도구를 활용하여 일관성을 확인하고, 묘사를 강화하며, 대화를 최적화하고, 속도를 조절하세요."
+      }
+    },
+    "userTypes": {
+      "sectionTitle": "[KO] Craft Your Story, Your Way",
+      "sectionSubtitle": "[KO] {{appTitle}} is designed to empower every kind of storyteller. Discover how our tools can adapt to your unique writing style and goals.",
+      "aspiring": {
+        "title": "[KO] The Aspiring Author",
+        "description": "[KO] Just starting your novel-writing journey? {{appTitle}} provides the guidance and structure to turn your fledgling ideas into a complete story.",
+        "benefit1": "[KO] Overcome writer's block with AI-powered idea generation.",
+        "benefit2": "[KO] Learn story structure with guided outlining tools.",
+        "benefit3": "[KO] Build confidence with AI co-writing assistance for first drafts.",
+        "cta": "[KO] Start Your First Novel"
+      },
+      "experienced": {
+        "title": "[KO] The Seasoned Novelist",
+        "description": "[KO] Looking to enhance your workflow and explore new creative avenues? {{appTitle}} offers advanced tools to streamline your process and polish your prose.",
+        "benefit1": "[KO] Accelerate drafting and revisions with intelligent AI.",
+        "benefit2": "[KO] Experiment with new concepts rapidly using Trend Spark.",
+        "benefit3": "[KO] Fine-tune your manuscript with a comprehensive AI revision suite.",
+        "cta": "[KO] Explore Advanced Tools"
+      },
+      "hobbyist": {
+        "title": "[KO] The Creative Hobbyist",
+        "description": "[KO] Love building worlds and crafting characters for fun? {{appTitle}} is your creative sandbox to explore storytelling without pressure.",
+        "benefit1": "[KO] Easily develop rich characters and intricate worlds.",
+        "benefit2": "[KO] Experiment with different plotlines and story ideas.",
+        "benefit3": "[KO] Enjoy the process of creation with a supportive AI partner.",
+        "cta": "[KO] Unleash Your Imagination"
       }
     },
     "megaMenu": {
@@ -150,11 +179,9 @@
     "currencySelectedMessage": "통화가 {{currencyCode}}(으)로 설정되었습니다.",
     "perMonth": "/월",
     "billedAnnually": "매년 청구",
-    "polloApiNote": "결제 처리는 예시이며 플레이스홀더 Gumroad 링크를 사용합니다.",
-    "polloApiLinkText": "Gumroad에 대해 자세히 알아보기.",
+    "paymentProcessingNote": "Square를 통한 결제 처리.",
     "paymentSafety": "안전하고 암호화된 결제.",
     "morePaymentMethods": "등",
-    "gumroadLinkUnavailableAlert": "{{planName}} ({{cycle}})에 대한 Gumroad 링크를 아직 사용할 수 없습니다.",
     "joinUsersSection": {
         "title": "{{appTitle}}에서 수천 명의 작가와 함께하세요",
         "ctaLoggedIn": "내 소설로 이동",
@@ -210,6 +237,74 @@
         ],
         "cta": "프로로 이동"
       }
+    },
+    "cta": {
+      "manageSubscription": "구독 관리"
+    },
+    "activePlanBadge": "활성 플랜",
+    "paymentModal": {
+        "title": "{{planName}} 결제 완료하기",
+        "youArePayingFor": "결제 대상",
+        "submitPaymentButton": "{{price}} 결제하기",
+        "securityNote": "결제 정보는 Square를 통해 안전하게 처리됩니다.",
+        "errorSquareSDK": "Square 결제 SDK를 로드할 수 없습니다. 페이지를 새로고침하거나 인터넷 연결을 확인하세요.",
+        "errorInitCardForm": "카드 결제 양식을 초기화할 수 없습니다. 다시 시도해주세요.",
+        "errorCardNotReady": "카드 결제 양식이 준비되지 않았습니다. 잠시만 기다려주세요.",
+        "errorTokenizationFailed": "결제 정보를 처리하지 못했습니다. 카드 정보를 확인하고 다시 시도해주세요.",
+        "errorTokenizationGeneric": "결제 처리 중 예기치 않은 오류가 발생했습니다. 나중에 다시 시도해주세요.",
+        "errorVerificationFailed": "결제 인증에 실패했습니다. 다시 시도하거나 은행에 문의하십시오.",
+        "verifyingPayment": "결제 인증 중입니다. 잠시만 기다려주십시오...",
+        "nonceReceivedAlert": "결제 Nonce 수신됨: {{nonce}}. 이 정보는 서버로 전송됩니다。",
+        "errorSquareIdsMissing": "Square 결제 게이트웨이가 올바르게 구성되지 않았습니다. 고객 지원에 문의하세요.",
+        "alertSquareIdsNotConfigured": "결제 시스템이 구성되지 않았습니다. 고객 지원에 문의하거나 테스트용 샌드박스 ID를 사용하세요."
+    },
+    "submissionStatus": {
+      "title": "결제 제출 상태",
+      "dismissAriaLabel": "상태 메시지 닫기",
+      "submitting": "결제 정보 처리 중...",
+      "success": "{{planName}} 플랜 결제가 성공적으로 완료되었습니다! (프론트엔드 시뮬레이션)",
+      "error": "{{planName}} 플랜 결제 처리 중 문제가 발생했습니다. 정보를 확인하고 다시 시도해주세요. (프론트엔드 시뮬레이션)",
+      "backendNote": "이것은 프론트엔드 시뮬레이션입니다. 다음 단계는 Square로 이 결제를 안전하게 처리하기 위해 백엔드 엔드포인트(예: /api/create-subscription)를 구현하는 것입니다. 현재 설정으로는 실제 청구가 이루어지지 않습니다. Sandbox 테스트를 위해 `constants.ts`의 Square Application ID 및 Location ID가 올바르게 설정되었는지 확인하십시오.",
+      "submittingToServer": "구독 요청을 서버로 제출 중...",
+      "successBackend": "{{planName}} 플랜 구독이 성공적으로 생성되었습니다!",
+      "errorBackendSpecific": "{{planName}} 구독 생성에 실패했습니다. 오류: {{backendError}}",
+      "errorBackendGeneric": "{{planName}} 구독 생성에 실패했습니다. 나중에 다시 시도하거나 문제가 지속되면 지원팀에 문의하십시오.",
+      "manageSubscription": {
+        "loading": "처리 중...",
+        "cancelled": "구독이 성공적으로 취소되었습니다 (시뮬레이션)."
+      }
+    },
+    "faqs": {
+      "sectionTitleGeneral": "자주 묻는 질문",
+      "sectionTitlePricing": "요금제 FAQ",
+      "0": {
+        "question": "[KO] What payment methods do you accept?",
+        "answer": "[KO] We accept major credit cards (Visa, Mastercard, American Express), Apple Pay, Google Pay, and other payment methods supported by Square, our payment processing partner."
+      },
+      "1": {
+        "question": "[KO] Can I cancel my subscription at any time?",
+        "answer": "[KO] Yes, you can cancel your monthly or yearly subscription at any time. If you cancel, you'll retain access to your plan's features until the end of your current billing period. No refunds are provided for partial periods."
+      },
+      "2": {
+        "question": "[KO] What happens if I upgrade or downgrade my plan?",
+        "answer": "[KO] Upgrades are typically effective immediately, with a prorated charge for the new plan. Downgrades take effect at the end of your current billing cycle. Specifics are handled by Square's subscription management."
+      },
+      "3": {
+        "question": "[KO] Is there a free trial for paid plans?",
+        "answer": "[KO] We offer a comprehensive Free plan that allows you to experience the core functionalities of Novel Weaver AI. We currently do not offer separate time-limited free trials for paid plans."
+      },
+      "4": {
+        "question": "[KO] What does 'Limited' vs 'Full' AI Model Access mean?",
+        "answer": "[KO] Free and Lite plans may use standard AI models. Pro plans get access to our premium, more powerful AI models, which can result in higher quality suggestions, more nuanced writing, and better understanding of complex prompts."
+      },
+      "5": {
+        "question": "[KO] What is the Custom Meta Prompt Builder?",
+        "answer": "[KO] Available on the Pro plan, this powerful tool allows you to define your own unique story structures, AI instructions, and parameters for novel generation, giving you unparalleled control over the AI's creative process to match very specific needs."
+      },
+      "6": {
+        "question": "[KO] Are there any word count limits on paid plans?",
+        "answer": "[KO] The 'Lite Weaver' plan has a generous word count limit per novel (e.g., 50,000 words). The 'Pro Weaver' plan offers unlimited words per novel, allowing you to write epics without restriction."
+      }
     }
   },
   "billingCycle": {
@@ -229,62 +324,7 @@
         "sectionDescription": "Novel Weaver AI 편집기 사용에 대해 궁금한 점이 있으신가요? 아래에서 일반적인 질문에 대한 답변을 찾아보세요."
     }
   },
-  "general.faqs": [
-      {
-        "question": "Novel Weaver AI란 무엇인가요?",
-        "answer": "Novel Weaver AI는 아이디어 구상, 아웃라인 작성, 챕터 작성, 교정 등 소설 창작의 모든 단계에서 작가를 지원하도록 설계된 AI 기반 웹 애플리케이션입니다. 구조화된 도구와 고급 AI를 결합하여 매력적인 이야기를 만드는 데 도움을 줍니다."
-      },
-      {
-        "question": "AI는 소설 쓰기에 어떻게 도움이 되나요?",
-        "answer": "AI는 아이디어 브레인스토밍, 플롯 포인트 제안, 캐릭터 개발, 프롬프트 기반 챕터 초안 생성, 작품 교정 제안(예: 묘사 개선, 일관성 확인, 대화 최적화) 등에 도움을 줄 수 있습니다."
-      },
-      {
-        "question": "Novel Weaver AI는 모든 장르에 적합한가요?",
-        "answer": "네! SF, 판타지, 미스터리와 같은 인기 장르에 대한 특화 프롬프트를 제공하지만 핵심 도구는 다목적이며 열정을 가진 모든 장르에 적용할 수 있습니다. 커스텀 메타 프롬프트 빌더(프로 요금제)는 더욱 심도 있는 장르 맞춤 설정을 가능하게 합니다."
-      },
-      {
-        "question": "Novel Weaver AI로 만든 콘텐츠의 소유권은 저에게 있나요?",
-        "answer": "물론입니다. Novel Weaver AI에 입력하고 생성한 모든 콘텐츠와 AI 지원으로 생성된 서사의 소유권은 전적으로 귀하에게 있습니다. 저희는 당신의 이야기가 당신의 것이라고 믿습니다."
-      },
-      {
-        "question": "제 데이터는 어떻게 저장되고 안전한가요?",
-        "answer": "소설 데이터는 빠른 액세스를 위해 주로 브라우저의 로컬 저장소에 저장됩니다. 편리하지만 '소설 다운로드' 기능을 자주 사용하여 컴퓨터에 .txt 백업을 저장하는 것이 좋습니다. 인증된 사용자의 경우 향후 업데이트에 클라우드 저장소 옵션이 포함될 수 있습니다. 저희는 데이터 보안에 전념하고 있지만 로컬 저장소는 본질적으로 브라우저에 연결됩니다."
-      },
-      {
-        "question": "Novel Weaver AI를 무료로 사용할 수 있나요?",
-        "answer": "네, 플랫폼을 사용해 볼 수 있는 기본 기능과 제한이 있는 '프리 위버' 요금제를 제공합니다. 더 고급 기능과 적은 제한을 원하시면 저렴한 유료 요금제를 제공합니다."
-      }
-  ],
-  "pricing.faqs": [
-    {
-      "question": "어떤 결제 수단을 사용할 수 있나요?",
-      "answer": "주요 신용카드(Visa, Mastercard, American Express), PayPal, Apple Pay, Google Pay 및 결제 처리 파트너인 Gumroad에서 지원하는 기타 결제 수단을 사용할 수 있습니다."
-    },
-    {
-      "question": "언제든지 구독을 취소할 수 있나요?",
-      "answer": "네, 월간 또는 연간 구독은 언제든지 취소할 수 있습니다. 취소하면 현재 청구 기간이 끝날 때까지 요금제 기능에 계속 액세스할 수 있습니다. 부분 기간에 대해서는 환불되지 않습니다."
-    },
-    {
-      "question": "요금제를 업그레이드하거나 다운그레이드하면 어떻게 되나요?",
-      "answer": "업그레이드는 일반적으로 즉시 적용되며 새 요금제에 대해 비례 배분된 요금이 부과됩니다. 다운그레이드는 현재 청구 주기가 끝나면 적용됩니다. 세부 사항은 Gumroad의 구독 관리에서 처리합니다."
-    },
-    {
-      "question": "유료 요금제에 대한 무료 평가판이 있나요?",
-      "answer": "Novel Weaver AI의 핵심 기능을 경험할 수 있는 포괄적인 무료 요금제를 제공합니다. 현재 유료 요금제에 대한 별도의 시간 제한 무료 평가판은 제공하지 않습니다."
-    },
-    {
-      "question": "'제한된' AI 모델 액세스와 '전체' AI 모델 액세스는 무엇을 의미하나요?",
-      "answer": "무료 및 라이트 요금제는 표준 AI 모델을 사용할 수 있습니다. 프로 요금제는 프리미엄급의 더 강력한 AI 모델에 액세스할 수 있어 고품질 제안, 더 미묘한 글쓰기, 복잡한 프롬프트에 대한 더 나은 이해를 얻을 수 있습니다."
-    },
-    {
-      "question": "커스텀 메타 프롬프트 빌더란 무엇인가요?",
-      "answer": "프로 요금제에서 사용할 수 있는 이 강력한 도구를 사용하면 자신만의 고유한 이야기 구조, AI 지침, 소설 생성을 위한 매개변수를 정의하여 매우 특정한 요구 사항에 맞게 AI의 창작 과정에 대한 전례 없는 제어력을 얻을 수 있습니다."
-    },
-    {
-      "question": "유료 요금제에 단어 수 제한이 있나요?",
-      "answer": "'라이트 위버' 요금제는 소설당 넉넉한 단어 수 제한(예: 50,000단어)이 있습니다. '프로 위버' 요금제는 소설당 무제한 단어를 제공하여 제한 없이 대작을 쓸 수 있도록 합니다."
-    }
-  ],
+  "general.faqs": "[KO] (Same structure as English, content needs translation)",
   "toolPage": {
     "sections": {
       "novelEditor": { "title": "소설 편집기" },
@@ -440,10 +480,8 @@
     }
   },
   "signUpPage": {
-    "titles": {
-        "createAccount": "계정 만들기",
-        "verifyEmail": "이메일 인증"
-    },
+    "titleRegister": "계정 만들기",
+    "titleVerify": "이메일 인증",
     "labels": {
       "email": "이메일 주소",
       "password": "비밀번호",
@@ -452,12 +490,16 @@
     },
     "placeholders": {
       "email": "you@example.com",
+      "password": "••••••••",
+      "confirmPassword": "••••••••",
       "verificationCode": "이메일로 받은 코드 입력"
     },
     "instructions": {
         "passwordMinLength": "최소 6자 이상이어야 합니다."
     },
     "buttons": {
+      "register": "가입하기",
+      "verify": "인증하기",
       "registerAndSendCode": "가입하고 인증 코드 받기",
       "verifyCode": "코드 인증",
       "backToRegistration": "가입으로 돌아가기",
@@ -469,7 +511,8 @@
     "messages": {
         "verificationSent": "인증 코드가 이메일로 발송되었습니다. 받은 편지함(및 스팸 폴더)을 확인해주세요.",
         "verificationSuccess": "계정이 성공적으로 인증되었습니다! 로그인으로 리디렉션됩니다...",
-        "signInAfterVerification": "계정이 인증되었습니다. 계속하려면 로그인해주세요."
+        "signInAfterVerification": "계정이 인증되었습니다. 계속하려면 로그인해주세요.",
+        "verificationInstructions": "{{email}}(으)로 인증 코드가 발송되었습니다. 아래에 입력해주세요."
     },
     "errors": {
         "passwordsMismatch": "비밀번호가 일치하지 않습니다.",
@@ -566,7 +609,8 @@
     },
     "tool": {
       "defaultTitle": "소설 편집기",
-      "description": "{{appTitle}}의 '{{novelTitle}}' 소설 편집기 - 현재 '{{currentStage}}' 단계입니다. 기초, 아웃라인, 글쓰기, 교정을 위해 AI 도구를 활용하세요."
+      "description": "{{appTitle}}의 '{{novelTitle}}' 소설 편집기 - 현재 '{{currentStage}}' 단계입니다. 기초, 아웃라인, 글쓰기, 교정을 위해 AI 도구를 활용하세요.",
+      "yourNovel": "당신의 소설"
     },
     "pricing": {
       "title": "요금제",
@@ -599,6 +643,10 @@
     "contact": {
       "title": "문의하기",
       "description": "{{appTitle}} 팀에 문의하세요. AI 소설 쓰기 플랫폼에 대한 질문, 피드백, 문의를 환영합니다."
+    },
+    "monetization": {
+      "title": "수익화 전략",
+      "description": "{{appTitle}}의 안내를 통해 소설 수익화 전략 및 플랫폼을 알아보세요. 구독 모델, 직접 판매 등에 대해 알아보세요."
     }
   },
   "ldJson": {
@@ -621,25 +669,25 @@
     "character": {
         "name": "이름",
         "fields": {
-            "identity": "정체성",
+            "identity": "정체성/직업",
             "appearance": "외모",
             "personality": "성격",
-            "want": "욕구",
-            "need": "필요",
-            "flaw": "결점",
-            "backstory": "배경 이야기",
-            "arc": "인물 성장",
+            "want": "주요 욕망/목표",
+            "need": "내적 필요",
+            "flaw": "약점/치명적인 결함",
+            "backstory": "배경 이야기 단편",
+            "arc": "캐릭터 아크",
             "motivation": "동기 (적대자)",
             "relationshipToProtagonist": "주인공과의 관계 (적대자)",
-            "functionInStory": "이야기 속 역할 (조연)",
+            "functionInStory": "이야기에서의 기능 (조연)",
             "briefDescription": "간단한 설명 (조연)"
         }
     },
     "worldBuilding": {
         "fields": {
-            "timeAndPlace": "시간 및 장소",
-            "coreRules": "핵심 규칙",
-            "socialStructure": "사회 구조",
+            "timeAndPlace": "시대와 장소",
+            "coreRules": "핵심 규칙/법칙",
+            "socialStructure": "사회 구조와 문화",
             "keyLocations": "주요 장소"
         }
     },
@@ -651,28 +699,28 @@
         },
         "plotPointKey": {
             "stasis": "일상",
-            "incitingIncident": "발단 사건",
-            "debate": "고민",
+            "incitingIncident": "발단이 되는 사건",
+            "debate": "갈등",
             "turningPoint1": "1차 전환점",
-            "testsAlliesEnemies": "시험, 협력자, 적대자",
+            "testsAlliesEnemies": "시험, 협력자, 적",
             "midpoint": "중간점",
-            "risingAction": "상승 액션",
-            "allIsLost": "절망의 순간",
+            "risingAction": "고조되는 액션/위기",
+            "allIsLost": "모든 것을 잃음/영혼의 암흑기",
             "turningPoint2": "2차 전환점",
-            "runUpToClimax": "클라이맥스 전개",
+            "runUpToClimax": "클라이맥스로의 전개",
             "climax": "클라이맥스",
-            "fallingAction": "하강 액션",
-            "resolution": "결말"
+            "fallingAction": "낙하",
+            "resolution": "해결과 새로운 일상"
         }
     },
     "stage3": {
-        "chapter": "챕터",
-        "pov": "시점 인물",
-        "goal": "핵심 목표",
-        "keyPlotPoints": "주요 플롯 포인트",
-        "startingScene": "시작 장면",
-        "endingScene": "종결 장면",
-        "atmosphere": "분위기",
+        "chapter": "제",
+        "pov": "시점 캐릭터",
+        "goal": "이 장의 핵심 목표",
+        "keyPlotPoints": "이 장에 포함될 주요 플롯 포인트",
+        "startingScene": "이 장의 시작 장면",
+        "endingScene": "이 장의 끝 장면 (서스펜스 또는 후크)",
+        "atmosphere": "이 장에서 강조할 분위기/감정",
         "targetWordCount": "목표 단어 수"
     }
   },
@@ -680,15 +728,21 @@
     "defaultTitle": "나의 AI 소설"
   },
   "genres": {
-    "sciFi": { "name": "SF", "description": "미래, 기술, 우주를 탐험하세요." },
-    "fantasy": { "name": "판타지", "description": "마법, 신화, 장대한 퀘스트." },
-    "mystery": { "name": "미스터리", "description": "단서, 긴장감, 스릴 넘치는 반전." }
+    "sciFi": { "name": "SF", "description": "미래, 기술, 우주를 탐험합니다." },
+    "fantasy": { "name": "판타지", "description": "마법, 신화, 장대한 모험." },
+    "mystery": { "name": "미스터리", "description": "단서, 서스펜스, 스릴 넘치는 반전." }
   },
   "upgradeModal": {
     "title": "무료 한도 도달",
-    "description": "무료 소설 다운로드 횟수를 모두 사용하셨습니다. 계속 다운로드하고 프리미엄 기능을 사용하려면 로그인하거나 업그레이드하세요.",
-    "cta": "로그인 / 업그레이드",
+    "description": "무료 소설 다운로드를 모두 사용하셨습니다. 계속 다운로드하고 프리미엄 기능을 잠금 해제하려면 로그인하거나 플랜을 업그레이드하세요.",
+    "cta": "로그인/업그레이드",
     "later": "나중에",
-    "signInPrompt": "더 많은 소설을 다운로드하고 프리미엄 기능을 이용하려면 로그인하거나 업그레이드하세요."
+    "signInPrompt": "더 많은 소설을 다운로드하고 프리미엄 기능에 액세스하려면 로그인하거나 플랜을 업그레이드하세요."
+  },
+  "monetizationPage": {
+    "title": "소설 수익화 전략",
+    "footerLink": "수익화 가이드",
+    "englishPlatformsReportTitle": "영어 웹소설 수익화 플랫폼 분석 보고서",
+    "maleOrientedPlatformsReportTitle": "남성향 웹소설 플랫폼 상세 분석 및 제안"
   }
 }

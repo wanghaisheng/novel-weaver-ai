@@ -1,10 +1,8 @@
-
-
 import React, { useState, useMemo, useEffect, useRef } from 'react';
-import { useTranslation } from 'react-i18next'; // Import useTranslation
-import { GENERAL_FAQS } from '../constants'; 
-import type { User, FAQItem } from '../types'; 
-import LanguagePicker from '../components/common/LanguagePicker'; // Import LanguagePicker
+import { useTranslation } from 'react-i18next'; 
+import { GENERAL_FAQS, TOOL_PAGE_SECTIONS, NOVEL_EDITOR_SUB_SECTIONS } from '../constants'; 
+import type { User, FAQItem, ToolSectionId } from '../types'; 
+import LanguagePicker from '../components/common/LanguagePicker'; 
 
 interface HomePageProps {
   onStartCreating: () => void;
@@ -17,9 +15,9 @@ interface HomePageProps {
   onNavigateToTerms: () => void;   
   onNavigateToAbout: () => void;   
   onNavigateToContact: () => void; 
+  onNavigateToMonetization: () => void;
 }
 
-// Key features will now use translation keys
 const keyFeatures = [
   {
     icon: '💡',
@@ -43,7 +41,6 @@ const keyFeatures = [
   },
 ];
 
-// How it works steps will also use translation keys
 const howItWorksSteps = [
   {
     step: 1,
@@ -71,16 +68,54 @@ const howItWorksSteps = [
   },
 ];
 
-// Genres for mega menu: names and descriptions should be translatable
+const userTypes = [
+  {
+    icon: '🌱',
+    titleKey: 'home.userTypes.aspiring.title',
+    descriptionKey: 'home.userTypes.aspiring.description',
+    benefits: [
+      'home.userTypes.aspiring.benefit1',
+      'home.userTypes.aspiring.benefit2',
+      'home.userTypes.aspiring.benefit3',
+    ],
+    ctaKey: 'home.userTypes.aspiring.cta',
+    action: 'startCreating' as const,
+  },
+  {
+    icon: '🚀',
+    titleKey: 'home.userTypes.experienced.title',
+    descriptionKey: 'home.userTypes.experienced.description',
+    benefits: [
+      'home.userTypes.experienced.benefit1',
+      'home.userTypes.experienced.benefit2',
+      'home.userTypes.experienced.benefit3',
+    ],
+    ctaKey: 'home.userTypes.experienced.cta',
+    action: 'navigateToPricing' as const,
+  },
+  {
+    icon: '🎨',
+    titleKey: 'home.userTypes.hobbyist.title',
+    descriptionKey: 'home.userTypes.hobbyist.description',
+    benefits: [
+      'home.userTypes.hobbyist.benefit1',
+      'home.userTypes.hobbyist.benefit2',
+      'home.userTypes.hobbyist.benefit3',
+    ],
+    ctaKey: 'home.userTypes.hobbyist.cta',
+    action: 'startCreating' as const,
+  },
+];
+
+
 const genresForMegaMenu = [ 
   { nameKey: 'genres.sciFi.name', color: 'bg-gradient-to-br from-indigo-500 to-purple-600', icon: '🚀', descriptionKey: "genres.sciFi.description" },
   { nameKey: 'genres.fantasy.name', color: 'bg-gradient-to-br from-purple-500 to-pink-600', icon: '🐉', descriptionKey: "genres.fantasy.description" },
   { nameKey: 'genres.mystery.name', color: 'bg-gradient-to-br from-yellow-500 to-orange-600', icon: '🔍', descriptionKey: "genres.mystery.description" },
 ];
 
-// Novel showcases: titles and blurbs could be translatable if they are generic examples
 const initialNovelShowcases = [ 
-  { title: "The Last Stargazer", blurb: "In a dying universe...", imagePlaceholder: "🌌", bgColor: "bg-secondary border border-border", genre: "Sci-Fi"}, // Mapped to secondary
+  { title: "The Last Stargazer", blurb: "In a dying universe...", imagePlaceholder: "🌌", bgColor: "bg-secondary border border-border", genre: "Sci-Fi"},
   { title: "Cyber-Soul City", blurb: "A detective with a bio-enhanced past...", imagePlaceholder: "🌃", bgColor: "bg-secondary border border-border", genre: "Cyberpunk"},
   { title: "The Clockwork Heart", blurb: "An inventor in a steampunk era creates an automaton with a human heart, leading to unforeseen emotional entanglements.", imagePlaceholder: "⚙️❤️", bgColor: "bg-secondary border border-border", genre: "Steampunk"},
   { title: "Echoes of the Void", blurb: "A lone ship adrift in uncharted space receives a cryptic message from a long-lost civilization.", imagePlaceholder: "🛰️", bgColor: "bg-secondary border border-border", genre: "Sci-Fi"},
@@ -88,7 +123,6 @@ const initialNovelShowcases = [
   { title: "Neon City Blues", blurb: "In the sprawling metropolis of Neo-Veridia, a private investigator uncovers a conspiracy that reaches the highest echelons of corporate power.", imagePlaceholder: "🏙️✨", bgColor: "bg-secondary border border-border", genre: "Cyberpunk"}
 ];
 
-// Testimonials: quotes, author names, titles could be translatable
 interface Testimonial {
   id: string;
   quoteKey: string;
@@ -103,19 +137,18 @@ const testimonials: Testimonial[] = [
   { id: 'testimonial-3', quoteKey: "home.testimonials.3.quote", authorNameKey: "home.testimonials.3.authorName", authorTitleKey: "home.testimonials.3.authorTitle", avatarPlaceholder: "✒️" }
 ];
 
-// Genre tools: names, descriptions, toolFocus should be translatable
 interface HomePageGenreTool {
   nameKey: string;
   icon: string;
   descriptionKey: string;
   toolFocusKey: string;
-  colorClasses: string; // Keep this for specific border colors if not directly mapped to primary/accent
+  colorClasses: string; 
 }
 
 const homePageGenreExamples: HomePageGenreTool[] = [
   { nameKey: "home.genreTools.sciFi.name", icon: "🚀", descriptionKey: "home.genreTools.sciFi.description", toolFocusKey: "home.genreTools.sciFi.toolFocus", colorClasses: "border-primary hover:shadow-primary/10" },
-  { nameKey: "home.genreTools.fantasy.name", icon: "🐉", descriptionKey: "home.genreTools.fantasy.description", toolFocusKey: "home.genreTools.fantasy.toolFocus", colorClasses: "border-purple-500 hover:shadow-purple-500/10" }, // Keep purple or map to accent
-  { nameKey: "home.genreTools.mystery.name", icon: "🔍", descriptionKey: "home.genreTools.mystery.description", toolFocusKey: "home.genreTools.mystery.toolFocus", colorClasses: "border-amber-500 hover:shadow-amber-500/10" } // Keep amber or map to accent
+  { nameKey: "home.genreTools.fantasy.name", icon: "🐉", descriptionKey: "home.genreTools.fantasy.description", toolFocusKey: "home.genreTools.fantasy.toolFocus", colorClasses: "border-accent hover:shadow-accent/10" }, 
+  { nameKey: "home.genreTools.mystery.name", icon: "🔍", descriptionKey: "home.genreTools.mystery.description", toolFocusKey: "home.genreTools.mystery.toolFocus", colorClasses: "border-yellow-500 hover:shadow-yellow-500/10" } 
 ];
 
 
@@ -189,7 +222,8 @@ const HomePage: React.FC<HomePageProps> = ({
     onNavigateToPrivacy,
     onNavigateToTerms,
     onNavigateToAbout,
-    onNavigateToContact
+    onNavigateToContact,
+    onNavigateToMonetization
 }) => {
   const { t } = useTranslation(); 
   const [activeFilter, setActiveFilter] = useState<string>('All');
@@ -232,6 +266,14 @@ const HomePage: React.FC<HomePageProps> = ({
   const toggleFaq = (index: number) => {
     setOpenFaqIndex(openFaqIndex === index ? null : index);
   };
+  
+  const handleUserTypeCta = (action: 'startCreating' | 'navigateToPricing') => {
+    if (action === 'startCreating') {
+      onStartCreating();
+    } else if (action === 'navigateToPricing') {
+      onNavigateToPricing();
+    }
+  };
 
   return (
     <div className="min-h-screen bg-background text-foreground flex flex-col items-center">
@@ -243,6 +285,7 @@ const HomePage: React.FC<HomePageProps> = ({
           <nav className="hidden md:flex items-center space-x-1">
             <NavLink href="#key-features">{t('navigation.features')}</NavLink>
             <NavLink href="#how-it-works-home">{t('navigation.howItWorks')}</NavLink>
+            <NavLink href="#user-types-section">{t('navigation.forEveryWriter')}</NavLink> {/* New NavLink */}
             <NavLink href="#testimonials">{t('navigation.testimonials')}</NavLink>
             <NavLink href="#genre-tools-section-home">{t('navigation.genreTools')}</NavLink>
 
@@ -289,7 +332,7 @@ const HomePage: React.FC<HomePageProps> = ({
         </div>
       </header>
 
-      <section className="w-full py-20 md:py-28 px-4 text-center relative overflow-hidden hero-gradient"> {/* hero-gradient class applied */}
+      <section className="w-full py-20 md:py-28 px-4 text-center relative overflow-hidden hero-gradient">
          <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight text-foreground relative z-10">{t('home.hero.welcome')} <span className="gradient-text">{t('appTitle')}!</span></h1>
         <p className="text-lg sm:text-xl text-muted-foreground mt-6 max-w-2xl mx-auto relative z-10 leading-relaxed">{t('home.hero.tagline')}</p>
          <button onClick={handleStartCreatingClick} className="mt-10 px-8 py-4 bg-primary hover:bg-primary/90 text-primary-foreground text-lg font-semibold rounded-lg shadow-lg hover:shadow-primary/40 transform hover:scale-105 transition-all duration-300 focus:outline-none focus:ring-4 focus:ring-ring focus:ring-offset-2 focus:ring-offset-background active:scale-[0.98] relative z-10" aria-label={t('home.hero.createNovelNowAriaLabel')}>
@@ -323,6 +366,38 @@ const HomePage: React.FC<HomePageProps> = ({
             ))}
           </div>
         </section>
+        
+        {/* New User Types Section */}
+        <section id="user-types-section" className="py-12 md:py-16 scroll-mt-20">
+          <h2 className="text-3xl font-bold text-center text-primary mb-4 tracking-tight">{t('home.userTypes.sectionTitle')}</h2>
+          <p className="text-center text-muted-foreground mb-16 max-w-2xl mx-auto leading-relaxed">
+            {t('home.userTypes.sectionSubtitle', { appTitle: t('appTitle') })}
+          </p>
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {userTypes.map((userType) => (
+              <div key={userType.titleKey} className="bg-card p-8 rounded-xl shadow-xl border border-border flex flex-col transform hover:-translate-y-2 hover:shadow-xl hover:shadow-primary/10 hover:border-accent transition-all duration-300">
+                <div className="text-5xl mb-6 text-primary text-center">{userType.icon}</div>
+                <h3 className="text-xl font-semibold text-foreground mb-3 text-center">{t(userType.titleKey)}</h3>
+                <p className="text-muted-foreground text-sm leading-relaxed mb-6">{t(userType.descriptionKey)}</p>
+                <ul className="space-y-2 text-sm text-foreground mb-8 flex-grow">
+                  {userType.benefits.map((benefitKey) => (
+                    <li key={benefitKey} className="flex items-start">
+                      <svg className="w-5 h-5 text-green-400 mr-2 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20"><path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" /></svg>
+                      <span>{t(benefitKey)}</span>
+                    </li>
+                  ))}
+                </ul>
+                <button
+                  onClick={() => handleUserTypeCta(userType.action)}
+                  className="w-full mt-auto px-6 py-3 bg-accent hover:bg-accent/90 text-accent-foreground font-semibold rounded-lg shadow-md focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 focus:ring-offset-card active:scale-[0.98] transition-all duration-200 ease-in-out"
+                >
+                  {t(userType.ctaKey)}
+                </button>
+              </div>
+            ))}
+          </div>
+        </section>
+
 
         <section  id="novel-showcase" className="py-12 md:py-16 scroll-mt-20">
           <h2 className="text-3xl font-bold text-center text-primary mb-12 tracking-tight">{t('home.showcase.sectionTitle')}</h2>
@@ -393,7 +468,7 @@ const HomePage: React.FC<HomePageProps> = ({
                 </div>
               ))}
             </div>
-            <div className="mt-16 p-8 bg-gradient-to-r from-primary via-primary/80 to-primary/60 rounded-xl shadow-2xl text-center border border-primary/70"> {/* Gradient based on primary */}
+            <div className="mt-16 p-8 bg-gradient-to-r from-primary via-primary/80 to-accent rounded-xl shadow-2xl text-center border border-primary/70">
               <h3 className="text-2xl font-bold text-primary-foreground mb-3 tracking-tight">{t('home.genreTools.customPrompt.title')}</h3>
               <p className="text-primary-foreground/90 mb-6 max-w-xl mx-auto leading-relaxed">
                 {t('home.genreTools.customPrompt.description')}
@@ -411,7 +486,7 @@ const HomePage: React.FC<HomePageProps> = ({
         <section id="seo-content-home" className="py-12 md:py-16 bg-secondary rounded-xl my-16 shadow-xl border border-border scroll-mt-20">
           <div className="container mx-auto px-4 md:px-6 max-w-4xl">
             <h2 className="text-3xl font-bold text-primary mb-6 text-center tracking-tight">{t('home.seoSection.title')}</h2>
-            <div className="prose prose-sm md:prose-base mx-auto text-muted-foreground leading-relaxed space-y-4"> {/* Adjusted prose text color */}
+            <div className="prose prose-sm md:prose-base mx-auto text-muted-foreground leading-relaxed space-y-4">
               <p>{t('home.seoSection.paragraph1', { appTitle: t('appTitle') })}</p>
               <p>{t('home.seoSection.paragraph2', { appTitle: t('appTitle') })}</p>
               <p>{t('home.seoSection.paragraph3', { appTitle: t('appTitle') })}</p>
@@ -450,11 +525,34 @@ const HomePage: React.FC<HomePageProps> = ({
 
       <footer className="w-full text-center py-10 border-t border-border bg-secondary">
         <p className="text-sm text-muted-foreground">{t('footer.copyright', { year: new Date().getFullYear(), appTitle: t('appTitle') })} {t('footer.tagline')}</p>
+        <div className="mt-4 mb-3 border-t border-border/50 pt-3">
+          <span className="text-xs text-muted-foreground mr-2">{t('footer.toolNavigation')}:</span>
+          {TOOL_PAGE_SECTIONS.map(tool => (
+            <button
+              key={tool.id}
+              onClick={() => {
+                if (tool.id === 'novel-editor') {
+                  onStartCreating(); // Navigate to tool page and default to workflow editor
+                } else {
+                  // For other tools, might need a different navigation handler or specific view
+                  onStartCreating(); // Placeholder, assuming it sets view to 'tool' then TrendSpark can be selected
+                  // Future: could pass tool.id to onStartCreating to directly open that tool
+                  alert(`Navigating to ${t(tool.titleKey)} (tool page will handle actual display)`);
+                }
+              }}
+              className="text-xs text-primary hover:text-primary/80 hover:underline transition-colors duration-200 ease-in-out px-2 py-1 focus:outline-none focus:ring-1 focus:ring-ring rounded"
+              aria-label={t(tool.titleKey)}
+            >
+              {t(tool.titleKey)}
+            </button>
+          ))}
+        </div>
         <div className="mt-4 flex flex-wrap justify-center items-center gap-x-6 gap-y-3">
-            <button onClick={onNavigateToPrivacy} className="text-xs text-muted-foreground hover:text-primary transition-colors duration-200 ease-in-out">{t('footer.privacyPolicy')}</button>
-            <button onClick={onNavigateToTerms} className="text-xs text-muted-foreground hover:text-primary transition-colors duration-200 ease-in-out">{t('footer.termsOfService')}</button>
-            <button onClick={onNavigateToAbout} className="text-xs text-muted-foreground hover:text-primary transition-colors duration-200 ease-in-out">{t('footer.aboutUs')}</button>
-            <button onClick={onNavigateToContact} className="text-xs text-muted-foreground hover:text-primary transition-colors duration-200 ease-in-out">{t('footer.contactUs')}</button>
+            <button onClick={onNavigateToPrivacy} className="text-xs text-muted-foreground hover:text-primary hover:underline transition-colors duration-200 ease-in-out">{t('footer.privacyPolicy')}</button>
+            <button onClick={onNavigateToTerms} className="text-xs text-muted-foreground hover:text-primary hover:underline transition-colors duration-200 ease-in-out">{t('footer.termsOfService')}</button>
+            <button onClick={onNavigateToAbout} className="text-xs text-muted-foreground hover:text-primary hover:underline transition-colors duration-200 ease-in-out">{t('footer.aboutUs')}</button>
+            <button onClick={onNavigateToContact} className="text-xs text-muted-foreground hover:text-primary hover:underline transition-colors duration-200 ease-in-out">{t('footer.contactUs')}</button>
+            <button onClick={onNavigateToMonetization} className="text-xs text-muted-foreground hover:text-primary hover:underline transition-colors duration-200 ease-in-out">{t('monetizationPage.footerLink')}</button>
             <div className="w-full sm:w-auto mt-2 sm:mt-0">
                  <LanguagePicker />
             </div>

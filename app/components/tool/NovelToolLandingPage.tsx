@@ -29,7 +29,8 @@ interface NovelToolLandingPageProps {
   onNavigateToTerms: () => void;
   onNavigateToAbout: () => void;
   onNavigateToContact: () => void;
-  onSelectNavigation: (toolId: ToolSectionId, displayId: string) => void; // Added for tool navigation
+  onNavigateToMonetization: () => void;
+  onSelectNavigation: (toolId: ToolSectionId, displayId: string) => void; 
 }
 
 
@@ -49,6 +50,7 @@ const NovelToolLandingPage: React.FC<NovelToolLandingPageProps> = ({
   onNavigateToTerms,
   onNavigateToAbout,
   onNavigateToContact,
+  onNavigateToMonetization,
   onSelectNavigation
 }) => {
   const { t } = useTranslation();
@@ -95,7 +97,7 @@ const NovelToolLandingPage: React.FC<NovelToolLandingPageProps> = ({
           {TOOL_PAGE_SECTIONS.map(tool => (
             <button
               key={tool.id}
-              onClick={() => onSelectNavigation(tool.id, tool.id)}
+              onClick={() => onSelectNavigation(tool.id, tool.id === 'novel-editor' ? (NOVEL_EDITOR_SUB_SECTIONS[0]?.id || 'novel-workflow-editor-section') : tool.id)}
               className="text-xs text-primary hover:text-primary/80 hover:underline transition-colors duration-200 ease-in-out px-2 py-1 focus:outline-none focus:ring-1 focus:ring-ring rounded"
               aria-label={t(tool.titleKey)}
             >
@@ -109,6 +111,7 @@ const NovelToolLandingPage: React.FC<NovelToolLandingPageProps> = ({
             <button onClick={onNavigateToTerms} className="text-xs text-muted-foreground hover:text-primary hover:underline transition-colors duration-200 ease-in-out">{t('footer.termsOfService')}</button>
             <button onClick={onNavigateToAbout} className="text-xs text-muted-foreground hover:text-primary hover:underline transition-colors duration-200 ease-in-out">{t('footer.aboutUs')}</button>
             <button onClick={onNavigateToContact} className="text-xs text-muted-foreground hover:text-primary hover:underline transition-colors duration-200 ease-in-out">{t('footer.contactUs')}</button>
+            <button onClick={onNavigateToMonetization} className="text-xs text-muted-foreground hover:text-primary hover:underline transition-colors duration-200 ease-in-out">{t('monetizationPage.footerLink')}</button>
             <div className="w-full sm:w-auto mt-2 sm:mt-0">
                  <LanguagePicker />
             </div>

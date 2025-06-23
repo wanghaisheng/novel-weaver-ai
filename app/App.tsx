@@ -2,7 +2,7 @@
 
 import React, { useState, useCallback, useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
-import { NovelData, NovelStage, Stage1Data, Stage2Data, Stage3Data, CharacterProfile, Chapter, User, AppView } from './types';
+import { NovelData, NovelStage, Stage1Data, Stage2Data, Stage3Data, CharacterProfile, Chapter, User, AppView, BillingCycle } from './types';
 import HomePage from './pages/HomePage';
 import ToolPage from './pages/ToolPage';
 import PricingPage from './pages/PricingPage';
@@ -13,11 +13,13 @@ import PrivacyPage from './pages/PrivacyPage';
 import TermsPage from './pages/TermsPage';
 import AboutPage from './pages/AboutPage';
 import ContactPage from './pages/ContactPage';
+import MonetizationPage from './pages/MonetizationPage'; // Added
 import UpgradeModal from './components/UpgradeModal'; 
-import { STAGE_INSTRUCTIONS } from './constants'; // Moved up as it's used in downloadNovel
+import { STAGE_INSTRUCTIONS } from './constants'; 
 
 const AUTH_USER_KEY = 'novelAuthUser';
 const USER_API_KEY = 'userGeminiApiKey';
+const ACTIVE_SUBSCRIPTION_KEY = 'novelActiveSubscription';
 
 export const getInitialNovelData = (t: (key: string) => string): NovelData => ({
   title: t('novel.defaultTitle'), 
@@ -47,6 +49,7 @@ const App: React.FC = () => {
   const [authLoading, setAuthLoading] = useState(true); 
   const [signInRedirectMessage, setSignInRedirectMessage] = useState<string | undefined>(undefined);
   const [userApiKey, setUserApiKey] = useState<string | null>(null);
+  const [activeSubscription, setActiveSubscription] = useState<{ planId: string; billingCycle: BillingCycle } | null>(null);
 
   const [currentStage, setCurrentStage] = useState<NovelStage>(NovelStage.FOUNDATION);
   const [showUpgradeModal, setShowUpgradeModal] = useState(false);
@@ -57,11 +60,10 @@ const App: React.FC = () => {
     if (savedData) {
       try {
         const parsed = JSON.parse(savedData);
-        // Perform a deep merge, preferring parsed data but ensuring structure from initialData
         return {
-          ...initialData, // Start with initial structure
-          ...parsed,      // Overwrite top-level keys with parsed data
-          title: parsed.title || initialData.title, // Specific handling for title
+          ...initialData, 
+          ...parsed,      
+          title: parsed.title || initialData.title, 
           stage1: {
             ...initialData.stage1,
             ...(parsed.stage1 || {}),
@@ -84,7 +86,7 @@ const App: React.FC = () => {
         };
       } catch (e) {
         console.error("Failed to parse novelData from localStorage or merge failed. Using initial data and clearing corrupted storage.", e);
-        localStorage.removeItem('novelData'); // Clear corrupted data to prevent future errors
+        localStorage.removeItem('novelData'); 
       }
     }
     return initialData;
@@ -113,6 +115,14 @@ const App: React.FC = () => {
     if (storedUserApiKey) {
       setUserApiKey(storedUserApiKey);
     }
+    const storedSubscription = localStorage.getItem(ACTIVE_SUBSCRIPTION_KEY);
+    if (storedSubscription) {
+        try {
+            setActiveSubscription(JSON.parse(storedSubscription));
+        } catch (e) {
+            localStorage.removeItem(ACTIVE_SUBSCRIPTION_KEY);
+        }
+    }
     setAuthLoading(false);
   }, []);
 
@@ -127,6 +137,14 @@ const App: React.FC = () => {
         localStorage.setItem(USER_API_KEY, userApiKey);
     }
   }, [userApiKey]);
+
+  useEffect(() => {
+    if (activeSubscription === null) {
+        localStorage.removeItem(ACTIVE_SUBSCRIPTION_KEY);
+    } else {
+        localStorage.setItem(ACTIVE_SUBSCRIPTION_KEY, JSON.stringify(activeSubscription));
+    }
+  }, [activeSubscription]);
   
   const BASE_URL = "https://novelweaver.deepseek.diy"; 
 
@@ -142,6 +160,7 @@ const App: React.FC = () => {
       case 'terms': return '/terms-of-service';
       case 'about': return '/about-us';
       case 'contact': return '/contact-us';
+      case 'monetization': return '/monetization-strategies'; // Added
       default: return '/';
     }
   };
@@ -189,6 +208,10 @@ const App: React.FC = () => {
         "priceCurrency": "USD", 
         "price": t('ldJson.seePlans')
       };
+    } else if (view === 'monetization') {
+      pageType = "Article"; // Or WebPage, Guide
+      additionalProps.articleSection = "Author Resources";
+      additionalProps.keywords = "novel monetization, web novel platforms, author income, publishing";
     }
     
     return JSON.stringify({
@@ -254,6 +277,10 @@ const App: React.FC = () => {
       case 'contact':
         title = `${t('seo.contact.title')} | ${t('appTitle')}`;
         description = t('seo.contact.description', { appTitle: t('appTitle') });
+        break;
+      case 'monetization': // Added
+        title = `${t('seo.monetization.title')} | ${t('appTitle')}`;
+        description = t('seo.monetization.description', { appTitle: t('appTitle') });
         break;
     }
 
@@ -379,7 +406,7 @@ const App: React.FC = () => {
       content += "---\n";
     });
 
-    const blob = new Blob([content], { type: 'text/plain;charset=utf-8' });
+    const blob = new Blob([content], { type: 'text/plain;charset=utf-utf-8' });
     const link = document.createElement('a');
     link.href = URL.createObjectURL(blob);
     const sanitizedTitle = novelData.title.replace(/[^a-z0-9]/gi, '_').toLowerCase();
@@ -402,6 +429,7 @@ const App: React.FC = () => {
   const navigateToTerms = useCallback(() => setCurrentView('terms'), []);
   const navigateToAbout = useCallback(() => setCurrentView('about'), []);
   const navigateToContact = useCallback(() => setCurrentView('contact'), []);
+  const navigateToMonetization = useCallback(() => setCurrentView('monetization'), []); // Added
 
 
   const handleSignInSuccess = useCallback((userData: { user: User; token: string }) => {
@@ -414,6 +442,9 @@ const App: React.FC = () => {
   const handleSignOut = useCallback(() => {
     setCurrentUser(null);
     localStorage.removeItem(AUTH_USER_KEY);
+    // Potentially clear activeSubscription too if it's tied to a user account
+    // setActiveSubscription(null); 
+    // localStorage.removeItem(ACTIVE_SUBSCRIPTION_KEY);
     setCurrentView('home'); 
   }, []);
 
@@ -429,6 +460,15 @@ const App: React.FC = () => {
   const handleSetUserApiKey = useCallback((key: string | null) => {
     setUserApiKey(key);
   }, []);
+  
+  const handleSetSubscription = useCallback((planId: string, cycle: BillingCycle) => {
+    setActiveSubscription({ planId, billingCycle: cycle });
+  }, []);
+
+  const handleClearSubscription = useCallback(() => {
+    setActiveSubscription(null);
+  }, []);
+
 
   if (authLoading) {
     return <div className="min-h-screen bg-background flex items-center justify-center text-foreground text-xl">{t('loading.application')}</div>;
@@ -439,6 +479,7 @@ const App: React.FC = () => {
     onNavigateToTerms: navigateToTerms,
     onNavigateToAbout: navigateToAbout,
     onNavigateToContact: navigateToContact,
+    onNavigateToMonetization: navigateToMonetization, // Added
   };
 
   if (currentView === 'home') {
@@ -449,10 +490,7 @@ const App: React.FC = () => {
               onSignOut={handleSignOut}
               onNavigateToSignIn={navigateToSignIn}
               onNavigateToSignUp={navigateToSignUp}
-              onNavigateToPrivacy={navigateToPrivacy}
-              onNavigateToTerms={navigateToTerms}
-              onNavigateToAbout={navigateToAbout}
-              onNavigateToContact={navigateToContact}
+              {...commonPageProps}
             />;
   }
   if (currentView === 'tool') {
@@ -473,11 +511,8 @@ const App: React.FC = () => {
               onNavigateHome={navigateToHome}
               currentUser={currentUser}
               onSignOut={handleSignOut}
-              onNavigateToPrivacy={navigateToPrivacy}
-              onNavigateToTerms={navigateToTerms}
-              onNavigateToAbout={navigateToAbout}
-              onNavigateToContact={navigateToContact}
-              getInitialNovelData={getInitialNovelData} // Pass the helper function
+              getInitialNovelData={getInitialNovelData} 
+              {...commonPageProps}
            />;
   }
   if (currentView === 'pricing') {
@@ -486,10 +521,10 @@ const App: React.FC = () => {
                 onStartCreating={navigateToTool} 
                 currentUser={currentUser}
                 onNavigateToSignIn={navigateToSignIn}
-                onNavigateToPrivacy={navigateToPrivacy}
-                onNavigateToTerms={navigateToTerms}
-                onNavigateToAbout={navigateToAbout}
-                onNavigateToContact={navigateToContact}
+                activeSubscription={activeSubscription}
+                onSetSubscription={handleSetSubscription}
+                onClearSubscription={handleClearSubscription}
+                {...commonPageProps}
             />;
   }
   if (currentView === 'signIn') {
@@ -525,6 +560,9 @@ const App: React.FC = () => {
   if (currentView === 'contact') {
     return <ContactPage onNavigateHome={navigateToHome} {...commonPageProps} />;
   }
+  if (currentView === 'monetization') { // Added
+    return <MonetizationPage onNavigateHome={navigateToHome} {...commonPageProps} />;
+  }
   
   return (
     <>
@@ -533,7 +571,7 @@ const App: React.FC = () => {
         onClose={() => setShowUpgradeModal(false)}
         onUpgradeClick={handleUpgradeModalClick}
       />
-      <div className="text-center p-8 text-destructive-foreground">{t('error.unknownView')} <button onClick={navigateToHome} className="underline">{t('navigation.goHome')}</button></div>
+      <div className="text-center p-8 text-destructive-foreground bg-destructive rounded-md m-4">{t('error.unknownView')} <button onClick={navigateToHome} className="underline hover:text-primary transition-colors">{t('navigation.goHome')}</button></div>
     </>
   );
 };

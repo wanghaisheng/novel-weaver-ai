@@ -31,7 +31,7 @@ const StageFinalizeExport: React.FC<StageFinalizeExportProps> = ({
           value={novelTitle}
           onChange={(e) => onSetNovelTitle(e.target.value)}
           placeholder={t('finalizeExport.novelTitlePlaceholder')}
-          className="text-center text-xl p-3" 
+          className="text-center text-xl p-3 bg-muted" 
           instruction={t('finalizeExport.novelTitleInstruction')}
         />
       </div>

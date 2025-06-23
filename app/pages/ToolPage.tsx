@@ -1,5 +1,4 @@
 
-
 import React, { useState, useEffect, useCallback } from 'react';
 import { useTranslation } from 'react-i18next';
 import { NovelData, NovelStage, Stage1Data, Stage2Data, Stage3Data, Chapter, User, TrendSparkConcept } from '../types';
@@ -32,7 +31,8 @@ interface ToolPageProps {
   onNavigateToTerms: () => void;
   onNavigateToAbout: () => void;
   onNavigateToContact: () => void;
-  getInitialNovelData: (t: (key: string) => string) => NovelData; // Add this prop
+  onNavigateToMonetization: () => void; // This prop is crucial
+  getInitialNovelData: (t: (key: string) => string) => NovelData; 
 }
 
 const ToolPage: React.FC<ToolPageProps> = (props) => {
@@ -65,84 +65,101 @@ const ToolPage: React.FC<ToolPageProps> = (props) => {
     setActiveToolId(toolId);
     setActiveDisplayId(displayId); 
 
+    const scrollableContainer = document.querySelector('main.flex-1.overflow-y-auto');
+    if (!scrollableContainer) return;
+
     if (toolId === 'novel-editor') {
         requestAnimationFrame(() => {
             const element = document.getElementById(displayId);
             if (element) {
-                const headerOffset = 80; // Approximate height of sticky header/tabs if any
-                const scrollableContainer = document.querySelector('main.flex-1.overflow-y-auto');
+                const headerOffset = 20; // Offset for sticky elements or desired padding
+                const elementRect = element.getBoundingClientRect();
+                const containerRect = scrollableContainer.getBoundingClientRect();
+                const scrollTopTarget = elementRect.top - containerRect.top + scrollableContainer.scrollTop - headerOffset;
                 
-                if (scrollableContainer) {
-                    const elementRect = element.getBoundingClientRect();
-                    const containerRect = scrollableContainer.getBoundingClientRect();
-                    // Calculate scroll position relative to the container's current scroll top
-                    const scrollTopTarget = elementRect.top - containerRect.top + scrollableContainer.scrollTop - headerOffset;
-                    
-                    scrollableContainer.scrollTo({
-                        top: scrollTopTarget,
-                        behavior: 'smooth'
-                    });
-                } else {
-                     // Fallback to window scroll if specific container not found
-                    const elementPosition = element.getBoundingClientRect().top + window.pageYOffset;
-                    window.scrollTo({ top: elementPosition - headerOffset, behavior: 'smooth'});
-                }
+                scrollableContainer.scrollTo({
+                    top: scrollTopTarget,
+                    behavior: 'smooth'
+                });
             }
         });
-    } else { // For TrendSpark or other single-page tools
-        const scrollableContainer = document.querySelector('main.flex-1.overflow-y-auto');
-        if (scrollableContainer) {
-            scrollableContainer.scrollTo({ top: 0, behavior: 'smooth' });
-        }
+    } else { 
+        scrollableContainer.scrollTo({ top: 0, behavior: 'smooth' });
     }
   }, []);
   
   const handleDevelopConcept = useCallback((concept: TrendSparkConcept) => {
     const initialNovelStructure = props.getInitialNovelData(t);
     props.onSetNovelData(prevData => ({
-      ...prevData, // Keep existing top-level data like user preferences if any
+      ...initialNovelStructure, 
       title: concept.title,
       stage1: {
-        ...initialNovelStructure.stage1, // Start with a clean Stage 1 structure
+        ...initialNovelStructure.stage1, 
         coreIdea: concept.blurb,
         genre: concept.genreSuggestion,
         targetAudience: concept.targetAudiencePlatform,
-        // Ensure other Stage 1 fields are explicitly reset or from initial structure
-        theme: '', // Reset
-        logline: '', // Reset
-        characters: [], // Reset
-        worldBuilding: { timeAndPlace: '', coreRules: '', socialStructure: '', keyLocations: '' }, // Reset
       },
-      stage2: initialNovelStructure.stage2, // Reset Stage 2
-      stage3: initialNovelStructure.stage3, // Reset Stage 3
     }));
     props.onSetCurrentStage(NovelStage.FOUNDATION);
-    const novelEditorWorkflowId = NOVEL_EDITOR_SUB_SECTIONS.find(s => s.titleKey === 'toolPage.subSections.novelWorkflowEditor.title')?.id || 'novel-workflow-editor-section';
+    const novelEditorWorkflowId = NOVEL_EDITOR_SUB_SECTIONS.find(s => s.id === 'novel-workflow-editor-section')?.id || 'novel-workflow-editor-section';
     handleSelectNavigation('novel-editor', novelEditorWorkflowId);
   }, [props.onSetNovelData, props.onSetCurrentStage, handleSelectNavigation, props.getInitialNovelData, t]);
 
 
   const renderActiveSection = () => {
-    const commonLandingPageProps = {
-      ...props,
-      onSelectNavigation: handleSelectNavigation, 
-    };
     switch (activeToolId) {
       case 'novel-editor':
-        return <NovelToolLandingPage {...commonLandingPageProps} />;
-      case 'trend-spark':
-        return <TrendSparkTool 
-                  userApiKey={props.userApiKey} 
-                  onDevelopConcept={handleDevelopConcept}
-                  onSelectNavigation={handleSelectNavigation}
+        return <NovelToolLandingPage
+                  novelData={props.novelData}
+                  currentStage={props.currentStage}
+                  onSetNovelData={props.onSetNovelData}
+                  onSetCurrentStage={props.onSetCurrentStage}
+                  onUpdateStage1Data={props.onUpdateStage1Data}
+                  onUpdateStage2Data={props.onUpdateStage2Data}
+                  onUpdateStage3Data={props.onUpdateStage3Data}
+                  onChapterUpdate={props.onChapterUpdate}
+                  onChapterGenerateStart={props.onChapterGenerateStart}
+                  onChapterGenerateEnd={props.onChapterGenerateEnd}
+                  onDownloadNovel={props.onDownloadNovel}
                   onNavigateToPrivacy={props.onNavigateToPrivacy}
                   onNavigateToTerms={props.onNavigateToTerms}
                   onNavigateToAbout={props.onNavigateToAbout}
                   onNavigateToContact={props.onNavigateToContact}
+                  onNavigateToMonetization={props.onNavigateToMonetization}
+                  onSelectNavigation={handleSelectNavigation}
+                />;
+      case 'trend-spark':
+        return <TrendSparkTool 
+                  userApiKey={props.userApiKey} 
+                  onDevelopConcept={handleDevelopConcept}
+                  onSelectNavigation={handleSelectNavigation} // Added for consistency, might not be used yet
+                  onNavigateToPrivacy={props.onNavigateToPrivacy}
+                  onNavigateToTerms={props.onNavigateToTerms}
+                  onNavigateToAbout={props.onNavigateToAbout}
+                  onNavigateToContact={props.onNavigateToContact}
+                  onNavigateToMonetization={props.onNavigateToMonetization} // Added
                 />;
       default:
         console.warn(`[ToolPage.tsx] Unknown activeToolId: ${activeToolId}. Defaulting to NovelToolLandingPage.`);
-        return <NovelToolLandingPage {...commonLandingPageProps} />;
+        return <NovelToolLandingPage
+                  novelData={props.novelData}
+                  currentStage={props.currentStage}
+                  onSetNovelData={props.onSetNovelData}
+                  onSetCurrentStage={props.onSetCurrentStage}
+                  onUpdateStage1Data={props.onUpdateStage1Data}
+                  onUpdateStage2Data={props.onUpdateStage2Data}
+                  onUpdateStage3Data={props.onUpdateStage3Data}
+                  onChapterUpdate={props.onChapterUpdate}
+                  onChapterGenerateStart={props.onChapterGenerateStart}
+                  onChapterGenerateEnd={props.onChapterGenerateEnd}
+                  onDownloadNovel={props.onDownloadNovel}
+                  onNavigateToPrivacy={props.onNavigateToPrivacy}
+                  onNavigateToTerms={props.onNavigateToTerms}
+                  onNavigateToAbout={props.onNavigateToAbout}
+                  onNavigateToContact={props.onNavigateToContact}
+                  onNavigateToMonetization={props.onNavigateToMonetization}
+                  onSelectNavigation={handleSelectNavigation}
+                />;
     }
   };
 
@@ -160,7 +177,7 @@ const ToolPage: React.FC<ToolPageProps> = (props) => {
         currentUser={props.currentUser}
         onSignOut={props.onSignOut}
       />
-      <main className="flex-1 overflow-y-auto bg-background"> {/* Updated bg-background */}
+      <main className="flex-1 overflow-y-auto bg-background" id="tool-main-content">
         {renderActiveSection()}
       </main>
     </div>
